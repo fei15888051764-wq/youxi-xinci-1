@@ -2,35 +2,30 @@ baseURL: 'https://gamerglossary.com'
 languageCode: 'en-us'
 title: 'Gamer Glossary'
 theme: 'gamer-theme'
-
 pagination:
   pagerSize: 16
 enableRobotsTXT: true
 enableGitInfo: false
-
 permalinks:
   slang: '/slang/:slug/'
-
 params:
   description: 'The ultimate dictionary for gaming slang and terminology.'
   author: 'GEBILAOWANG'
   keywords: 'gaming slang, gamer glossary, gaming terms, esports terminology'
-
 menu:
   main:
-    - name: 'Home'
-      url: '/'
+    - name: Home
+      url: /
       weight: 10
-    - name: 'Categories'
-      url: '/tags/'
+    - name: Categories
+      url: /tags/
       weight: 20
-    - name: 'About'
-      url: '/about/'
+    - name: About
+      url: /about/
       weight: 30
-    - name: 'Contact'
-      url: '/contact/'
+    - name: Contact
+      url: /contact/
       weight: 40
-
 sitemap:
   changefreq: daily
   priority: 0.5
