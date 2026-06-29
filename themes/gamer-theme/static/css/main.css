@@ -34,13 +34,14 @@ input{font-family:inherit}
 }
 
 /* ===== HERO ===== */
-.hero{position:relative;width:100%;height:260px;overflow:hidden}
+.hero{position:relative;width:100%;height:200px;overflow:hidden}
 .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,#101510 0%,#0a0a0a 70%);z-index:0}
 .hero-bg canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
-.hero-content{position:relative;z-index:10;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:72px 24px 16px}
+.hero-content{position:relative;z-index:10;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:80px 24px 20px}
 .hero-title{font-family:'Press Start 2P',cursive;font-size:clamp(22px,4.5vw,40px);color:#f0f0f0;text-align:center;margin-bottom:10px;text-shadow:0 0 20px rgba(163,255,0,.5),0 0 40px rgba(163,255,0,.3)}
-.hero-subtitle{color:#8c8c8c;font-size:14px;text-align:center;margin-bottom:16px}
-.search-form{position:relative;width:100%;max-width:420px}
+.hero-subtitle{color:#8c8c8c;font-size:14px;text-align:center;margin-bottom:0}
+.search-section{width:100%;background:#0c0f0c;padding:24px 16px 12px;display:flex;justify-content:center}
+.search-form{position:relative;width:100%;max-width:520px}
 .search-icon{position:absolute;left:16px;top:50%;transform:translateY(-50%);pointer-events:none}
 .search-input{width:100%;padding:12px 16px 12px 42px;border-radius:9999px;background:rgba(10,10,10,0.8);border:1px solid #333;color:#f0f0f0;font-size:14px;outline:none;transition:border-color .2s,background .2s}
 .search-input::placeholder{color:#555}
@@ -48,11 +49,11 @@ input{font-family:inherit}
 
 /* ===== ADS ===== */
 .ad-banner-wrap{max-width:1400px;margin:0 auto;padding:8px 24px 4px}
-.ad-banner{background:#111;border:1px dashed #333;border-radius:8px;height:90px;max-width:728px;margin:0 auto;display:flex;align-items:center;justify-content:center;color:#555;font-size:10px;letter-spacing:.15em}
-.ad-sidebar{display:none;width:160px;flex-shrink:0}
-.ad-sidebar-inner{background:#111;border:1px dashed #333;border-radius:8px;height:460px;display:flex;align-items:center;justify-content:center;color:#555;font-size:10px;letter-spacing:.15em;position:sticky;top:80px}
-.ad-sidebar-detail{display:none;width:160px;flex-shrink:0}
-.ad-sidebar-detail .ad-sidebar-inner{height:300px}
+.ad-banner{background:#111;border:1px dashed #333;border-radius:8px;height:60px;max-width:520px;margin:0 auto;display:flex;align-items:center;justify-content:center;color:#555;font-size:10px;letter-spacing:.15em}
+.ad-sidebar{display:none;width:120px;flex-shrink:0}
+.ad-sidebar-inner{background:#111;border:1px dashed #333;border-radius:8px;height:360px;display:flex;align-items:center;justify-content:center;color:#555;font-size:10px;letter-spacing:.15em;position:sticky;top:80px}
+.ad-sidebar-detail{display:none;width:120px;flex-shrink:0}
+.ad-sidebar-detail .ad-sidebar-inner{height:240px}
 
 @media(min-width:1024px){
   .ad-sidebar{display:block}
@@ -78,12 +79,12 @@ input{font-family:inherit}
 .card-img-wrap{width:100%;aspect-ratio:16/9;background:#0c0f0c;overflow:hidden}
 .card-img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
 .card:hover .card-img{transform:scale(1.05)}
-.card-body{padding:16px}
-.card-header-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
-.card-title-text{font-size:16px;font-weight:700;color:#f0f0f0;transition:color .2s;margin:0}
+.card-body{padding:12px}
+.card-header-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+.card-title-text{font-size:14px;font-weight:700;color:#f0f0f0;transition:color .2s;margin:0}
 .card:hover .card-title-text{color:#a3ff00}
-.card-badge{display:inline-block;border:1px solid #a3ff00;color:#a3ff00;border-radius:4px;padding:3px 10px;font-size:10px;text-transform:uppercase;letter-spacing:.04em;flex-shrink:0}
-.card-desc{font-size:13px;color:#8c8c8c;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:12px}
+.card-badge{display:inline-block;border:1px solid #a3ff00;color:#a3ff00;border-radius:4px;padding:2px 8px;font-size:9px;text-transform:uppercase;letter-spacing:.04em;flex-shrink:0}
+.card-desc{font-size:12px;color:#8c8c8c;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:10px}
 .card-footer{display:flex;align-items:center;justify-content:space-between}
 .card-tags{display:flex;gap:8px}
 .card-tag{font-size:11px;color:#666}
