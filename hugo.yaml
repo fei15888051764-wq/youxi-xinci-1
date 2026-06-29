@@ -12,9 +12,9 @@ permalinks:
   slang: '/slang/:slug/'
 
 params:
-  description: 'The ultimate dictionary for gaming slang and terminology. Learn what GG, Noob, OP, and hundreds of other gaming terms mean.'
+  description: 'The ultimate dictionary for gaming slang and terminology.'
   author: 'GEBILAOWANG'
-  keywords: 'gaming slang, gamer glossary, gaming terms, esports terminology, video game slang'
+  keywords: 'gaming slang, gamer glossary, gaming terms, esports terminology'
 
 menu:
   main:
