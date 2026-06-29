@@ -5,11 +5,9 @@
       <span class="nav-logo-text">GAMER GLOSSARY</span>
     </a>
     <div class="nav-links">
-      {{ range .Site.Menus.main }}
-      {{ if ne .Name "Home" }}
-      <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
-      {{ end }}
-      {{ end }}
+      <a href="/tags/" class="nav-link">Categories</a>
+      <a href="/about/" class="nav-link">About</a>
+      <a href="/contact/" class="nav-link">Contact</a>
     </div>
   </div>
 </nav>
