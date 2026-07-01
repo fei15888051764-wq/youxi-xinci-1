@@ -1,0 +1,68 @@
+{{ define "main" }}
+
+<!-- Top Ad -->
+<div class="ad-banner-wrap">
+  <div class="ad-banner">AD</div>
+</div>
+
+<!-- Tag Terms Section -->
+<section class="terms-section">
+  <div class="terms-header">
+    <h2 class="terms-title">{{ .Title | upper }}</h2>
+    <p class="terms-subtitle">{{ len .Pages }} GAMING SLANG TERM{{ if ne (len .Pages) 1 }}S{{ end }}</p>
+  </div>
+
+  <div class="terms-layout">
+    <!-- Left Ad -->
+    <div class="ad-sidebar">
+      <div class="ad-sidebar-inner">AD</div>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="cards-grid">
+      {{ range .Pages }}
+      <a href="{{ .RelPermalink }}" class="card">
+        <div class="card-img-wrap">
+          <img src="/slang/{{ replace .Params.slug "-gaming" "" }}-featured.jpg" alt="{{ .Title }}" class="card-img" loading="lazy" onerror="this.parentElement.style.display='none'">
+        </div>
+        <div class="card-body">
+          <div class="card-header-row">
+            <h3 class="card-title-text">{{ .Title }}</h3>
+            <span class="card-badge">{{ .Params.category }}</span>
+          </div>
+          <p class="card-desc">{{ .Params.shortDescription }}</p>
+          <div class="card-footer">
+            <div class="card-tags">
+              {{ range first 2 .Params.tags }}
+              <span class="card-tag">#{{ . }}</span>
+              {{ end }}
+            </div>
+            <span class="card-date">{{ .Params.updated }}</span>
+          </div>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+
+    <!-- Right Ad -->
+    <div class="ad-sidebar">
+      <div class="ad-sidebar-inner">AD</div>
+    </div>
+  </div>
+</section>
+
+<!-- Subscribe via Email -->
+<section class="newsletter">
+  <div class="newsletter-box">
+    <h2 class="newsletter-title">STAY IN THE LOOP</h2>
+    <p class="newsletter-desc">New gaming slang drops weekly. No spam, just the words you actually need to know.</p>
+    <p style="color:#8c8c8c;font-size:14px;margin:20px 0;">
+      To subscribe, send an email to
+      <a href="mailto:fei15888051764@gmail.com?subject=Subscribe%20to%20Gamer%20Glossary%20Newsletter" style="color:#a3ff00;">fei15888051764@gmail.com</a>
+      with subject "Subscribe" and we'll add you to the list.
+    </p>
+    <p class="newsletter-note">Unsubscribe anytime by replying "Unsubscribe"</p>
+  </div>
+</section>
+
+{{ end }}
