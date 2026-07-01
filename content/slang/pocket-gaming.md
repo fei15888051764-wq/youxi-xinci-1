@@ -15,7 +15,7 @@ tags:
 - moba
 - team-based
 - support
-- 2026
+- "2026"
 usageExamples:
 - example: Our Mercy is pocketing the Pharah. We need to focus fire.
   context: Enemy team strategy discussion
@@ -35,7 +35,10 @@ originSpread:
   detail: Team-based game communities (Overwatch, MOBAs)
 - attribute: Peak Period
   detail: 2017-present; standard competitive vocabulary
-culturalContext: "'Pocket' reflects the unique social dynamics of team-based games.\n  The relationship between a pocket healer and their carry is one of the most important\n  partnerships in competitive play. A good pocket can elevate an average player to\n  greatness."
+culturalContext: "'Pocket' reflects the unique social dynamics of team-based games.
+  The relationship between a pocket healer and their carry is one of the most important
+  partnerships in competitive play. A good pocket can elevate an average player to
+  greatness."
 similarTerms:
 - term: Hard pocket
   meaning: Exclusively supporting one player to the exclusion of everyone else
@@ -45,11 +48,16 @@ similarTerms:
   meaning: Similar concept but implies the carry needs constant help — less flattering
 faq:
 - question: Is pocketing a good strategy?
-  answer: "It depends. In some compositions (like Pharmercy in Overwatch), pocketing\n    is the optimal strategy. In others, spreading support is better. Good players\n    know when to pocket and when to support the whole team."
+  answer: "It depends. In some compositions (like Pharmercy in Overwatch), pocketing
+    is the optimal strategy. In others, spreading support is better. Good players
+    know when to pocket and when to support the whole team."
 - question: Can any role be pocketed?
-  answer: "Usually it's DPS/carry players who get pocketed since they benefit most\n    from dedicated support. However, you can technically pocket any role if the situation\n    calls for it."
+  answer: "Usually it's DPS/carry players who get pocketed since they benefit most
+    from dedicated support. However, you can technically pocket any role if the situation
+    calls for it."
 - question: Is 'pocket' only used in Overwatch?
-  answer: "While it originated in Overwatch, it's used in any team-based game with\n    support roles — Valorant, League of Legends, Apex Legends, etc."
+  answer: "While it originated in Overwatch, it's used in any team-based game with
+    support roles — Valorant, League of Legends, Apex Legends, etc."
 sources:
 - name: Overwatch Wiki — Pocket Healing
   url: https://overwatchwiki.com/pocket-healing

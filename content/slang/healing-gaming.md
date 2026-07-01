@@ -14,9 +14,10 @@ tags:
 - moba
 - mental-health
 - gen-z
-- 2026
+- "2026"
 usageExamples:
-- example: "After that ranked grind, I need some healing gaming. Time for Stardew\n    Valley."
+- example: "After that ranked grind, I need some healing gaming. Time for Stardew
+    Valley."
   context: Post-competitive session wind-down
   tone: Relaxed
 - example: My healing gaming routine is what keeps me from burning out.
@@ -34,7 +35,9 @@ originSpread:
   detail: Gen Z gamers across all platforms
 - attribute: Peak Period
   detail: 2023-present; growing with wellness culture in gaming
-culturalContext: "'Healing gaming' reflects a growing awareness in gaming culture that\n  not every session needs to be competitive. It's part of a broader wellness movement\n    among younger gamers who recognize the mental toll of competitive play."
+culturalContext: "'Healing gaming' reflects a growing awareness in gaming culture that
+  not every session needs to be competitive. It's part of a broader wellness movement
+    among younger gamers who recognize the mental toll of competitive play."
 similarTerms:
 - term: Comfort game
   meaning: A game you return to for relaxation — similar concept
@@ -44,11 +47,16 @@ similarTerms:
   meaning: The act of unwinding through casual play
 faq:
 - question: What counts as healing gaming?
-  answer: "Any game that helps you relax and decompress. Popular choices include\n    Stardew Valley, Animal Crossing, Minecraft (creative mode), and similar low-stress\n    games. The key is that it feels good, not competitive."
+  answer: "Any game that helps you relax and decompress. Popular choices include
+    Stardew Valley, Animal Crossing, Minecraft (creative mode), and similar low-stress
+    games. The key is that it feels good, not competitive."
 - question: Is healing gaming just for casual players?
-  answer: "Not at all. Many competitive players use healing gaming to prevent burnout.\n    It's becoming a recognized part of maintaining mental health in the gaming community."
+  answer: "Not at all. Many competitive players use healing gaming to prevent burnout.
+    It's becoming a recognized part of maintaining mental health in the gaming community."
 - question: Can healing gaming become escapism?
-  answer: "Like anything, balance is key. Healing gaming should complement your life,\n    not replace responsibilities. If you find yourself only playing healing games\n    and avoiding everything else, it might be worth examining why."
+  answer: "Like anything, balance is key. Healing gaming should complement your life,
+    not replace responsibilities. If you find yourself only playing healing games
+    and avoiding everything else, it might be worth examining why."
 sources:
 - name: Polygon — Healing Gaming Trend 2026
   url: https://www.polygon.com/healing-gaming-trend

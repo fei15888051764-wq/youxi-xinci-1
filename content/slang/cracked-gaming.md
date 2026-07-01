@@ -14,7 +14,7 @@ tags:
 - battle-royale
 - valorant
 - compliment
-- 2026
+- "2026"
 usageExamples:
 - example: Bro, you're cracked! How did you hit that shot?
   context: Casual team match
@@ -35,7 +35,10 @@ originSpread:
   detail: FPS and Battle Royale communities
 - attribute: Peak Period
   detail: 2020-present; universal across competitive gaming
-culturalContext: "'Cracked' sits at the top of the gaming compliment hierarchy. It\n  implies not just skill, but a level of play that seems almost superhuman. In a culture\n  where trash talk is common, calling someone 'cracked' is one of the highest forms\n  of praise."
+culturalContext: "'Cracked' sits at the top of the gaming compliment hierarchy. It
+  implies not just skill, but a level of play that seems almost superhuman. In a culture
+  where trash talk is common, calling someone 'cracked' is one of the highest forms
+  of praise."
 similarTerms:
 - term: Sweaty
   meaning: Highly skilled but implies trying too hard — less complimentary than 'cracked'
@@ -45,12 +48,16 @@ similarTerms:
   meaning: Expression of amazement at a play — not specifically about the player
 faq:
 - question: Is 'cracked' always a compliment?
-  answer: "Yes, with rare exceptions. Calling someone 'cracked' is almost always\n    positive. The only exception is when used sarcastically after a bad play, which\n    is usually obvious from tone."
+  answer: "Yes, with rare exceptions. Calling someone 'cracked' is almost always
+    positive. The only exception is when used sarcastically after a bad play, which
+    is usually obvious from tone."
 - question: Can 'cracked' refer to teams or just individuals?
   answer: Both. You can say a player is cracked or that an entire team is cracked.
     Both convey exceptional skill level.
 - question: What's the difference between 'cracked' and 'sweaty'?
-  answer: "'Cracked' focuses purely on skill level — you're just that good. 'Sweaty'\n    implies you're skilled but try too hard, taking the fun out of it. 'Cracked'\n    is the more desirable label."
+  answer: "'Cracked' focuses purely on skill level — you're just that good. 'Sweaty'
+    implies you're skilled but try too hard, taking the fun out of it. 'Cracked'
+    is the more desirable label."
 sources:
 - name: IGN — Gaming Slang Guide 2026
   url: https://www.ign.com/articles/gaming-slang-guide

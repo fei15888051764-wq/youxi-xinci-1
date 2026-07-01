@@ -13,7 +13,7 @@ tags:
 - general
 - gen-z
 - exaggeration
-- 2026
+- "2026"
 usageExamples:
 - example: Bro, you're OD with those callouts. Chill.
   context: Overly intense team communication
@@ -33,7 +33,9 @@ originSpread:
   detail: Universal across all gaming communities
 - attribute: Peak Period
   detail: 2020-present; mainstream gaming vocabulary
-culturalContext: "'OD' is a perfect example of how urban slang crosses into gaming\n  culture. Its flexibility makes it incredibly useful — it can describe anything from\n  an amazing play to an annoying teammate."
+culturalContext: "'OD' is a perfect example of how urban slang crosses into gaming
+  culture. Its flexibility makes it incredibly useful — it can describe anything from
+  an amazing play to an annoying teammate."
 similarTerms:
 - term: Extra
   meaning: Similar concept of excessive behavior — often used interchangeably
@@ -43,11 +45,16 @@ similarTerms:
   meaning: More recent term for chaotic, excessive behavior
 faq:
 - question: Is OD always negative?
-  answer: "No, it depends on context. 'That play was OD' is positive. 'You're being\n    OD right now' is negative. Tone and situation determine the meaning."
+  answer: "No, it depends on context. 'That play was OD' is positive. 'You're being
+    OD right now' is negative. Tone and situation determine the meaning."
 - question: Can OD describe in-game mechanics?
-  answer: "Absolutely. Players often say weapons, abilities, or game mechanics are\n    'OD' when they're too powerful or excessive. It's a common complaint in game\n    balance discussions."
+  answer: "Absolutely. Players often say weapons, abilities, or game mechanics are
+    'OD' when they're too powerful or excessive. It's a common complaint in game
+    balance discussions."
 - question: Where did OD come from?
-  answer: "OD is shortened from 'overdose,' which originated in urban/drug slang.\n    It crossed into gaming through hip-hop culture and streaming communities, where\n    it lost its drug-specific meaning and became a general term for excess."
+  answer: "OD is shortened from 'overdose,' which originated in urban/drug slang.
+    It crossed into gaming through hip-hop culture and streaming communities, where
+    it lost its drug-specific meaning and became a general term for excess."
 sources:
 - name: Urban Dictionary — OD in Gaming
   url: https://www.urbandictionary.com/define.php?term=OD

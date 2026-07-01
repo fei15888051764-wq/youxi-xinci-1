@@ -15,7 +15,7 @@ tags:
 - fps
 - tactical-shooter
 - competitive
-- 2026
+- "2026"
 usageExamples:
 - example: He had an ego peek and died immediately. Classic.
   context: Post-round analysis in Valorant
@@ -36,7 +36,10 @@ originSpread:
   detail: Tactical shooter communities (Valorant, CS2)
 - attribute: Peak Period
   detail: 2021-present; core vocabulary in ranked play
-culturalContext: "'Ego peek' captures a specific kind of gaming arrogance — the belief\n  that you're good enough to win a duel even when the odds are against you. In tactical\n  shooters where information and positioning are everything, ego peeking is often\n  the difference between winning and losing."
+culturalContext: "'Ego peek' captures a specific kind of gaming arrogance — the belief
+  that you're good enough to win a duel even when the odds are against you. In tactical
+  shooters where information and positioning are everything, ego peeking is often
+  the difference between winning and losing."
 similarTerms:
 - term: Wide peek
   meaning: Exposing too much of your character model — related but not always intentional
@@ -46,11 +49,16 @@ similarTerms:
   meaning: Aggressive peeking — can be strategic or ego-driven
 faq:
 - question: Is ego peeking always bad?
-  answer: "Not always. In some situations, an aggressive peek can catch opponents\n    off guard. The 'ego' part specifically refers to peeking when you have no advantage\n    and no reason to believe you'll win — pure overconfidence."
+  answer: "Not always. In some situations, an aggressive peek can catch opponents
+    off guard. The 'ego' part specifically refers to peeking when you have no advantage
+    and no reason to believe you'll win — pure overconfidence."
 - question: How do I stop ego peeking?
-  answer: "Focus on information gathering rather than frag hunting. Ask yourself:\n    'Do I know where the enemy is? Do I have an advantage?' If the answer is no,\n    don't peek."
+  answer: "Focus on information gathering rather than frag hunting. Ask yourself:
+    'Do I know where the enemy is? Do I have an advantage?' If the answer is no,
+    don't peek."
 - question: Is 'ego peek' only used in tactical shooters?
-  answer: "Primarily yes, though you might hear it in any game where peeking/exposing\n    yourself is a mechanic. It's most common in Valorant and CS2."
+  answer: "Primarily yes, though you might hear it in any game where peeking/exposing
+    yourself is a mechanic. It's most common in Valorant and CS2."
 sources:
 - name: ValorantWiki — Ego Peek Definition
   url: https://valorantwiki.com/ego-peek

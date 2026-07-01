@@ -15,7 +15,7 @@ tags:
 - competitive
 - ranked
 - insult
-- 2026
+- "2026"
 usageExamples:
 - example: "He's just ratting in the corner. Let's third-party someone else."
   context: Spotting a hiding player in Apex Legends
@@ -35,7 +35,10 @@ originSpread:
   detail: Battle royale communities (Apex, Fortnite)
 - attribute: Peak Period
   detail: 2020-present; standard ranked vocabulary
-culturalContext: "'Rat' represents the ongoing debate in battle royale culture between\n  aggressive and passive playstyles. Some view ratting as smart strategy — survival\n  is the point of the game, after all. Others see it as cowardly and against the\n  spirit of competition."
+culturalContext: "'Rat' represents the ongoing debate in battle royale culture between
+  aggressive and passive playstyles. Some view ratting as smart strategy — survival
+  is the point of the game, after all. Others see it as cowardly and against the
+  spirit of competition."
 similarTerms:
 - term: Camper
   meaning: Similar concept but usually refers to staying in one spot — broader term
@@ -45,11 +48,17 @@ similarTerms:
   meaning: A specific hiding location that's hard to find
 faq:
 - question: Is ratting a valid strategy?
-  answer: "From a game mechanics perspective, absolutely. Surviving is the objective\n    in battle royale games. However, many players view it as boring or against the\n    spirit of competition. It depends on whether you prioritize winning or entertainment."
+  answer: "From a game mechanics perspective, absolutely. Surviving is the objective
+    in battle royale games. However, many players view it as boring or against the
+    spirit of competition. It depends on whether you prioritize winning or entertainment."
 - question: Why do people hate ratting?
-  answer: "It creates unexciting gameplay, especially for viewers. A tournament where\n    everyone rats isn't fun to watch. Players also find it frustrating when someone\n    hides all game only to third-party the final fight."
+  answer: "It creates unexciting gameplay, especially for viewers. A tournament where
+    everyone rats isn't fun to watch. Players also find it frustrating when someone
+    hides all game only to third-party the final fight."
 - question: What's the difference between a rat and a camper?
-  answer: "A camper stays in one spot and waits. A rat actively avoids detection,\n    often moving from hiding spot to hiding spot. All rats camp, but not all campers\n    are rats."
+  answer: "A camper stays in one spot and waits. A rat actively avoids detection,
+    often moving from hiding spot to hiding spot. All rats camp, but not all campers
+    are rats."
 sources:
 - name: Apex Legends Wiki — Ratting
   url: https://apexlegendswiki.com/ratting

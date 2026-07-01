@@ -14,7 +14,7 @@ tags:
 - discord
 - gen-z
 - mental-health
-- 2026
+- "2026"
 usageExamples:
 - example: "Bro, you're tweaking. Calm down, it's just a game."
   context: Friend trying to de-escalate a tilted player
@@ -34,7 +34,9 @@ originSpread:
   detail: Gen Z gaming communities, streamers
 - attribute: Peak Period
   detail: 2021-present; mainstream gaming vocabulary
-culturalContext: "'Tweaking' highlights how gaming culture has developed its own vocabulary\n  for mental states. Recognizing when someone is 'tweaking' is part of the social\n  skill set of modern gamers — knowing when to call it out and when to take a break."
+culturalContext: "'Tweaking' highlights how gaming culture has developed its own vocabulary
+  for mental states. Recognizing when someone is 'tweaking' is part of the social
+  skill set of modern gamers — knowing when to call it out and when to take a break."
 similarTerms:
 - term: Tilted
   meaning: Frustrated and playing worse because of it — older term, similar concept
@@ -44,11 +46,17 @@ similarTerms:
   meaning: Getting angry while going bald — comedic way to describe rage
 faq:
 - question: Is tweaking always negative?
-  answer: "Not necessarily. It's often used lightheartedly among friends. 'You're\n    tweaking' can be a friendly check-in rather than an insult. The tone matters a\n    lot."
+  answer: "Not necessarily. It's often used lightheartedly among friends. 'You're
+    tweaking' can be a friendly check-in rather than an insult. The tone matters a
+    lot."
 - question: How do I stop tweaking?
-  answer: "Take a break. Step away from the game for a few minutes. Drink water.\n    The physical reset helps more than trying to mentally force yourself to calm down\n    while still playing."
+  answer: "Take a break. Step away from the game for a few minutes. Drink water.
+    The physical reset helps more than trying to mentally force yourself to calm down
+    while still playing."
 - question: Can teams tweak collectively?
-  answer: "Absolutely. When one player starts tweaking, it can spread to the whole\n    team. This is why mental resilience is so important in team games — one tilted\n    player can bring everyone down."
+  answer: "Absolutely. When one player starts tweaking, it can spread to the whole
+    team. This is why mental resilience is so important in team games — one tilted
+    player can bring everyone down."
 sources:
 - name: Twitch Culture Report 2026
   url: https://twitchculture.com/report-2026
