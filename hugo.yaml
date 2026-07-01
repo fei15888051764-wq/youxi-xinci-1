@@ -17,8 +17,8 @@ menu:
     - name: Home
       url: /
       weight: 10
-    - name: 标签
-      url: /slang/
+    - name: Tags
+      url: /tags/
       weight: 20
     - name: About
       url: /about/
