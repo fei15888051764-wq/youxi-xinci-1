@@ -1,43 +1,28 @@
 ---
 title: "About"
-description: "Learn about Gamer Glossary — your ultimate dictionary for gaming slang and terminology."
+description: "Meet GEBILAOWANG — the gaming culture researcher behind Gamer Glossary."
 ---
 
-# About Gamer Glossary
+# About GEBILAOWANG
 
-Gamer Glossary is your ultimate dictionary for gaming slang, terminology, and culture. We document the ever-evolving language of gaming communities across all genres and platforms.
+GEBILAOWANG is an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. With deep roots in competitive gaming communities, he documents the ever-evolving language that shapes how players interact across genres and platforms.
 
-## Our Mission
+## Mission
 
-Gaming has developed its own rich vocabulary — from tactical shooter callouts to MMO jargon to battle royale slang. Our mission is to preserve and explain this language, making it accessible to newcomers and entertaining for veterans.
-
-## What We Cover
-
-- **Slang & Terminology**: From mainstream terms like "gg" and "nerf" to niche community phrases
-- **Origins & Evolution**: Where terms came from and how their meanings have shifted
-- **Cultural Context**: How gaming language reflects broader gaming culture and community dynamics
-- **Cross-Platform**: Terms from PC, console, and mobile gaming communities
-
-## Our Sources
-
-We research terms using:
-- Gaming community discussions (Reddit, Discord, forums)
-- Official game documentation and patch notes
-- Esports broadcasts and player interviews
-- Academic research on gaming linguistics
-- Community contributions and feedback
+Gamer Glossary exists to preserve, explain, and celebrate gaming slang — from mainstream terms like "gg" and "nerf" to niche community phrases that emerge from specific games or platforms. Every definition is researched, verified, and presented with real-world context so readers truly understand how these terms are used.
 
 ## Editorial Standards
 
-Every term is researched, verified against multiple sources, and presented with:
-- Clear definitions with usage examples
-- Historical context and origin stories
-- Cultural significance and community usage patterns
-- Related terms and variations
+- **Research-First**: Every term is verified against multiple community sources before publication
+- **Real Examples**: Usage examples come from actual gaming scenarios, not made-up sentences
+- **Cultural Context**: We explain not just what a term means, but why it matters in gaming culture
+- **Living Documentation**: Gaming slang evolves fast — content is regularly reviewed and updated
 
 ## Contact
 
-Have a term to suggest or a correction to make?
+- Email: [fei15888051764@gmail.com](mailto:fei15888051764@gmail.com)
+- Response time: Usually within 48 hours
 
-- Visit our [Contact page](/contact/)
-- Email us at [fei15888051764@gmail.com](mailto:fei15888051764@gmail.com)
+## Submit a Term
+
+Know a gaming slang term that should be in our dictionary? Send us the term, its meaning, usage examples, and origin story. We review all submissions and credit contributors.
