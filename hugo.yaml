@@ -17,7 +17,7 @@ menu:
     - name: Home
       url: /
       weight: 10
-    - name: Categories
+    - name: Tags
       url: /tags/
       weight: 20
     - name: About
