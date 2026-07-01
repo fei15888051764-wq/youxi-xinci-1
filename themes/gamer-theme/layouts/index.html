@@ -14,8 +14,8 @@
 <!-- Search Bar -->
 <section class="search-section">
   <form class="search-form" onsubmit="event.preventDefault();">
-    <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-    <input type="text" class="search-input" placeholder="搜索游戏术语">
+    <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+    <input type="text" class="search-input" placeholder="Search gaming terms...">
   </form>
 </section>
 
@@ -170,7 +170,7 @@
       {{ range first 8 (where .Site.RegularPages "Section" "slang") }}
       <a href="{{ .RelPermalink }}" class="card">
         <div class="card-img-wrap">
-          <img src="/slang/{{ .Params.slug }}/{{ .Params.slug }}-featured.jpg" alt="{{ .Title }}" class="card-img" loading="lazy" onerror="this.parentElement.style.display='none'">
+          <img src="/slang/{{ replace .Params.slug "-gaming" "" }}-featured.jpg" alt="{{ .Title }}" class="card-img" loading="lazy" onerror="this.parentElement.style.display='none'">
         </div>
         <div class="card-body">
           <div class="card-header-row">
@@ -200,25 +200,23 @@
   <!-- View All Button -->
   <div class="view-all-wrap">
     <a href="/slang/" class="view-all-btn">
-      <span>View All Terms</span>
+      <span>Browse All Slang</span>
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
     </a>
   </div>
 </section>
 
-<!-- Newsletter -->
+<!-- Subscribe via Email -->
 <section class="newsletter">
   <div class="newsletter-box">
     <h2 class="newsletter-title">STAY IN THE LOOP</h2>
     <p class="newsletter-desc">New gaming slang drops weekly. No spam, just the words you actually need to know.</p>
-    <form class="newsletter-form" onsubmit="event.preventDefault();this.innerHTML='<div class=\'subscribed\'><svg width=\'20\' height=\'20\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'#a3ff00\' stroke-width=\'2\'><path d=\'M20 6L9 17l-5-5\'/></svg><span>You are subscribed! Welcome to the guild.</span></div>';">
-      <input type="email" class="newsletter-input" placeholder="your@email.com" required>
-      <button type="submit" class="newsletter-btn">
-        <span>Subscribe</span>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-      </button>
-    </form>
-    <p class="newsletter-note">Join the newsletter. Unsubscribe anytime.</p>
+    <p style="color:#8c8c8c;font-size:14px;margin:20px 0;">
+      To subscribe, send an email to
+      <a href="mailto:fei15888051764@gmail.com?subject=Subscribe%20to%20Gamer%20Glossary%20Newsletter" style="color:#a3ff00;">fei15888051764@gmail.com</a>
+      with subject "Subscribe" and we'll add you to the list.
+    </p>
+    <p class="newsletter-note">Unsubscribe anytime by replying "Unsubscribe"</p>
   </div>
 </section>
 
