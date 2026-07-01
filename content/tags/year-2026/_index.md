@@ -1,0 +1,4 @@
+---
+title: "2026"
+description: "All gaming slang terms from 2026."
+---
