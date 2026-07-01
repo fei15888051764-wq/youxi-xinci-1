@@ -5,16 +5,20 @@
   <div class="ad-banner">AD</div>
 </div>
 
+<!-- Debug info -->
+<div style="color:#a3ff00;padding:20px;text-align:center;">
+  <p>Section: {{ .Section }}</p>
+  <p>Title: {{ .Title }}</p>
+  <p>Kind: {{ .Kind }}</p>
+  <p>Type: {{ .Type }}</p>
+  <p>Layout: {{ .Layout }}</p>
+</div>
+
 <!-- List Section -->
 <section class="terms-section">
   <div class="terms-header">
-    {{ if eq .Section "tags" }}
     <h2 class="terms-title">{{ .Title | upper }}</h2>
     <p class="terms-subtitle">{{ len .Pages }} GAMING SLANG TERM{{ if ne (len .Pages) 1 }}S{{ end }}</p>
-    {{ else }}
-    <h2 class="terms-title">ALL TERMS</h2>
-    <p class="terms-subtitle">BROWSE ALL GAMING SLANG</p>
-    {{ end }}
   </div>
 
   <div class="terms-layout">
