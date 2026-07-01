@@ -5,11 +5,11 @@
   <div class="ad-banner">AD</div>
 </div>
 
-<!-- Year Section -->
+<!-- Tag Terms Section -->
 <section class="terms-section">
   <div class="terms-header">
-    <h2 class="terms-title">{{ .Title }}</h2>
-    <p class="terms-subtitle">{{ len (where .Site.RegularPages "Params.tags" "intersect" (slice .Title)) }} GAMING SLANG TERMS</p>
+    <h2 class="terms-title">{{ .Title | upper }}</h2>
+    <p class="terms-subtitle">{{ len .Pages }} GAMING SLANG TERM{{ if ne (len .Pages) 1 }}S{{ end }}</p>
   </div>
 
   <div class="terms-layout">
@@ -20,25 +20,23 @@
 
     <!-- Cards Grid -->
     <div class="cards-grid">
-      {{ range where .Site.RegularPages "Params.tags" "intersect" (slice .Title) }}
+      {{ range .Pages }}
       <a href="{{ .RelPermalink }}" class="card">
         <div class="card-img-wrap">
           <img src="/slang/{{ replace .Params.slug "-gaming" "" }}-featured.jpg" alt="{{ .Title }}" class="card-img" loading="lazy" onerror="this.parentElement.style.display='none'">
         </div>
         <div class="card-body">
-          <div class="card-header-row">
-            <h3 class="card-title-text">{{ .Title }}</h3>
-            <span class="card-badge">{{ .Params.category }}</span>
-          </div>
+          <h3 class="card-title-text">{{ .Title }}</h3>
+          <span class="card-badge">{{ .Params.category }}</span>
           <p class="card-desc">{{ .Params.shortDescription }}</p>
-          <div class="card-footer">
-            <div class="card-tags">
-              {{ range first 2 .Params.tags }}
-              <span class="card-tag">#{{ . }}</span>
-              {{ end }}
-            </div>
-            <span class="card-date">{{ .Params.updated }}</span>
+          {{ with .Params.tags }}
+          <div class="card-tags">
+            {{ range first 2 . }}
+            <span class="card-tag">#{{ . }}</span>
+            {{ end }}
           </div>
+          {{ end }}
+          <span class="card-date">{{ .Params.updated }}</span>
         </div>
       </a>
       {{ end }}

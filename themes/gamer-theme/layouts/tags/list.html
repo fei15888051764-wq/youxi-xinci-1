@@ -5,48 +5,34 @@
   <div class="ad-banner">AD</div>
 </div>
 
-<!-- Tag Terms Section -->
-<section class="terms-section">
-  <div class="terms-header">
-    <h2 class="terms-title">{{ .Title | upper }}</h2>
-    <p class="terms-subtitle">{{ len .Pages }} GAMING SLANG TERM{{ if ne (len .Pages) 1 }}S{{ end }}</p>
-  </div>
+<!-- All Tags Section -->
+<section class="tags-page">
+  <div class="tags-container">
+    <h1 class="tags-title">ALL TAGS</h1>
+    <p class="tags-subtitle">BROWSE GAMING SLANG BY CATEGORY</p>
 
-  <div class="terms-layout">
-    <!-- Left Ad -->
-    <div class="ad-sidebar">
-      <div class="ad-sidebar-inner">AD</div>
-    </div>
+    <div class="tags-layout">
+      <!-- Left Ad -->
+      <div class="ad-sidebar">
+        <div class="ad-sidebar-inner">AD</div>
+      </div>
 
-    <!-- Cards Grid -->
-    <div class="cards-grid">
-      {{ range .Pages }}
-      <a href="{{ .RelPermalink }}" class="card">
-        <div class="card-img-wrap">
-          <img src="/slang/{{ replace .Params.slug "-gaming" "" }}-featured.jpg" alt="{{ .Title }}" class="card-img" loading="lazy" onerror="this.parentElement.style.display='none'">
+      <!-- Tags Grid -->
+      <div class="tags-main">
+        <div class="tags-grid">
+          {{ range .Data.Terms.ByCount }}
+          <a href="{{ .Page.RelPermalink }}" class="tag-pill">
+            <span class="tag-pill-name">{{ .Page.Title }}</span>
+            <span class="tag-pill-count">{{ .Count }}</span>
+          </a>
+          {{ end }}
         </div>
-        <div class="card-body">
-          <div class="card-header-row">
-            <h3 class="card-title-text">{{ .Title }}</h3>
-            <span class="card-badge">{{ .Params.category }}</span>
-          </div>
-          <p class="card-desc">{{ .Params.shortDescription }}</p>
-          <div class="card-footer">
-            <div class="card-tags">
-              {{ range first 2 .Params.tags }}
-              <span class="card-tag">#{{ . }}</span>
-              {{ end }}
-            </div>
-            <span class="card-date">{{ .Params.updated }}</span>
-          </div>
-        </div>
-      </a>
-      {{ end }}
-    </div>
+      </div>
 
-    <!-- Right Ad -->
-    <div class="ad-sidebar">
-      <div class="ad-sidebar-inner">AD</div>
+      <!-- Right Ad -->
+      <div class="ad-sidebar">
+        <div class="ad-sidebar-inner">AD</div>
+      </div>
     </div>
   </div>
 </section>
