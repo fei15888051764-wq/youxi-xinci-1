@@ -7,7 +7,7 @@ Have a suggestion, correction, or partnership inquiry? Reach out to us.
 
 ## Contact Information
 
-- **Email:** fei15888051764@gmail.com
+- **Email:** [fei15888051764@gmail.com](mailto:fei15888051764@gmail.com)
 - **Response Time:** Usually within 48 hours
 
 ## Submit a Term

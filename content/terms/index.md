@@ -29,4 +29,7 @@ We may update these terms from time to time. Continued use of the site after cha
 
 ## 6. Contact
 
-For questions about these terms, please visit our [Contact page](/contact/).
+For questions about these terms, please contact us:
+
+- Via the [Contact page](/contact/)
+- By email: [fei15888051764@gmail.com](mailto:fei15888051764@gmail.com)

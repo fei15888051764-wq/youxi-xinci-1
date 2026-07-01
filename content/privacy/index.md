@@ -32,4 +32,7 @@ We may update this privacy policy from time to time. Changes will be posted on t
 
 ## 6. Contact
 
-For privacy-related questions, please contact us via the [Contact page](/contact/).
+For privacy-related questions, please contact us:
+
+- Via the [Contact page](/contact/)
+- By email: [fei15888051764@gmail.com](mailto:fei15888051764@gmail.com)

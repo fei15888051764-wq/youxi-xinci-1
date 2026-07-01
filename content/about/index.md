@@ -37,4 +37,7 @@ Every term is researched, verified against multiple sources, and presented with:
 
 ## Contact
 
-Have a term to suggest or a correction to make? Visit our [Contact page](/contact/) to get in touch.
+Have a term to suggest or a correction to make?
+
+- Visit our [Contact page](/contact/)
+- Email us at [fei15888051764@gmail.com](mailto:fei15888051764@gmail.com)
