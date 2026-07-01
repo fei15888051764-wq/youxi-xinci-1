@@ -1,29 +1,68 @@
 {{ define "main" }}
-<div class="list-page">
-  <div class="list-container">
-    <h1 class="list-title">CATEGORIES</h1>
-    <p class="list-desc">Browse gaming slang by category.</p>
 
-    <h2 class="list-subtitle">ALL TERMS</h2>
-    <div class="list-grid">
+<!-- Top Ad -->
+<div class="ad-banner-wrap">
+  <div class="ad-banner">AD</div>
+</div>
+
+<!-- All Terms Section -->
+<section class="terms-section">
+  <div class="terms-header">
+    <h2 class="terms-title">ALL TERMS</h2>
+    <p class="terms-subtitle">BROWSE ALL GAMING SLANG</p>
+  </div>
+
+  <div class="terms-layout">
+    <!-- Left Ad -->
+    <div class="ad-sidebar">
+      <div class="ad-sidebar-inner">AD</div>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="cards-grid">
       {{ range .Pages }}
-      <a href="{{ .RelPermalink }}" class="list-item">
-        <img src="/slang/{{ replace .Params.slug "-gaming" "" }}-featured.jpg" alt="{{ .Title }}" class="list-item-img" onerror="this.style.display='none'">
-        <div class="list-item-body">
-          <h3 class="list-item-title">{{ .Title }}</h3>
-          <p class="list-item-desc">{{ .Params.shortDescription }}</p>
-          {{ with .Params.tags }}
-          <div class="list-item-tags">
-            {{ range first 2 . }}
-            <span class="list-item-tag">#{{ . }}</span>
-            {{ end }}
-          </div>
-          {{ end }}
+      <a href="{{ .RelPermalink }}" class="card">
+        <div class="card-img-wrap">
+          <img src="/slang/{{ replace .Params.slug "-gaming" "" }}-featured.jpg" alt="{{ .Title }}" class="card-img" loading="lazy" onerror="this.parentElement.style.display='none'">
         </div>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        <div class="card-body">
+          <div class="card-header-row">
+            <h3 class="card-title-text">{{ .Title }}</h3>
+            <span class="card-badge">{{ .Params.category }}</span>
+          </div>
+          <p class="card-desc">{{ .Params.shortDescription }}</p>
+          <div class="card-footer">
+            <div class="card-tags">
+              {{ range first 2 .Params.tags }}
+              <span class="card-tag">#{{ . }}</span>
+              {{ end }}
+            </div>
+            <span class="card-date">{{ .Params.updated }}</span>
+          </div>
+        </div>
       </a>
       {{ end }}
     </div>
+
+    <!-- Right Ad -->
+    <div class="ad-sidebar">
+      <div class="ad-sidebar-inner">AD</div>
+    </div>
   </div>
-</div>
+</section>
+
+<!-- Subscribe via Email -->
+<section class="newsletter">
+  <div class="newsletter-box">
+    <h2 class="newsletter-title">STAY IN THE LOOP</h2>
+    <p class="newsletter-desc">New gaming slang drops weekly. No spam, just the words you actually need to know.</p>
+    <p style="color:#8c8c8c;font-size:14px;margin:20px 0;">
+      To subscribe, send an email to
+      <a href="mailto:fei15888051764@gmail.com?subject=Subscribe%20to%20Gamer%20Glossary%20Newsletter" style="color:#a3ff00;">fei15888051764@gmail.com</a>
+      with subject "Subscribe" and we'll add you to the list.
+    </p>
+    <p class="newsletter-note">Unsubscribe anytime by replying "Unsubscribe"</p>
+  </div>
+</section>
+
 {{ end }}
