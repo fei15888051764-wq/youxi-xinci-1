@@ -5,19 +5,17 @@
   <div class="ad-banner">AD</div>
 </div>
 
-<!-- All Tags Section -->
+<!-- All Taxonomy Terms -->
 <section class="tags-page">
   <div class="tags-container">
-    <h1 class="tags-title">ALL TAGS</h1>
-    <p class="tags-subtitle">BROWSE GAMING SLANG BY CATEGORY</p>
+    <h1 class="tags-title">ALL {{ .Title | upper }}</h1>
+    <p class="tags-subtitle">BROWSE BY CATEGORY</p>
 
     <div class="tags-layout">
-      <!-- Left Ad -->
       <div class="ad-sidebar">
         <div class="ad-sidebar-inner">AD</div>
       </div>
 
-      <!-- Tags Grid -->
       <div class="tags-main">
         <div class="tags-grid">
           {{ range .Data.Terms.ByCount }}
@@ -29,7 +27,6 @@
         </div>
       </div>
 
-      <!-- Right Ad -->
       <div class="ad-sidebar">
         <div class="ad-sidebar-inner">AD</div>
       </div>
