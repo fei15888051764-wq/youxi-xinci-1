@@ -35,13 +35,13 @@ originSpread:
   detail: Universal across gaming and streaming communities, especially Gen Z
 - attribute: Peak Period
   detail: 2022-present; extremely common on Twitch and in gaming Discord servers
-culturalContext: 'Tweaking' represents another example of gaming culture absorbing
+culturalContext: "'Tweaking' represents another example of gaming culture absorbing
   and recontextualizing slang from other communities. The original meaning referred
   to physical symptoms of stimulant use (twitching, erratic behavior). Gaming culture
   adopted it as a metaphor for the kind of frantic, irrational reactions that stressful
   gaming moments produce. The term works because the visual metaphor is so apt —
   a player who's 'tweaking' physically manifests stress through erratic mouse movements
-  and panicked decisions.
+  and panicked decisions."
 similarTerms:
 - term: Panicking
   meaning: More literal — 'tweaking' includes but isn't limited to panic
@@ -58,8 +58,8 @@ faq:
   answer: Usually it's neutral-to-negative, but it can be affectionate when used
     among friends. 'We're all tweaking right now' can be a bonding moment.
 - question: What's the difference between tweaking and malding?
-  answer: 'Mald' specifically means getting angry. 'Tweak' is broader — it covers
-    any kind of overreaction, panic, or erratic behavior, not just anger.
+  answer: "'Mald' specifically means getting angry. 'Tweak' is broader — it covers
+    any kind of overreaction, panic, or erratic behavior, not just anger."
 sources:
 - name: PlayStation — Ultimate Gaming Glossary 2026
   url: https://www.playstation.com/en-us/editorial/playstation-ultimate-gaming-glossary/
