@@ -5,51 +5,22 @@
   <div class="ad-banner">AD</div>
 </div>
 
-{{ if eq .Kind "taxonomy" }}
-<!-- ALL TAGS page (/tags/) -->
-<section class="tags-page">
-  <div class="tags-container">
-    <h1 class="tags-title">ALL TAGS</h1>
-    <p class="tags-subtitle">BROWSE GAMING SLANG BY CATEGORY</p>
-
-    <div class="tags-layout">
-      <div class="ad-sidebar">
-        <div class="ad-sidebar-inner">AD</div>
-      </div>
-
-      <div class="tags-main">
-        <div class="tags-grid">
-          {{ range .Data.Terms.ByCount }}
-          <a href="{{ .Page.RelPermalink }}" class="tag-pill">
-            <span class="tag-pill-name">{{ .Page.Title }}</span>
-            <span class="tag-pill-count">{{ .Count }}</span>
-          </a>
-          {{ end }}
-        </div>
-      </div>
-
-      <div class="ad-sidebar">
-        <div class="ad-sidebar-inner">AD</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-{{ else }}
-<!-- SINGLE TAG page (/tags/competitive/) -->
+<!-- Tag Terms Section -->
 <section class="terms-section">
   <div class="terms-header">
     <h2 class="terms-title">{{ .Title | upper }}</h2>
-    <p class="terms-subtitle">{{ .Data.Pages.Len }} GAMING SLANG TERM{{ if ne .Data.Pages.Len 1 }}S{{ end }}</p>
+    <p class="terms-subtitle">{{ len .Pages }} GAMING SLANG TERM{{ if ne (len .Pages) 1 }}S{{ end }}</p>
   </div>
 
   <div class="terms-layout">
+    <!-- Left Ad -->
     <div class="ad-sidebar">
       <div class="ad-sidebar-inner">AD</div>
     </div>
 
+    <!-- Cards Grid -->
     <div class="cards-grid">
-      {{ range .Data.Pages }}
+      {{ range .Pages }}
       <a href="{{ .RelPermalink }}" class="card">
         <div class="card-img-wrap">
           <img src="/slang/{{ replace .Params.slug "-gaming" "" }}-featured.jpg" alt="{{ .Title }}" class="card-img" loading="lazy" onerror="this.parentElement.style.display='none'">
@@ -73,12 +44,12 @@
       {{ end }}
     </div>
 
+    <!-- Right Ad -->
     <div class="ad-sidebar">
       <div class="ad-sidebar-inner">AD</div>
     </div>
   </div>
 </section>
-{{ end }}
 
 <!-- Subscribe via Email -->
 <section class="newsletter">
