@@ -15,7 +15,7 @@ tags:
 - moba
 - insult
 - newbie
-- "2026"
+- year-2026
 usageExamples:
 - example: You walked into the same doorway three times, bro. Bot behavior.
   context: Call of Duty post-match lobby

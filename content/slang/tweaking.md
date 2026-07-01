@@ -14,7 +14,7 @@ tags:
 - discord
 - gen-z
 - mental-health
-- "2026"
+- year-2026
 usageExamples:
 - example: "Bro, you're tweaking. Calm down, it's just a game."
   context: Friend trying to de-escalate a tilted player

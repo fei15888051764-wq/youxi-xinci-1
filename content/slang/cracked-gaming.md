@@ -14,7 +14,7 @@ tags:
 - battle-royale
 - valorant
 - compliment
-- "2026"
+- year-2026
 usageExamples:
 - example: Bro, you're cracked! How did you hit that shot?
   context: Casual team match

@@ -15,7 +15,7 @@ tags:
 - moba
 - team-based
 - support
-- "2026"
+- year-2026
 usageExamples:
 - example: Our Mercy is pocketing the Pharah. We need to focus fire.
   context: Enemy team strategy discussion

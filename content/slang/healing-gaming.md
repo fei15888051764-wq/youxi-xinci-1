@@ -14,7 +14,7 @@ tags:
 - moba
 - mental-health
 - gen-z
-- "2026"
+- year-2026
 usageExamples:
 - example: "After that ranked grind, I need some healing gaming. Time for Stardew
     Valley."
