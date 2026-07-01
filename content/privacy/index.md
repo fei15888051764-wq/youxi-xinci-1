@@ -20,7 +20,7 @@ We do not set cookies directly. Third-party services (e.g., analytics) may use c
 
 ## 3. External Links
 
-Our website contains links to external sites (e.g., PlayStation, game wikis). We are not responsible for the privacy practices of these sites.
+Our website contains links to external sites (e.g., PlayStation, game wikis). We are not responsible for the content or practices of any third-party websites.
 
 ## 4. Data Sharing
 
@@ -32,7 +32,4 @@ We may update this privacy policy from time to time. Changes will be posted on t
 
 ## 6. Contact
 
-For privacy-related questions, please contact us:
-
-- Via the [Contact page](/contact/)
-- By email: [fei15888051764@gmail.com](mailto:fei15888051764@gmail.com)
+For privacy-related questions, please contact us via the [Contact page](/contact/) or email [fei15888051764@gmail.com](mailto:fei15888051764@gmail.com).
