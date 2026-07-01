@@ -61,7 +61,7 @@ input{font-family:inherit}
 
 /* ===== TERMS SECTION ===== */
 .terms-section{max-width:1400px;margin:0 auto;padding:0 24px 16px}
-.terms-header{text-align:center;border-top:1px solid #a3ff00;padding-top:80px;margin-top:4px;margin-bottom:20px}
+.terms-header{text-align:center;border-top:1px solid #a3ff00;padding-top:96px;margin-top:4px;margin-bottom:20px}
 .terms-title{font-family:'Press Start 2P',cursive;font-size:18px;color:#f0f0f0;margin-bottom:6px}
 .terms-subtitle{color:#8c8c8c;font-size:13px;text-transform:uppercase;letter-spacing:.05em}
 
@@ -126,7 +126,7 @@ input{font-family:inherit}
 }
 
 /* ===== DETAIL PAGE ===== */
-.detail-page{min-height:100vh;background:#0c0f0c;padding-top:80px}
+.detail-page{min-height:100vh;background:#0c0f0c;padding-top:96px}
 .detail-container{max-width:1000px;margin:0 auto;padding:0 24px 32px}
 .back-btn{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border:1px solid #333;border-radius:9999px;color:#8c8c8c;font-size:14px;margin-bottom:16px;transition:all .2s}
 .back-btn:hover{border-color:#a3ff00;color:#a3ff00}
@@ -183,7 +183,7 @@ input{font-family:inherit}
 .text-dim{color:#666;font-size:13px;margin-top:8px}
 
 /* ===== LIST PAGE ===== */
-.list-page{min-height:100vh;background:#0c0f0c;padding-top:80px}
+.list-page{min-height:100vh;background:#0c0f0c;padding-top:96px}
 .list-container{max-width:1200px;margin:0 auto;padding:32px 24px}
 .list-title{font-family:'Press Start 2P',cursive;font-size:22px;color:#f0f0f0;margin-bottom:8px}
 @media(min-width:768px){.list-title{font-size:28px}}
@@ -203,7 +203,7 @@ input{font-family:inherit}
 .list-item-tag{font-size:11px;color:#666}
 
 /* ===== TAGS PAGE ===== */
-.tags-page{min-height:100vh;background:#0c0f0c;padding-top:80px}
+.tags-page{min-height:100vh;background:#0c0f0c;padding-top:96px}
 .tags-container{max-width:1000px;margin:0 auto;padding:32px 24px}
 .tags-title{font-family:'Press Start 2P',cursive;font-size:22px;color:#f0f0f0;text-align:center;margin-bottom:8px}
 @media(min-width:768px){.tags-title{font-size:28px}}
