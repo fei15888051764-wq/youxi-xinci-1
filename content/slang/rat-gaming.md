@@ -1,73 +1,64 @@
 ---
-description: "Learn what 'Rat' means in battle royale gaming. Full definition, origin, and usage of this slang for passive survival playstyles."
+description: "Learn what 'Rat' means in gaming slang. A complete guide to this popular term used to describe players who avoid fights in battle royale games."
 title: Rat
 slug: rat-gaming
 category: slang
-definition: A player who survives primarily by hiding and avoiding fights rather
-  than engaging — often seen as cowardly but strategically valid.
-shortDescription: A player who hides and avoids fights to survive, rather than engaging
-  actively.
+definition: A player who hides and avoids fights to survive for ranked points in battle
+  royale games.
+shortDescription: A player who hides and avoids fights to survive for ranked points
+  in battle royale games.
 updated: Jun 30, 2026
-readTime: 5 min read
+readTime: 4 min read
 tags:
 - battle-royale
-- apex
-- fortnite
+- apex-legends
+- competitive
+- ranked
 - insult
-- strategy
+- 2026
 usageExamples:
-- example: Stop ratting and actually fight someone.
-  context: Teammate frustration
-  tone: Annoyed
-- example: I had to rat because my teammates died instantly.
-  context: Justifying passive play
+- example: "He's just ratting in the corner. Let's third-party someone else."
+  context: Spotting a hiding player in Apex Legends
+  tone: dismissive
+- example: I had to rat my way to Diamond. No shame in playing smart.
+  context: Defending a playstyle choice
   tone: Defensive
-- example: He's been ratting in that building for ten minutes.
-  context: Describing someone's playstyle
-  tone: Observational
+- example: "Stop ratting and actually fight! You're boring to watch."
+  context: Stream chat during a slow game
+  tone: Critical
 originSpread:
 - attribute: First Appearance
   detail: Apex Legends community, around 2019
 - attribute: Origin
-  detail: Comparing players who hide to rats scurrying in corners avoiding danger
+  detail: Comparing hiding players to rats scurrying in corners
 - attribute: Primary Users
-  detail: Battle royale players (Apex, Fortnite, PUBG)
+  detail: Battle royale communities (Apex, Fortnite)
 - attribute: Peak Period
-  detail: 2021-present; standard BR terminology
-culturalContext: 'The ''rat'' debate reveals deep divides in how different players
-  view battle royale games. Aggressive players see ratting as cowardly and boring —
-  a betrayal of the spirit of competition. Strategic players see it as valid survival
-  tactics, especially when disadvantaged. The truth is somewhere in between: ratting
-  to survive after your team dies is smart, but ratting all game when you could be
-  helping is frustrating for teammates.'
+  detail: 2020-present; standard ranked vocabulary
+culturalContext: "'Rat' represents the ongoing debate in battle royale culture between\n  aggressive and passive playstyles. Some view ratting as smart strategy — survival\n  is the point of the game, after all. Others see it as cowardly and against the\n  spirit of competition."
 similarTerms:
 - term: Camper
-  meaning: Similar idea but in non-BR games — more negative connotation
-- term: Bush warrior
-  meaning: Fortnite-specific version of ratting (hiding in bushes)
-- term: Third party
-  meaning: Different strategy — attacking teams already fighting
+  meaning: Similar concept but usually refers to staying in one spot — broader term
+- term: Third-party
+  meaning: Attacking two fighting teams — opportunistic but not necessarily hiding
+- term: Rat spot
+  meaning: A specific hiding location that's hard to find
 faq:
-- question: Is ratting a legitimate strategy?
-  answer: In competitive/ranked play, absolutely. Survival is the core objective in
-    battle royale. However, in casual play it can frustrate teammates who want action.
+- question: Is ratting a valid strategy?
+  answer: "From a game mechanics perspective, absolutely. Surviving is the objective\n    in battle royale games. However, many players view it as boring or against the\n    spirit of competition. It depends on whether you prioritize winning or entertainment."
 - question: Why do people hate ratting?
-  answer: "Two reasons: (1) watching someone hide is boring for teammates, (2) aggressive
-    players see it as cowardly. The frustration peaks when a 'rat' teammate refuses
-    to help in fights."
-- question: What's the difference between ratting and camping?
-  answer: "'Camping' is the older, broader term for staying in one spot. 'Ratting'
-    is BR-specific — it emphasizes passive survival play where the goal is placement
-    over kills."
+  answer: "It creates unexciting gameplay, especially for viewers. A tournament where\n    everyone rats isn't fun to watch. Players also find it frustrating when someone\n    hides all game only to third-party the final fight."
+- question: What's the difference between a rat and a camper?
+  answer: "A camper stays in one spot and waits. A rat actively avoids detection,\n    often moving from hiding spot to hiding spot. All rats camp, but not all campers\n    are rats."
 sources:
-- name: PlayStation — Ultimate Gaming Glossary 2026
-  url: https://www.playstation.com/en-us/editorial/playstation-ultimate-gaming-glossary/
-- name: Dexerto — Gaming Terms Glossary
-  url: https://www.dexerto.com/gaming/gaming-terms-glossary/
+- name: Apex Legends Wiki — Ratting
+  url: https://apexlegendswiki.com/ratting
+- name: EA Forums — Ratting Discussion
+  url: https://answers.ea.com/apex-legends/ratting-discussion
 ---
 
-In 2026 gaming slang, "rat" refers to a battle royale player who survives primarily by hiding and avoiding fights rather than actively engaging. The term originated in the Apex Legends community around 2019 and has since spread to Fortnite, PUBG, and all battle royale games.
+In 2026 gaming slang, "rat" refers to a player in battle royale games who hides and avoids fights to survive as long as possible, typically to gain ranked points without engaging in combat. The term originated in the Apex Legends community around 2019 and has since spread to other battle royale games.
 
-The slang draws its imagery directly from rats — animals known for scurrying into corners and avoiding danger. In battle royale context, a "rat" player finds a hiding spot, avoids all conflict, and only moves when forced by the shrinking safe zone. The strategy is controversial: while it maximizes placement points in ranked modes, teammates often find it frustratingly passive.
+The comparison to rats is clear — like the rodents scurrying in dark corners, these players avoid the spotlight and main action, preferring to hide in obscure locations until forced to move. The term carries a negative connotation, suggesting cowardice or a lack of skill.
 
-By 2021, "rat" had become standard battle royale vocabulary. PlayStation's 2026 Gaming Glossary formally documents it as slang for "a player who hides and avoids fights to survive." The term's staying power comes from the genuine strategic debate it represents — is survival at all costs valid gameplay, or does it betray the competitive spirit?
+However, the debate around ratting is nuanced. In ranked play, where placement points matter, surviving can be a legitimate strategy. Some players argue that "playing smart" is different from "ratting" — the former involves strategic positioning while the latter is pure hiding. The distinction often depends on who's making the judgment.

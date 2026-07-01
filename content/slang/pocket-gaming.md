@@ -1,75 +1,64 @@
 ---
-description: "Discover what 'Pocket' means in gaming. Definition and usage of this support player strategy term in Overwatch and team-based games."
+description: "Learn what 'Pocket' means in gaming slang. A complete guide to this popular term used in team-based games to describe dedicated support."
 title: Pocket
 slug: pocket-gaming
 category: slang
-definition: A support player who focuses primarily on enabling one specific teammate
-  with healing and buffs.
+definition: When a support player dedicates all their resources to one teammate, usually
+  the carry.
 shortDescription: When a support player dedicates all their resources to one teammate,
   usually the carry.
 updated: Jun 30, 2026
-readTime: 6 min read
+readTime: 4 min read
 tags:
 - overwatch
 - valorant
+- moba
 - team-based
 - support
-- strategy
+- 2026
 usageExamples:
-- example: Our Sojourn is cracked, I'm gonna pocket her.
-  context: Overwatch 2 team strategy
-  tone: Strategic
-- example: Yo Mercy, can you pocket me this round?
-  context: Requesting support focus
-  tone: Casual
-- example: Our Ana is supposed to be main support, but she's clearly pocketing the
-    Genji.
-  context: VOD review analysis
-  tone: Analytical
+- example: Our Mercy is pocketing the Pharah. We need to focus fire.
+  context: Enemy team strategy discussion
+  tone: Tactical
+- example: I got pocketed by our Sage and we won the round.
+  context: Describing a successful play
+  tone: Grateful
+- example: Stop pocketing the tank and help the rest of us!
+  context: Frustrated team communication
+  tone: Demanding
 originSpread:
 - attribute: First Appearance
-  detail: Overwatch community, 2017-2018 (PharMercy meta)
+  detail: Overwatch community, around 2016
 - attribute: Origin
-  detail: Describing Mercy players staying close to a damage hero like something in
-    a pocket
+  detail: Referring to keeping someone "in your pocket" — close and protected
 - attribute: Primary Users
-  detail: Team-based competitive game players (Overwatch, VALORANT, Apex)
+  detail: Team-based game communities (Overwatch, MOBAs)
 - attribute: Peak Period
-  detail: 2020-present; standard competitive vocabulary across all team-based games
-culturalContext: 'The concept of ''pocketing'' reveals deep strategic and social dynamics
-  in team-based games. At its core, pocketing is a resource allocation decision: the
-  support bets that enabling one exceptional teammate will generate more value than
-  distributing support evenly. This creates fascinating tension — the pocketed player
-  feels pressure to perform, the support sacrifices their own agency, and the rest
-  of the team must play around a lopsided strategy. In solo queue, accusing a support
-  of ''only pocketing their duo'' is a common source of team conflict.'
+  detail: 2017-present; standard competitive vocabulary
+culturalContext: "'Pocket' reflects the unique social dynamics of team-based games.\n  The relationship between a pocket healer and their carry is one of the most important\n  partnerships in competitive play. A good pocket can elevate an average player to\n  greatness."
 similarTerms:
-- term: Pocket Pick
-  meaning: A player's secret signature hero — completely different meaning, same word
-- term: Hard Carry
-  meaning: The player receiving pocket support, not the support action itself
-- term: Peel
-  meaning: Protecting a teammate from enemies — different from enabling with buffs
+- term: Hard pocket
+  meaning: Exclusively supporting one player to the exclusion of everyone else
+- term: Pocket healer
+  meaning: A support player who primarily focuses on one teammate
+- term: Baby-sitting
+  meaning: Similar concept but implies the carry needs constant help — less flattering
 faq:
-- question: Is pocketing the same as 'pocket pick' in esports drafts?
-  answer: No — completely different meanings. 'Pocket' as a support strategy means
-    dedicating healing to one teammate. 'Pocket pick' means a player's secret signature
-    hero they pull out in specific situations.
-- question: Can pocketing cause team conflict?
-  answer: Absolutely. In solo queue, supports who only pocket their duo partner while
-    ignoring the rest of the team are a common source of frustration. Good pocketing
-    requires reading the game state.
-- question: Is pocketing a legitimate competitive strategy?
-  answer: It's absolutely legitimate at the highest levels. Professional Overwatch
-    teams regularly run pocket strategies. The decision of who to pocket is a core
-    strategic element.
+- question: Is pocketing a good strategy?
+  answer: "It depends. In some compositions (like Pharmercy in Overwatch), pocketing\n    is the optimal strategy. In others, spreading support is better. Good players\n    know when to pocket and when to support the whole team."
+- question: Can any role be pocketed?
+  answer: "Usually it's DPS/carry players who get pocketed since they benefit most\n    from dedicated support. However, you can technically pocket any role if the situation\n    calls for it."
+- question: Is 'pocket' only used in Overwatch?
+  answer: "While it originated in Overwatch, it's used in any team-based game with\n    support roles — Valorant, League of Legends, Apex Legends, etc."
 sources:
-- name: Overwatch Wiki — Common Terms
-  url: https://overwatch.fandom.com/wiki/Common_Terms
+- name: Overwatch Wiki — Pocket Healing
+  url: https://overwatchwiki.com/pocket-healing
+- name: DotEsports — Overwatch Slang Guide
+  url: https://dotesports.com/overwatch/slang-guide
 ---
 
-In 2026 gaming slang, "pocket" refers to a support player who focuses primarily on enabling one specific teammate — usually a damage dealer — with dedicated healing and buffs. The term is most commonly used in Overwatch (where Mercy "pocketing" a Pharah or Sojourn is a core strategy) but has spread to VALORANT, Apex Legends, and other team-based competitive games.
+In 2026 gaming slang, "pocket" refers to the strategy of a support player dedicating all or most of their resources (healing, buffs, protection) to a single teammate, typically the team's main damage dealer or carry. The term originated in Overwatch but has spread to any team-based game with support roles.
 
-The term emerged from the Overwatch community around 2017-2018, when Mercy players began forming symbiotic relationships with specific damage heroes — most famously "PharMercy" (Mercy pocketing Pharah in the sky). The term captured the dynamic perfectly: the support stays close to their chosen teammate like something kept in a pocket, ready to provide instant assistance.
+The concept comes from the phrase "keeping someone in your pocket" — meaning to keep them close and protected. In gaming, a "pocket healer" stays near their chosen target, ensuring they survive and can deal maximum damage.
 
-By 2020, the term had spread to other hero-based games. The Overwatch Wiki (March 2026 update) formally defines "pocket" as "a Support player that focuses primarily on enabling only one hero with healing and buffs." In 2026, "pocket" has become standard competitive vocabulary across all team-based games with support roles.
+The pocket dynamic creates one of the most important partnerships in team-based gaming. A skilled carry with a dedicated pocket can dominate matches, while a bad pocket can waste their team's resources. It's a relationship built on trust, coordination, and mutual benefit.
