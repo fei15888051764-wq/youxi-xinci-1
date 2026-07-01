@@ -55,9 +55,9 @@ faq:
     competitive stress is affecting you and actively choosing to play something
     relaxing instead.
 - question: How do I know I need healing?
-  answer: Signs include: feeling angry after losses, blaming teammates constantly,
+  answer: "Signs include: feeling angry after losses, blaming teammates constantly,
     playing worse than usual, or not having fun anymore. These are clear signals
-    to take a healing break.
+    to take a healing break."
 sources:
 - name: PlayStation — Ultimate Gaming Glossary 2026
   url: https://www.playstation.com/en-us/editorial/playstation-ultimate-gaming-glossary/
