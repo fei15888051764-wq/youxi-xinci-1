@@ -8,6 +8,8 @@ enableRobotsTXT: true
 enableGitInfo: false
 permalinks:
   slang: '/slang/:slug/'
+taxonomies:
+  tag: tags
 params:
   description: 'The ultimate dictionary for gaming slang and terminology.'
   author: 'GEBILAOWANG'
