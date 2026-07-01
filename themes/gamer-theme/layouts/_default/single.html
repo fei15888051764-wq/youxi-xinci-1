@@ -111,10 +111,37 @@
           </ul>
         </div>
         {{ end }}
+
+        <!-- Author -->
         <div class="author-box">
           <p class="text-muted">By <a href="/about/" class="author-link">GEBILAOWANG</a></p>
           <p class="text-dim">Independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns.</p>
         </div>
+
+        <!-- Related Slang -->
+        {{ $current := . }}
+        {{ $related := slice }}
+        {{ range .Params.tags }}
+          {{ range where $.Site.RegularPages "Params.tags" "intersect" (slice .) }}
+            {{ if and (ne .RelPermalink $current.RelPermalink) (not (in $related .)) }}
+              {{ $related = $related | append . }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        {{ if $related }}
+        <div class="related-section">
+          <h2 class="section-title">RELATED SLANG</h2>
+          <div class="related-grid">
+            {{ range first 3 $related }}
+            <a href="{{ .RelPermalink }}" class="related-card">
+              <h3 class="related-title">{{ .Title }}</h3>
+              <p class="related-desc">{{ .Params.shortDescription }}</p>
+            </a>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+
       </article>
     </div>
   </div>
