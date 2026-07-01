@@ -1,12 +1,14 @@
 {{ define "main" }}
-{{ if eq .Section "slang" }}
-<!-- Slang Detail Page -->
 <div class="detail-page">
   <div class="detail-container">
+
+    <!-- Back Button -->
     <button onclick="history.back()" class="back-btn">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
       Back to Home
     </button>
+
+    <!-- Breadcrumb -->
     <nav class="breadcrumb">
       <a href="/">Home</a>
       <span>/</span>
@@ -14,11 +16,14 @@
       <span>/</span>
       <span class="breadcrumb-current">{{ .Title }}</span>
     </nav>
+
     <div class="detail-layout">
+      <!-- Main Content -->
       <article class="detail-content">
         <div class="detail-hero-img">
           <img src="/slang/{{ replace .Params.slug "-gaming" "" }}-featured.jpg" alt="{{ .Title }}" onerror="this.parentElement.style.display='none'">
         </div>
+
         <div class="detail-title-block">
           <div class="detail-title-row">
             <h1 class="detail-title">{{ .Title }}</h1>
@@ -34,14 +39,20 @@
             {{ end }}
           </div>
         </div>
+
+        <!-- Definition -->
         <div class="definition-box">
           <h2 class="section-label">Definition</h2>
           <p>{{ .Params.definition }}</p>
         </div>
+
+        <!-- Full Meaning -->
         <div class="content-block">
           <h2 class="section-title">What Does "{{ .Title }}" Mean?</h2>
           <div class="content-text">{{ .Content }}</div>
         </div>
+
+        <!-- Usage Examples -->
         {{ with .Params.usageExamples }}
         <div class="content-block">
           <h2 class="section-title">Usage Examples</h2>
@@ -57,6 +68,8 @@
           </div>
         </div>
         {{ end }}
+
+        <!-- Origin -->
         {{ with .Params.originSpread }}
         <div class="content-block">
           <h2 class="section-title">Origin &amp; Spread</h2>
@@ -72,12 +85,16 @@
           </div>
         </div>
         {{ end }}
+
+        <!-- Cultural Context -->
         {{ with .Params.culturalContext }}
         <div class="content-block">
           <h2 class="section-title">Cultural Context</h2>
           <p class="content-text">{{ . }}</p>
         </div>
         {{ end }}
+
+        <!-- Similar Terms -->
         {{ with .Params.similarTerms }}
         <div class="content-block">
           <h2 class="section-title">Similar Slang</h2>
@@ -88,6 +105,8 @@
           </ul>
         </div>
         {{ end }}
+
+        <!-- FAQ -->
         {{ with .Params.faq }}
         <div class="content-block">
           <h2 class="section-title">FAQ</h2>
@@ -101,6 +120,8 @@
           </div>
         </div>
         {{ end }}
+
+        <!-- Sources -->
         {{ with .Params.sources }}
         <div class="content-block">
           <h2 class="section-title">Sources</h2>
@@ -111,27 +132,16 @@
           </ul>
         </div>
         {{ end }}
+
+        <!-- Author -->
         <div class="author-box">
           <p class="text-muted">By <span class="text-green">GEBILAOWANG</span></p>
           <p class="text-dim">Independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns.</p>
         </div>
+
       </article>
     </div>
+
   </div>
 </div>
-{{ else }}
-<!-- Simple Page (About / Contact / Privacy / Terms) -->
-<div class="detail-page">
-  <div class="detail-container">
-    <button onclick="history.back()" class="back-btn">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
-      Back to Home
-    </button>
-    <article class="detail-content" style="max-width:800px;margin:0 auto;">
-      <h1 class="detail-title" style="margin-bottom:24px;">{{ .Title }}</h1>
-      <div class="content-text">{{ .Content }}</div>
-    </article>
-  </div>
-</div>
-{{ end }}
 {{ end }}
