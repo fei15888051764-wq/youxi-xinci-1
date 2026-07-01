@@ -5,49 +5,68 @@
   <div class="ad-banner">AD</div>
 </div>
 
+<!-- Search Bar -->
+<section class="search-section">
+  <form class="search-form" onsubmit="event.preventDefault();">
+    <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+    <input type="text" class="search-input" placeholder="Search gaming terms...">
+  </form>
+</section>
+
 <!-- All Tags Section -->
-<section class="tags-page">
-  <div class="tags-container">
-    <h1 class="tags-title">ALL TAGS</h1>
-    <p class="tags-subtitle">BROWSE GAMING SLANG BY CATEGORY</p>
+<section class="terms-section">
+  <div class="terms-header">
+    <h2 class="terms-title">ALL TAGS</h2>
+    <p class="terms-subtitle">BROWSE GAMING SLANG BY CATEGORY</p>
+  </div>
 
-    <div class="tags-layout">
-      <!-- Left Ad -->
-      <div class="ad-sidebar">
-        <div class="ad-sidebar-inner">AD</div>
-      </div>
+  <div class="terms-layout">
+    <!-- Left Ad -->
+    <div class="ad-sidebar">
+      <div class="ad-sidebar-inner">AD</div>
+    </div>
 
-      <!-- Tags Grid -->
-      <div class="tags-main">
-        <div class="tags-grid">
-          {{ range .Data.Terms.ByCount }}
-          <a href="{{ .Page.RelPermalink }}" class="tag-pill">
-            <span class="tag-pill-name">{{ .Page.Title }}</span>
-            <span class="tag-pill-count">{{ .Count }}</span>
-          </a>
-          {{ end }}
+    <!-- Tags Grid -->
+    <div class="cards-grid">
+      {{ range .Pages }}
+      <a href="{{ .RelPermalink }}" class="card">
+        <div class="card-body">
+          <div class="card-header-row">
+            <h3 class="card-title-text">{{ .Title }}</h3>
+            <span class="card-badge">{{ len .Pages }} TERMS</span>
+          </div>
+          <p class="card-desc">Browse all {{ len .Pages }} gaming slang term{{ if ne (len .Pages) 1 }}s{{ end }} tagged with "{{ .Title }}".</p>
+          <div class="card-footer">
+            <div class="card-tags">
+              <span class="card-tag">#{{ .Title }}</span>
+            </div>
+            <span class="card-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+          </div>
         </div>
-      </div>
+      </a>
+      {{ end }}
+    </div>
 
-      <!-- Right Ad -->
-      <div class="ad-sidebar">
-        <div class="ad-sidebar-inner">AD</div>
-      </div>
+    <!-- Right Ad -->
+    <div class="ad-sidebar">
+      <div class="ad-sidebar-inner">AD</div>
     </div>
   </div>
 </section>
 
-<!-- Subscribe via Email -->
+<!-- Newsletter -->
 <section class="newsletter">
   <div class="newsletter-box">
     <h2 class="newsletter-title">STAY IN THE LOOP</h2>
     <p class="newsletter-desc">New gaming slang drops weekly. No spam, just the words you actually need to know.</p>
-    <p style="color:#8c8c8c;font-size:14px;margin:20px 0;">
-      To subscribe, send an email to
-      <a href="mailto:fei15888051764@gmail.com?subject=Subscribe%20to%20Gamer%20Glossary%20Newsletter" style="color:#a3ff00;">fei15888051764@gmail.com</a>
-      with subject "Subscribe" and we'll add you to the list.
-    </p>
-    <p class="newsletter-note">Unsubscribe anytime by replying "Unsubscribe"</p>
+    <form class="newsletter-form" onsubmit="event.preventDefault();this.innerHTML='<div class=\'subscribed\'><svg width=\'20\' height=\'20\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'#a3ff00\' stroke-width=\'2\'><path d=\'M20 6L9 17l-5-5\'/></svg><span>You are subscribed! Welcome to the guild.</span></div>';">
+      <input type="email" class="newsletter-input" placeholder="your@email.com" required>
+      <button type="submit" class="newsletter-btn">
+        <span>Subscribe</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+      </button>
+    </form>
+    <p class="newsletter-note">Join the newsletter. Unsubscribe anytime.</p>
   </div>
 </section>
 
