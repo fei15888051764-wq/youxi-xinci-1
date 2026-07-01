@@ -12,12 +12,17 @@
     <nav class="breadcrumb">
       <a href="/">Home</a>
       <span>/</span>
-      <a href="/slang/">Slang</a>
+      <a href="/tags/">Slang</a>
       <span>/</span>
       <span class="breadcrumb-current">{{ .Title }}</span>
     </nav>
 
     <div class="detail-layout">
+      <!-- Left Ad -->
+      <div class="ad-sidebar-detail">
+        <div class="ad-sidebar-inner">AD</div>
+      </div>
+
       <!-- Main Content -->
       <article class="detail-content">
         <div class="detail-hero-img">
@@ -68,6 +73,9 @@
           </div>
         </div>
         {{ end }}
+
+        <!-- Ad -->
+        <div class="ad-banner-wrap"><div class="ad-banner">AD</div></div>
 
         <!-- Origin -->
         {{ with .Params.originSpread }}
@@ -140,6 +148,11 @@
         </div>
 
       </article>
+
+      <!-- Right Ad -->
+      <div class="ad-sidebar-detail">
+        <div class="ad-sidebar-inner">AD</div>
+      </div>
     </div>
 
   </div>
