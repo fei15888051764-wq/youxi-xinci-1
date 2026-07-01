@@ -9,7 +9,7 @@ enableGitInfo: false
 permalinks:
   slang: '/slang/:slug/'
 taxonomies:
-  tag: 'tags'
+  tag: tags
 params:
   description: 'The ultimate dictionary for gaming slang and terminology.'
   author: 'GEBILAOWANG'
