@@ -18,7 +18,7 @@ menu:
       url: /
       weight: 10
     - name: Categories
-      url: /tags/
+      url: /slang/
       weight: 20
     - name: About
       url: /about/
