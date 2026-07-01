@@ -13,7 +13,7 @@ tags:
 - general
 - gen-z
 - exaggeration
-- year-2026
+- "2026"
 usageExamples:
 - example: Bro, you're OD with those callouts. Chill.
   context: Overly intense team communication

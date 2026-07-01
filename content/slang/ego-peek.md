@@ -15,7 +15,7 @@ tags:
 - fps
 - tactical-shooter
 - competitive
-- year-2026
+- "2026"
 usageExamples:
 - example: He had an ego peek and died immediately. Classic.
   context: Post-round analysis in Valorant

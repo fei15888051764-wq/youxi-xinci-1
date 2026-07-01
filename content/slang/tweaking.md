@@ -14,7 +14,7 @@ tags:
 - discord
 - gen-z
 - mental-health
-- year-2026
+- "2026"
 usageExamples:
 - example: "Bro, you're tweaking. Calm down, it's just a game."
   context: Friend trying to de-escalate a tilted player
@@ -60,7 +60,7 @@ faq:
 sources:
 - name: Twitch Culture Report 2026
   url: https://twitchculture.com/report-2026
-- name: Polygon — Gaming Mental Health
+  name: Polygon — Gaming Mental Health
   url: https://polygon.com/gaming-mental-health
 ---
 

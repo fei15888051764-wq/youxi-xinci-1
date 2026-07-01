@@ -15,7 +15,7 @@ tags:
 - competitive
 - ranked
 - insult
-- year-2026
+- "2026"
 usageExamples:
 - example: "He's just ratting in the corner. Let's third-party someone else."
   context: Spotting a hiding player in Apex Legends
