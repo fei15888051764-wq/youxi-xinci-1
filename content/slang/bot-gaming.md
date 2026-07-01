@@ -1,4 +1,5 @@
 ---
+description: "Learn what 'Bot' means in gaming slang. A complete guide to this popular term used to describe inexperienced or poorly performing players."
 title: Bot
 slug: bot-gaming
 category: slang
