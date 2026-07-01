@@ -21,23 +21,12 @@
       <div class="ad-sidebar-inner">AD</div>
     </div>
 
-    <!-- Tags Grid -->
-    <div class="cards-grid">
+    <!-- Tags Cloud -->
+    <div class="tags-cloud">
       {{ range .Pages }}
-      <a href="{{ .RelPermalink }}" class="card">
-        <div class="card-body">
-          <div class="card-header-row">
-            <h3 class="card-title-text">{{ .Title }}</h3>
-            <span class="card-badge">{{ len .Pages }} TERMS</span>
-          </div>
-          <p class="card-desc">Browse all {{ len .Pages }} gaming slang term{{ if ne (len .Pages) 1 }}s{{ end }} tagged with "{{ .Title }}".</p>
-          <div class="card-footer">
-            <div class="card-tags">
-              <span class="card-tag">#{{ .Title }}</span>
-            </div>
-            <span class="card-date">{{ .Date.Format "Jan 2, 2006" }}</span>
-          </div>
-        </div>
+      <a href="{{ .RelPermalink }}" class="tag-pill">
+        <span class="tag-pill-name">{{ .Title }}</span>
+        <span class="tag-pill-count">{{ len .Pages }}</span>
       </a>
       {{ end }}
     </div>

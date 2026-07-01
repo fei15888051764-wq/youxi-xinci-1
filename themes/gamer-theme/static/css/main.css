@@ -216,6 +216,14 @@ input{font-family:inherit}
 .placeholder-card .card-tag{color:#444}
 .placeholder-card .card-date{color:#444}
 
+/* ===== TAGS CLOUD ===== */
+.tags-cloud{flex:1;min-width:0;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px;padding:8px 0}
+.tag-pill{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:#111;border:1px solid #333;border-radius:9999px;color:#f0f0f0;font-size:14px;font-weight:500;transition:border-color .2s,background .2s;white-space:nowrap}
+.tag-pill:hover{border-color:#a3ff00;background:#1a1a1a}
+.tag-pill-name{text-transform:capitalize}
+.tag-pill-count{font-size:12px;color:#8c8c8c;font-weight:400}
+.tag-pill:hover .tag-pill-count{color:#a3ff00}
+
 /* ===== RELATED SLANG ===== */
 .related-section{margin-top:32px;padding-top:24px;border-top:1px solid #333}
 .related-grid{display:grid;grid-template-columns:repeat(1,1fr);gap:16px}
