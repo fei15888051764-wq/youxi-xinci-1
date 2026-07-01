@@ -1,8 +1,15 @@
 ---
 title: "Contact"
-description: "Get in touch."
+description: "Get in touch with Gamer Glossary for suggestions, corrections, or partnership inquiries."
 ---
 
-## Contact Us
+Have a suggestion, correction, or partnership inquiry? Reach out to us.
 
-**Email:** hello@gamerglossary.com
+## Contact Information
+
+- **Email:** contact@gamerglossary.com *(please replace with your real email)*
+- **Response Time:** Usually within 48 hours
+
+## Submit a Term
+
+Know a gaming slang term that should be in our dictionary? Send us the term, its meaning, usage examples, and origin story. We review all submissions and credit contributors.
