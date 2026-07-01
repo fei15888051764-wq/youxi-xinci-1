@@ -1,4 +1,4 @@
 ---
-title: "All Tags"
-description: "Browse all gaming slang tags and categories."
+title: "Tags"
+description: "Browse gaming slang by tags and categories."
 ---
