@@ -1,0 +1,7 @@
+{
+  "name": "gamer-glossary",
+  "private": true,
+  "scripts": {
+    "build": "npx hugo-bin@0.146.0 -- --gc --minify || hugo --gc --minify"
+  }
+}
