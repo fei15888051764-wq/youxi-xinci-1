@@ -1,4 +1,5 @@
 ---
+description: "What does 'OD' mean in gaming? Full definition and usage guide for this slang term meaning overdoing it or excessively intense."
 title: OD
 slug: od-gaming
 category: slang

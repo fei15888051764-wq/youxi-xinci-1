@@ -1,4 +1,5 @@
 ---
+description: "Discover what 'Pocket' means in gaming. Definition and usage of this support player strategy term in Overwatch and team-based games."
 title: Pocket
 slug: pocket-gaming
 category: slang
