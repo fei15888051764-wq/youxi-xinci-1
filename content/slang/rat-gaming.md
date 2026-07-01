@@ -34,7 +34,7 @@ originSpread:
   detail: Battle royale players (Apex, Fortnite, PUBG)
 - attribute: Peak Period
   detail: 2021-present; standard BR terminology
-culturalContext: 'The 'rat' debate reveals deep divides in how different players
+culturalContext: 'The ''rat'' debate reveals deep divides in how different players
   view battle royale games. Aggressive players see ratting as cowardly and boring —
   a betrayal of the spirit of competition. Strategic players see it as valid survival
   tactics, especially when disadvantaged. The truth is somewhere in between: ratting
@@ -52,13 +52,13 @@ faq:
   answer: In competitive/ranked play, absolutely. Survival is the core objective in
     battle royale. However, in casual play it can frustrate teammates who want action.
 - question: Why do people hate ratting?
-  answer: Two reasons: (1) watching someone hide is boring for teammates, (2) aggressive
+  answer: "Two reasons: (1) watching someone hide is boring for teammates, (2) aggressive
     players see it as cowardly. The frustration peaks when a 'rat' teammate refuses
-    to help in fights.
+    to help in fights."
 - question: What's the difference between ratting and camping?
-  answer: 'Camping' is the older, broader term for staying in one spot. 'Ratting'
+  answer: "'Camping' is the older, broader term for staying in one spot. 'Ratting'
     is BR-specific — it emphasizes passive survival play where the goal is placement
-    over kills.
+    over kills."
 sources:
 - name: PlayStation — Ultimate Gaming Glossary 2026
   url: https://www.playstation.com/en-us/editorial/playstation-ultimate-gaming-glossary/
