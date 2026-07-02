@@ -1,10 +1,14 @@
 ---
-title: "What 'Cooked' Means in Gaming (2026)"
+title: "Cooked"
 date: 2026-07-03T00:00:00Z
 slug: "cooked-gaming"
 description: "In gaming slang, 'cooked' means being completely destroyed, dominated, or outplayed. It's part of a family of cooking metaphors for getting wrecked."
 summary: "'Cooked' means being completely destroyed or outplayed in a game. It's a cooking metaphor for getting wrecked, popular in Gen-Z gaming slang."
 author: "GEBILAOWANG"
+category: slang
+shortDescription: "Being in a bad situation, doomed to fail, or completely outplayed."
+updated: "Jul 3, 2026"
+readTime: "5 min read"
 categories:
   - Gaming Slang
 tags:
