@@ -165,9 +165,9 @@
       <div class="ad-sidebar-inner">AD</div>
     </div>
 
-    <!-- Cards Grid -->
+    <!-- Cards Grid -- Show newest 21 first -->
     <div class="cards-grid">
-      {{ range (where .Site.RegularPages "Section" "slang") }}
+      {{ range first 21 (sort (where .Site.RegularPages "Section" "slang") "Date" "desc") }}
       <a href="{{ .RelPermalink }}" class="card">
         <div class="card-img-wrap">
           <img src="/slang/{{ replace .Params.slug "-gaming" "" }}-featured.jpg" alt="{{ .Title }}" class="card-img" loading="lazy" onerror="this.parentElement.style.display='none'">
