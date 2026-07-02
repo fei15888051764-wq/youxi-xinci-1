@@ -70,3 +70,7 @@ In 2026 gaming slang, "pocket" refers to the strategy of a support player dedica
 The concept comes from the phrase "keeping someone in your pocket" — meaning to keep them close and protected. In gaming, a "pocket healer" stays near their chosen target, ensuring they survive and can deal maximum damage.
 
 The pocket dynamic creates one of the most important partnerships in team-based gaming. A skilled carry with a dedicated pocket can dominate matches, while a bad pocket can waste their team's resources. It's a relationship built on trust, coordination, and mutual benefit.
+
+---
+
+*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. Contact: fei15888051764@gmail.com.*
