@@ -79,6 +79,6 @@ Independent gaming culture researcher and lexicographer specializing in gaming s
 
 This term is starting to appear in mainstream media, which usually signals permanent adoption.
 
-Published: 2026-07-03 | Author: GEBILAOWANG
+Published: 2026-07-03 | Author: GEBILAOWANG | Email: fei15888051764@gmail.com
 
 ---
