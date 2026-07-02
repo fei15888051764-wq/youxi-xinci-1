@@ -1,10 +1,14 @@
 ---
-title: "What 'Boop' Means in Gaming (2026)"
+title: "Boop"
 date: 2026-07-03T00:00:00Z
 slug: "boop-gaming"
 description: "In gaming, 'boop' refers to using an ability or attack to push an opponent off a ledge, cliff, or into an environmental hazard. The term originated from Overwatch's Lucio but has spread to many games."
 summary: "'Boop' is the act of pushing an opponent off a ledge or into a hazard, often with a playful tone. Originated from Overwatch's Lucio and spread across gaming."
 author: "GEBILAOWANG"
+category: slang
+shortDescription: "A playful push or displacement move that knocks enemies off positions or maps."
+updated: "Jul 3, 2026"
+readTime: "5 min read"
 categories:
   - Gaming Slang
 tags:
