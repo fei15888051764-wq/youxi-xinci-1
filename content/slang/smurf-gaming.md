@@ -79,6 +79,6 @@ Independent gaming culture researcher and lexicographer specializing in gaming s
 
 This word perfectly captures a specific gaming experience that no other term does.
 
-Published: 2026-07-03 | Author: GEBILAOWANG
+Published: 2026-07-03 | Author: GEBILAOWANG | Email: fei15888051764@gmail.com
 
 ---
