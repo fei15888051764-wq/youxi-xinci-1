@@ -1,10 +1,14 @@
 ---
-title: "'Smurf': The Gaming Slang Term Everyone's Using in 2026"
+title: "Smurf"
 date: 2026-07-03T00:00:00Z
 slug: "smurf-gaming"
 description: "A smurf is a highly skilled player who creates a new, low-ranked account to play against less experienced opponents. The term originated in 1996 from "
 summary: "A 'smurf' is a highly skilled player who creates a new, low-ranked account to play against less experienced opponents. The term originated in 1996 from two Warcraft 2 players who used 'PapaSmurf' and 'Smurfette' as alternate account names to hide their skill level and get more matches."
 author: "GEBILAOWANG"
+category: slang
+shortDescription: "A highly skilled player using a low-ranked account to dominate beginners."
+updated: "Jul 3, 2026"
+readTime: "5 min read"
 categories: ["gaming-slang"]
 tags: [competitive, ranked, general, history, essential]
 ---
