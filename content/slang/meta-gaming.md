@@ -1,10 +1,14 @@
 ---
-title: "What 'Meta' Means in Gaming (2026)"
+title: "Meta"
 date: 2026-07-03T00:00:00Z
 slug: "meta-gaming"
 description: "The meta is the current dominant strategy, character picks, or playstyle that defines competitive play at any given time."
 summary: "The meta is the current dominant strategy or playstyle in competitive gaming. Short for 'metagame' — the game beyond the game."
 author: "GEBILAOWANG"
+category: slang
+shortDescription: "The most effective strategies and tactics currently dominant in competitive play."
+updated: "Jul 3, 2026"
+readTime: "5 min read"
 categories:
   - Gaming Slang
 tags:
