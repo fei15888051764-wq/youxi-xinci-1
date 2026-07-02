@@ -71,3 +71,7 @@ In 2026 gaming slang, "rat" refers to a player in battle royale games who hides 
 The comparison to rats is clear — like the rodents scurrying in dark corners, these players avoid the spotlight and main action, preferring to hide in obscure locations until forced to move. The term carries a negative connotation, suggesting cowardice or a lack of skill.
 
 However, the debate around ratting is nuanced. In ranked play, where placement points matter, surviving can be a legitimate strategy. Some players argue that "playing smart" is different from "ratting" — the former involves strategic positioning while the latter is pure hiding. The distinction often depends on who's making the judgment.
+
+---
+
+*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. Contact: fei15888051764@gmail.com.*
