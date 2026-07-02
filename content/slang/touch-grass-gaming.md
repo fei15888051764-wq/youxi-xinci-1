@@ -80,6 +80,6 @@ Independent gaming culture researcher and lexicographer specializing in gaming s
 
 The longevity of this term proves it fills a genuine communication gap in gaming.
 
-Published: 2026-07-03 | Author: GEBILAOWANG
+Published: 2026-07-03 | Author: GEBILAOWANG | Email: fei15888051764@gmail.com
 
 ---
