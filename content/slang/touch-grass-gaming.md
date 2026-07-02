@@ -1,10 +1,14 @@
 ---
-title: "'Touch Grass' Meaning in Gaming — Slang Explained (2026)"
+title: "Touch Grass"
 date: 2026-07-03T00:00:00Z
 slug: "touch-grass-gaming"
 description: "Touch grass is an internet slang phrase used to tell someone they spend too much time online and need to go outside. It became popular in gaming commu"
 summary: "'Touch grass' is an internet slang phrase used to tell someone they spend too much time online and need to go outside and experience the real world. It became popular in gaming and streaming communities around 2021 and has become one of the most recognizable comebacks in online arguments."
 author: "GEBILAOWANG"
+category: slang
+shortDescription: "Advice telling someone to go outside and take a break from gaming or the internet."
+updated: "Jul 3, 2026"
+readTime: "5 min read"
 categories: ["gaming-slang"]
 tags: [general, internet-culture, mental-health, casual, meme]
 ---
