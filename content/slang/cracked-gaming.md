@@ -70,3 +70,7 @@ In 2026 gaming slang, "cracked" describes a player whose skill level is so excep
 The term originated around 2018-2019 in streaming culture, where viewers would describe incredible plays as the player having "cracked the code" of the game. By 2020, it had spread throughout FPS and Battle Royale communities and became a universal term.
 
 The beauty of "cracked" is its versatility. It can describe anything from a single amazing shot to consistent dominance across an entire match. When someone says "that guy is cracked," they're acknowledging a level of skill that commands respect.
+
+---
+
+*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. Contact: fei15888051764@gmail.com.*
