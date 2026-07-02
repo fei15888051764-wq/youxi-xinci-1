@@ -50,19 +50,27 @@ input{font-family:inherit}
 /* ===== ADS ===== */
 .ad-banner-wrap{max-width:1400px;margin:0 auto;padding:8px 24px 4px}
 .ad-banner{background:#111;border:1px dashed #333;border-radius:8px;height:60px;max-width:520px;margin:0 auto;display:flex;align-items:center;justify-content:center;color:#555;font-size:10px;letter-spacing:.15em}
+
+/* Desktop sidebar ads */
 .ad-sidebar{display:none;width:120px;flex-shrink:0}
 .ad-sidebar-inner{background:#111;border:1px dashed #333;border-radius:8px;height:360px;display:flex;align-items:center;justify-content:center;color:#555;font-size:10px;letter-spacing:.15em;position:sticky;top:80px}
 .ad-sidebar-detail{display:none;width:120px;flex-shrink:0}
 .ad-sidebar-detail .ad-sidebar-inner{height:240px}
 
-/* Mobile inline ads */
-.ad-mobile{width:100%;background:#111;border:1px dashed #333;border-radius:8px;height:80px;display:flex;align-items:center;justify-content:center;color:#555;font-size:10px;letter-spacing:.15em;margin:8px 0}
+/* Mobile inline ads - hidden by default on desktop */
+.ad-mobile{display:none}
 .ad-mobile-inner{width:100%;height:100%;display:flex;align-items:center;justify-content:center}
 
+/* Show mobile ads only on small screens */
+@media(max-width:1023px){
+  .ad-mobile{display:block;width:100%;background:#111;border:1px dashed #333;border-radius:8px;height:80px;margin:8px 0}
+}
+
+/* Show desktop sidebar ads only on large screens */
 @media(min-width:1024px){
   .ad-sidebar{display:block}
   .ad-sidebar-detail{display:block}
-  .ad-mobile{display:none}
+  .ad-mobile{display:none !important}
 }
 
 /* ===== TERMS SECTION ===== */
