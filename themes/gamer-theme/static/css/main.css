@@ -16,7 +16,8 @@ input{font-family:inherit}
 .nav-container{max-width:1400px;margin:0 auto;height:100%;display:flex;align-items:center;justify-content:space-between;padding:0 16px}
 .nav-logo{display:flex;align-items:center;gap:8px}
 .nav-logo svg{flex-shrink:0;width:18px;height:18px}
-.nav-logo-text{font-family:'Press Start 2P',cursive;font-size:9px;color:#a3ff00;letter-spacing:-.02em;line-height:1.4}
+.nav-logo-text{font-family:'Press Start 2P',cursive;font-size:9px;color:#a3ff00;letter-spacing:-.02em;line-height:1.4;white-space:nowrap}
+@media(max-width:639px){.nav-logo-text{display:none}}
 .nav-links{display:flex;align-items:center;gap:10px}
 .nav-link{font-size:10px;text-transform:uppercase;letter-spacing:.03em;color:#a3ff00;font-weight:500;transition:color .2s;white-space:nowrap}
 .nav-link:hover{color:#f0f0f0}
