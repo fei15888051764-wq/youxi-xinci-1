@@ -1,10 +1,14 @@
 ---
-title: "What 'Noob' Means in Gaming (2026)"
+title: "Noob"
 date: 2026-07-03T00:00:00Z
 slug: "noob-gaming"
 description: "A noob is a beginner or inexperienced player, often used as an insult in competitive games. Derived from 'newbie.'"
 summary: "'Noob' is a beginner or inexperienced player. Originally from 'newbie,' it evolved into a mild insult in gaming culture."
 author: "GEBILAOWANG"
+category: slang
+shortDescription: "A new or inexperienced player, often used as an insult."
+updated: "Jul 3, 2026"
+readTime: "5 min read"
 categories:
   - Gaming Slang
 tags:
