@@ -72,14 +72,4 @@ Friend 2: "That's why I have a foam desk pad. Learned the hard way."
 
 ---
 
-## About the Author
-
-By **GEBILAOWANG**
-
-Independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns.
-
-I've noticed this term being used differently depending on which region you're playing in.
-
-Published: 2026-07-03 | Author: GEBILAOWANG | Email: fei15888051764@gmail.com
-
----
+*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. Contact: fei15888051764@gmail.com.*
