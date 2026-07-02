@@ -71,3 +71,7 @@ In 2026 gaming slang, "ego peek" refers to the act of overconfidently exposing y
 The term combines "ego" (referring to overconfidence or pride) with "peek" (the action of briefly exposing yourself to gather information or take a shot). An ego peek specifically refers to situations where a player peeks despite having no tactical advantage — often because they believe their individual skill is enough to win the duel.
 
 In tactical shooters like Valorant and Counter-Strike 2, where positioning and information are crucial, ego peeking is one of the most common mistakes players make. The term has become a standard piece of vocabulary in ranked play and esports commentary.
+
+---
+
+*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. Contact: fei15888051764@gmail.com.*
