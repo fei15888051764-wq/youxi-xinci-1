@@ -1,10 +1,14 @@
 ---
-title: "The Real Meaning of 'Tilt' in Gaming (2026)"
+title: "Tilt"
 date: 2026-07-03T00:00:00Z
 slug: "tilt-gaming"
 description: "Tilted describes a state of frustration or emotional distress that causes a player to make poor decisions and play worse than normal. The term origina"
 summary: "In gaming, 'tilted' describes a state of frustration or emotional distress that causes a player to make poor decisions and play significantly worse than their normal skill level. The term originated in 1950s poker culture and migrated into gaming in the early 2000s."
 author: "GEBILAOWANG"
+category: slang
+shortDescription: "A state of frustration that causes poor decisions and worse performance."
+updated: "Jul 3, 2026"
+readTime: "5 min read"
 categories: ["gaming-slang"]
 tags: [competitive, psychology, general, mental-health, esports]
 ---
