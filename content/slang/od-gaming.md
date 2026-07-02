@@ -67,3 +67,7 @@ In 2026 gaming slang, "OD" (short for "overdose") is used to describe anything e
 The term originated in urban slang as a shortened form of "overdose," but crossed into gaming culture around 2018 through hip-hop and streaming communities. In gaming, it completely lost its drug-specific meaning and became a general-purpose descriptor for excess.
 
 What makes "OD" particularly useful is its flexibility. It can describe an incredible play ("that was OD!"), an annoying teammate ("you're being OD"), or an overpowered game mechanic ("this gun is OD"). The meaning is almost entirely determined by tone and context.
+
+---
+
+*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. Contact: fei15888051764@gmail.com.*
