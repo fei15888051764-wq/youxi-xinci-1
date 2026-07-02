@@ -3,6 +3,8 @@ languageCode: 'en-us'
 title: 'Gamer Slang & Pro Terms Hub'
 theme: 'gamer-theme'
 
+buildFuture: true
+
 pagination:
   pagerSize: 16
 enableRobotsTXT: true
