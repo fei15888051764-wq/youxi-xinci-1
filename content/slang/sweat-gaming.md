@@ -71,14 +71,4 @@ Friend 1: "Practice in Arena, not in casual modes."
 
 ---
 
-## About the Author
-
-By **GEBILAOWANG**
-
-Independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns.
-
-The way this term evolved from its original meaning fascinates me.
-
-Published: 2026-07-03 | Author: GEBILAOWANG | Email: fei15888051764@gmail.com
-
----
+*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. Contact: fei15888051764@gmail.com.*
