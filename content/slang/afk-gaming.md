@@ -1,10 +1,14 @@
 ---
-title: "The Real Meaning of 'AFK' in Gaming (2026)"
+title: "AFK"
 date: 2026-07-03T00:00:00Z
 slug: "afk-gaming"
 description: "AFK stands for 'Away From Keyboard' and indicates that a player has temporarily stepped away from their device. Originating in early internet chat rooms and MMO culture, AFK has evolved into one of the most universally recognized terms in online gaming and internet slang."
 summary: "AFK stands for 'Away From Keyboard' — a term used when a player temporarily steps away from their device during a game. Originating in early internet culture and MMO gaming, AFK has become one of the most universally recognized terms in online gaming and internet slang."
 author: "GEBILAOWANG"
+category: slang
+shortDescription: "Away From Keyboard — when a player temporarily steps away from their device during a game."
+updated: "Jul 3, 2026"
+readTime: "5 min read"
 categories:
   - Gaming Slang
 tags:
