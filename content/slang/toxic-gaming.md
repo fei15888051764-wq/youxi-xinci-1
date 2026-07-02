@@ -1,10 +1,14 @@
 ---
-title: "The Real Meaning of 'Toxic' in Gaming (2026)"
+title: "Toxic"
 date: 2026-07-03T00:00:00Z
 slug: "toxic-gaming"
 description: "Toxic refers to players who exhibit negative, harmful, or abusive behavior toward others in online games. The term has become the standard way to desc"
 summary: "In gaming, 'toxic' refers to players who exhibit negative, harmful, or abusive behavior toward others — including verbal abuse, harassment, intentional feeding (deliberately dying to help the enemy), and sabotaging teammates. The term has become the standard descriptor for the darker side of online gaming culture since the early 2010s."
 author: "GEBILAOWANG"
+category: slang
+shortDescription: "Negative, harmful, or abusive behavior toward other players in a game."
+updated: "Jul 3, 2026"
+readTime: "5 min read"
 categories: ["gaming-slang"]
 tags: [competitive, community, general, mental-health, essential]
 ---
