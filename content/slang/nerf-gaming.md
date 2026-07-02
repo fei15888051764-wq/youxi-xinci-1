@@ -1,10 +1,14 @@
 ---
-title: "What 'Nerf' Means in Gaming (2026)"
+title: "Nerf"
 date: 2026-07-03T00:00:00Z
 slug: "nerf-gaming"
 description: "A nerf is a game update that weakens a character, weapon, or ability that was considered too powerful."
 summary: "A nerf is a game update that weakens something too powerful. The opposite of buff. Named after Nerf toy guns."
 author: "GEBILAOWANG"
+category: slang
+shortDescription: "A game update that makes a character, weapon, or ability weaker."
+updated: "Jul 3, 2026"
+readTime: "5 min read"
 categories:
   - Gaming Slang
 tags:
