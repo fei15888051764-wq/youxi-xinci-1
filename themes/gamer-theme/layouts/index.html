@@ -167,7 +167,7 @@
 
     <!-- Cards Grid -->
     <div class="cards-grid">
-      {{ range first 8 (where .Site.RegularPages "Section" "slang") }}
+      {{ range (where .Site.RegularPages "Section" "slang") }}
       <a href="{{ .RelPermalink }}" class="card">
         <div class="card-img-wrap">
           <img src="/slang/{{ replace .Params.slug "-gaming" "" }}-featured.jpg" alt="{{ .Title }}" class="card-img" loading="lazy" onerror="this.parentElement.style.display='none'">
