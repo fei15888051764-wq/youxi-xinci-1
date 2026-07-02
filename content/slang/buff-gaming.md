@@ -1,10 +1,14 @@
 ---
-title: "What 'Buff' Means in Gaming (2026)"
+title: "Buff"
 date: 2026-07-03T00:00:00Z
 slug: "buff-gaming"
 description: "A buff is a game update or patch that strengthens a character, weapon, or ability. Buffs make gameplay elements more powerful or effective."
 summary: "A buff is a game update that strengthens a character, weapon, or ability. It's the opposite of a nerf and a core concept in game balance."
 author: "GEBILAOWANG"
+category: slang
+shortDescription: "A game update that makes a character, weapon, or ability stronger."
+updated: "Jul 3, 2026"
+readTime: "5 min read"
 categories:
   - Gaming Slang
 tags:
