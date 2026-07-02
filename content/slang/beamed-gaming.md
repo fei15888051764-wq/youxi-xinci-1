@@ -1,10 +1,14 @@
 ---
-title: "What 'Beamed' Means in Gaming (2026)"
+title: "Beamed"
 date: 2026-07-03T00:00:00Z
 slug: "beamed-gaming"
 description: "In gaming, 'beamed' means getting hit with a near-perfect stream of bullets from an automatic weapon, usually from long range with laser-like precision. The term is most common in FPS and battle royale games like Fortnite, Roblox Frontlines, and Call of Duty."
 summary: "'Beamed' describes getting eliminated by a precise, long-range spray of bullets — like being hit by a laser beam. The term is common in FPS games like Fortnite, Roblox, and Call of Duty."
 author: "GEBILAOWANG"
+category: slang
+shortDescription: "Getting instantly killed by a precise headshot, usually from a distance."
+updated: "Jul 3, 2026"
+readTime: "5 min read"
 categories:
   - Gaming Slang
 tags:
