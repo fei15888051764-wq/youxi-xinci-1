@@ -69,3 +69,7 @@ In 2026 gaming slang, "healing gaming" refers to the practice of playing relaxed
 The term originated in Chinese gaming communities around 2022, where the concept of "healing" (therapeutic relaxation) was applied to gaming habits. It quickly spread to Western gaming culture as part of a broader wellness movement among Gen Z gamers.
 
 Healing gaming represents a shift in how gamers think about their hobby. Rather than viewing every gaming session as an opportunity to climb ranks or improve skills, healing gaming acknowledges that sometimes the best thing you can do is boot up Stardew Valley, plant some crops, and let your brain rest.
+
+---
+
+*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. Contact: fei15888051764@gmail.com.*
