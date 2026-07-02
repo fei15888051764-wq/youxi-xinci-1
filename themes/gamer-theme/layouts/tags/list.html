@@ -24,6 +24,9 @@
     <style>.tags-cloud{flex:1;min-width:0;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px;padding:8px 0}.tag-pill{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:#111;border:1px solid #333;border-radius:9999px;color:#f0f0f0;font-size:14px;font-weight:500;transition:border-color .2s,background .2s;white-space:nowrap;text-decoration:none}.tag-pill:hover{border-color:#a3ff00;background:#1a1a1a}.tag-pill-name{text-transform:capitalize}.tag-pill-count{font-size:12px;color:#8c8c8c;font-weight:400}.tag-pill:hover .tag-pill-count{color:#a3ff00}</style>
     <!-- Tags Cloud -->
     <div class="tags-cloud">
+      <!-- Mobile Ad 1: above first tag -->
+      <div class="ad-mobile" style="flex-basis:100%;"><div class="ad-mobile-inner">AD</div></div>
+
       {{ $filtered := where .Pages "Title" "not in" (slice "2026" "year-2026") }}
       {{ $half := div (len $filtered) 2 }}
 
@@ -35,6 +38,9 @@
       </a>
       {{ end }}
 
+      <!-- Mobile Ad 2: middle of tags -->
+      <div class="ad-mobile" style="flex-basis:100%;"><div class="ad-mobile-inner">AD</div></div>
+
       <!-- Second half of tags -->
       {{ range after $half $filtered }}
       <a href="{{ .RelPermalink }}" class="tag-pill">
@@ -42,6 +48,9 @@
         <span class="tag-pill-count">{{ len .Pages }}</span>
       </a>
       {{ end }}
+
+      <!-- Mobile Ad 3: after last tag -->
+      <div class="ad-mobile" style="flex-basis:100%;"><div class="ad-mobile-inner">AD</div></div>
     </div>
 
     <!-- Right Ad -->
