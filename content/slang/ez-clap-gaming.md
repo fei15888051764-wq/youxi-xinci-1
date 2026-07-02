@@ -1,10 +1,14 @@
 ---
-title: "What 'EZ Clap' Means in Gaming (2026)"
+title: "EZ Clap"
 date: 2026-07-03T00:00:00Z
 slug: "ez-clap-gaming"
 description: "'EZ Clap' is a taunting phrase used after winning a match with little effort. It combines 'EZ' (easy) with 'Clap' (applause) to mock opponents."
 summary: "'EZ Clap' is a taunting phrase combining 'Easy' and 'Clap' to mock opponents after an effortless win. Common in FPS and competitive games."
 author: "GEBILAOWANG"
+category: slang
+shortDescription: "An arrogant way to say 'easy win' after dominating a match."
+updated: "Jul 3, 2026"
+readTime: "5 min read"
 categories:
   - Gaming Slang
 tags:
