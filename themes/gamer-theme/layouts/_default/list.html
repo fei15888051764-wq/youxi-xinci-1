@@ -22,9 +22,6 @@
 
     <!-- Cards Grid -- Show ALL cards sorted newest first -->
     <div class="cards-grid">
-      <!-- Ad 1: before 1st card -->
-      <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
-
       {{ range $index, $page := sort .Pages "Date" "desc" }}
       <a href="{{ $page.RelPermalink }}" class="card">
         <div class="card-img-wrap">
@@ -48,14 +45,6 @@
           </div>
         </div>
       </a>
-      {{ if eq $index 9 }}
-      <!-- Ad 2: after 10th card -->
-      <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
-      {{ end }}
-      {{ if eq $index 19 }}
-      <!-- Ad 3: after 20th card -->
-      <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
-      {{ end }}
       {{ end }}
     </div>
 
