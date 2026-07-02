@@ -1,10 +1,14 @@
 ---
-title: "What 'Griefing' Means in Gaming (2026)"
+title: "Griefing"
 date: 2026-07-03T00:00:00Z
 slug: "griefing-gaming"
 description: "Griefing is intentionally ruining the game for your own teammates through sabotage, feeding, or disruptive behavior."
 summary: "Griefing is intentionally ruining the game for teammates through sabotage or disruptive behavior. One of the most reportable offenses in online gaming."
 author: "GEBILAOWANG"
+category: slang
+shortDescription: "Intentionally ruining the game experience for teammates or opponents."
+updated: "Jul 3, 2026"
+readTime: "5 min read"
 categories:
   - Gaming Slang
 tags:
