@@ -79,6 +79,6 @@ Independent gaming culture researcher and lexicographer specializing in gaming s
 
 The way this term evolved from its original meaning fascinates me.
 
-Published: 2026-07-03 | Author: GEBILAOWANG
+Published: 2026-07-03 | Author: GEBILAOWANG | Email: fei15888051764@gmail.com
 
 ---
