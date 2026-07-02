@@ -1,10 +1,14 @@
 ---
-title: "What 'Pog' Means in Gaming (2026)"
+title: "Pog"
 date: 2026-07-03T00:00:00Z
 slug: "pog-gaming"
 description: "Pog is an expression of extreme excitement or hype, originating from the PogChamp Twitch emote."
 summary: "'Pog' is an expression of extreme excitement or hype. It originated from the PogChamp Twitch emote and became universal gaming slang."
 author: "GEBILAOWANG"
+category: slang
+shortDescription: "An expression of excitement and amazement at an impressive play."
+updated: "Jul 3, 2026"
+readTime: "5 min read"
 categories:
   - Gaming Slang
 tags:
