@@ -1,10 +1,14 @@
 ---
-title: "Understanding 'Sweat': Gaming Slang Breakdown (2026)"
+title: "Sweat"
 date: 2026-07-03T00:00:00Z
 slug: "sweat-gaming"
 description: "Sweat or sweaty describes a player who tries extremely hard to win, often using the most optimal strategies and meta loadouts. The term can be either "
 summary: "In gaming slang, 'sweat' or 'sweaty' describes a player who tries extremely hard to win, often using the most optimal strategies, meta loadouts, and competitive tactics. The term can be either an insult (implying someone takes the game too seriously) or a backhanded compliment (acknowledging their skill and dedication)."
 author: "GEBILAOWANG"
+category: slang
+shortDescription: "A player who tries extremely hard to win, even in casual game modes."
+updated: "Jul 3, 2026"
+readTime: "5 min read"
 categories: ["gaming-slang"]
 tags: [competitive, tryhard, casual, meta, general]
 ---
