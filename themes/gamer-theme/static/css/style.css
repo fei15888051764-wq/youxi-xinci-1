@@ -55,9 +55,14 @@ input{font-family:inherit}
 .ad-sidebar-detail{display:none;width:120px;flex-shrink:0}
 .ad-sidebar-detail .ad-sidebar-inner{height:240px}
 
+/* Mobile inline ads */
+.ad-mobile{width:100%;background:#111;border:1px dashed #333;border-radius:8px;height:80px;display:flex;align-items:center;justify-content:center;color:#555;font-size:10px;letter-spacing:.15em;margin:8px 0}
+.ad-mobile-inner{width:100%;height:100%;display:flex;align-items:center;justify-content:center}
+
 @media(min-width:1024px){
   .ad-sidebar{display:block}
   .ad-sidebar-detail{display:block}
+  .ad-mobile{display:none}
 }
 
 /* ===== TERMS SECTION ===== */
