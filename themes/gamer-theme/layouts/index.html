@@ -167,28 +167,38 @@
 
     <!-- Cards Grid -- Show newest 21 first -->
     <div class="cards-grid">
-      {{ range first 21 (sort (where .Site.RegularPages "Section" "slang") "Date" "desc") }}
-      <a href="{{ .RelPermalink }}" class="card">
+      <!-- Ad 1: before 1st card -->
+      <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
+
+      {{ range $index, $page := first 21 (sort (where .Site.RegularPages "Section" "slang") "Date" "desc") }}
+      <a href="{{ $page.RelPermalink }}" class="card">
         <div class="card-img-wrap">
-          <img src="/slang/{{ replace .Params.slug "-gaming" "" }}-featured.jpg" alt="{{ .Title }}" class="card-img" loading="lazy" onerror="this.parentElement.style.display='none'">
+          <img src="/slang/{{ replace $page.Params.slug "-gaming" "" }}-featured.jpg" alt="{{ $page.Title }}" class="card-img" loading="lazy" onerror="this.parentElement.style.display='none'">
         </div>
         <div class="card-body">
           <div class="card-header-row">
-            <h3 class="card-title-text">{{ .Title }}</h3>
-            <span class="card-badge">{{ .Params.category }}</span>
+            <h3 class="card-title-text">{{ $page.Title }}</h3>
+            <span class="card-badge">{{ $page.Params.category }}</span>
           </div>
-          <p class="card-desc">{{ .Params.shortDescription }}</p>
+          <p class="card-desc">{{ $page.Params.shortDescription }}</p>
           <div class="card-footer">
             <div class="card-tags">
-              {{ range first 2 .Params.tags }}
+              {{ range first 2 $page.Params.tags }}
               <span class="card-tag">#{{ . }}</span>
               {{ end }}
             </div>
-            <span class="card-date">{{ .Params.updated }}</span>
+            <span class="card-date">{{ $page.Params.updated }}</span>
           </div>
         </div>
       </a>
+      {{ if eq $index 9 }}
+      <!-- Ad 2: after 10th card -->
+      <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
       {{ end }}
+      {{ end }}
+
+      <!-- Ad 3: after last card -->
+      <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
     </div>
 
     <!-- Right Ad -->
