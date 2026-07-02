@@ -77,3 +77,7 @@ In 2026 gaming slang, "bot" refers to a player who performs so poorly or predict
 The slang emerged around 2019-2020 when competitive players began calling poorly performing teammates "bots" as a shorthand insult. The comparison was devastating because it implied the player was so bad they were indistinguishable from artificial intelligence — walking into walls, missing easy shots, and making decisions that no human would.
 
 By 2022, the term had become universal across gaming genres. PlayStation's official Gaming Glossary (2026 edition) formally documents "bot" as slang for "an inexperienced or poor player, whose ability is no greater than an AI bot." Interestingly, the term has also developed a softer, almost affectionate usage among friends — calling your buddy a "certified bot" after a mistake has become a bonding ritual rather than genuine toxicity.
+
+---
+
+*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. Contact: fei15888051764@gmail.com.*
