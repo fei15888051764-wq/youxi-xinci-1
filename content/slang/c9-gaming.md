@@ -1,10 +1,14 @@
 ---
-title: "What 'C9' Means in Gaming (2026)"
+title: "C9"
 date: 2026-07-03T00:00:00Z
 slug: "c9-gaming"
 description: "In gaming, 'C9' means abandoning the objective to chase kills, resulting in a preventable loss. Named after the esports team Cloud9."
 summary: "'C9' is when a team abandons the objective to chase kills and loses as a result. Named after Cloud9's famous Overwatch League mistake."
 author: "GEBILAOWANG"
+category: slang
+shortDescription: "When a team wins a fight but forgets to touch the objective, causing them to lose."
+updated: "Jul 3, 2026"
+readTime: "5 min read"
 categories:
   - Gaming Slang
 tags:
