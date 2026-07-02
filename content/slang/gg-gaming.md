@@ -1,10 +1,14 @@
 ---
-title: "What 'GG' Means in Gaming (2026)"
+title: "GG"
 date: 2026-07-03T00:00:00Z
 slug: "gg-gaming"
 description: "GG stands for 'Good Game' and is the most universal term in gaming etiquette, said at the end of matches to show sportsmanship."
 summary: "GG stands for 'Good Game' — the most universal term in gaming etiquette. Said at the end of matches to show respect to opponents."
 author: "GEBILAOWANG"
+category: slang
+shortDescription: "Good Game — the universal sign of sportsmanship typed at the end of a match."
+updated: "Jul 3, 2026"
+readTime: "5 min read"
 categories:
   - Gaming Slang
 tags:
