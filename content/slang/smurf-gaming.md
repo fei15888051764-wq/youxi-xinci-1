@@ -71,14 +71,4 @@ Friend 2: "Don't be that guy. Just play unrated with me."
 
 ---
 
-## About the Author
-
-By **GEBILAOWANG**
-
-Independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns.
-
-This word perfectly captures a specific gaming experience that no other term does.
-
-Published: 2026-07-03 | Author: GEBILAOWANG | Email: fei15888051764@gmail.com
-
----
+*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. Contact: fei15888051764@gmail.com.*
