@@ -1,10 +1,14 @@
 ---
-title: "What 'Frag' Means in Gaming (2026)"
+title: "Frag"
 date: 2026-07-03T00:00:00Z
 slug: "frag-gaming"
 description: "In gaming, 'frag' is slang for a kill or elimination in FPS games. It originated from military fragmentation grenades."
 summary: "'Frag' is a kill or elimination in FPS games, derived from military fragmentation grenades. One of the oldest gaming terms still in use."
 author: "GEBILAOWANG"
+category: slang
+shortDescription: "A kill or elimination of an enemy player, originating from military slang."
+updated: "Jul 3, 2026"
+readTime: "5 min read"
 categories:
   - Gaming Slang
 tags:
