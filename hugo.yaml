@@ -1,20 +1,21 @@
-baseURL: 'baseURL: 'https://gamerterms.com/'
+baseURL: 'https://gamerterms.com/'
 languageCode: 'en-us'
 title: 'Gamer Slang & Pro Terms Hub'
-theme: 'gamer-theme''
-languageCode: 'en-us'
-title: 'Gamer Glossary'
 theme: 'gamer-theme'
+
 pagination:
   pagerSize: 16
 enableRobotsTXT: true
 enableGitInfo: false
+
 permalinks:
   slang: '/slang/:slug/'
+
 params:
   description: 'The ultimate dictionary for gaming slang and terminology.'
   author: 'GEBILAOWANG'
   keywords: 'gaming slang, gamer glossary, gaming terms, esports terminology'
+
 menu:
   main:
     - name: Home
@@ -29,6 +30,7 @@ menu:
     - name: Contact
       url: /contact/
       weight: 40
+
 sitemap:
   changefreq: daily
   priority: 0.5
