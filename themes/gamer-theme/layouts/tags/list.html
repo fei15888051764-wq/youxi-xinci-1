@@ -51,7 +51,7 @@
     <div class="year-grid">
       {{ range $sortedYears }}
       {{ $count := index $years . }}
-      <a href="/slang/?year={{ . }}" class="year-pill">
+      <a href="/years/#year-{{ . }}" class="year-pill">
         <span class="year-pill-label">{{ . }}</span>
         <span class="year-pill-count">{{ $count }} terms</span>
       </a>
