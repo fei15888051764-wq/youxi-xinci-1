@@ -42,7 +42,3 @@ sources:
 ---
 
 In gaming, 'BM' stands for 'Bad Manners' and describes rude, disrespectful, or unsportsmanlike behavior toward opponents or teammates. This includes taunting, excessive celebrating, intentionally delaying a won game, or any behavior that goes against the spirit of friendly competition.
-
----
-
-*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. If you have suggestions for new terms or corrections, feel free to reach out.*

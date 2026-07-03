@@ -45,7 +45,3 @@ sources:
 ---
 
 In gaming, 'WP' stands for 'Well Played' and is used to acknowledge good performance from opponents or teammates. Often paired with 'GG' as 'GG WP' (Good Game, Well Played), it is one of the foundational terms of gaming sportsmanship and is used across virtually all competitive online games.
-
----
-
-*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. If you have suggestions for new terms or corrections, feel free to reach out.*

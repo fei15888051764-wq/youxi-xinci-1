@@ -43,7 +43,3 @@ sources:
 ---
 
 In gaming, 'lore' refers to the backstory, history, and world-building of a game — including character origins, historical events, relationships, and the overall narrative universe. Originally used in tabletop RPGs like Dungeons & Dragons, the term has become central to how players engage with story-rich games.
-
----
-
-*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. If you have suggestions for new terms or corrections, feel free to reach out.*

@@ -46,7 +46,3 @@ sources:
 ---
 
 In gaming, 'respawn' means to reappear in the game after dying, typically at a designated spawn point or checkpoint. It is one of the most fundamental mechanics in modern gaming, replacing the older 'Game Over' system and allowing players to continue without restarting.
-
----
-
-*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. If you have suggestions for new terms or corrections, feel free to reach out.*

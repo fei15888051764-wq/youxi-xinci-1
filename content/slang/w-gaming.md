@@ -46,7 +46,3 @@ sources:
 ---
 
 In gaming and internet culture, 'W' stands for 'Win' and is used to celebrate victories, positive outcomes, or good decisions. Paired with 'L' (Loss), W/L forms the simplest framework for evaluating results. The term has become deeply embedded in gaming vocabulary and broader internet slang.
-
----
-
-*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. If you have suggestions for new terms or corrections, feel free to reach out.*
