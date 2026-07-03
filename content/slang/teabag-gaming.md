@@ -1,7 +1,7 @@
 ---
 title: "Teabag"
 date: 2026-07-05T00:00:00Z
-updated: "Jul 5, 2026"
+updated: "Jul 4, 2026"
 shortDescription: "In gaming, 'teabagging' means repeatedly crouching over a defeated opponent's body as a taunting gesture. Originating in first-perso..."
 slug: "teabag-gaming"
 description: "Teabagging is the act of crouching repeatedly over a defeated opponent's body as a taunt. One of gaming's most infamous and controversial gestures."

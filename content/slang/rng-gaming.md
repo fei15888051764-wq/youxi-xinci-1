@@ -1,7 +1,7 @@
 ---
 title: "RNG"
 date: 2026-07-05T00:00:00Z
-updated: "Jul 5, 2026"
+updated: "Jul 4, 2026"
 shortDescription: "In gaming, 'RNG' stands for 'Random Number Generator' and refers to any luck-based element that affects gameplay — from loot drops a..."
 slug: "rng-gaming"
 description: "RNG stands for Random Number Generator and refers to luck-based elements in games. A core concept that affects everything from loot drops to critical hits."

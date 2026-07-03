@@ -1,7 +1,7 @@
 ---
 title: "Skill Issue"
 date: 2026-07-05T00:00:00Z
-updated: "Jul 5, 2026"
+updated: "Jul 4, 2026"
 shortDescription: "In gaming, 'skill issue' is a dismissive response used to attribute someone's failure or complaint to their own lack of skill rather..."
 slug: "skill-issue-gaming"
 description: "Skill issue is a dismissive way of saying someone lost because of their own lack of skill. A popular comeback that shifts blame from luck to player ability."

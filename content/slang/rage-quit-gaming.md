@@ -1,7 +1,7 @@
 ---
 title: "Rage Quit"
 date: 2026-07-05T00:00:00Z
-updated: "Jul 5, 2026"
+updated: "Jul 4, 2026"
 shortDescription: "In gaming, 'rage quit' means to abruptly leave a match out of anger or frustration, usually after a string of losses, unfair death..."
 slug: "rage-quit-gaming"
 description: "Rage quit means to abruptly leave a game out of anger or frustration. One of gaming's most relatable and meme-worthy behaviors."
@@ -65,7 +65,7 @@ User3: "keyboard replacement costs"
 > Yes, most modern games have leaver penalties. These range from temporary matchmaking bans and rank point deductions to low-priority queues where you only play with other leavers. Repeat offenders face permanent bans.
 
 **Q3: Is rage quitting still common in 2026?**
-> Less common than in the 2010s due to penalties, but still a regular occurrence in casual modes. Ranked rage quitting has decreased significantly because the consequences are too severe.
+> Less common than in 2010s due to penalties, but still a regular occurrence in casual modes. Ranked rage quitting has decreased significantly because the consequences are too severe.
 
 ## Sources
 
