@@ -36,7 +36,7 @@
 <!-- WebSite -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"{{ .Site.Title }}","url":"{{ .Site.BaseURL }}","description":"{{ .Site.Params.description }}","potentialAction":{"@type":"SearchAction","target":"{{ .Site.BaseURL }}?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
 <!-- Organization -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"{{ .Site.Title }}","url":"{{ .Site.BaseURL }}","logo":"{{ .Site.BaseURL }}logo.png","founder":{"@type":"Person","name":"{{ .Site.Params.author }}","url":"https://about.me/GEBILAOWANG"},"contactPoint":{"@type":"ContactPoint","email":"fei15888051764@gmail.com","contactType":"customer support"},"sameAs":[]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"{{ .Site.Title }}","url":"{{ .Site.BaseURL }}","logo":"{{ .Site.BaseURL }}logo.png","founder":{"@type":"Person","name":"{{ .Site.Params.author }}"},"contactPoint":{"@type":"ContactPoint","email":"fei15888051764@gmail.com","contactType":"customer support"},"sameAs":[]}</script>
 {{ else if eq .Section "slang" }}
 {{ $imgBase := .Params.slug }}
 <!-- Article -->
