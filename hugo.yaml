@@ -26,9 +26,6 @@ menu:
     - name: Tags
       url: /tags/
       weight: 20
-    - name: Years
-      url: /years/
-      weight: 25
     - name: About
       url: /about/
       weight: 30
