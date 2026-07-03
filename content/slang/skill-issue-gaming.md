@@ -1,5 +1,5 @@
 ---
-title: "What Does 'Skill Issue' Mean in Gaming? Slang Explained (2026)"
+title: "Skill Issue"
 date: 2026-07-05T00:00:00Z
 updated: "Jul 5, 2026"
 shortDescription: "In gaming, 'skill issue' is a dismissive response used to attribute someone's failure or complaint to their own lack of skill rather..."

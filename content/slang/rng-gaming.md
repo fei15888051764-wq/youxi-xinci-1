@@ -1,5 +1,5 @@
 ---
-title: "What Does 'RNG' Mean in Gaming? Slang Explained (2026)"
+title: "RNG"
 date: 2026-07-05T00:00:00Z
 updated: "Jul 5, 2026"
 shortDescription: "In gaming, 'RNG' stands for 'Random Number Generator' and refers to any luck-based element that affects gameplay — from loot drops a..."

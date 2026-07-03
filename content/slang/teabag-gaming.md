@@ -1,5 +1,5 @@
 ---
-title: "What Does 'Teabag' Mean in Gaming? Slang Explained (2026)"
+title: "Teabag"
 date: 2026-07-05T00:00:00Z
 updated: "Jul 5, 2026"
 shortDescription: "In gaming, 'teabagging' means repeatedly crouching over a defeated opponent's body as a taunting gesture. Originating in first-perso..."

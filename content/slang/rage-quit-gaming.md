@@ -1,5 +1,5 @@
 ---
-title: "What Does 'Rage Quit' Mean in Gaming? Slang Explained (2026)"
+title: "Rage Quit"
 date: 2026-07-05T00:00:00Z
 updated: "Jul 5, 2026"
 shortDescription: "In gaming, 'rage quit' means to abruptly leave a match out of anger or frustration, usually after a string of losses, unfair death..."
