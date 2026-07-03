@@ -27,10 +27,12 @@
       </form>
     </section>
 
-    <!-- Mobile Ad 1: below search bar -->
-    <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
-
     <div class="detail-layout">
+      <!-- Left Ad (desktop only) -->
+      <div class="ad-sidebar ad-sidebar-detail">
+        <div class="ad-sidebar-inner">AD</div>
+      </div>
+
       <!-- Main Content -->
       <article class="detail-content">
         <div class="detail-hero-img">
@@ -52,6 +54,9 @@
             {{ end }}
           </div>
         </div>
+
+        <!-- Mobile Ad 1: top of detail content (after title, before meaning) -->
+        <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
 
         <!-- Full Meaning -->
         <div class="content-block">
@@ -150,7 +155,7 @@
           </p>
         </div>
 
-        <!-- Mobile Ad 3: below About the Author -->
+        <!-- Mobile Ad 3: end of detail content (before Related Slang) -->
         <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
 
         <!-- Related Slang -->
@@ -178,6 +183,11 @@
         {{ end }}
 
       </article>
+
+      <!-- Right Ad (desktop only) -->
+      <div class="ad-sidebar ad-sidebar-detail">
+        <div class="ad-sidebar-inner">AD</div>
+      </div>
     </div>
 
   </div>
