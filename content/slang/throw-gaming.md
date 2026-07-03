@@ -45,7 +45,3 @@ sources:
 ---
 
 In gaming, 'throw' means to lose a match that you were winning, usually by making a series of poor decisions or playing recklessly. It can be accidental (getting overconfident) or intentional (deliberately losing, also known as 'throwing' the game).
-
----
-
-*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. If you have suggestions for new terms or corrections, feel free to reach out.*

@@ -45,7 +45,3 @@ sources:
 ---
 
 GLHF stands for 'Good Luck, Have Fun' and is typed or said at the beginning of a competitive match as a gesture of sportsmanship. Along with 'GG' (Good Game), it forms the bookends of gaming etiquette — GLHF at the start, GG at the end.
-
----
-
-*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. If you have suggestions for new terms or corrections, feel free to reach out.*

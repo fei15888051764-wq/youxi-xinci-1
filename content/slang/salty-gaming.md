@@ -39,14 +39,10 @@ faq:
   - question: "How do I explain salty to a non-gamer in one sentence?"
     answer: "It means being bitter or upset after losing — like when someone gets mad about a game but won't admit it, so you say they're 'salty.'"
 sources:
-  - name: "SmileLoverz — Salty Meaning Slang in 2026"
+  - name: "SmileLoverz — Salty Meaning Slang 2026"
     url: "https://smileloverz.com/salty-meaning-slang/"
   - name: "PlayStation — Ultimate Gaming Glossary (2026)"
     url: "https://www.playstation.com/en-us/editorial/playstation-ultimate-gaming-glossary/"
 ---
 
 In gaming, 'salty' describes a player who is angry, frustrated, or bitter — usually after losing a match, being outplayed, or experiencing bad luck. The term has been part of gaming vocabulary since the early 2000s and remains one of the most common ways to describe frustration in competitive gaming.
-
----
-
-*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. If you have suggestions for new terms or corrections, feel free to reach out.*

@@ -42,7 +42,3 @@ sources:
 ---
 
 In gaming, 'OP' stands for 'Overpowered' and describes a character, weapon, or ability that is significantly stronger than its alternatives. Originally a gaming term from the early 2000s, OP has expanded into general internet slang and is now used to describe anything exceptionally strong or impressive.
-
----
-
-*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. If you have suggestions for new terms or corrections, feel free to reach out.*

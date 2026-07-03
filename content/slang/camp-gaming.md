@@ -46,7 +46,3 @@ sources:
 ---
 
 In gaming, 'camping' refers to staying in one defensive position for an extended period, usually to ambush passing opponents. Common in FPS games like Call of Duty and Counter-Strike, camping is one of the most debated strategies — viewed as smart tactics by some and as annoying cowardice by others.
-
----
-
-*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. If you have suggestions for new terms or corrections, feel free to reach out.*
