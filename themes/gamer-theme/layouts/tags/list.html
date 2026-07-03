@@ -8,7 +8,65 @@
   </form>
 </section>
 
-<!-- All Tags Section -->
+<!-- ===== BY YEAR Section ===== -->
+{{ $allSlang := where .Site.RegularPages "Section" "slang" }}
+{{ $years := dict }}
+{{ range $allSlang }}
+  {{ $year := .Date.Format "2006" }}
+  {{ $existing := index $years $year }}
+  {{ if $existing }}
+    {{ $years = merge $years (dict $year (add $existing 1)) }}
+  {{ else }}
+    {{ $years = merge $years (dict $year 1) }}
+  {{ end }}
+{{ end }}
+{{ $sortedYears := slice }}
+{{ range $y, $c := $years }}
+  {{ $sortedYears = $sortedYears | append $y }}
+{{ end }}
+{{ $sortedYears = sort $sortedYears "" "desc" }}
+
+{{ if gt (len $sortedYears) 0 }}
+<section class="terms-section">
+  <div class="terms-header">
+    <h2 class="terms-title">BY YEAR</h2>
+    <p class="terms-subtitle">BROWSE GAMING SLANG BY UPLOAD YEAR</p>
+  </div>
+
+  <div class="terms-layout">
+    <!-- Left Ad -->
+    <div class="ad-sidebar">
+      <div class="ad-sidebar-inner">AD</div>
+    </div>
+
+    <style>
+      .year-grid{flex:1;min-width:0;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:16px;padding:8px 0}
+      .year-pill{display:inline-flex;align-items:center;gap:10px;padding:14px 28px;background:linear-gradient(135deg,#1a1a1a,#111);border:1.5px solid #a3ff00;border-radius:12px;color:#f0f0f0;font-size:18px;font-weight:700;transition:all .25s;white-space:nowrap;text-decoration:none;box-shadow:0 0 8px rgba(163,255,0,0.1)}
+      .year-pill:hover{border-color:#a3ff00;background:linear-gradient(135deg,#222,#1a1a1a);box-shadow:0 0 20px rgba(163,255,0,0.3);transform:translateY(-2px)}
+      .year-pill-label{color:#a3ff00}
+      .year-pill-count{font-size:14px;color:#8c8c8c;font-weight:400}
+      .year-pill:hover .year-pill-count{color:#f0f0f0}
+    </style>
+
+    <div class="year-grid">
+      {{ range $sortedYears }}
+      {{ $count := index $years . }}
+      <a href="/slang/?year={{ . }}" class="year-pill">
+        <span class="year-pill-label">{{ . }}</span>
+        <span class="year-pill-count">{{ $count }} terms</span>
+      </a>
+      {{ end }}
+    </div>
+
+    <!-- Right Ad -->
+    <div class="ad-sidebar">
+      <div class="ad-sidebar-inner">AD</div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- ===== ALL TAGS Section ===== -->
 <section class="terms-section">
   <div class="terms-header">
     <h2 class="terms-title">ALL TAGS</h2>
@@ -27,7 +85,7 @@
       <!-- Mobile Ad 1: above first tag -->
       <div class="ad-mobile" style="flex-basis:100%;"><div class="ad-mobile-inner">AD</div></div>
 
-      {{ $filtered := where .Pages "Title" "not in" (slice "2026" "year-2026") }}
+      {{ $filtered := where .Pages "Title" "not in" (slice "2026" "year-2026" "2025" "2024" "2023" "2022") }}
       {{ $half := div (len $filtered) 2 }}
 
       <!-- First half of tags -->
