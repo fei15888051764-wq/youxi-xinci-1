@@ -1,5 +1,5 @@
 ---
-title: "What Does 'Diff' Mean in Gaming? Slang Explained (2026)"
+title: "Diff"
 date: 2026-07-05T00:00:00Z
 updated: "Jul 5, 2026"
 shortDescription: "In gaming, 'diff' is short for 'difference' and describes a significant performance gap between two players in the same role — a..."

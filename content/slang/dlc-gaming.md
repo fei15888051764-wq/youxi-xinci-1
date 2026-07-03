@@ -1,5 +1,5 @@
 ---
-title: "What Does 'DLC' Mean in Gaming? Slang Explained (2026)"
+title: "DLC"
 date: 2026-07-05T00:00:00Z
 updated: "Jul 5, 2026"
 shortDescription: "In gaming, 'DLC' stands for 'Downloadable Content' and refers to any additional content released after a game's initial launch — in..."

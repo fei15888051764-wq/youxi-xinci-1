@@ -1,5 +1,5 @@
 ---
-title: "What Does 'Feed' Mean in Gaming? Slang Explained (2026)"
+title: "Feed"
 date: 2026-07-05T00:00:00Z
 updated: "Jul 5, 2026"
 shortDescription: "In gaming, 'feed' means to repeatedly die to the enemy team, unintentionally giving them gold, experience, and strategic advantage..."
