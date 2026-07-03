@@ -1,6 +1,8 @@
 ---
 title: "What Does 'Teabag' Mean in Gaming? Slang Explained (2026)"
 date: 2026-07-05T00:00:00Z
+updated: "Jul 5, 2026"
+shortDescription: "In gaming, 'teabagging' means repeatedly crouching over a defeated opponent's body as a taunting gesture. Originating in first-perso..."
 slug: "teabag-gaming"
 description: "Teabagging is the act of crouching repeatedly over a defeated opponent's body as a taunt. One of gaming's most infamous and controversial gestures."
 summary: "In gaming, 'teabagging' means repeatedly crouching over a defeated opponent's body as a taunting gesture. Originating in first-person shooters like Halo in the early 2000s, it remains one of the most recognizable — and controversial — behaviors in competitive gaming culture."
