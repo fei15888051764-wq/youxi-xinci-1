@@ -1,11 +1,87 @@
 {{ define "main" }}
 
+<!-- Check if this is the Years section page or a year tag page -->
+{{ $isYearsSection := eq .Title "Years" }}
+
 <!-- Top Ad -->
 <div class="ad-banner-wrap">
   <div class="ad-banner">AD</div>
 </div>
 
-<!-- Year Section -->
+{{ if $isYearsSection }}
+<!-- ===== YEARS SECTION PAGE (/years/) ===== -->
+
+{{/* Collect all slang pages */}}
+{{ $slangPages := slice }}
+{{ range .Site.RegularPages }}
+  {{ if eq .Section "slang" }}
+    {{ $slangPages = $slangPages | append . }}
+  {{ end }}
+{{ end }}
+
+<section class="terms-section">
+  <div class="terms-header">
+    <h2 class="terms-title">BROWSE BY YEAR</h2>
+    <p class="terms-subtitle">ALL GAMING SLANG TERMS GROUPED BY YEAR</p>
+  </div>
+
+  <div class="terms-layout">
+    <div class="ad-sidebar">
+      <div class="ad-sidebar-inner">AD</div>
+    </div>
+
+    <div class="years-list" style="flex:1;min-width:0;">
+      <!-- Mobile Ad 1 -->
+      <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
+
+      {{ $grouped := $slangPages.GroupByDate "2006" }}
+      {{ $sorted := sort $grouped ".Key" "desc" }}
+
+      {{ range $sorted }}
+      <div class="year-group" id="year-{{ .Key }}" style="margin-bottom:48px;">
+        <h3 class="year-heading" style="font-size:28px;font-weight:700;color:#f0f0f0;margin-bottom:24px;padding-bottom:12px;border-bottom:2px solid #a3ff00;">
+          {{ .Key }}
+          <span style="color:#8c8c8c;font-size:16px;font-weight:400;margin-left:12px;">({{ len .Pages }} terms)</span>
+        </h3>
+
+        <div class="year-terms" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;">
+          {{ range .Pages }}
+          {{ $base := .File.BaseFileName }}
+          {{ $permalink := .RelPermalink }}
+          <a href="{{ $permalink }}" class="year-term-card" style="display:flex;align-items:center;gap:16px;padding:16px;background:#111;border:1px solid #222;border-radius:12px;text-decoration:none;transition:border-color .2s,background .2s;">
+            <div class="year-term-img" style="width:60px;height:60px;border-radius:8px;overflow:hidden;flex-shrink:0;background:#1a1a1a;">
+              <img src="{{ $permalink }}{{ $base }}.jpg" alt="{{ .Title }}" style="width:100%;height:100%;object-fit:cover;"
+                   onerror="var s=this,v=['{{ $permalink }}{{ $base }}-gaming.jpg','{{ $permalink }}{{ $base }}-featured.jpg'];var i=0;var f=function(){if(i&lt;v.length){s.src=v[i];i++;s.onerror=f;}else{s.style.display='none';}};s.onerror=f;">
+            </div>
+            <div class="year-term-info" style="flex:1;min-width:0;">
+              <h4 style="font-size:16px;font-weight:600;color:#f0f0f0;margin:0 0 4px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ .Title }}</h4>
+              <p style="font-size:12px;color:#8c8c8c;margin:0;">{{ .Date.Format "Jan 2, 2006" }}</p>
+            </div>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2" style="flex-shrink:0;"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+          {{ end }}
+        </div>
+      </div>
+
+      <!-- Mobile Ad between years -->
+      <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
+      {{ end }}
+    </div>
+
+    <div class="ad-sidebar">
+      <div class="ad-sidebar-inner">AD</div>
+    </div>
+  </div>
+</section>
+
+<style>
+.year-term-card:hover { border-color: #a3ff00 !important; background: #1a1a1a !important; }
+.year-term-card:hover svg { stroke: #a3ff00; }
+</style>
+
+{{ else }}
+<!-- ===== YEAR TAG PAGE (e.g. /tags/2026/) ===== -->
+
 <section class="terms-section">
   <div class="terms-header">
     <h2 class="terms-title">{{ .Title }}</h2>
@@ -50,6 +126,8 @@
     </div>
   </div>
 </section>
+
+{{ end }}
 
 <!-- Subscribe via Email -->
 <section class="newsletter">
