@@ -1,12 +1,17 @@
 {{ define "main" }}
 
-{{ $slangSection := .Site.GetPage "/slang" }}
-{{ $slangPages := $slangSection.RegularPages }}
+{{/* Collect all slang pages manually */}}
+{{ $slangPages := slice }}
+{{ range .Site.RegularPages }}
+  {{ if eq .Section "slang" }}
+    {{ $slangPages = $slangPages | append . }}
+  {{ end }}
+{{ end }}
 
 <section class="terms-section">
   <div class="terms-header">
     <h2 class="terms-title">BROWSE BY YEAR</h2>
-    <p class="terms-subtitle">ALL GAMING SLANG TERMS GROUPED BY YEAR — {{ len $slangPages }} TOTAL</p>
+    <p class="terms-subtitle">ALL GAMING SLANG TERMS GROUPED BY YEAR</p>
   </div>
 
   <div class="terms-layout">
