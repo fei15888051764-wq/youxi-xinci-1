@@ -7,7 +7,7 @@ slug: "skill-issue-gaming"
 description: "Skill issue is a dismissive way of saying someone lost because of their own lack of skill. A popular comeback that shifts blame from luck to player ability."
 summary: "In gaming, 'skill issue' is a dismissive response used to attribute someone's failure or complaint to their own lack of skill rather than external factors. Popularized in the early 2020s, it has become a common comeback against players who blame the game, their teammates, or RNG for their losses."
 author: "GEBILAOWANG"
-categories: ["gaming-slang"]
+category: slang
 tags: ["competitive", "toxic", "meme", "general", "essential"]
 ---
 

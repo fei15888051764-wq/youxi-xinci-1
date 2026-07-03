@@ -7,7 +7,7 @@ slug: "rng-gaming"
 description: "RNG stands for Random Number Generator and refers to luck-based elements in games. A core concept that affects everything from loot drops to critical hits."
 summary: "In gaming, 'RNG' stands for 'Random Number Generator' and refers to any luck-based element that affects gameplay — from loot drops and critical hit chances to card draws and enemy spawns. Originally a technical term, RNG has become gamer's favorite excuse for both good and bad luck."
 author: "GEBILAOWANG"
-categories: ["gaming-slang"]
+category: slang
 tags: ["general", "mechanics", "rpg", "competitive", "essential"]
 ---
 

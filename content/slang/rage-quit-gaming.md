@@ -7,7 +7,7 @@ slug: "rage-quit-gaming"
 description: "Rage quit means to abruptly leave a game out of anger or frustration. One of gaming's most relatable and meme-worthy behaviors."
 summary: "In gaming, 'rage quit' means to abruptly leave a match out of anger or frustration, usually after a string of losses, unfair deaths, or toxic teammates. The term dates back to the early 2000s and has since entered everyday language to describe quitting anything in anger."
 author: "GEBILAOWANG"
-categories: ["gaming-slang"]
+category: slang
 tags: ["general", "emotion", "competitive", "behavior", "essential"]
 ---
 
