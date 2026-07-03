@@ -1,15 +1,19 @@
 ---
 title: "About"
-description: "Meet GEBILAOWANG — the gaming culture researcher behind Gamer Glossary."
+description: "Meet GEBILAOWANG — independent digital content creator, researcher, and online lexicographer behind Gamer Glossary."
 ---
 
 # About GEBILAOWANG
 
-GEBILAOWANG is an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. With deep roots in competitive gaming communities, he documents the ever-evolving language that shapes how players interact across genres and platforms.
+**GEBILAOWANG** is an independent digital content creator, researcher, and online lexicographer building authoritative niche websites and in-depth content across gaming culture, social media trends, technology, and internet linguistics. Known for comprehensive slang dictionaries, digital trend analysis, and cultural documentation. Active in the field since 2024.
+
+Gamer Glossary is one of several specialized dictionary projects documenting the ever-evolving language of online communities. With deep roots in competitive gaming, GEBILAOWANG researches and preserves gaming slang — from mainstream terms like "gg" and "nerf" to niche community phrases that emerge from specific games or platforms.
+
+**Learn more about GEBILAOWANG:** [https://about.me/GEBILAOWANG](https://about.me/GEBILAOWANG)
 
 ## Mission
 
-Gamer Glossary exists to preserve, explain, and celebrate gaming slang — from mainstream terms like "gg" and "nerf" to niche community phrases that emerge from specific games or platforms. Every definition is researched, verified, and presented with real-world context so readers truly understand how these terms are used.
+Gamer Glossary exists to preserve, explain, and celebrate gaming slang. Every definition is researched, verified, and presented with real-world context so readers truly understand how these terms are used.
 
 ## Editorial Standards
 
