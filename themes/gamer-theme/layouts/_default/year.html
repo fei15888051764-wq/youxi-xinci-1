@@ -46,12 +46,13 @@
 
         <div class="year-terms" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;">
           {{ range .Pages }}
-          {{ $base := .File.BaseFileName }}
+          {{ $slug := .Params.slug }}
+          {{ $name := replace $slug "-gaming" "" }}
           {{ $permalink := .RelPermalink }}
           <a href="{{ $permalink }}" class="year-term-card" style="display:flex;align-items:center;gap:16px;padding:16px;background:#111;border:1px solid #222;border-radius:12px;text-decoration:none;transition:border-color .2s,background .2s;">
             <div class="year-term-img" style="width:60px;height:60px;border-radius:8px;overflow:hidden;flex-shrink:0;background:#1a1a1a;">
-              <img src="{{ $permalink }}{{ $base }}.jpg" alt="{{ .Title }}" style="width:100%;height:100%;object-fit:cover;"
-                   onerror="var s=this,v=['{{ $permalink }}{{ $base }}-gaming.jpg','{{ $permalink }}{{ $base }}-featured.jpg'];var i=0;var f=function(){if(i&lt;v.length){s.src=v[i];i++;s.onerror=f;}else{s.style.display='none';}};s.onerror=f;">
+              <img src="/slang/{{ $name }}.jpg" alt="{{ .Title }}" style="width:100%;height:100%;object-fit:cover;"
+                   onerror="this.onerror=function(){this.onerror=function(){this.parentElement.style.display='none';};this.src='/slang/{{ $name }}-featured.jpg';};this.src='/slang/{{ $name }}-gaming.jpg';">
             </div>
             <div class="year-term-info" style="flex:1;min-width:0;">
               <h4 style="font-size:16px;font-weight:600;color:#f0f0f0;margin:0 0 4px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ .Title }}</h4>
