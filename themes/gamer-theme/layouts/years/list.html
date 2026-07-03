@@ -1,0 +1,146 @@
+{{ define "main" }}
+
+<!-- Search Bar -->
+<section class="search-section">
+  <form class="search-form" style="margin-top:48px" onsubmit="event.preventDefault();">
+    <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+    <input type="text" class="search-input" placeholder="Search Gaming Terms">
+  </form>
+</section>
+
+<!-- ===== BY YEAR Section ===== -->
+{{ $allSlang := where .Site.RegularPages "Section" "slang" }}
+{{ $years := dict }}
+{{ range $allSlang }}
+  {{ $year := .Date.Format "2006" }}
+  {{ $list := index $years $year }}
+  {{ if $list }}
+    {{ $years = merge $years (dict $year ($list | append .)) }}
+  {{ else }}
+    {{ $years = merge $years (dict $year (slice .)) }}
+  {{ end }}
+{{ end }}
+{{ $sortedYears := slice }}
+{{ range $y, $pages := $years }}
+  {{ $sortedYears = $sortedYears | append $y }}
+{{ end }}
+{{ $sortedYears = sort $sortedYears "" "desc" }}
+
+<!-- Year Navigation Pills -->
+{{ if gt (len $sortedYears) 0 }}
+<section class="terms-section">
+  <div class="terms-header">
+    <h2 class="terms-title">BROWSE BY YEAR</h2>
+    <p class="terms-subtitle">JUMP TO A SPECIFIC YEAR</p>
+  </div>
+
+  <div class="terms-layout">
+    <!-- Left Ad -->
+    <div class="ad-sidebar">
+      <div class="ad-sidebar-inner">AD</div>
+    </div>
+
+    <style>
+      .year-nav-grid{flex:1;min-width:0;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:16px;padding:8px 0}
+      .year-nav-pill{display:inline-flex;align-items:center;gap:10px;padding:14px 28px;background:linear-gradient(135deg,#1a1a1a,#111);border:1.5px solid #a3ff00;border-radius:12px;color:#f0f0f0;font-size:18px;font-weight:700;transition:all .25s;white-space:nowrap;text-decoration:none;box-shadow:0 0 8px rgba(163,255,0,0.1)}
+      .year-nav-pill:hover{border-color:#a3ff00;background:linear-gradient(135deg,#222,#1a1a1a);box-shadow:0 0 20px rgba(163,255,0,0.3);transform:translateY(-2px)}
+      .year-nav-pill-label{color:#a3ff00}
+      .year-nav-pill-count{font-size:14px;color:#8c8c8c;font-weight:400}
+      .year-nav-pill:hover .year-nav-pill-count{color:#f0f0f0}
+    </style>
+
+    <div class="year-nav-grid">
+      {{ range $sortedYears }}
+      {{ $pages := index $years . }}
+      <a href="#year-{{ . }}" class="year-nav-pill">
+        <span class="year-nav-pill-label">{{ . }}</span>
+        <span class="year-nav-pill-count">{{ len $pages }} terms</span>
+      </a>
+      {{ end }}
+    </div>
+
+    <!-- Right Ad -->
+    <div class="ad-sidebar">
+      <div class="ad-sidebar-inner">AD</div>
+    </div>
+  </div>
+</section>
+
+<!-- Year Groups -->
+{{ range $sortedYears }}
+{{ $year := . }}
+{{ $pages := index $years $year }}
+{{ $sortedPages := sort $pages "Date" "desc" }}
+
+<section class="terms-section" id="year-{{ $year }}">
+  <div class="terms-header">
+    <h2 class="terms-title">{{ $year }}</h2>
+    <p class="terms-subtitle">{{ len $pages }} GAMING SLANG TERMS</p>
+  </div>
+
+  <div class="terms-layout">
+    <!-- Left Ad -->
+    <div class="ad-sidebar">
+      <div class="ad-sidebar-inner">AD</div>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="cards-grid">
+      <!-- Mobile Ad -->
+      <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
+
+      {{ range $index, $page := $sortedPages }}
+      {{ $base := replace $page.Params.slug "-gaming" "" }}
+      <a href="{{ $page.RelPermalink }}" class="card">
+        <div class="card-img-wrap">
+          <img src="/slang/{{ $base }}.jpg" alt="{{ $page.Title }}" class="card-img" loading="lazy" onerror="var t=this; var base='{{ $base }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg';} else {this.parentElement.style.display='none'};">
+        </div>
+        <div class="card-body">
+          <div class="card-header-row">
+            <h3 class="card-title-text">{{ $page.Title }}</h3>
+            <span class="card-badge">{{ $page.Params.category }}</span>
+          </div>
+          <p class="card-desc">{{ $page.Params.shortDescription }}</p>
+          <div class="card-footer">
+            <div class="card-tags">
+              {{ with $page.Params.tags }}
+                {{ range first 2 . }}
+                <span class="card-tag">#{{ . }}</span>
+                {{ end }}
+              {{ end }}
+            </div>
+            <span class="card-date">{{ $page.Params.updated }}</span>
+          </div>
+        </div>
+      </a>
+      {{ if eq $index 9 }}
+      <!-- Mobile Ad: after 10th card -->
+      <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
+      {{ end }}
+      {{ end }}
+    </div>
+
+    <!-- Right Ad -->
+    <div class="ad-sidebar">
+      <div class="ad-sidebar-inner">AD</div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- Subscribe via Email -->
+<section class="newsletter">
+  <div class="newsletter-box">
+    <h2 class="newsletter-title">STAY IN THE LOOP</h2>
+    <p class="newsletter-desc">New gaming slang drops weekly. No spam, just the words you actually need to know.</p>
+    <p style="color:#8c8c8c;font-size:14px;margin:20px 0;">
+      To subscribe, send an email to
+      <a href="mailto:fei15888051764@gmail.com?subject=Subscribe%20to%20Gamer%20Glossary%20Newsletter" style="color:#a3ff00;">fei15888051764@gmail.com</a>
+      with subject "Subscribe" and we'll add you to the list.
+    </p>
+    <p class="newsletter-note">Unsubscribe anytime by replying "Unsubscribe"</p>
+  </div>
+</section>
+
+{{ end }}
