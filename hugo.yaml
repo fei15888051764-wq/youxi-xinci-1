@@ -13,6 +13,11 @@ enableGitInfo: false
 permalinks:
   slang: '/slang/:slug/'
 
+# Year taxonomy for auto-grouping by upload year
+taxonomies:
+  tag: tags
+  year: years
+
 params:
   description: 'The ultimate dictionary for gaming slang and terminology.'
   author: 'GEBILAOWANG'
