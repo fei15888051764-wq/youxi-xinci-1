@@ -1,7 +1,7 @@
 ---
 title: "Grind"
 date: 2026-07-05T00:00:00Z
-updated: "Jul 5, 2026"
+updated: "Jul 4, 2026"
 shortDescription: "In gaming, 'grind' refers to the repetitive performance of tasks — killing enemies, completing quests, or farming resources — to earn..."
 slug: "grind-gaming"
 description: "Grind means to repeatedly perform tasks in a game to earn rewards, experience, or currency. A core activity across virtually all game genres."

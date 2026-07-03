@@ -1,7 +1,7 @@
 ---
 title: "Diff"
 date: 2026-07-05T00:00:00Z
-updated: "Jul 5, 2026"
+updated: "Jul 4, 2026"
 shortDescription: "In gaming, 'diff' is short for 'difference' and describes a significant performance gap between two players in the same role — a..."
 slug: "diff-gaming"
 description: "Diff is short for 'difference' and describes when one player or team significantly outperforms another at a specific role. Common in MOBAs and team games."
