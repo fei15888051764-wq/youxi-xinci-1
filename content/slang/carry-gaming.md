@@ -7,7 +7,7 @@ slug: "carry-gaming"
 description: "Carry refers to a player who performs so well that they single-handedly lead their team to victory. One of the highest compliments in team games."
 summary: "In gaming, a 'carry' is a player who performs so exceptionally well that they effectively 'carry' their entire team to victory, compensating for weaker teammates. The term originated in MOBAs like Dota 2 and League of Legends but applies to all team-based competitive games."
 author: "GEBILAOWANG"
-categories: ["gaming-slang"]
+category: slang
 tags: ["competitive", "team-game", "moba", "fps", "essential"]
 ---
 

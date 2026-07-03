@@ -7,7 +7,7 @@ slug: "dlc-gaming"
 description: "DLC stands for Downloadable Content and refers to extra content released after a game's launch. From expansion packs to cosmetic items."
 summary: "In gaming, 'DLC' stands for 'Downloadable Content' and refers to any additional content released after a game's initial launch — including expansion packs, new levels, characters, cosmetic items, and story chapters. The concept dates back to the 1990s but became standard industry practice in the 2010s."
 author: "GEBILAOWANG"
-categories: ["gaming-slang"]
+category: slang
 tags: ["general", "industry", "business", "essential", "all-genres"]
 ---
 

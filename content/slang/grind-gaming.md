@@ -7,7 +7,7 @@ slug: "grind-gaming"
 description: "Grind means to repeatedly perform tasks in a game to earn rewards, experience, or currency. A core activity across virtually all game genres."
 summary: "In gaming, 'grind' refers to the repetitive performance of tasks — killing enemies, completing quests, or farming resources — to earn experience points, currency, or rare items. The term originated in RPGs and MMORPGs and applies to virtually every game genre today."
 author: "GEBILAOWANG"
-categories: ["gaming-slang"]
+category: slang
 tags: ["general", "rpg", "mmo", "progression", "essential"]
 ---
 

@@ -7,7 +7,7 @@ slug: "diff-gaming"
 description: "Diff is short for 'difference' and describes when one player or team significantly outperforms another at a specific role. Common in MOBAs and team games."
 summary: "In gaming, 'diff' is short for 'difference' and describes a significant performance gap between two players in the same role — as in 'jungle diff' when one jungler dominates the other. Originally from League of Legends, it has spread to all competitive team games."
 author: "GEBILAOWANG"
-categories: ["gaming-slang"]
+category: slang
 tags: ["competitive", "moba", "fps", "esports", "general"]
 ---
 
