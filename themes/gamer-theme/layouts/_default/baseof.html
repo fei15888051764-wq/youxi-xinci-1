@@ -7,23 +7,51 @@
 <meta name="description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta name="keywords" content="{{ if .Params.tags }}{{ delimit .Params.tags ", " }}{{ else }}{{ .Site.Params.keywords }}{{ end }}">
 <meta name="author" content="{{ .Site.Params.author }}">
+<meta name="copyright" content="© {{ now.Year }} {{ .Site.Title }}">
 <meta name="robots" content="index, follow">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="msapplication-TileColor" content="#0a0a0a">
 <link rel="canonical" href="{{ .Permalink }}">
 <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
 <meta property="og:description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
+{{ if eq .Section "slang" }}{{ $imgBase := .Params.slug }}<meta property="og:image" content="{{ .Site.BaseURL }}slang/{{ $imgBase }}.jpg">{{ else }}<meta property="og:image" content="{{ .Site.BaseURL }}og-image.jpg">{{ end }}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
 <meta name="twitter:description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-{{ if .IsHome }}
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"{{ .Site.Title }}","url":"{{ .Site.BaseURL }}"}</script>
-{{ else if eq .Section "slang" }}
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"{{ .Title }}","description":"{{ .Params.description }}","url":"{{ .Permalink }}","author":{"@type":"Person","name":"{{ .Site.Params.author }}"},"publisher":{"@type":"Organization","name":"Gamer Glossary"}}</script>
-{{ end }}
-<link rel="preconnect" href="https://fonts.googleapis.com">
+{{ if eq .Section "slang" }}{{ $imgBase := .Params.slug }}<meta name="twitter:image" content="{{ .Site.BaseURL }}slang/{{ $imgBase }}.jpg">{{ else }}<meta name="twitter:image" content="{{ .Site.BaseURL }}og-image.jpg">{{ end }}
+
+<!-- Performance: Preconnect -->
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+{{/* ===== Schema.org Structured Data ===== */}}
+{{ if .IsHome }}
+<!-- WebSite -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"{{ .Site.Title }}","url":"{{ .Site.BaseURL }}","description":"{{ .Site.Params.description }}","potentialAction":{"@type":"SearchAction","target":"{{ .Site.BaseURL }}?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<!-- Organization -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"{{ .Site.Title }}","url":"{{ .Site.BaseURL }}","logo":"{{ .Site.BaseURL }}logo.png","founder":{"@type":"Person","name":"{{ .Site.Params.author }}"},"contactPoint":{"@type":"ContactPoint","email":"fei15888051764@gmail.com","contactType":"customer support"},"sameAs":[]}</script>
+{{ else if eq .Section "slang" }}
+{{ $imgBase := .Params.slug }}
+<!-- Article -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"{{ .Title }}","description":"{{ .Params.description }}","url":"{{ .Permalink }}","image":"{{ .Site.BaseURL }}slang/{{ $imgBase }}.jpg","datePublished":"{{ .Date.Format "2006-01-02T15:04:05-07:00" }}","dateModified":"{{ .Date.Format "2006-01-02T15:04:05-07:00" }}","author":{"@type":"Person","name":"{{ .Site.Params.author }}","url":"{{ .Site.BaseURL }}about/"},"publisher":{"@type":"Organization","name":"{{ .Site.Title }}","logo":{"@type":"ImageObject","url":"{{ .Site.BaseURL }}logo.png"}},"articleSection":"Gaming Slang","keywords":"{{ if .Params.tags }}{{ delimit .Params.tags ", " }}{{ end }}","mainEntityOfPage":{"@type":"WebPage","@id":"{{ .Permalink }}"},"inLanguage":"en-US","isAccessibleForFree":"True"}</script>
+<!-- BreadcrumbList -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"{{ .Site.BaseURL }}"},{"@type":"ListItem","position":2,"name":"Slang","item":"{{ .Site.BaseURL }}slang/"},{"@type":"ListItem","position":3,"name":"{{ .Title }}","item":"{{ .Permalink }}"}]}</script>
+{{ with .Params.faq }}
+<!-- FAQPage -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{{ range $i, $q := . }}{{ if $i }},{{ end }}{"@type":"Question","name":{{ $q.question | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ $q.answer | plainify | jsonify }}}}{{ end }}]}</script>
+{{ end }}
+{{ else }}
+<!-- WebPage -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"{{ .Title }}","url":"{{ .Permalink }}","description":"{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}"}</script>
+{{ end }}
+
 <link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
