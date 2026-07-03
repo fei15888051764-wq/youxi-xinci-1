@@ -26,9 +26,10 @@
       <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
 
       {{ range $index, $page := sort .Pages "Date" "desc" }}
+      {{ $base := replace $page.Params.slug "-gaming" "" }}
       <a href="{{ $page.RelPermalink }}" class="card">
         <div class="card-img-wrap">
-          <img src="/slang/{{ replace $page.Params.slug "-gaming" "" }}-featured.jpg" alt="{{ $page.Title }}" class="card-img" loading="lazy" onerror="this.parentElement.style.display='none'">
+          <img src="/slang/{{ $base }}.jpg" alt="{{ $page.Title }}" class="card-img" loading="lazy" onerror="var t=this; var base='{{ $base }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg';} else {this.parentElement.style.display='none'};">
         </div>
         <div class="card-body">
           <div class="card-header-row">
