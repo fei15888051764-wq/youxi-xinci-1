@@ -21,17 +21,41 @@
       <div class="ad-sidebar-inner">AD</div>
     </div>
 
-    <style>.tags-cloud{flex:1;min-width:0;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px;padding:8px 0}.tag-pill{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:#111;border:1px solid #333;border-radius:9999px;color:#f0f0f0;font-size:14px;font-weight:500;transition:border-color .2s,background .2s;white-space:nowrap;text-decoration:none}.tag-pill:hover{border-color:#a3ff00;background:#1a1a1a}.tag-pill-name{text-transform:capitalize}.tag-pill-count{font-size:12px;color:#8c8c8c;font-weight:400}.tag-pill:hover .tag-pill-count{color:#a3ff00}</style>
+    <style>
+      .tags-cloud{flex:1;min-width:0;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px;padding:8px 0}
+      .tag-pill{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:#111;border:1px solid #333;border-radius:9999px;color:#f0f0f0;font-size:14px;font-weight:500;transition:border-color .2s,background .2s;white-space:nowrap;text-decoration:none}
+      .tag-pill:hover{border-color:#a3ff00;background:#1a1a1a}
+      .tag-pill-name{text-transform:capitalize}
+      .tag-pill-count{font-size:12px;color:#8c8c8c;font-weight:400}
+      .tag-pill:hover .tag-pill-count{color:#a3ff00}
+      /* Year tag - pinned style */
+      .tag-pill.year-tag{border-color:#a3ff00;background:#1a1a1a}
+      .tag-pill.year-tag:hover{border-color:#f0f0f0;background:#a3ff00}
+      .tag-pill.year-tag:hover .tag-pill-name{color:#111}
+      .tag-pill.year-tag:hover .tag-pill-count{color:#333}
+    </style>
+
     <!-- Tags Cloud -->
     <div class="tags-cloud">
       <!-- Mobile Ad 1: above first tag -->
       <div class="ad-mobile" style="flex-basis:100%;"><div class="ad-mobile-inner">AD</div></div>
 
-      {{ $filtered := where .Pages "Title" "not in" (slice "2026" "year-2026") }}
-      {{ $half := div (len $filtered) 2 }}
+      {{/* Get 2026 count from slang pages */}}
+      {{ $slangSection := .Site.GetPage "section" "slang" }}
+      {{ $all2026 := where $slangSection.Pages "Date.Year" "eq" 2026 }}
+      {{ $count2026 := len $all2026 }}
 
-      <!-- First half of tags -->
-      {{ range first $half $filtered }}
+      {{/* Filter out year- tags from regular tags */}}
+      {{ $filtered := where .Pages "Title" "not in" (slice "2026" "2025" "2024" "2023" "2022" "2021" "2020" "year-2026" "year-2025" "year-2024") }}
+
+      <!-- Pinned: 2026 Year Tag (always first) -->
+      <a href="/years/" class="tag-pill year-tag">
+        <span class="tag-pill-name">2026</span>
+        <span class="tag-pill-count">{{ $count2026 }}</span>
+      </a>
+
+      <!-- Rest of tags -->
+      {{ range $filtered }}
       <a href="{{ .RelPermalink }}" class="tag-pill">
         <span class="tag-pill-name">{{ .Title }}</span>
         <span class="tag-pill-count">{{ len .Pages }}</span>
@@ -41,64 +65,11 @@
       <!-- Mobile Ad 2: middle of tags -->
       <div class="ad-mobile" style="flex-basis:100%;"><div class="ad-mobile-inner">AD</div></div>
 
-      <!-- Second half of tags -->
-      {{ range after $half $filtered }}
-      <a href="{{ .RelPermalink }}" class="tag-pill">
-        <span class="tag-pill-name">{{ .Title }}</span>
-        <span class="tag-pill-count">{{ len .Pages }}</span>
-      </a>
-      {{ end }}
-
       <!-- Mobile Ad 3: after last tag -->
       <div class="ad-mobile" style="flex-basis:100%;"><div class="ad-mobile-inner">AD</div></div>
     </div>
 
     <!-- Right Ad -->
-    <div class="ad-sidebar">
-      <div class="ad-sidebar-inner">AD</div>
-    </div>
-  </div>
-</section>
-
-<!-- BY YEAR Section -->
-<section class="terms-section">
-  <div class="terms-header">
-    <h2 class="terms-title">BY YEAR</h2>
-    <p class="terms-subtitle">BROWSE GAMING SLANG BY UPLOAD YEAR</p>
-  </div>
-
-  <div class="terms-layout">
-    <div class="ad-sidebar">
-      <div class="ad-sidebar-inner">AD</div>
-    </div>
-
-    <!-- Only process pages from slang section -->
-    {{ $slangPages := where .Site.RegularPages "Section" "slang" }}
-    {{ $grouped := $slangPages.GroupByDate "2006" }}
-    {{ $sorted := sort $grouped ".Key" "desc" }}
-
-    <div class="years-grid" style="flex:1;min-width:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;">
-      <!-- Mobile Ad -->
-      <div class="ad-mobile" style="grid-column:1/-1;"><div class="ad-mobile-inner">AD</div></div>
-
-      {{ range $sorted }}
-      <a href="/years/#year-{{ .Key }}" class="year-card" style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px 24px;background:#111;border:1px solid #333;border-radius:16px;text-decoration:none;transition:border-color .2s,background .2s;cursor:pointer;">
-        <span class="year-number" style="font-size:36px;font-weight:800;color:#f0f0f0;margin-bottom:8px;">{{ .Key }}</span>
-        <span class="year-count" style="font-size:14px;color:#8c8c8c;">{{ len .Pages }} {{ if gt (len .Pages) 1 }}terms{{ else }}term{{ end }}</span>
-        <span class="year-arrow" style="margin-top:12px;font-size:12px;color:#555;transition:color .2s;">View All &rarr;</span>
-      </a>
-
-      <style>
-        .year-card:hover { border-color: #a3ff00 !important; background: #1a1a1a !important; }
-        .year-card:hover .year-number { color: #a3ff00; }
-        .year-card:hover .year-arrow { color: #a3ff00; }
-      </style>
-      {{ end }}
-
-      <!-- Mobile Ad -->
-      <div class="ad-mobile" style="grid-column:1/-1;"><div class="ad-mobile-inner">AD</div></div>
-    </div>
-
     <div class="ad-sidebar">
       <div class="ad-sidebar-inner">AD</div>
     </div>
