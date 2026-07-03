@@ -1,5 +1,6 @@
 {{ define "main" }}
 {{ if eq .Section "slang" }}
+{{ $base := replace .Params.slug "-gaming" "" }}
 <!-- Slang Detail Page -->
 <div class="detail-page">
   <div class="detail-container">
@@ -36,7 +37,7 @@
       <!-- Main Content -->
       <article class="detail-content">
         <div class="detail-hero-img">
-          <img src="/slang/{{ .Params.slug }}.jpg" alt="{{ .Title }}" onerror="var s=this.src; var slug='{{ .Params.slug }}'; var oldName=slug.replace('-gaming','')+'-featured.jpg'; if(s.indexOf('-featured')===-1){this.src='/slang/'+oldName;}else{this.parentElement.style.display='none'};">
+          <img src="/slang/{{ $base }}.jpg" alt="{{ .Title }}" onerror="var t=this; var base='{{ $base }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg';} else {this.parentElement.style.display='none'};">
         </div>
 
         <div class="detail-title-block">
