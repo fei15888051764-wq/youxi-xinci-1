@@ -29,13 +29,13 @@ originSpread:
     detail: "OP (Overpowered) emerged from online multiplayer gaming communities in the early 2000s, particularly in MMORPGs like EverQuest and World of Warcraft where game balance was a constant topic of discussion. By the mid-2000s, OP had spread to FPS games, fighting games, and MOBAs. The rise of live-service games in the 2010s made 'OP' a daily part of gaming vocabulary as balance patches became regular events. By the early 2020s, OP had crossed into mainstream internet culture. EnglishColege documented in February 2026 that OP meaning slang is 'fully mainstream' and appears 'in memes, fitness transformations, relationship jokes, and tech reviews.'"
 culturalContext: "OP represents the gamification of everyday language. When someone calls a restaurant 'OP,' they're applying gaming's balance framework to real life — this thing is so good it's almost unfair. The term also reveals the democratization of game balance discussion. In the past, only game developers decided what was 'too strong.' Now, every player has a voice through forums, Reddit, and social media. When the community collectively agrees something is 'OP,' developers are pressured to respond."
 faq:
-  - question: "Q1: Is something being OP always bad?"
+  - question: "Is something being OP always bad?"
     answer: "In competitive gaming, yes — OP elements reduce diversity because everyone uses them. In non-gaming contexts, calling something 'OP' is a compliment, not a complaint."
-  - question: "Q2: What's the difference between OP and meta?"
+  - question: "What's the difference between OP and meta?"
     answer: "'Meta' refers to what's currently dominant and effective. 'OP' means something is too strong and likely needs a nerf."
-  - question: "Q3: How do developers decide what's OP?"
+  - question: "How do developers decide what's OP?"
     answer: "Developers use data (win rates, pick rates, kill/death ratios) combined with community feedback."
-  - question: "Q4: How do I explain OP to a non-gamer in one sentence?"
+  - question: "How do I explain OP to a non-gamer in one sentence?"
     answer: "\"It means something is unfairly strong or good — originally for game characters that were too powerful, now used for anything that's impressively dominant.\""
 sources:
   - name: "EnglishColege — OP Meaning Slang in 2026"
@@ -80,22 +80,3 @@ Player A: "Not this one. It one-shots from 15 meters. That's broken."
 Player A: "did they finally nerf that champ?"
 Opponent: "yeah thank god, she was oppressive"
 Player B: "took them 3 patches though, she was free LP for weeks"
-
-## FAQ
-
-**Q1: Is something being OP always bad?**
-> In competitive gaming, yes — OP elements reduce diversity because everyone uses them. In non-gaming contexts, calling something 'OP' is a compliment, not a complaint.
-
-**Q2: What's the difference between OP and meta?**
-> 'Meta' refers to what's currently dominant and effective. 'OP' means something is too strong and likely needs a nerf.
-
-**Q3: How do developers decide what's OP?**
-> Developers use data (win rates, pick rates, kill/death ratios) combined with community feedback.
-
-**Q4: How do I explain OP to a non-gamer in one sentence?**
-> "It means something is unfairly strong or good — originally for game characters that were too powerful, now used for anything that's impressively dominant."
-
-## Sources
-
-- EnglishColege — OP Meaning Slang in 2026 [https://englishcolege.com/op-meaning-slang-in-2026/]
-- SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition) [https://spawnpoint.be/gaming-terms-slang-glossary/]
