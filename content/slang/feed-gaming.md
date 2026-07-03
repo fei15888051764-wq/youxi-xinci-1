@@ -1,6 +1,8 @@
 ---
 title: "What Does 'Feed' Mean in Gaming? Slang Explained (2026)"
 date: 2026-07-05T00:00:00Z
+updated: "Jul 5, 2026"
+shortDescription: "In gaming, 'feed' means to repeatedly die to the enemy team, unintentionally giving them gold, experience, and strategic advantage..."
 slug: "feed-gaming"
 description: "Feed means to repeatedly die to the enemy team, giving them gold, experience, or advantages. Common in MOBAs and competitive team games."
 summary: "In gaming, 'feed' means to repeatedly die to the enemy team, unintentionally giving them gold, experience, and strategic advantages. A 'feeder' is someone who feeds excessively, often blamed for losing the match. The term originated in MOBAs like League of Legends and Dota 2."
