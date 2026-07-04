@@ -165,14 +165,14 @@
       <div class="ad-sidebar-inner">AD</div>
     </div>
 
-    <!-- Cards Grid -- Show newest 21 first -->
+    <!-- Cards Grid -- Show 22 cards (21 on desktop, 22 on mobile) -->
     <div class="cards-grid">
       <!-- Mobile Ad 1: before 1st card -->
       <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
 
-      {{ range $index, $page := first 21 (sort (where .Site.RegularPages "Section" "slang") "Date" "desc") }}
+      {{ range $index, $page := first 22 (sort (where .Site.RegularPages "Section" "slang") "Date" "desc") }}
       {{ $base := replace $page.Params.slug "-gaming" "" }}
-      <a href="{{ $page.RelPermalink }}" class="card">
+      <a href="{{ $page.RelPermalink }}" class="card{{ if eq $index 21 }} hide-on-desktop{{ end }}">
         <div class="card-img-wrap">
           <img src="/slang/{{ $base }}.jpg" alt="{{ $page.Title }}" class="card-img" loading="lazy" onerror="var t=this; var base='{{ $base }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg';} else {this.parentElement.style.display='none'};">
         </div>
