@@ -67,12 +67,12 @@
 window.searchIndex = [
 {{ range $i, $p := $slangPages }}
   {
-    title: {{ $p.Title | jsonify }},
-    url: {{ $p.RelPermalink | jsonify }},
-    slug: {{ $p.Params.slug | jsonify }},
-    desc: {{ $p.Params.shortDescription | jsonify }},
-    tags: {{ $p.Params.tags | jsonify }},
-    category: {{ $p.Params.category | jsonify }}
+    title: {{ $p.Title | jsonify | safeJS }},
+    url: {{ $p.RelPermalink | jsonify | safeJS }},
+    slug: {{ $p.Params.slug | jsonify | safeJS }},
+    desc: {{ $p.Params.shortDescription | jsonify | safeJS }},
+    tags: {{ $p.Params.tags | jsonify | safeJS }},
+    category: {{ $p.Params.category | jsonify | safeJS }}
   }{{ if ne (add (len $slangPages) -1) $i }},{{ end }}
 {{ end }}
 ];
