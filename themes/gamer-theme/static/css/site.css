@@ -40,6 +40,9 @@
 .card-tag{font-size:11px;color:#666}
 .card-date{font-size:11px;color:#555}
 
+/* 22nd card: show on mobile/tablet, hide on desktop 3-column layout */
+@media(min-width:1024px){.hide-on-desktop{display:none}}
+
 /* ===== Browse All Slang Button ===== */
 .view-all-wrap{grid-column:1/-1;text-align:center;padding:48px 0 32px}
 .view-all-btn{display:inline-flex;align-items:center;gap:12px;padding:16px 40px;background:transparent;border:2px solid #a3ff00;border-radius:9999px;color:#a3ff00;font-family:'Press Start 2P',cursive;font-size:16px;font-weight:600;transition:all .2s;text-decoration:none}
