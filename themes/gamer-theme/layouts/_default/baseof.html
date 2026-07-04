@@ -60,5 +60,125 @@
 {{ block "main" . }}{{ end }}
 </main>
 {{ partial "footer.html" . }}
+
+{{ $slangPages := where .Site.RegularPages "Section" "slang" }}
+<script>
+// ===== Search Data =====
+window.searchIndex = [
+{{ range $i, $p := $slangPages }}
+  {
+    title: {{ $p.Title | jsonify }},
+    url: {{ $p.RelPermalink | jsonify }},
+    slug: {{ $p.Params.slug | jsonify }},
+    desc: {{ $p.Params.shortDescription | jsonify }},
+    tags: {{ $p.Params.tags | jsonify }},
+    category: {{ $p.Params.category | jsonify }}
+  }{{ if ne (add (len $slangPages) -1) $i }},{{ end }}
+{{ end }}
+];
+
+// ===== Search Logic =====
+(function() {
+  'use strict';
+
+  var searchInputs = document.querySelectorAll('.search-input');
+  var selectedIdx = -1;
+
+  function createDropdown(input) {
+    var existing = input.parentElement.querySelector('.search-dropdown');
+    if (existing) return existing;
+    var dropdown = document.createElement('div');
+    dropdown.className = 'search-dropdown';
+    input.parentElement.appendChild(dropdown);
+    return dropdown;
+  }
+
+  function highlight(text, query) {
+    if (!query) return text;
+    var re = new RegExp('(' + query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+    return String(text || '').replace(re, '<mark>$1</mark>');
+  }
+
+  function doSearch(input, dropdown, query) {
+    query = query.trim().toLowerCase();
+    if (!query) { dropdown.classList.remove('active'); dropdown.innerHTML = ''; return; }
+
+    var results = [];
+    window.searchIndex.forEach(function(item) {
+      var score = 0;
+      var t = (item.title || '').toLowerCase();
+      var d = (item.desc || '').toLowerCase();
+      var g = ((item.tags || []).join(' ')).toLowerCase();
+
+      if (t === query) score += 100;
+      else if (t.startsWith(query)) score += 80;
+      else if (t.includes(query)) score += 60;
+      if (g.includes(query)) score += 40;
+      if (d.includes(query)) score += 20;
+
+      if (score > 0) results.push({item: item, score: score});
+    });
+
+    results.sort(function(a, b) { return b.score - a.score; });
+    results = results.slice(0, 8);
+
+    if (!results.length) {
+      dropdown.innerHTML = '<div class="search-dropdown-empty">No results for "' + query + '"</div>';
+      dropdown.classList.add('active');
+      return;
+    }
+
+    var html = '';
+    results.forEach(function(r) {
+      var item = r.item;
+      var base = (item.slug || '').replace('-gaming', '');
+      html += '<a href="' + item.url + '" class="search-dropdown-item">';
+      html += '<img src="/slang/' + base + '.jpg" alt="" loading="lazy" onerror="this.style.display=\'none\'">';
+      html += '<div class="search-dropdown-info">';
+      html += '<div class="search-dropdown-title">' + highlight(item.title, query) + '</div>';
+      html += '<div class="search-dropdown-desc">' + highlight((item.desc || '').substring(0, 55) + '...', query) + '</div>';
+      html += '</div>';
+      html += '<span class="search-dropdown-tag">' + (item.category || 'slang') + '</span>';
+      html += '</a>';
+    });
+    dropdown.innerHTML = html;
+    dropdown.classList.add('active');
+    selectedIdx = -1;
+  }
+
+  searchInputs.forEach(function(input) {
+    var dropdown = createDropdown(input);
+    var timer;
+
+    input.addEventListener('input', function() {
+      clearTimeout(timer);
+      timer = setTimeout(function() { doSearch(input, dropdown, input.value); }, 150);
+    });
+
+    input.addEventListener('focus', function() {
+      if (input.value.trim()) doSearch(input, dropdown, input.value);
+    });
+
+    input.addEventListener('keydown', function(e) {
+      var items = dropdown.querySelectorAll('.search-dropdown-item');
+      if (!dropdown.classList.contains('active') || !items.length) return;
+      if (e.key === 'ArrowDown') { e.preventDefault(); selectedIdx = Math.min(selectedIdx + 1, items.length - 1); updateSel(items); }
+      else if (e.key === 'ArrowUp') { e.preventDefault(); selectedIdx = Math.max(selectedIdx - 1, -1); updateSel(items); }
+      else if (e.key === 'Enter') { e.preventDefault(); if (selectedIdx >= 0 && items[selectedIdx]) items[selectedIdx].click(); else if (items[0]) items[0].click(); }
+      else if (e.key === 'Escape') { dropdown.classList.remove('active'); input.blur(); }
+    });
+
+    function updateSel(items) {
+      items.forEach(function(el, i) { el.style.background = i === selectedIdx ? '#1a1a1a' : ''; });
+    }
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.search-form')) {
+      document.querySelectorAll('.search-dropdown').forEach(function(d) { d.classList.remove('active'); });
+    }
+  });
+})();
+</script>
 </body>
 </html>
