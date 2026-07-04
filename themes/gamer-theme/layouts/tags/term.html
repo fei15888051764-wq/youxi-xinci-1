@@ -1,34 +1,82 @@
 {{ define "main" }}
-<section class="terms-section" style="min-height:100vh;background:#0c0f0c;padding-top:80px;">
-  <div style="max-width:1200px;margin:0 auto;padding:32px 24px;">
-    <div style="margin-bottom:40px;">
-      <h2 style="font-family:'Press Start 2P',cursive;font-size:22px;color:#f0f0f0;margin-bottom:8px;">#{{ .Title | upper }}</h2>
-      <p style="color:#8c8c8c;">{{ len .Pages }} GAMING SLANG TERM{{ if ne (len .Pages) 1 }}S{{ end }}</p>
+
+<!-- Search Bar -->
+<section class="search-section">
+  <form class="search-form" style="margin-top:48px" onsubmit="event.preventDefault();">
+    <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+    <input type="text" class="search-input" placeholder="Search Gaming Terms">
+  </form>
+</section>
+
+<section class="terms-section">
+  <div class="terms-header">
+    <h2 class="terms-title" style="font-size:clamp(24px,6vw,72px);margin-bottom:0;word-break:break-word">#{{ .Title | upper }}</h2>
+    <p class="terms-subtitle">{{ len .Pages }} GAMING SLANG TERM{{ if ne (len .Pages) 1 }}S{{ end }}</p>
+  </div>
+
+  <div class="terms-layout">
+    <!-- Left Ad -->
+    <div class="ad-sidebar">
+      <div class="ad-sidebar-inner">AD</div>
     </div>
+
+    <!-- Cards Grid -->
     <div class="cards-grid">
-      {{ range .Pages }}
-      <a href="{{ .RelPermalink }}" class="card">
+      <!-- Mobile Ad 1: before 1st card -->
+      <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
+
+      {{ range $index, $page := .Pages }}
+      {{ $base := replace $page.Params.slug "-gaming" "" }}
+      <a href="{{ $page.RelPermalink }}" class="card">
         <div class="card-img-wrap">
-          <img src="/slang/{{ replace .Params.slug "-gaming" "" }}-card.jpg" alt="{{ .Title }}" class="card-img" loading="lazy" onerror="this.style.display='none'">
+          <img src="/slang/{{ $base }}.jpg" alt="{{ $page.Title }}" class="card-img" loading="lazy" onerror="var t=this; var base='{{ $base }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg';} else {this.parentElement.style.display='none'};">
         </div>
         <div class="card-body">
-          <div class="card-title-row">
-            <h3 class="card-title-text">{{ .Title }}</h3>
-            <span class="card-badge">{{ .Params.category }}</span>
+          <div class="card-header-row">
+            <h3 class="card-title-text">{{ $page.Title }}</h3>
+            <span class="card-badge">{{ $page.Params.category }}</span>
           </div>
-          <p class="card-desc">{{ .Params.shortDescription }}</p>
+          <p class="card-desc">{{ $page.Params.shortDescription }}</p>
           <div class="card-footer">
             <div class="card-tags">
-              {{ range .Params.tags }}
-              <span class="card-tag">{{ . }}</span>
+              {{ range first 2 $page.Params.tags }}
+              <span class="card-tag">#{{ . }}</span>
               {{ end }}
             </div>
-            <span class="card-date">{{ .Params.updated }}</span>
+            <span class="card-date">{{ $page.Params.updated }}</span>
           </div>
         </div>
       </a>
+
+      {{ if eq $index 9 }}
+      <!-- Mobile Ad 2: after row 5 -->
+      <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
       {{ end }}
+      {{ end }}
+
+      <!-- Mobile Ad 3: after last card -->
+      <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
+    </div>
+
+    <!-- Right Ad -->
+    <div class="ad-sidebar">
+      <div class="ad-sidebar-inner">AD</div>
     </div>
   </div>
 </section>
+
+<!-- Subscribe via Email -->
+<section class="newsletter">
+  <div class="newsletter-box">
+    <h2 class="newsletter-title">STAY IN THE LOOP</h2>
+    <p class="newsletter-desc">New gaming slang drops weekly. No spam, just the words you actually need to know.</p>
+    <p style="color:#8c8c8c;font-size:14px;margin:20px 0;">
+      To subscribe, send an email to
+      <a href="mailto:fei15888051764@gmail.com?subject=Subscribe%20to%20Gamer%20Glossary%20Newsletter" style="color:#a3ff00;">fei15888051764@gmail.com</a>
+      with subject "Subscribe" and we'll add you to the list.
+    </p>
+    <p class="newsletter-note">Unsubscribe anytime by replying "Unsubscribe"</p>
+  </div>
+</section>
+
 {{ end }}
