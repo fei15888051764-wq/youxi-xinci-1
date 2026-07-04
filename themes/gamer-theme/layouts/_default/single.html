@@ -181,11 +181,29 @@
         {{ if $related }}
         <div class="related-section">
           <h2 class="section-title">RELATED SLANG</h2>
-          <div class="related-grid">
+          <div class="cards-grid">
             {{ range first 3 $related }}
-            <a href="{{ .RelPermalink }}" class="related-card">
-              <h3 class="related-title">{{ .Title }}</h3>
-              <p class="related-desc">{{ .Params.shortDescription }}</p>
+            {{ $rbase := replace .Params.slug "-gaming" "" }}
+            <a href="{{ .RelPermalink }}" class="card">
+              <div class="card-img-wrap">
+                <img src="/slang/{{ $rbase }}.jpg" alt="{{ .Title }}" class="card-img" loading="lazy"
+                     onerror="var t=this; var base='{{ $rbase }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg';} else {this.parentElement.style.display='none'};">
+              </div>
+              <div class="card-body">
+                <div class="card-header-row">
+                  <h3 class="card-title-text">{{ .Title }}</h3>
+                  <span class="card-badge">{{ .Params.category }}</span>
+                </div>
+                <p class="card-desc">{{ .Params.shortDescription }}</p>
+                <div class="card-footer">
+                  <div class="card-tags">
+                    {{ range first 2 .Params.tags }}
+                    <span class="card-tag">#{{ . }}</span>
+                    {{ end }}
+                  </div>
+                  <span class="card-date">{{ .Params.updated }}</span>
+                </div>
+              </div>
             </a>
             {{ end }}
           </div>
