@@ -83,12 +83,12 @@
 .newsletter-btn:hover{background:#b8ff40}
 .newsletter-note{color:#666;font-size:12px;margin-top:12px}
 
-/* ===== Footer ===== */
-.footer{padding:32px 16px;background:#0a0a0a;border-top:1px solid #222}
-.footer-container{max-width:1400px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+/* ===== Footer: single row centered with pipe separators ===== */
+.footer{padding:24px 16px;background:#0a0a0a;border-top:1px solid #222;text-align:center}
+.footer-container{max-width:1400px;margin:0 auto;display:inline-flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:4px}
 .footer-copy{color:#888;font-size:13px}
-.footer-links{display:flex;gap:20px}
-.footer-link{color:#888;font-size:13px;transition:color .2s}
+.footer-sep{color:#555;font-size:13px;margin:0 4px}
+.footer-link{color:#888;font-size:13px;transition:color .2s;padding:2px 0}
 .footer-link:hover{color:#a3ff00}
 
 /* ===== Detail Page ===== */
