@@ -102,7 +102,3 @@ Yes, especially in classic FPS communities and military shooters.
 1. [SpawnPoint Gaming Glossary (2026)](https://spawnpoint.gg/glossary)
 2. [Quake History Archives](https://www.quakewiki.net)
 3. [Doom Wiki — Frag Count](https://doomwiki.org/wiki/Frag)
-
----
-
-*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. Contact: fei15888051764@gmail.com*
