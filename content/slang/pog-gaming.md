@@ -119,7 +119,3 @@ No, it's used everywhere in gaming and even in casual conversation.
 1. [SpawnPoint Gaming Glossary (2026)](https://spawnpoint.gg/glossary)
 2. [Twitch Emote History](https://www.twitch.tv)
 3. [Know Your Meme — PogChamp](https://knowyourmeme.com/memes/pogchamp)
-
----
-
-*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. Contact: fei15888051764@gmail.com*
