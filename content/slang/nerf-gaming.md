@@ -119,7 +119,3 @@ A nerf reduces numbers. A rework changes how an ability functions.
 1. [SpawnPoint Gaming Glossary (2026)](https://spawnpoint.gg/glossary)
 2. [World of Warcraft Patch Notes Archive](https://worldofwarcraft.blizzard.com)
 3. [League of Legends Balance Blog](https://www.leagueoflegends.com)
-
----
-
-*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. Contact: fei15888051764@gmail.com*
