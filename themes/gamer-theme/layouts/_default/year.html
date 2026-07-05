@@ -45,7 +45,7 @@
         </h3>
 
         <div class="year-terms" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;">
-          {{ range sort .Pages "Date" "desc" }}
+          {{ range .Pages.ByDate.Reverse }}
           {{ $slug := .Params.slug }}
           {{ $name := replace $slug "-gaming" "" }}
           {{ $permalink := .RelPermalink }}
@@ -97,7 +97,7 @@
 
     <!-- Cards Grid sorted newest first -->
     <div class="cards-grid">
-      {{ range sort (where .Site.RegularPages "Params.tags" "intersect" (slice .Title)) "Date" "desc" }}
+      {{ range (where .Site.RegularPages "Params.tags" "intersect" (slice .Title)).ByDate.Reverse }}
       <a href="{{ .RelPermalink }}" class="card">
         <div class="card-img-wrap">
           <img src="/slang/{{ replace .Params.slug "-gaming" "" }}-featured.jpg" alt="{{ .Title }}" class="card-img" loading="lazy" onerror="this.parentElement.style.display='none'">

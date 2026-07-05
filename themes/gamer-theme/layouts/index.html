@@ -170,7 +170,7 @@
       <!-- Mobile Ad 1: before 1st card -->
       <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
 
-      {{ range $index, $page := first 22 (sort (where .Site.RegularPages "Section" "slang") "Date" "desc") }}
+      {{ $slang := .Site.GetPage "section" "slang" }}{{ range $index, $page := first 22 $slang.Pages.ByDate.Reverse }}
       {{ $base := replace $page.Params.slug "-gaming" "" }}
       <a href="{{ $page.RelPermalink }}" class="card{{ if eq $index 21 }} hide-on-desktop{{ end }}">
         <div class="card-img-wrap">

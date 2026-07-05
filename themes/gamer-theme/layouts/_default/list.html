@@ -25,7 +25,7 @@
       <!-- Mobile Ad 1: before 1st card -->
       <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
 
-      {{ range $index, $page := sort .Pages "Date" "desc" }}
+      {{ range $index, $page := .Pages.ByDate.Reverse }}
       {{ $base := replace $page.Params.slug "-gaming" "" }}
       <a href="{{ $page.RelPermalink }}" class="card">
         <div class="card-img-wrap">
