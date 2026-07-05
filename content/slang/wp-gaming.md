@@ -1,13 +1,13 @@
 ---
 title: "WP"
-date: 2026-07-04T00:00:00Z
+date: 2026-07-05T12:00:00Z
 slug: "wp-gaming"
 description: "WP means 'Well Played' — a compliment to opponents after a good match."
 summary: "In gaming, 'WP' stands for 'Well Played' and is used as a compliment to opponents or teammates after a good match or impressive play."
 author: "GEBILAOWANG"
 category: slang
 shortDescription: "Well Played — a compliment after a good match."
-updated: "Jul 4, 2026"
+updated: "Jul 5, 2026"
 readTime: "5 min read"
 tags:
   - competitive

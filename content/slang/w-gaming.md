@@ -1,13 +1,13 @@
 ---
 title: "W"
-date: 2026-07-04T00:00:00Z
+date: 2026-07-05T12:00:00Z
 slug: "w-gaming"
 description: "W stands for Win. A simple, universal way to celebrate victory in gaming."
 summary: "In gaming, 'W' stands for 'Win' and is used to celebrate victory or describe something positive. The opposite of L (Loss)."
 author: "GEBILAOWANG"
 category: slang
 shortDescription: "Win — a simple way to celebrate victory."
-updated: "Jul 4, 2026"
+updated: "Jul 5, 2026"
 readTime: "5 min read"
 tags:
   - general

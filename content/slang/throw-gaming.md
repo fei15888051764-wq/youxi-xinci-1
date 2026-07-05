@@ -1,13 +1,13 @@
 ---
 title: "Throw"
-date: 2026-07-04T00:00:00Z
+date: 2026-07-05T12:00:00Z
 slug: "throw-gaming"
 description: "To throw means to intentionally or accidentally lose a match you were winning."
 summary: "In gaming, 'throw' means to lose a match you were winning, either intentionally or through catastrophic mistakes. One of the most frustrating experiences in competitive gaming."
 author: "GEBILAOWANG"
 category: slang
 shortDescription: "Losing a match you were winning, either intentionally or through mistakes."
-updated: "Jul 4, 2026"
+updated: "Jul 5, 2026"
 readTime: "5 min read"
 tags:
   - competitive

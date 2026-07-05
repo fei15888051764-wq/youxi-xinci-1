@@ -1,13 +1,13 @@
 ---
 title: "Respawn"
-date: 2026-07-04T00:00:00Z
+date: 2026-07-05T12:00:00Z
 slug: "respawn-gaming"
 description: "Respawn means coming back to life after being killed in a game."
 summary: "In gaming, 'respawn' refers to a player's character coming back to life after being killed, either immediately or after a timer. A core mechanic in most multiplayer games."
 author: "GEBILAOWANG"
 category: slang
 shortDescription: "Coming back to life after being killed in a game."
-updated: "Jul 4, 2026"
+updated: "Jul 5, 2026"
 readTime: "5 min read"
 tags:
   - general

@@ -1,13 +1,13 @@
 ---
 title: "Salty"
-date: 2026-07-04T00:00:00Z
+date: 2026-07-05T12:00:00Z
 slug: "salty-gaming"
 description: "Salty describes a player who is angry, bitter, or upset after losing. The term comes from the tears of frustration."
 summary: "In gaming, 'salty' describes a player who is angry, bitter, or upset after losing or experiencing frustration. A core concept in gaming psychology."
 author: "GEBILAOWANG"
 category: slang
 shortDescription: "Being angry, bitter, or upset after losing or experiencing frustration."
-updated: "Jul 4, 2026"
+updated: "Jul 5, 2026"
 readTime: "5 min read"
 tags:
   - competitive
