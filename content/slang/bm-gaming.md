@@ -1,13 +1,13 @@
 ---
 title: "BM"
-date: 2026-07-04T00:00:00Z
+date: 2026-07-05T12:00:00Z
 slug: "bm-gaming"
 description: "BM stands for 'Bad Manners' and describes rude or disrespectful behavior in online games."
 summary: "In gaming, 'BM' stands for 'Bad Manners' and describes rude, disrespectful, or unsportsmanlike behavior toward opponents or teammates. This includes taunting, excessive celebrating, intentionally delaying a won game, or any behavior that goes against the spirit of friendly competition."
 author: "GEBILAOWANG"
 category: slang
 shortDescription: "In gaming, 'BM' stands for 'Bad Manners' and describes rude, disrespectful, or unsportsmanlike behavior toward oppone..."
-updated: "Jul 4, 2026"
+updated: "Jul 5, 2026"
 readTime: "5 min read"
 tags:
   - competitive

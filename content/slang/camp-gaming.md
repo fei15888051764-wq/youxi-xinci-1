@@ -1,13 +1,13 @@
 ---
 title: "Camp"
-date: 2026-07-04T00:00:00Z
+date: 2026-07-05T12:00:00Z
 slug: "camp-gaming"
 description: "Camping is staying in one spot to ambush enemies. A controversial tactic seen as both smart strategy and poor sportsmanship."
 summary: "In gaming, 'camping' refers to the tactic of staying in one spot, often a hidden or defensible position, to ambush enemies rather than actively moving around the map. Common in FPS games."
 author: "GEBILAOWANG"
 category: slang
 shortDescription: "Staying in one spot to ambush enemies rather than moving around the map."
-updated: "Jul 4, 2026"
+updated: "Jul 5, 2026"
 readTime: "5 min read"
 tags:
   - fps

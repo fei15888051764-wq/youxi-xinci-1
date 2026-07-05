@@ -1,13 +1,13 @@
 ---
 title: "Lore"
-date: 2026-07-04T00:00:00Z
+date: 2026-07-05T12:00:00Z
 slug: "lore-gaming"
 description: "Lore refers to the backstory, world-building, and narrative history of a game universe."
 summary: "In gaming, 'lore' refers to the backstory, world-building, and narrative history of a game universe. It includes character backgrounds, historical events, and world mythology."
 author: "GEBILAOWANG"
 category: slang
 shortDescription: "The backstory, world-building, and narrative history of a game universe."
-updated: "Jul 4, 2026"
+updated: "Jul 5, 2026"
 readTime: "5 min read"
 tags:
   - general

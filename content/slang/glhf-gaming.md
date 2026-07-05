@@ -1,13 +1,13 @@
 ---
 title: "GLHF"
-date: 2026-07-04T00:00:00Z
+date: 2026-07-05T12:00:00Z
 slug: "glhf-gaming"
 description: "GLHF means 'Good Luck, Have Fun' and is the standard greeting at the start of competitive matches."
 summary: "GLHF stands for 'Good Luck, Have Fun' and is the standard greeting players type at the start of competitive matches. It sets a positive tone for the game."
 author: "GEBILAOWANG"
 category: slang
 shortDescription: "Good Luck, Have Fun — the standard greeting at the start of competitive matches."
-updated: "Jul 4, 2026"
+updated: "Jul 5, 2026"
 readTime: "5 min read"
 tags:
   - competitive

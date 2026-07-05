@@ -1,13 +1,13 @@
 ---
 title: "OP"
-date: 2026-07-04T00:00:00Z
+date: 2026-07-05T12:00:00Z
 slug: "op-gaming"
 description: "OP means 'Overpowered' — something so strong it breaks game balance."
 summary: "In gaming, 'OP' stands for 'Overpowered' and describes a character, weapon, item, or strategy that is significantly stronger than other options to the point of breaking game balance."
 author: "GEBILAOWANG"
 category: slang
 shortDescription: "Overpowered — something so strong it breaks game balance."
-updated: "Jul 4, 2026"
+updated: "Jul 5, 2026"
 readTime: "5 min read"
 tags:
   - competitive
