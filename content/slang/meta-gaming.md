@@ -115,7 +115,3 @@ The community collectively — pro players, content creators, and data analysts.
 1. [SpawnPoint Gaming Glossary (2026)](https://spawnpoint.gg/glossary)
 2. [League of Legends Tier Lists](https://www.leagueoflegends.com)
 3. [Overwatch Meta Reports](https://overwatch.blizzard.com)
-
----
-
-*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. Contact: fei15888051764@gmail.com*
