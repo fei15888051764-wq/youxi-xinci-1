@@ -111,7 +111,3 @@ Through player reports, statistical analysis, and behavioral patterns.
 1. [SpawnPoint Gaming Glossary (2026)](https://spawnpoint.gg/glossary)
 2. [Riot Games Reporting System](https://support-leagueoflegends.riotgames.com)
 3. [Steam Community Guidelines](https://store.steampowered.com)
-
----
-
-*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. Contact: fei15888051764@gmail.com*
