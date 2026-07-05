@@ -105,7 +105,3 @@ Most live-service games have monthly patches with buffs and nerfs. Some games li
 1. [SpawnPoint Gaming Glossary (2026)](https://spawnpoint.gg/glossary)
 2. [League of Legends Patch Notes Archive](https://www.leagueoflegends.com/en-us/news/tags/patch-notes/)
 3. [Game Developer Magazine — Balance Design](https://gdcvault.com/)
-
----
-
-*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. Contact: fei15888051764@gmail.com*
