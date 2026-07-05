@@ -1,1 +1,234 @@
+{{ define "main" }}
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <canvas id="heroGrid"></canvas>
+  </div>
+  <div class="hero-content">
+    <h1 class="hero-title" style="font-size:clamp(14px,5vw,40px)">GAMER SLANG & PRO TERMS HUB</h1>
+    <p class="hero-subtitle">Your ultimate dictionary for gaming slang and terminology.</p>
+  </div>
+</section>
+
+<!-- Search Bar -->
+<section class="search-section home-search">
+  <form class="search-form" onsubmit="event.preventDefault();">
+    <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+    <input type="text" class="search-input" placeholder="Search Gaming Terms">
+  </form>
+</section>
+
+<script>
+(function() {
+  'use strict';
+  var canvas = document.getElementById('heroGrid');
+  if (!canvas) return;
+  var ctx = canvas.getContext('2d');
+  if (!ctx) return;
+
+  var DPR = Math.min(window.devicePixelRatio || 1, 2);
+  var W, H, dprW, dprH;
+  var frame = 0;
+  var rows = 18, cols = 32;
+  var cellW, cellH;
+  var pulsePts = [];
+  for (var i = 0; i < 5; i++) {
+    pulsePts.push({
+      x: Math.random(), y: Math.random(),
+      vx: (Math.random() - 0.5) * 0.003,
+      vy: (Math.random() - 0.5) * 0.003,
+      phase: Math.random() * Math.PI * 2
+    });
+  }
+
+  function resize() {
+    var parent = canvas.parentElement;
+    if (!parent) return;
+    W = parent.clientWidth;
+    H = parent.clientHeight;
+    dprW = Math.floor(W * DPR);
+    dprH = Math.floor(H * DPR);
+    canvas.width = dprW;
+    canvas.height = dprH;
+    canvas.style.width = W + 'px';
+    canvas.style.height = H + 'px';
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    cellW = W / cols;
+    cellH = H / rows;
+  }
+
+  function drawPixel(x, y, size, color, alpha) {
+    if (alpha <= 0.01) return;
+    ctx.globalAlpha = alpha;
+    ctx.fillStyle = color;
+    var r = size * 0.15;
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.lineTo(x + size - r, y);
+    ctx.quadraticCurveTo(x + size, y, x + size, y + r);
+    ctx.lineTo(x + size, y + size - r);
+    ctx.quadraticCurveTo(x + size, y + size, x + size - r, y + size);
+    ctx.lineTo(x + r, y + size);
+    ctx.quadraticCurveTo(x, y + size, x, y + size - r);
+    ctx.lineTo(x, y + r);
+    ctx.quadraticCurveTo(x, y, x + r, y);
+    ctx.closePath();
+    ctx.fill();
+  }
+
+  function render() {
+    ctx.clearRect(0, 0, W, H);
+    ctx.globalAlpha = 1;
+
+    var cx = W / 2, cy = H / 2;
+
+    for (var i = 0; i < pulsePts.length; i++) {
+      var p = pulsePts[i];
+      p.x += p.vx; p.y += p.vy;
+      if (p.x < 0.1 || p.x > 0.9) p.vx *= -1;
+      if (p.y < 0.1 || p.y > 0.9) p.vy *= -1;
+    }
+
+    for (var row = 0; row < rows; row++) {
+      for (var col = 0; col < cols; col++) {
+        var px = col * cellW, py = row * cellH;
+        var gx = (col + 0.5) / cols, gy = (row + 0.5) / rows;
+
+        var totalGlow = 0;
+        for (var pi = 0; pi < pulsePts.length; pi++) {
+          var pp = pulsePts[pi];
+          var ddx = gx - pp.x, ddy = gy - pp.y;
+          var d = Math.sqrt(ddx * ddx + ddy * ddy);
+          totalGlow += Math.exp(-d * 6) * (0.6 + 0.4 * Math.sin(frame * 0.03 + pp.phase));
+        }
+
+        var edgeFade = Math.min(gx, 1 - gx, gy, 1 - gy) * 3;
+        totalGlow *= Math.min(1, edgeFade);
+
+        var size = Math.min(cellW, cellH) * 0.55;
+        var offX = px + (cellW - size) / 2;
+        var offY = py + (cellH - size) / 2;
+
+        var breathe = 0.5 + 0.5 * Math.sin(frame * 0.04 + row * 0.3 + col * 0.5);
+        var baseAlpha = 0.03 + 0.06 * breathe;
+
+        if (totalGlow > 0.05) {
+          var gAlpha = Math.min(0.7, totalGlow);
+          drawPixel(offX, offY, size, '#a3ff00', gAlpha);
+        } else {
+          drawPixel(offX, offY, size, '#333', baseAlpha);
+        }
+      }
+    }
+
+    ctx.globalAlpha = 1;
+    ctx.strokeStyle = 'rgba(163,255,0,0.12)';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(32, 0); ctx.lineTo(32, H);
+    ctx.moveTo(W - 32, 0); ctx.lineTo(W - 32, H);
+    ctx.stroke();
+
+    ctx.strokeStyle = 'rgba(163,255,0,0.06)';
+    ctx.lineWidth = 1;
+    for (var li = 1; li < cols; li++) {
+      var lx = li * cellW;
+      ctx.beginPath(); ctx.moveTo(lx, 0); ctx.lineTo(lx, H); ctx.stroke();
+    }
+    for (var lj = 1; lj < rows; lj++) {
+      var ly = lj * cellH;
+      ctx.beginPath(); ctx.moveTo(0, ly); ctx.lineTo(W, ly); ctx.stroke();
+    }
+
+    ctx.globalAlpha = 1;
+    frame++;
+    requestAnimationFrame(render);
+  }
+
+  resize();
+  window.addEventListener('resize', resize);
+  requestAnimationFrame(render);
+})();
+</script>
+
+<!-- Trending Terms -->
+<section class="terms-section">
+  <div class="terms-header">
+    <h2 class="terms-title">TRENDING TERMS</h2>
+    <p class="terms-subtitle">LATEST GAMING SLANG UPDATES</p>
+  </div>
+
+  <div class="terms-layout">
+    <!-- Left Ad -->
+    <div class="ad-sidebar">
+      <div class="ad-sidebar-inner">AD</div>
+    </div>
+
+    <!-- Cards Grid -- Show 22 cards (21 on desktop, 22 on mobile) -->
+    <div class="cards-grid">
+      <!-- Mobile Ad 1: before 1st card -->
+      <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
+
       {{ $slang := .Site.GetPage "section" "slang" }}{{ range $index, $page := first 22 $slang.Pages }}
+      {{ $base := replace $page.Params.slug "-gaming" "" }}
+      <a href="{{ $page.RelPermalink }}" class="card{{ if eq $index 21 }} hide-on-desktop{{ end }}">
+        <div class="card-img-wrap">
+          <img src="/slang/{{ $base }}.jpg" alt="{{ $page.Title }}" class="card-img" loading="lazy" onerror="var t=this; var base='{{ $base }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg';} else {this.parentElement.style.display='none'};">
+        </div>
+        <div class="card-body">
+          <div class="card-header-row">
+            <h3 class="card-title-text">{{ $page.Title }}</h3>
+            <span class="card-badge">{{ $page.Params.category }}</span>
+          </div>
+          <p class="card-desc">{{ $page.Params.shortDescription }}</p>
+          <div class="card-footer">
+            <div class="card-tags">
+              {{ range first 2 $page.Params.tags }}
+              <span class="card-tag">#{{ . }}</span>
+              {{ end }}
+            </div>
+            <span class="card-date">{{ $page.Params.updated }}</span>
+          </div>
+        </div>
+      </a>
+      {{ if eq $index 9 }}
+      <!-- Mobile Ad 2: after 10th card -->
+      <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
+      {{ end }}
+      {{ end }}
+
+      <!-- Mobile Ad 3: after last card -->
+      <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
+
+      <!-- View All Button -->
+      <div class="view-all-wrap">
+        <a href="/slang/" class="view-all-btn">
+          <span>Browse All Slang</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Ad -->
+    <div class="ad-sidebar">
+      <div class="ad-sidebar-inner">AD</div>
+    </div>
+  </div>
+</section>
+
+<!-- Subscribe via Email -->
+<section class="newsletter">
+  <div class="newsletter-box">
+    <h2 class="newsletter-title">STAY IN THE LOOP</h2>
+    <p class="newsletter-desc">New gaming slang drops weekly. No spam, just the words you actually need to know.</p>
+    <p style="color:#8c8c8c;font-size:14px;margin:20px 0;">
+      To subscribe, send an email to
+      <a href="mailto:fei15888051764@gmail.com?subject=Subscribe%20to%20Gamer%20Glossary%20Newsletter" style="color:#a3ff00;">fei15888051764@gmail.com</a>
+      with subject "Subscribe" and we'll add you to the list.
+    </p>
+    <p class="newsletter-note">Unsubscribe anytime by replying "Unsubscribe"</p>
+  </div>
+</section>
+
+{{ end }}
