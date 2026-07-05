@@ -108,7 +108,3 @@ Yes. A "gg" after your teammate makes a terrible play carries very different mea
 1. [SpawnPoint Gaming Glossary (2026)](https://spawnpoint.gg/glossary)
 2. [ESL Gaming — Sportsmanship Guidelines](https://www.eslgaming.com)
 3. [Know Your Meme — GG](https://knowyourmeme.com/memes/gg)
-
----
-
-*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. Contact: fei15888051764@gmail.com*
