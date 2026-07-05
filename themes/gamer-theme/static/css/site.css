@@ -10,9 +10,6 @@
 /* Home page search - moved down 20% */
 .home-search{padding-top:38px}
 
-/* Browse All Slang page search - moved down 30% */
-.slang-list-search{padding-top:62px}
-
 /* ===== Ad Sidebar (Desktop sticky) ===== */
 .ad-sidebar{width:200px;flex-shrink:0;display:none;align-self:flex-start;position:sticky;top:72px}
 .ad-sidebar-inner{background:#111;border:1px dashed #333;border-radius:8px;height:500px;display:flex;align-items:center;justify-content:center;color:#555;font-size:12px}
@@ -216,3 +213,17 @@
 .search-dropdown-tag{font-size:10px;color:#a3ff00;border:1px solid #a3ff00;padding:1px 6px;border-radius:3px;flex-shrink:0}
 .search-dropdown-empty{padding:24px;text-align:center;color:#666;font-size:14px}
 .search-dropdown mark{background:transparent;color:#a3ff00;font-weight:700}
+
+/* ===== Mobile Detail Page Text Overflow Fix ===== */
+@media(max-width:639px){
+.detail-content{word-break:break-word;overflow-wrap:break-word;hyphens:auto}
+.detail-content p{word-break:break-word;overflow-wrap:break-word}
+.detail-content table{display:block;overflow-x:auto;white-space:nowrap;max-width:100%}
+.detail-content td,.detail-content th{white-space:normal;word-break:break-word}
+.detail-title{font-size:clamp(14px,5vw,22px);word-break:break-word;overflow-wrap:break-word}
+.detail-content h2{font-size:clamp(12px,4vw,16px);word-break:break-word;overflow-wrap:break-word}
+.detail-container{padding:16px 12px}
+.detail-meta{font-size:12px;gap:8px}
+.detail-tag{font-size:11px;padding:3px 8px}
+.breadcrumb{font-size:12px}
+}

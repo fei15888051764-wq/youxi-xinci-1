@@ -1,15 +1,15 @@
 {{ define "main" }}
 
-<!-- Search Bar -->
-<section class="search-section">
-  <form class="search-form" style="margin-top:48px" onsubmit="event.preventDefault();">
-    <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-    <input type="text" class="search-input" placeholder="Search Gaming Terms">
-  </form>
-</section>
-
 <!-- All Tags Section -->
 <section class="terms-section">
+  <!-- Search Bar - positioned right above the title -->
+  <div class="search-section" style="padding-top:0;padding-bottom:16px;">
+    <form class="search-form" onsubmit="event.preventDefault();">
+      <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      <input type="text" class="search-input" placeholder="Search Gaming Terms">
+    </form>
+  </div>
+
   <div class="terms-header">
     <h2 class="terms-title">ALL TAGS</h2>
     <p class="terms-subtitle">BROWSE GAMING SLANG BY CATEGORY</p>
