@@ -112,7 +112,3 @@ Terms like "hardstuck," "bot," or "feeder" are more insulting.
 1. [SpawnPoint Gaming Glossary (2026)](https://spawnpoint.gg/glossary)
 2. [Oxford English Dictionary — Newbie](https://www.oed.com)
 3. [Urban Dictionary — Noob](https://www.urbandictionary.com)
-
----
-
-*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. Contact: fei15888051764@gmail.com*
