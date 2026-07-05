@@ -36,9 +36,9 @@
         {{ end }}
       </div>
       {{ else }}
-      <!-- Single tag - cards grid -->
+      <!-- Single tag - cards grid sorted newest first -->
       <div class="cards-grid">
-        {{ range .Pages }}
+        {{ range sort .Pages "Date" "desc" }}
         <a href="{{ .RelPermalink }}" class="card">
           <div class="card-img-wrap">
             <img src="/slang/{{ replace .Params.slug "-gaming" "" }}-featured.jpg" alt="{{ .Title }}" class="card-img" loading="lazy" onerror="this.parentElement.style.display='none'">

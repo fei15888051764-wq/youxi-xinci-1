@@ -34,7 +34,7 @@
         </h3>
 
         <div class="cards-grid">
-          {{ range .Pages }}
+          {{ range sort .Pages "Date" "desc" }}
           {{ $base := replace .Params.slug "-gaming" "" }}
           <a href="{{ .RelPermalink }}" class="card">
             <div class="card-img-wrap">
