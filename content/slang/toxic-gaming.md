@@ -68,7 +68,3 @@ Friend 1: "Toxic players ruin the experience for everyone."
 
 - SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition) [https://spawnpoint.be/gaming-terms-slang-glossary/]
 - Bark.us — 2026 Gaming Terms and Slang Words [https://www.bark.us/blog/gaming-terms/]
-
----
-
-*About the Author: This guide was compiled and written by **GEBILAOWANG**, an independent gaming culture researcher and lexicographer specializing in gaming slang, esports terminology, and online communication patterns. Contact: fei15888051764@gmail.com.*
