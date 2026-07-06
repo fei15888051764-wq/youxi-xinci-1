@@ -28,6 +28,10 @@
       .tag-pill-name{text-transform:capitalize}
       .tag-pill-count{font-size:12px;color:#8c8c8c;font-weight:400}
       .tag-pill:hover .tag-pill-count{color:#a3ff00}
+      /* Year tag - special style */
+      .tag-pill.year-tag{border-color:#a3ff00;color:#a3ff00}
+      .tag-pill.year-tag:hover{background:#a3ff00;color:#111}
+      .tag-pill.year-tag:hover .tag-pill-count{color:#333}
     </style>
 
     <!-- Tags Cloud -->
@@ -35,6 +39,15 @@
       <!-- Mobile Ad 1: above first tag -->
       <div class="ad-mobile" style="flex-basis:100%;"><div class="ad-mobile-inner">AD</div></div>
 
+      <!-- 2026 Year Tag (auto-detected from Date.Year, always first) -->
+      {{ $slangSection := .Site.GetPage "section" "slang" }}
+      {{ $all2026 := where $slangSection.Pages "Date.Year" "eq" 2026 }}
+      <a href="/years/" class="tag-pill year-tag">
+        <span class="tag-pill-name">2026</span>
+        <span class="tag-pill-count">{{ len $all2026 }}</span>
+      </a>
+
+      <!-- Rest of tags (skip 2026 from taxonomy) -->
       {{ range .Pages }}
         {{ if ne .Title "2026" }}
         <a href="{{ .RelPermalink }}" class="tag-pill">
