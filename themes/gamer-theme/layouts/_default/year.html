@@ -19,7 +19,15 @@
   {{ end }}
 {{ end }}
 
-<section class="terms-section">
+<!-- Search Box above title -->
+<div class="search-section slang-list-search" style="padding-top:72px;padding-bottom:0;margin-top:0;background:#0a0a0a;">
+  <form class="search-form" onsubmit="event.preventDefault();">
+    <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+    <input type="text" class="search-input" placeholder="Search Gaming Terms">
+  </form>
+</div>
+
+<section class="terms-section" style="padding-top:24px;">
   <div class="terms-header">
     <h2 class="terms-title">BROWSE BY YEAR</h2>
     <p class="terms-subtitle">ALL GAMING SLANG TERMS GROUPED BY YEAR</p>
@@ -44,28 +52,30 @@
           <span style="color:#8c8c8c;font-size:16px;font-weight:400;margin-left:12px;">({{ len .Pages }} terms)</span>
         </h3>
 
-        <div class="year-terms" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;">
+        <div class="cards-grid">
           {{ range .Pages.ByDate.Reverse }}
-          {{ $slug := .Params.slug }}
-          {{ $name := replace $slug "-gaming" "" }}
-          {{ $permalink := .RelPermalink }}
-          <a href="{{ $permalink }}" class="year-term-card" style="display:flex;align-items:center;gap:16px;padding:16px;background:#111;border:1px solid #222;border-radius:12px;text-decoration:none;transition:border-color .2s,background .2s;">
-            <div class="year-term-img" style="width:60px;height:60px;border-radius:8px;overflow:hidden;flex-shrink:0;background:#1a1a1a;">
-              <img src="/slang/{{ $name }}.jpg" alt="{{ .Title }}" style="width:100%;height:100%;object-fit:cover;"
-                   onerror="this.onerror=function(){this.onerror=function(){this.parentElement.style.display='none';};this.src='/slang/{{ $name }}-featured.jpg';};this.src='/slang/{{ $name }}-gaming.jpg';">
+          {{ $base := replace .Params.slug "-gaming" "" }}
+          <a href="{{ .RelPermalink }}" class="card">
+            <div class="card-img-wrap">
+              <img src="/slang/{{ $base }}.jpg" alt="{{ .Title }}" class="card-img" loading="lazy"
+                   onerror="var t=this; var base='{{ $base }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg';} else {this.parentElement.style.display='none'};">
             </div>
-            <div class="year-term-info" style="flex:1;min-width:0;">
-              <h4 style="font-size:16px;font-weight:600;color:#f0f0f0;margin:0 0 4px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ .Title }}</h4>
-              <p style="font-size:12px;color:#8c8c8c;margin:0;">{{ .Date.Format "Jan 2, 2006" }}</p>
+            <div class="card-body">
+              <h3 class="card-title-text">{{ .Title }}</h3>
+              <p class="card-desc">{{ .Params.shortDescription }}</p>
+              <div class="card-bottom">
+                <div class="card-tags">
+                  {{ range first 2 .Params.tags }}
+                  <span class="card-tag">#{{ . }}</span>
+                  {{ end }}
+                </div>
+                <span class="card-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+              </div>
             </div>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2" style="flex-shrink:0;"><path d="M9 18l6-6-6-6"/></svg>
           </a>
           {{ end }}
         </div>
       </div>
-
-      <!-- Mobile Ad between years -->
-      <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
       {{ end }}
     </div>
 
@@ -74,11 +84,6 @@
     </div>
   </div>
 </section>
-
-<style>
-.year-term-card:hover { border-color: #a3ff00 !important; background: #1a1a1a !important; }
-.year-term-card:hover svg { stroke: #a3ff00; }
-</style>
 
 {{ else }}
 <!-- ===== YEAR TAG PAGE (e.g. /tags/2026/) ===== -->
