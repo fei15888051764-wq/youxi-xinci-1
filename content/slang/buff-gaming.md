@@ -17,7 +17,6 @@ tags:
   - game-design
   - history
   - essential
-  - "2026"
 ---
 
 A **buff** is a game update, patch, or hotfix that **strengthens** a character, weapon, ability, item, or game mechanic. Buffs increase numerical values — damage, health, speed, cooldown reduction — or improve functionality. They are the optimistic counterpart to **nerfs**, and together they form the eternal cycle of **game balance**.
