@@ -12,10 +12,22 @@
   <div style="max-width:1200px;margin:0 auto;padding:32px 24px;">
     <div style="margin-bottom:40px;">
       <h2 style="font-family:'Press Start 2P',cursive;font-size:22px;color:#f0f0f0;margin-bottom:8px;">#{{ .Title | upper }}</h2>
-      <p style="color:#8c8c8c;">{{ len .Pages }} GAMING SLANG TERM{{ if ne (len .Pages) 1 }}S{{ end }}</p>
+      <p style="color:#8c8c8c;">
+        {{ $pages := .Pages }}
+        {{ $title := .Title }}
+        {{ if findRE "^[0-9]+$" $title }}
+          {{ $pages = where (where .Site.RegularPages "Section" "slang") "Date.Year" "==" (int $title) }}
+        {{ end }}
+        {{ len $pages }} GAMING SLANG TERM{{ if ne (len $pages) 1 }}S{{ end }}
+      </p>
     </div>
     <div class="cards-grid">
-      {{ range .Pages.ByDate.Reverse }}
+      {{ $pages := .Pages }}
+      {{ $title := .Title }}
+      {{ if findRE "^[0-9]+$" $title }}
+        {{ $pages = where (where .Site.RegularPages "Section" "slang") "Date.Year" "==" (int $title) }}
+      {{ end }}
+      {{ range $pages.ByDate.Reverse }}
       {{ $base := replace .Params.slug "-gaming" "" }}
       <a href="{{ .RelPermalink }}" class="card">
         <div class="card-img-wrap">
