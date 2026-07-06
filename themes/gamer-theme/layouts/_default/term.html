@@ -12,12 +12,9 @@
           <img src="/slang/{{ replace .Params.slug "-gaming" "" }}-card.jpg" alt="{{ .Title }}" class="card-img" loading="lazy" onerror="this.style.display='none'">
         </div>
         <div class="card-body">
-          <div class="card-title-row">
-            <h3 class="card-title-text">{{ .Title }}</h3>
-            <span class="card-badge">{{ .Params.category }}</span>
-          </div>
+          <h3 class="card-title-text">{{ .Title }}</h3>
           <p class="card-desc">{{ .Params.shortDescription }}</p>
-          <div class="card-footer">
+          <div class="card-bottom">
             <div class="card-tags">
               {{ range .Params.tags }}
               <span class="card-tag">{{ . }}</span>

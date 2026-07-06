@@ -177,12 +177,9 @@
           <img src="/slang/{{ $base }}.jpg" alt="{{ $page.Title }}" class="card-img" loading="lazy" onerror="var t=this; var base='{{ $base }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg';} else {this.parentElement.style.display='none'};">
         </div>
         <div class="card-body">
-          <div class="card-header-row">
-            <h3 class="card-title-text">{{ $page.Title }}</h3>
-            <span class="card-badge">{{ $page.Params.category }}</span>
-          </div>
+          <h3 class="card-title-text">{{ $page.Title }}</h3>
           <p class="card-desc">{{ $page.Params.shortDescription }}</p>
-          <div class="card-footer">
+          <div class="card-bottom">
             <div class="card-tags">
               {{ range first 2 $page.Params.tags }}
               <span class="card-tag">#{{ . }}</span>

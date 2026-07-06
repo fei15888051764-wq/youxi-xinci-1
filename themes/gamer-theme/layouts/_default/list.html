@@ -20,7 +20,7 @@
       <div class="ad-sidebar-inner">AD</div>
     </div>
 
-    <!-- Cards Grid -- Show ALL cards sorted by section _index.md -->
+    <!-- Cards Grid -- Show ALL cards sorted newest first -->
     <div class="cards-grid">
       <!-- Mobile Ad 1: before 1st card -->
       <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
@@ -32,12 +32,9 @@
           <img src="/slang/{{ $base }}.jpg" alt="{{ $page.Title }}" class="card-img" loading="lazy" onerror="var t=this; var base='{{ $base }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg';} else {this.parentElement.style.display='none'};">
         </div>
         <div class="card-body">
-          <div class="card-header-row">
-            <h3 class="card-title-text">{{ $page.Title }}</h3>
-            <span class="card-badge">{{ $page.Params.category }}</span>
-          </div>
+          <h3 class="card-title-text">{{ $page.Title }}</h3>
           <p class="card-desc">{{ $page.Params.shortDescription }}</p>
-          <div class="card-footer">
+          <div class="card-bottom">
             <div class="card-tags">
               {{ with $page.Params.tags }}
                 {{ range first 2 . }}
