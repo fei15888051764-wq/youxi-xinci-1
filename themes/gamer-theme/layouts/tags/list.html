@@ -45,21 +45,20 @@
       {{ $all2026 := where $slangSection.Pages "Date.Year" "eq" 2026 }}
       {{ $count2026 := len $all2026 }}
 
-      {{/* Filter out year- tags from regular tags */}}
-      {{ $filtered := where .Pages "Title" "not in" (slice "2026" "2025" "2024" "2023" "2022" "2021" "2020" "year-2026" "year-2025" "year-2024") }}
-
       <!-- Pinned: 2026 Year Tag (always first) -->
       <a href="/years/" class="tag-pill year-tag">
         <span class="tag-pill-name">2026</span>
         <span class="tag-pill-count">{{ $count2026 }}</span>
       </a>
 
-      <!-- Rest of tags -->
-      {{ range $filtered }}
-      <a href="{{ .RelPermalink }}" class="tag-pill">
-        <span class="tag-pill-name">{{ .Title }}</span>
-        <span class="tag-pill-count">{{ len .Pages }}</span>
-      </a>
+      <!-- Rest of tags (skip 2026) -->
+      {{ range .Pages }}
+        {{ if ne .Title "2026" }}
+        <a href="{{ .RelPermalink }}" class="tag-pill">
+          <span class="tag-pill-name">{{ .Title }}</span>
+          <span class="tag-pill-count">{{ len .Pages }}</span>
+        </a>
+        {{ end }}
       {{ end }}
 
       <!-- Mobile Ad 2: middle of tags -->
