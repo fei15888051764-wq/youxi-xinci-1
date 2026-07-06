@@ -34,20 +34,18 @@
 @media(min-width:640px){.cards-grid{grid-template-columns:repeat(2,1fr);gap:16px}}
 @media(min-width:1024px){.cards-grid{grid-template-columns:repeat(3,1fr)}}
 
-/* ===== Card ===== */
-.card{background:#111;border:1px solid #222;border-radius:10px;overflow:hidden;transition:border-color .2s,transform .2s;display:block}
+/* ===== Card (4:5 aspect ratio) ===== */
+.card{background:#111;border:1px solid #222;border-radius:10px;overflow:hidden;transition:border-color .2s,transform .2s;display:flex;flex-direction:column;aspect-ratio:4/5}
 .card:hover{border-color:#a3ff00;transform:translateY(-2px)}
-.card-img-wrap{position:relative;width:100%;padding-top:56.25%;background:#0a0a0a;overflow:hidden}
+.card-img-wrap{position:relative;flex:0 0 55%;background:#0a0a0a;overflow:hidden}
 .card-img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;transition:transform .3s}
 .card:hover .card-img{transform:scale(1.05)}
-.card-body{padding:14px}
-.card-header-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
-.card-title-text{font-size:15px;font-weight:700;color:#f0f0f0;margin:0;transition:color .2s}
+.card-body{flex:1;display:flex;flex-direction:column;padding:10px 12px;overflow:hidden;min-height:0}
+.card-title-text{font-size:15px;font-weight:700;color:#f0f0f0;margin:0 0 6px 0;transition:color .2s}
 .card:hover .card-title-text{color:#a3ff00}
-.card-badge{padding:3px 10px;border:1px solid #a3ff00;color:#a3ff00;border-radius:4px;font-size:10px;font-weight:500;text-transform:uppercase;letter-spacing:0.5px;flex-shrink:0}
-.card-desc{font-size:13px;color:#888;line-height:1.5;margin-bottom:10px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.card-footer{display:flex;align-items:center;justify-content:space-between}
-.card-tags{display:flex;gap:8px}
+.card-desc{font-size:13px;color:#888;line-height:1.5;margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;flex-shrink:0}
+.card-bottom{margin-top:auto;text-align:center;padding-top:6px}
+.card-tags{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin-bottom:3px}
 .card-tag{font-size:11px;color:#666}
 .card-date{font-size:11px;color:#555}
 
@@ -70,13 +68,11 @@
 .cards-grid{gap:6px}
 .related-grid{gap:6px}
 .year-terms{gap:6px}
-.card-body{padding:6px}
-.card-header-row{margin-bottom:3px;gap:4px}
-.card-title-text{font-size:11px}
-.card-badge{padding:1px 5px;font-size:7px;border-radius:2px}
-.card-desc{font-size:10px;line-height:1.3;margin-bottom:3px;-webkit-line-clamp:2}
-.card-footer{gap:3px;margin-top:3px}
-.card-tags{gap:4px}
+.card-body{padding:6px 8px}
+.card-title-text{font-size:11px;margin-bottom:3px}
+.card-desc{font-size:10px;line-height:1.3;-webkit-line-clamp:3}
+.card-bottom{padding-top:3px}
+.card-tags{gap:3px;margin-bottom:2px}
 .card-tag{font-size:9px}
 .card-date{font-size:9px}
 .ad-mobile{grid-column:1/-1;margin:6px 0;height:60px}
