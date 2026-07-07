@@ -1,12 +1,20 @@
 ---
-title: "What Does 'Eco' Mean in Gaming? Slang Explained (2026)"
+title: "Eco"
 date: 2026-07-07T09:00:00+08:00
 slug: "eco-gaming"
 description: "Eco means spending little to no money to save for future rounds. The art of losing gracefully to win later."
 summary: "In gaming, 'eco' (short for 'economy round') refers to intentionally spending little or no in-game currency to save money for future full-buy rounds. A core strategic concept in CS2, VALORANT, and all economy-based competitive shooters."
 author: "GEBILAOWANG"
-categories: ["gaming-slang"]
-tags: ["fps", "competitive", "economy", "essential", "team-game"]
+category: slang
+shortDescription: "In gaming, 'eco' (short for 'economy round') refers to intentionally spending little or no in-game currency to save money for future full-buy rounds."
+updated: "Jul 7, 2026"
+readTime: "4 min read"
+tags:
+  - fps
+  - competitive
+  - economy
+  - essential
+  - team-game
 ---
 
 In gaming, 'eco' (short for 'economy round') refers to intentionally spending little or no in-game currency to save money for future full-buy rounds. A core strategic concept in CS2, VALORANT, and all economy-based competitive shooters.

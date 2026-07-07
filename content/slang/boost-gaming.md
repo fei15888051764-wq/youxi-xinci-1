@@ -1,12 +1,20 @@
 ---
-title: "What Does 'Boost' Mean in Gaming? Slang Explained (2026)"
+title: "Boost"
 date: 2026-07-07T08:20:00+08:00
 slug: "boost-gaming"
 description: "Boost can mean jumping to a high spot, paying for rank help, or a power-up. One of gaming's most context-dependent terms."
 summary: "In gaming, 'boost' has multiple meanings: jumping to an elevated position using a teammate or ability, paying a skilled player to raise your rank, or receiving a temporary power-up. Context determines which meaning applies."
 author: "GEBILAOWANG"
-categories: ["gaming-slang"]
-tags: ["fps", "mechanics", "competitive", "general", "essential"]
+category: slang
+shortDescription: "In gaming, 'boost' has multiple meanings: jumping to a high spot, paying for rank help, or a power-up."
+updated: "Jul 7, 2026"
+readTime: "4 min read"
+tags:
+  - fps
+  - mechanics
+  - competitive
+  - general
+  - essential
 ---
 
 In gaming, 'boost' has multiple meanings: jumping to an elevated position using a teammate or ability, paying a skilled player to raise your rank, or receiving a temporary power-up. Context determines which meaning applies.

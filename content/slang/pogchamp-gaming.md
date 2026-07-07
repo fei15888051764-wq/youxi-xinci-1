@@ -1,12 +1,20 @@
 ---
-title: "What Does 'PogChamp' Mean on Twitch? Slang Explained (2026)"
+title: "PogChamp"
 date: 2026-07-07T08:10:00+08:00
 slug: "pogchamp-gaming"
 description: "PogChamp is the legendary Twitch emote of pure hype and surprise. The face that launched a million 'Pogs' in chat."
 summary: "PogChamp is a legendary Twitch emote featuring a surprised, excited expression, used to express hype, shock, or amazement. Though the original was removed in 2021, the name lives on as gaming culture's go-to phrase for incredible moments."
 author: "GEBILAOWANG"
-categories: ["gaming-slang"]
-tags: ["twitch", "emote", "meme", "essential", "general"]
+category: slang
+shortDescription: "PogChamp is a legendary Twitch emote featuring a surprised, excited expression."
+updated: "Jul 7, 2026"
+readTime: "4 min read"
+tags:
+  - twitch
+  - emote
+  - meme
+  - essential
+  - general
 ---
 
 PogChamp is a legendary Twitch emote featuring a surprised, excited expression, used to express hype, shock, or amazement. Though the original was removed in 2021, the name lives on as gaming culture's go-to phrase for incredible moments.

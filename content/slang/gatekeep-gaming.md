@@ -1,12 +1,20 @@
 ---
-title: "What Does 'Gatekeep' Mean in Gaming? Slang Explained (2026)"
+title: "Gatekeep"
 date: 2026-07-07T09:30:00+08:00
 slug: "gatekeep-gaming"
 description: "Gatekeep means to control who gets access to a hobby or community. Gaming's favorite criticism of elitist behavior."
 summary: "In gaming, 'gatekeep' means to deliberately control or restrict access to a game, hobby, or community, often by making newcomers feel unwelcome or establishing arbitrary barriers to participation. Common in niche gaming communities."
 author: "GEBILAOWANG"
-categories: ["gaming-slang"]
-tags: ["general", "community", "social", "essential", "all-genres"]
+category: slang
+shortDescription: "In gaming, 'gatekeep' means to deliberately control or restrict access to a game, hobby, or community."
+updated: "Jul 7, 2026"
+readTime: "4 min read"
+tags:
+  - general
+  - community
+  - social
+  - essential
+  - all-genres
 ---
 
 In gaming, 'gatekeep' means to deliberately control or restrict access to a game, hobby, or community, often by making newcomers feel unwelcome or establishing arbitrary barriers to participation. Common in niche gaming communities.

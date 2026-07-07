@@ -1,12 +1,20 @@
 ---
-title: "What Does 'Trade' Mean in Gaming? Slang Explained (2026)"
+title: "Trade"
 date: 2026-07-07T08:40:00+08:00
 slug: "trade-gaming"
 description: "Trade means to immediately kill an enemy after they kill your teammate. The golden rule of team shooters: never die without getting a trade."
 summary: "In gaming, a 'trade' occurs when a player kills an enemy immediately after that enemy killed their teammate, resulting in a one-for-one exchange. A fundamental concept in team-based shooters, trading ensures that no death is wasted."
 author: "GEBILAOWANG"
-categories: ["gaming-slang"]
-tags: ["fps", "competitive", "team-game", "essential", "shooter"]
+category: slang
+shortDescription: "In gaming, a 'trade' occurs when a player kills an enemy immediately after that enemy killed their teammate."
+updated: "Jul 7, 2026"
+readTime: "4 min read"
+tags:
+  - fps
+  - competitive
+  - team-game
+  - essential
+  - shooter
 ---
 
 In gaming, a 'trade' occurs when a player kills an enemy immediately after that enemy killed their teammate, resulting in a one-for-one exchange. A fundamental concept in team-based shooters, trading ensures that no death is wasted.

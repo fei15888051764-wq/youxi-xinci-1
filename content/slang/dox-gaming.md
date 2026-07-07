@@ -1,12 +1,20 @@
 ---
-title: "What Does 'Dox' Mean in Gaming? Slang Explained (2026)"
+title: "Dox"
 date: 2026-07-07T09:10:00+08:00
 slug: "dox-gaming"
 description: "Dox means to publicly reveal someone's private information online. One of the worst things you can do in internet culture."
 summary: "In gaming and internet culture, 'dox' (or 'doxx') means to publicly reveal someone's private personal information — address, phone number, real name — without their consent. Considered harassment and is illegal in many jurisdictions."
 author: "GEBILAOWANG"
-categories: ["gaming-slang"]
-tags: ["general", "toxic", "safety", "essential", "internet"]
+category: slang
+shortDescription: "In gaming and internet culture, 'dox' means to publicly reveal someone's private personal information."
+updated: "Jul 7, 2026"
+readTime: "4 min read"
+tags:
+  - general
+  - toxic
+  - safety
+  - essential
+  - internet
 ---
 
 In gaming and internet culture, 'dox' (or 'doxx') means to publicly reveal someone's private personal information — address, phone number, real name — without their consent. Considered harassment and is illegal in many jurisdictions.

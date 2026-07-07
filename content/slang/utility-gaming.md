@@ -1,12 +1,20 @@
 ---
-title: "What Does 'Utility' Mean in Gaming? Slang Explained (2026)"
+title: "Utility"
 date: 2026-07-07T08:50:00+08:00
 slug: "utility-gaming"
 description: "Utility refers to abilities, grenades, and tools that help your team beyond just shooting. Smoke, flash, heal — the unsung heroes of every round."
 summary: "In gaming, 'utility' refers to non-weapon abilities and tools that provide tactical advantages — smokes, flashes, heals, recon drones, and barriers. In tactical shooters like VALORANT and CS2, utility usage often determines which team wins more than raw aim."
 author: "GEBILAOWANG"
-categories: ["gaming-slang"]
-tags: ["fps", "tactical", "competitive", "team-game", "essential"]
+category: slang
+shortDescription: "In gaming, 'utility' refers to non-weapon abilities and tools that provide tactical advantages."
+updated: "Jul 7, 2026"
+readTime: "4 min read"
+tags:
+  - fps
+  - tactical
+  - competitive
+  - team-game
+  - essential
 ---
 
 In gaming, 'utility' refers to non-weapon abilities and tools that provide tactical advantages — smokes, flashes, heals, recon drones, and barriers. In tactical shooters like VALORANT and CS2, utility usage often determines which team wins more than raw aim.

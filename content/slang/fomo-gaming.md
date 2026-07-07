@@ -1,12 +1,20 @@
 ---
-title: "What Does 'FOMO' Mean in Gaming? Slang Explained (2026)"
+title: "FOMO"
 date: 2026-07-07T09:20:00+08:00
 slug: "fomo-gaming"
 description: "FOMO means Fear Of Missing Out and drives players to log in daily, buy limited skins, and grind battle passes. Game design's most powerful tool."
 summary: "In gaming, 'FOMO' stands for 'Fear Of Missing Out' and describes the anxiety that drives players to engage with limited-time content — exclusive skins, seasonal events, and battle pass rewards. A core psychological mechanic in modern live-service games."
 author: "GEBILAOWANG"
-categories: ["gaming-slang"]
-tags: ["general", "psychology", "industry", "essential", "all-genres"]
+category: slang
+shortDescription: "In gaming, 'FOMO' stands for 'Fear Of Missing Out' and describes the anxiety that drives players to engage with limited-time content."
+updated: "Jul 7, 2026"
+readTime: "4 min read"
+tags:
+  - general
+  - psychology
+  - industry
+  - essential
+  - all-genres
 ---
 
 In gaming, 'FOMO' stands for 'Fear Of Missing Out' and describes the anxiety that drives players to engage with limited-time content — exclusive skins, seasonal events, and battle pass rewards. A core psychological mechanic in modern live-service games.

@@ -1,12 +1,20 @@
 ---
-title: "What Does 'Rotate' Mean in Gaming? Slang Explained (2026)"
+title: "Rotate"
 date: 2026-07-07T08:30:00+08:00
 slug: "rotate-gaming"
 description: "Rotate means to move as a team to a different area of the map. The most important strategic decision in any round-based shooter."
 summary: "In gaming, 'rotate' means for a team to collectively move from one area of the map to another, usually in response to enemy positioning or to attack a different objective. A core strategic concept in VALORANT, CS2, and all tactical shooters."
 author: "GEBILAOWANG"
-categories: ["gaming-slang"]
-tags: ["fps", "tactical", "competitive", "essential", "team-game"]
+category: slang
+shortDescription: "In gaming, 'rotate' means for a team to collectively move from one area of the map to another."
+updated: "Jul 7, 2026"
+readTime: "4 min read"
+tags:
+  - fps
+  - tactical
+  - competitive
+  - essential
+  - team-game
 ---
 
 In gaming, 'rotate' means for a team to collectively move from one area of the map to another, usually in response to enemy positioning or to attack a different objective. A core strategic concept in VALORANT, CS2, and all tactical shooters.

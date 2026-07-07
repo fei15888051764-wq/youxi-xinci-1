@@ -1,12 +1,20 @@
 ---
-title: "What Does 'F' Mean in Gaming? Slang Explained (2026)"
+title: "F"
 date: 2026-07-07T08:00:00+08:00
 slug: "f-gaming"
 description: "F is the shortest way to pay respects in gaming. Born from a Call of Duty meme, it's now the universal response to any unfortunate event."
 summary: "In gaming, 'F' is a way to pay respects or express sympathy, originating from Call of Duty: Advanced Warfare's 'Press F to pay respects' prompt. Now used across all gaming platforms as a response to death, failure, or any unfortunate event."
 author: "GEBILAOWANG"
-categories: ["gaming-slang"]
-tags: ["general", "meme", "essential", "all-genres", "call-of-duty"]
+category: slang
+shortDescription: "In gaming, 'F' is a way to pay respects or express sympathy."
+updated: "Jul 7, 2026"
+readTime: "4 min read"
+tags:
+  - general
+  - meme
+  - essential
+  - all-genres
+  - call-of-duty
 ---
 
 In gaming, 'F' is a way to pay respects or express sympathy, originating from Call of Duty: Advanced Warfare's 'Press F to pay respects' prompt. Now used across all gaming platforms as a response to death, failure, or any unfortunate event.
