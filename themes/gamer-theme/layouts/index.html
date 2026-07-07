@@ -172,13 +172,14 @@
 
       {{ range $index, $page := first 22 (sort (where .Site.RegularPages "Section" "slang") "Date" "desc") }}
       {{ $base := replace $page.Params.slug "-gaming" "" }}
+      {{ $desc := $page.Params.shortDescription | default $page.Params.description | default $page.Summary }}
       <a href="{{ $page.RelPermalink }}" class="card{{ if eq $index 21 }} hide-on-desktop{{ end }}">
         <div class="card-img-wrap">
           <img src="/slang/{{ $base }}.jpg" alt="{{ $page.Title }}" class="card-img" loading="lazy" onerror="var t=this; var base='{{ $base }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg';} else {this.parentElement.style.display='none'};">
         </div>
         <div class="card-body">
           <h3 class="card-title-text">{{ $page.Title }}</h3>
-          <p class="card-desc">{{ $page.Params.shortDescription }}</p>
+          <p class="card-desc">{{ $desc }}</p>
           <div class="card-bottom">
             <div class="card-tags">
               {{ range first 2 $page.Params.tags }}

@@ -29,13 +29,14 @@
       {{ end }}
       {{ range $pages.ByDate.Reverse }}
       {{ $base := replace .Params.slug "-gaming" "" }}
+      {{ $desc := .Params.shortDescription | default .Params.description | default .Summary }}
       <a href="{{ .RelPermalink }}" class="card">
         <div class="card-img-wrap">
           <img src="/slang/{{ $base }}.jpg" alt="{{ .Title }}" class="card-img" loading="lazy" onerror="var t=this; var base='{{ $base }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg';} else {this.parentElement.style.display='none'};">
         </div>
         <div class="card-body">
           <h3 class="card-title-text">{{ .Title }}</h3>
-          <p class="card-desc">{{ .Params.shortDescription }}</p>
+          <p class="card-desc">{{ $desc }}</p>
           <div class="card-bottom">
             <div class="card-tags">
               {{ range first 2 .Params.tags }}
