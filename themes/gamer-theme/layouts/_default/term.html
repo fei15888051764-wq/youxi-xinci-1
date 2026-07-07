@@ -42,7 +42,7 @@
               <span class="card-tag">#{{ . }}</span>
               {{ end }}
             </div>
-            <span class="card-date">{{ .Params.updated }}</span>
+            <span class="card-date">{{ .Date.Format "Jan 2, 2006" }}</span>
           </div>
         </div>
       </a>
