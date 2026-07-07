@@ -43,11 +43,18 @@
         <div class="detail-title-block">
           <div class="detail-title-row">
             <h1 class="detail-title">{{ .Title }}</h1>
-            <span class="card-badge">{{ .Params.category }}</span>
+            {{ $cat := .Params.category | default .Section | default "slang" }}
+            <span class="card-badge">{{ $cat }}</span>
           </div>
           <div class="detail-meta">
-            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Updated {{ .Params.updated }}</span>
-            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>{{ .Params.readTime }}</span>
+            {{ $updated := .Params.updated | default (.Date.Format "Jan 2, 2006") | default "" }}
+            {{ if $updated }}
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Updated {{ $updated }}</span>
+            {{ end }}
+            {{ $rt := .Params.readTime | default (printf "%d min read" .ReadingTime) | default "" }}
+            {{ if $rt }}
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>{{ $rt }}</span>
+            {{ end }}
           </div>
           <div class="detail-tags-row">
             {{ range .Params.tags }}
@@ -61,7 +68,13 @@
 
         <!-- Full Meaning -->
         <div class="content-block">
-          <h2 class="section-title">What Does "{{ .Title }}" Mean?</h2>
+          {{ $titleLen := len .Title }}
+          {{ if gt $titleLen 30 }}
+            <!-- Long title: use a clean short heading -->
+            <h2 class="section-title">Overview</h2>
+          {{ else }}
+            <h2 class="section-title">What Does "{{ .Title }}" Mean?</h2>
+          {{ end }}
           <div class="content-text">{{ .Content }}</div>
         </div>
 
@@ -194,14 +207,15 @@
                   <h3 class="card-title-text">{{ .Title }}</h3>
                   <span class="card-badge">{{ .Params.category }}</span>
                 </div>
-                <p class="card-desc">{{ .Params.shortDescription }}</p>
+                {{ $rdesc := .Params.shortDescription | default .Params.description | default .Summary }}
+                <p class="card-desc">{{ $rdesc }}</p>
                 <div class="card-footer">
                   <div class="card-tags">
                     {{ range first 2 .Params.tags }}
                     <span class="card-tag">#{{ . }}</span>
                     {{ end }}
                   </div>
-                  <span class="card-date">{{ .Params.updated }}</span>
+                  <span class="card-date">{{ .Date.Format "Jan 2, 2006" }}</span>
                 </div>
               </div>
             </a>
