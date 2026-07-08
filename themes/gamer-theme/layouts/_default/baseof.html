@@ -8,7 +8,11 @@
 <meta name="keywords" content="{{ if .Params.tags }}{{ delimit .Params.tags ", " }}{{ else }}{{ .Site.Params.keywords }}{{ end }}">
 <meta name="author" content="{{ .Site.Params.author }}">
 <meta name="copyright" content="© {{ now.Year }} {{ .Site.Title }}">
+{{ if eq .Kind "404" }}
+<meta name="robots" content="noindex, nofollow">
+{{ else }}
 <meta name="robots" content="index, follow">
+{{ end }}
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#0a0a0a">
 <meta name="msapplication-TileColor" content="#0a0a0a">
@@ -36,7 +40,7 @@
 <!-- WebSite -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"{{ .Site.Title }}","url":"{{ .Site.BaseURL }}","description":"{{ .Site.Params.description }}","potentialAction":{"@type":"SearchAction","target":"{{ .Site.BaseURL }}?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
 <!-- Organization -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"{{ .Site.Title }}","url":"{{ .Site.BaseURL }}","logo":"{{ .Site.BaseURL }}logo.png","founder":{"@type":"Person","name":"{{ .Site.Params.author }}"},"contactPoint":{"@type":"ContactPoint","email":"fei15888051764@gmail.com","contactType":"customer support"},"sameAs":[]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"{{ .Site.Title }}","url":"{{ .Site.BaseURL }}","logo":"{{ .Site.BaseURL }}logo.png","founder":{"@type":"Person","name":"{{ .Site.Params.author }}"},"contactPoint":{"@type":"ContactPoint","email":"fei15888051764@gmail.com","contactType":"customer support"},"sameAs":["https://twitter.com/gamerterms","https://youtube.com/@gamerterms","https://tiktok.com/@gamerterms"]}</script>
 {{ else if eq .Section "slang" }}
 {{ $imgBase := .Params.slug }}
 <!-- Article -->
