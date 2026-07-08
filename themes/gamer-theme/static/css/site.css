@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Press+Start+2P&display=swap');*,*::before,*::after{box-sizing:border-box}html,body{margin:0;padding:0}body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:#0a0a0a;color:#f0f0f0;line-height:1.6}a{color:#a3ff00;text-decoration:none}a:hover{color:#b8ff40}img{max-width:100%;height:auto;display:block}button{font-family:inherit;cursor:pointer}input{font-family:inherit}.navbar{position:fixed;top:0;left:0;right:0;z-index:100;height:56px;background:rgba(10,10,10,0.95);backdrop-filter:blur(10px);border-bottom:1px solid #222;display:flex;align-items:center}.nav-container{max-width:1400px;margin:0 auto;width:100%;padding:0 16px;display:flex;align-items:center;justify-content:space-between}.nav-logo{display:flex;align-items:center;gap:8px}.nav-logo svg{width:20px;height:20px;color:#a3ff00}.nav-logo-text{font-family:'Press Start 2P',cursive;font-size:10px;color:#a3ff00}.nav-links{display:flex;align-items:center;gap:20px}.nav-link{font-size:12px;font-weight:500;color:#f0f0f0;transition:color .2s}.nav-link:hover{color:#a3ff00}@media(max-width:639px){.nav-links{gap:12px}.nav-link{font-size:11px}}.hero{position:relative;height:280px;display:flex;align-items:center;justify-content:center;overflow:hidden}.hero-bg{position:absolute;inset:0;z-index:0}.hero-content{position:relative;z-index:1;text-align:center;padding:0 24px}.hero-title{font-family:'Press Start 2P',cursive;font-size:clamp(20px,5vw,42px);color:#f0f0f0;margin-bottom:12px;text-shadow:0 0 30px rgba(163,255,0,0.3)}.hero-subtitle{font-size:14px;color:#888;max-width:500px;margin:0 auto}
 /* ===== Search Section & Input (White Background) ===== */
-.search-section{padding:32px 16px 12px;background:#0a0a0a}
+.search-section{padding:20px 16px 24px;background:#0a0a0a}
 .search-form{max-width:480px;margin:0 auto;position:relative}
 .search-input{width:100%;padding:18px 20px 18px 48px;background:#fff;border:1px solid #ccc;border-radius:9999px;color:#333;font-size:15px;outline:none;transition:border-color .2s}
 .search-input::placeholder{color:#999}
@@ -9,7 +9,7 @@
 
 /* ===== Home Button below search (white bg, matches search) ===== */
 .search-with-home{max-width:480px;margin:0 auto}
-.home-btn-row{display:flex;justify-content:flex-start;margin-top:10px}
+.home-btn-row{display:flex;justify-content:flex-start;margin-top:8px;padding-bottom:4px}
 .home-btn{display:inline-flex;align-items:center;gap:6px;padding:9px 20px;background:#fff;border:1px solid #ccc;border-radius:9999px;color:#555;font-size:13px;font-weight:500;cursor:pointer;transition:all .2s;text-decoration:none;line-height:1}
 .home-btn:hover{border-color:#a3ff00;color:#333;box-shadow:0 0 0 3px rgba(163,255,0,.1)}
 .home-btn svg{flex-shrink:0;color:#777;transition:color .2s}
@@ -24,7 +24,7 @@
 @media(min-width:1024px){.ad-sidebar{display:block}}
 
 /* Detail page ads */
-.detail-layout{display:flex;gap:16px;align-items:flex-start}
+.detail-layout{display:flex;gap:16px;align-items:flex-start;margin-top:16px}
 .ad-sidebar-detail{position:sticky;top:72px;align-self:flex-start}
 
 .ad-mobile{width:100%;height:90px;background:#111;border:1px dashed #333;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#555;font-size:12px;margin:12px 0;grid-column:1/-1}
