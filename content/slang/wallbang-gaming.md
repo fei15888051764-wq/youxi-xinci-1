@@ -23,68 +23,66 @@ In gaming, "wallbang" means killing an enemy by shooting through a wall or other
 
 ## High-Fidelity Contextual Dialogues
 
-**Scene: CS2, after a wallbang kill**
+**Scene: Counter-Strike 2, clutch situation**
 
-Player A: "Did you see that wallbang?!"
-Teammate: "Through double doors?! How did you know he was there?"
-Player A: "I heard him shift-walking. 2000 hours of map knowledge paying off."
-Teammate: "That's the cleanest wallbang I've ever seen"
-Player B: "Teach me your ways, wallbang sensei"
-
----
-
-**Scene: Discord, showing a clip**
-
-Alex: "Check this wallbang I hit yesterday"
-Jordan: "You shot through a WALL and got a headshot?"
-Alex: "The AK penetrates that wall perfectly. I pre-aimed the common angle."
-Jordan: "That's not luck, that's pure game sense"
-Alex: "Wallbangs are 90% knowledge, 10% guessing. I knew he'd be there."
+Player A: "He's defusing behind the wall, I'm going for the wallbang"
+Teammate: "You know the spot?"
+Player A: "Learned it from a pro match, watch this"
+[Shoots through wall, gets the kill]
+Teammate: "LET'S GO! That wallbang was clean!"
 
 ---
 
-**Scene: Twitch chat, pro player wallbang highlight**
+**Scene: VALORANT, post-round**
 
-[Pro player gets a wallbang through smoke AND a wall]
-Chat: "WALLBANG THROUGH SMOKE"
-Chat: "that's illegal"
-Chat: "how does he even know"
-Chat: "game sense lvl 999"
-Caster: "And THAT is why he's the best in the world. You can't teach that kind of map awareness."
+Player A: "How did he kill me? I was behind cover"
+Teammate: "He wallbanged you through the double doors"
+Player A: "I didn't think that wall was penetrable"
+Teammate: "Operator + wallbang = rip"
+
+---
+
+**Scene: Call of Duty, killcam rage**
+
+Player A: "NO WAY he killed me through that wall!"
+Killcam shows enemy shooting through concrete wall for the kill
+Player A: "That's such a BS wallbang spot"
+Teammate: "Now you know it exists, use it next time"
+Player A: "I'm about to become the wallbang king just out of spite"
 
 ---
 
 ## Trajectory & Chronology
 
-The term "wallbang" originated in Counter-Strike (1999), where certain weapons could penetrate thin walls and doors, allowing skilled players to kill enemies without direct line of sight. By the early 2000s, "wallbang" was standard CS terminology, with competitive players memorizing penetration points on every map. The mechanic spread to other tactical shooters: Rainbow Six Siege made wall destruction central to gameplay (literally shooting through walls is the game's defining feature), while VALORANT incorporated wallbangs through specific agent abilities and weapon penetrations. Call of Duty adopted wallbangs with the "FMJ" (Full Metal Jacket) attachment that increases bullet penetration. In 2026, wallbangs remain a signature skill expression in tactical shooters — getting a kill through a wall demonstrates not just aim, but deep game knowledge that casual players don't possess.
+The term "wallbang" emerged from Counter-Strike in the early 2000s, where the game's penetration system allowed bullets to pass through certain materials with reduced damage. The name comes from the combination of "wall" and "bang" (gunshot) — literally shooting through a wall. In CS 1.6 (2000-2003), wallbangs became legendary through competitive play, with pros memorizing specific pixel-perfect spots to kill common positions. The concept existed in earlier shooters but CS's predictable penetration mechanics made wallbangs a skill expression rather than random chance. By the CS:GO era (2012-2023), wallbangs were a standard part of high-level play, with smoke + wallbang combos becoming common. In 2026, wallbangs remain a defining feature of tactical shooters (CS2, VALORANT, Rainbow Six Siege), with each game implementing different penetration mechanics and material properties.
 
-> **GEBILAOWANG:** A wallbang isn't just a kill — it's a statement. It says "I know this map better than you know your own bedroom." There's something deeply satisfying about killing someone who thought they were safe behind a wall.
+> **GEBILAOWANG:** The wallbang is the ultimate 'I know something you don't' moment in FPS games. It's not just aim — it's hundreds of hours of map study distilled into one perfect shot. When you get wallbanged, you're not losing a gunfight; you're losing a knowledge check.
 
 ---
 
 ## Socio-Cultural Gain
 
-Wallbang represents the peak of game knowledge in tactical shooters — the moment when map memorization and prediction pay off in the most dramatic way possible. Unlike flashy flick shots (which anyone can appreciate), wallbangs are understood primarily by experienced players who know the maps well enough to recognize what just happened. This creates a unique social dynamic: when a pro player hits a wallbang, casual viewers might not understand the skill involved, while experienced players lose their minds. "Knowing your wallbangs" has become a shorthand for having deep game knowledge — it's the difference between someone who plays casually and someone who studies the game. In esports, wallbang kills are among the most hype moments, often generating the loudest crowd reactions. The term has also spawned "wallbang spots" — specific locations on maps that are known penetration points, which competitive teams practice extensively.
+Wallbangs represent the depth of skill expression in tactical shooters — the difference between a new player who only shoots what they can see, and a veteran who understands the map's hidden dimensions. In competitive culture, hitting a difficult wallbang is one of the most respected plays, often more impressive than a standard headshot. The "wallbang spot" has become shared knowledge passed down through communities — Reddit threads, YouTube tutorials, and pro match analysis all document penetrable surfaces. The psychology of wallbangs is fascinating: getting killed by one feels unfair ("I was behind cover!"), but using one feels incredibly satisfying. This asymmetry makes wallbangs controversial among casual players but beloved by competitive ones. In 2026, knowledge of wallbang spots is considered basic competency in ranked tactical shooters.
 
 ---
 
 ## FAQ
 
-**Q1: Can you wallbang through any wall in every game?**
-> No. Wall penetration depends entirely on the game. Counter-Strike has specific penetrable surfaces (thin walls, doors, wooden boxes) while thick concrete walls block bullets. Rainbow Six Siege lets you shoot through almost everything. VALORANT has limited penetration that varies by weapon. Call of Duty's penetration depends on the FMJ attachment. Battle royale games generally have minimal wall penetration. You need to learn each game's specific penetration mechanics — there's no universal rule.
+**Q1: How do wallbangs work technically?**
+> Games use "penetration" or "wallbanging" mechanics where bullets pass through surfaces with reduced damage. Each material has a "penetration value" — thin wood might let 80% damage through, while thick concrete might only allow 10% or block bullets entirely. Weapons also have different penetration power — sniper rifles typically penetrate better than pistols. The bullet's path is calculated when fired, and if it intersects a penetrable surface, the game continues tracing the path with reduced damage until it hits a player or becomes too weak.
 
-**Q2: How do pros know where to wallbang?**
-> Thousands of hours of practice and map study. Pros memorize common player positions, popular angles, and movement timings. They also use sound cues — footsteps, reloads, and ability usage reveal enemy positions through walls. In team games, callouts from teammates provide target locations. Some wallbangs are pre-fires (shooting before you see the enemy based on predicted timing). It's not guessing — it's applied knowledge from extensive experience.
+**Q2: How do I learn wallbang spots?**
+> Study pro matches and noted wallbang locations. Use custom games to test which walls are penetrable — look for bullet hole decals on the other side. Join community Discords and subreddits where players share wallbang spots. Watch tutorial videos for your specific game (CS2 and VALORANT have extensive wallbang guides). Some games have shooting ranges with penetration testing areas. The best way is to learn a few high-value spots for common enemy positions rather than trying to memorize every penetrable surface.
 
-**Q3: Is wallbanging still a major skill in 2026?**
-> Yes, particularly in tactical shooters. CS2 and VALORANT both maintain wall penetration as a core mechanic, and professional players are expected to know standard wallbang spots. Rainbow Six Siege has made wall destruction even more central to gameplay. However, battle royale games have generally moved away from wall penetration, focusing more on building/editing mechanics instead. Wallbangs remain one of the most respected skill expressions in competitive FPS.
+**Q3: Are wallbangs considered fair or cheap?**
+> In competitive and ranked play, wallbangs are universally respected as a skill expression — they require map knowledge, game sense, and often precise positioning. Among casual players, getting killed by a wallbang can feel "cheap" because you didn't see your attacker. However, it's a legitimate game mechanic that rewards knowledge. Most games balance wallbangs by reducing damage through walls, ensuring they rarely one-shot full-health players (except with high-penetration weapons like sniper rifles).
 
 **Q4: How do I explain wallbang to a non-gamer in one sentence?**
-> "In shooting games, a 'wallbang' is when you kill someone by shooting through a wall — it requires knowing exactly where the enemy is standing based on sound cues, map knowledge, and prediction, making it one of the most impressive plays in competitive gaming."
+> "A 'wallbang' is when a player shoots through a wall or surface to kill an enemy they can't directly see — it's a high-skill play that requires knowing exactly where someone is standing on the other side."
 
 ---
 
 ## Sources
 
 - SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition) [https://spawnpoint.be/gaming-terms-slang-glossary/]
-- CS2 Weapon Penetration Guide 2026 [https://www.esports.net/cs2/guides/weapon-wallbang-penetration-guide/]
+- Bark.us — 2026 Gaming Terms and Slang Words [https://www.bark.us/blog/gaming-terms/]
