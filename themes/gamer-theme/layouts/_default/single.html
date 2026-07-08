@@ -289,10 +289,8 @@
               }
             });
           }
-          // Add common variations
           var contentBlocks = document.querySelectorAll('.content-text');
           contentBlocks.forEach(function(block) {
-            // Only process text nodes, not inside links already
             var walker = document.createTreeWalker(block, NodeFilter.SHOW_TEXT, {
               acceptNode: function(node) {
                 return node.parentElement.tagName !== 'A' && node.parentElement.tagName !== 'SCRIPT' ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
@@ -303,7 +301,6 @@
               var text = walker.currentNode.textContent;
               var replaced = text;
               Object.keys(slangMap).forEach(function(term) {
-                // Don't link the current page's term
                 if (term === '{{ .Title | lower }}') return;
                 var regex = new RegExp('\\b' + term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'gi');
                 replaced = replaced.replace(regex, function(match) {
@@ -318,6 +315,48 @@
               var wrapper = document.createElement('span');
               wrapper.innerHTML = item.html;
               item.node.parentNode.replaceChild(wrapper, item.node);
+            });
+          });
+        })();
+        </script>
+
+        <!-- ===== TOC ANCHOR FIX: auto-assign IDs to content h2 headings ===== -->
+        <script>
+        (function() {
+          // Map of keyword → anchor ID for TOC links
+          var idMap = [
+            { keywords: ['contextual dialogue', 'usage example', 'high-fidelity'], id: 'context' },
+            { keywords: ['trajectory', 'chronology', 'origin', 'spread', 'history'], id: 'history' },
+            { keywords: ['socio-cultural', 'cultural context', 'cultural impact'], id: 'culture' },
+            { keywords: ['faq'], id: 'faq' }
+          ];
+
+          var contentBlocks = document.querySelectorAll('.content-text, .content-block');
+          contentBlocks.forEach(function(block) {
+            var h2s = block.querySelectorAll('h2');
+            h2s.forEach(function(h2) {
+              if (h2.id) return; // Skip if already has an ID
+              var text = h2.textContent.toLowerCase();
+              idMap.forEach(function(mapping) {
+                mapping.keywords.forEach(function(kw) {
+                  if (text.indexOf(kw) !== -1) {
+                    h2.id = mapping.id;
+                  }
+                });
+              });
+            });
+          });
+
+          // Also handle section-title h2 elements inside content blocks
+          document.querySelectorAll('.section-title').forEach(function(h2) {
+            if (h2.id) return;
+            var text = h2.textContent.toLowerCase();
+            idMap.forEach(function(mapping) {
+              mapping.keywords.forEach(function(kw) {
+                if (text.indexOf(kw) !== -1 && !h2.id) {
+                  h2.id = mapping.id;
+                }
+              });
             });
           });
         })();
