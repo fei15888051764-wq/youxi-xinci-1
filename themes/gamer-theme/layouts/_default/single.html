@@ -52,7 +52,7 @@
         <meta itemprop="dateModified" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}" />
 
         <div class="detail-hero-img">
-          <img src="/slang/{{ $base }}.jpg" alt="{{ .Title }} gaming slang" itemprop="image" onerror="var t=this; var base='{{ $base }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg';} else {this.parentElement.style.display='none'};">
+          <img src="/slang/{{ $base }}.jpg" alt="{{ .Title }} gaming slang meaning definition 2026" itemprop="image" onerror="var t=this; var base='{{ $base }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg';} else {this.parentElement.style.display='none'};">
         </div>
 
         <div class="detail-title-block">
@@ -238,7 +238,7 @@
             {{ $rbase := replace .Params.slug "-gaming" "" }}
             <a href="{{ .RelPermalink }}" class="card" style="text-decoration:none;">
               <div class="card-img-wrap">
-                <img src="/slang/{{ $rbase }}.jpg" alt="{{ .Title }} gaming slang" class="card-img" loading="lazy"
+                <img src="/slang/{{ $rbase }}.jpg" alt="{{ .Title }} gaming slang meaning definition 2026" class="card-img" loading="lazy"
                      onerror="var t=this; var base='{{ $rbase }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg';} else {this.parentElement.style.display='none'};">
               </div>
               <div class="card-body">
@@ -323,23 +323,19 @@
         <!-- ===== TOC DYNAMIC HREF FIX ===== -->
         <script>
         (function() {
-          // TOC link index → keywords to match against content h2 text
           var tocMappings = [
-            null, // 01 Meaning & Definition → fixed #meaning
-            { keywords: ['contextual', 'dialogue', 'example', 'usage'] },     // 02
-            { keywords: ['trajectory', 'chronology', 'origin', 'history'] }, // 03
-            { keywords: ['socio-cultural', 'cultural', 'impact', 'gain'] },  // 04
-            { keywords: ['faq'] },                                           // 05
-            null  // 06 Related Slang → fixed #related
+            null,
+            { keywords: ['contextual', 'dialogue', 'example', 'usage'] },
+            { keywords: ['trajectory', 'chronology', 'origin', 'history'] },
+            { keywords: ['socio-cultural', 'cultural', 'impact', 'gain'] },
+            { keywords: ['faq'] },
+            null
           ];
 
-          // Collect all h2[id] elements from article content
           var contentH2s = [];
           document.querySelectorAll('.content-text h2[id], .content-block h2[id]').forEach(function(h2) {
             contentH2s.push({ id: h2.id, text: h2.textContent.toLowerCase() });
           });
-
-          // Also check the parent content-block id for sections without h2[id]
           document.querySelectorAll('.content-block[id]').forEach(function(block) {
             var h2 = block.querySelector('h2');
             if (h2 && !h2.id) {
@@ -347,11 +343,10 @@
             }
           });
 
-          // Update TOC links
           var tocLinks = document.querySelectorAll('#toc a');
           tocLinks.forEach(function(link, index) {
             var mapping = tocMappings[index];
-            if (!mapping) return; // 01 and 06 are fixed
+            if (!mapping) return;
 
             var matched = false;
             contentH2s.forEach(function(h2) {
@@ -365,7 +360,6 @@
               });
             });
 
-            // If no match found, try the parent content-block id
             if (!matched) {
               var defaultIds = ['context', 'history', 'culture', 'faq'];
               var defaultId = defaultIds[index - 1];
@@ -374,6 +368,66 @@
               }
             }
           });
+        })();
+        </script>
+
+        <!-- ===== FAQPAGE SCHEMA: dynamic generation for new-format articles ===== -->
+        <script>
+        (function() {
+          // Skip if server-side FAQPage schema already exists (old format)
+          if (document.querySelector('script[type="application/ld+json"]')?.textContent?.includes('"@type":"FAQPage"')) return;
+
+          var faqBlock = document.getElementById('faq');
+          if (!faqBlock) return;
+
+          var mainEntity = [];
+          var elements = faqBlock.querySelectorAll('p, blockquote, li');
+
+          elements.forEach(function(el) {
+            var text = el.textContent.trim();
+            if (!text) return;
+
+            // Match Q1: ... or Q: ... patterns
+            var qMatch = text.match(/^Q(\d+):\s*(.+)/i);
+            if (!qMatch) qMatch = text.match(/^Q:\s*(.+)/i);
+
+            if (qMatch) {
+              var question = (qMatch[2] || qMatch[1]).trim();
+              // Extract answer: text after the Q: line, handling <strong>/<b> tags
+              var answerHtml = el.innerHTML;
+              var answerParts = answerHtml.split(/<\/(?:strong|b)>/i);
+              var answer = answerParts.length > 1 ? answerParts[1].replace(/<[^>]+>/g, '').trim() : '';
+
+              // If no answer found after the question, try next sibling
+              if (!answer && el.nextElementSibling) {
+                answer = el.nextElementSibling.textContent.trim();
+              }
+
+              if (question && answer) {
+                mainEntity.push({
+                  "@type": "Question",
+                  "name": question,
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": answer
+                  }
+                });
+              }
+            }
+          });
+
+          if (!mainEntity.length) return;
+
+          var schema = {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": mainEntity
+          };
+
+          var script = document.createElement('script');
+          script.type = 'application/ld+json';
+          script.textContent = JSON.stringify(schema);
+          document.head.appendChild(script);
         })();
         </script>
 
