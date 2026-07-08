@@ -1,13 +1,15 @@
 {{ define "main" }}
 
 <!-- Hero -->
-<section class="hero">
+<section class="hero" itemscope itemtype="https://schema.org/WebSite">
+  <meta itemprop="name" content="{{ .Site.Title }}">
+  <meta itemprop="url" content="{{ .Site.BaseURL }}">
   <div class="hero-bg" aria-hidden="true">
     <canvas id="heroGrid"></canvas>
   </div>
   <div class="hero-content">
     <h1 class="hero-title" style="font-size:clamp(14px,5vw,40px)">GAMER SLANG & PRO TERMS HUB</h1>
-    <p class="hero-subtitle">Your ultimate dictionary for gaming slang and terminology.</p>
+    <p class="hero-subtitle" itemprop="description">Your ultimate dictionary for gaming slang and terminology. Discover the meaning, origin, and usage of 100+ gaming terms updated for 2026.</p>
   </div>
 </section>
 
@@ -15,7 +17,7 @@
 <section class="search-section home-search">
   <form class="search-form" onsubmit="event.preventDefault();">
     <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-    <input type="text" class="search-input" placeholder="Search Gaming Terms">
+    <input type="text" class="search-input" placeholder="Search Gaming Terms..." aria-label="Search gaming slang terms">
   </form>
 </section>
 
@@ -153,7 +155,9 @@
 </script>
 
 <!-- Trending Terms -->
-<section class="terms-section">
+<section class="terms-section" itemscope itemtype="https://schema.org/ItemList">
+  <meta itemprop="name" content="Trending Gaming Slang Terms 2026">
+  <meta itemprop="description" content="Latest gaming slang terms and definitions updated for 2026. Discover what gamers are saying.">
   <div class="terms-header">
     <h2 class="terms-title">TRENDING TERMS</h2>
     <p class="terms-subtitle">LATEST GAMING SLANG UPDATES</p>
@@ -173,12 +177,17 @@
       {{ range $index, $page := first 22 (sort (where .Site.RegularPages "Section" "slang") "Date" "desc") }}
       {{ $base := replace $page.Params.slug "-gaming" "" }}
       {{ $desc := $page.Params.shortDescription | default $page.Params.description | default $page.Summary }}
-      <a href="{{ $page.RelPermalink }}" class="card{{ if eq $index 21 }} hide-on-desktop{{ end }}">
+      <a href="{{ $page.RelPermalink }}" class="card{{ if eq $index 21 }} hide-on-desktop{{ end }}" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <meta itemprop="position" content="{{ add $index 1 }}">
+        <div itemprop="item" itemscope itemtype="https://schema.org/Article">
+          <meta itemprop="headline" content="{{ $page.Title }}">
+          <meta itemprop="description" content="{{ $desc }}">
+          <meta itemprop="url" content="{{ $page.Permalink }}">
         <div class="card-img-wrap">
-          <img src="/slang/{{ $base }}.jpg?v=2" alt="{{ $page.Title }}" class="card-img" loading="lazy" onerror="var t=this; var base='{{ $base }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg?v=2';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg?v=2';} else {this.parentElement.style.display='none'};">
+          <img src="/slang/{{ $base }}.jpg?v=2" alt="{{ $page.Title }} gaming slang" class="card-img" loading="lazy" itemprop="image" onerror="var t=this; var base='{{ $base }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg?v=2';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg?v=2';} else {this.parentElement.style.display='none'};">
         </div>
         <div class="card-body">
-          <h3 class="card-title-text">{{ $page.Title }}</h3>
+          <h3 class="card-title-text" itemprop="name">{{ $page.Title }}</h3>
           <p class="card-desc">{{ $desc }}</p>
           <div class="card-bottom">
             <div class="card-tags">
@@ -188,6 +197,7 @@
             </div>
             <span class="card-date">{{ $page.Date.Format "Jan 2, 2006" }}</span>
           </div>
+        </div>
         </div>
       </a>
       {{ if eq $index 9 }}
@@ -201,7 +211,7 @@
 
       <!-- View All Button -->
       <div class="view-all-wrap">
-        <a href="/slang/" class="view-all-btn">
+        <a href="/slang/" class="view-all-btn" aria-label="Browse all gaming slang terms">
           <span>Browse All Slang</span>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
         </a>
@@ -211,6 +221,25 @@
     <!-- Right Ad -->
     <div class="ad-sidebar">
       <div class="ad-sidebar-inner">AD</div>
+    </div>
+  </div>
+</section>
+
+<!-- Popular Tags Section (SEO: provides tag pages internal links) -->
+<section class="terms-section" style="padding-top:0;">
+  <div class="terms-header">
+    <h2 class="terms-title">BROWSE BY CATEGORY</h2>
+    <p class="terms-subtitle">EXPLORE GAMING SLANG BY TOPIC</p>
+  </div>
+  <div style="max-width:900px;margin:0 auto 40px;padding:0 20px;">
+    <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;">
+      {{ $popularTags := slice "fps" "moba" "general" "competitive" "essential" "meme" "tactical" "rpg" "team-game" }}
+      {{ range $popularTags }}
+      <a href="/tags/{{ . | urlize }}/" style="display:inline-flex;align-items:center;gap:6px;background:#1a1a1a;border:1px solid #333;padding:10px 18px;border-radius:8px;color:#aaa;text-decoration:none;font-size:14px;transition:all .2s;" onmouseover="this.style.borderColor='#a3e635';this.style.color='#fff'" onmouseout="this.style.borderColor='#333';this.style.color='#aaa'">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/></svg>
+        {{ . }}
+      </a>
+      {{ end }}
     </div>
   </div>
 </section>
