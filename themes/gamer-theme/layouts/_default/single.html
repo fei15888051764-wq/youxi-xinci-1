@@ -320,44 +320,59 @@
         })();
         </script>
 
-        <!-- ===== TOC ANCHOR FIX: auto-assign IDs to content h2 headings ===== -->
+        <!-- ===== TOC DYNAMIC HREF FIX ===== -->
         <script>
         (function() {
-          // Map of keyword → anchor ID for TOC links
-          var idMap = [
-            { keywords: ['contextual dialogue', 'usage example', 'high-fidelity'], id: 'context' },
-            { keywords: ['trajectory', 'chronology', 'origin', 'spread', 'history'], id: 'history' },
-            { keywords: ['socio-cultural', 'cultural context', 'cultural impact'], id: 'culture' },
-            { keywords: ['faq'], id: 'faq' }
+          // TOC link index → keywords to match against content h2 text
+          var tocMappings = [
+            null, // 01 Meaning & Definition → fixed #meaning
+            { keywords: ['contextual', 'dialogue', 'example', 'usage'] },     // 02
+            { keywords: ['trajectory', 'chronology', 'origin', 'history'] }, // 03
+            { keywords: ['socio-cultural', 'cultural', 'impact', 'gain'] },  // 04
+            { keywords: ['faq'] },                                           // 05
+            null  // 06 Related Slang → fixed #related
           ];
 
-          var contentBlocks = document.querySelectorAll('.content-text, .content-block');
-          contentBlocks.forEach(function(block) {
-            var h2s = block.querySelectorAll('h2');
-            h2s.forEach(function(h2) {
-              if (h2.id) return; // Skip if already has an ID
-              var text = h2.textContent.toLowerCase();
-              idMap.forEach(function(mapping) {
-                mapping.keywords.forEach(function(kw) {
-                  if (text.indexOf(kw) !== -1) {
-                    h2.id = mapping.id;
-                  }
-                });
-              });
-            });
+          // Collect all h2[id] elements from article content
+          var contentH2s = [];
+          document.querySelectorAll('.content-text h2[id], .content-block h2[id]').forEach(function(h2) {
+            contentH2s.push({ id: h2.id, text: h2.textContent.toLowerCase() });
           });
 
-          // Also handle section-title h2 elements inside content blocks
-          document.querySelectorAll('.section-title').forEach(function(h2) {
-            if (h2.id) return;
-            var text = h2.textContent.toLowerCase();
-            idMap.forEach(function(mapping) {
+          // Also check the parent content-block id for sections without h2[id]
+          document.querySelectorAll('.content-block[id]').forEach(function(block) {
+            var h2 = block.querySelector('h2');
+            if (h2 && !h2.id) {
+              contentH2s.push({ id: block.id, text: h2.textContent.toLowerCase() });
+            }
+          });
+
+          // Update TOC links
+          var tocLinks = document.querySelectorAll('#toc a');
+          tocLinks.forEach(function(link, index) {
+            var mapping = tocMappings[index];
+            if (!mapping) return; // 01 and 06 are fixed
+
+            var matched = false;
+            contentH2s.forEach(function(h2) {
+              if (matched) return;
               mapping.keywords.forEach(function(kw) {
-                if (text.indexOf(kw) !== -1 && !h2.id) {
-                  h2.id = mapping.id;
+                if (matched) return;
+                if (h2.text.indexOf(kw) !== -1) {
+                  link.href = '#' + h2.id;
+                  matched = true;
                 }
               });
             });
+
+            // If no match found, try the parent content-block id
+            if (!matched) {
+              var defaultIds = ['context', 'history', 'culture', 'faq'];
+              var defaultId = defaultIds[index - 1];
+              if (defaultId && document.getElementById(defaultId)) {
+                link.href = '#' + defaultId;
+              }
+            }
           });
         })();
         </script>
