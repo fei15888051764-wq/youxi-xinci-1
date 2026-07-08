@@ -12,12 +12,21 @@
     </button>
 
     <!-- Breadcrumb -->
-    <nav class="breadcrumb">
-      <a href="/">Home</a>
+    <nav class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+        <meta itemprop="position" content="1" />
+      </span>
       <span>/</span>
-      <a href="/slang/">Slang</a>
+      <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/slang/" itemprop="item"><span itemprop="name">Slang</span></a>
+        <meta itemprop="position" content="2" />
+      </span>
       <span>/</span>
-      <span class="breadcrumb-current">{{ .Title }}</span>
+      <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumb-current">
+        <span itemprop="name">{{ .Title }}</span>
+        <meta itemprop="position" content="3" />
+      </span>
     </nav>
 
     <!-- Search Bar -->
@@ -35,14 +44,18 @@
       </div>
 
       <!-- Main Content -->
-      <article class="detail-content">
+      <article class="detail-content" itemscope itemtype="https://schema.org/Article">
+        <meta itemprop="headline" content="{{ .Title }} - Gaming Slang Meaning &amp; Origin 2026" />
+        <meta itemprop="datePublished" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}" />
+        <meta itemprop="dateModified" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}" />
+
         <div class="detail-hero-img">
-          <img src="/slang/{{ $base }}.jpg" alt="{{ .Title }}" onerror="var t=this; var base='{{ $base }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg';} else {this.parentElement.style.display='none'};">
+          <img src="/slang/{{ $base }}.jpg" alt="{{ .Title }} gaming slang" itemprop="image" onerror="var t=this; var base='{{ $base }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg';} else {this.parentElement.style.display='none'};">
         </div>
 
         <div class="detail-title-block">
           <div class="detail-title-row">
-            <h1 class="detail-title">{{ .Title }}</h1>
+            <h1 class="detail-title">{{ .Title }} <span style="color:#888;font-size:0.55em;white-space:normal;display:inline;">- Gaming Slang Meaning &amp; Origin 2026</span></h1>
             {{ $cat := .Params.category | default .Section | default "slang" }}
             <span class="card-badge">{{ $cat }}</span>
           </div>
@@ -58,7 +71,7 @@
           </div>
           <div class="detail-tags-row">
             {{ range .Params.tags }}
-            <span class="detail-tag"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/></svg>{{ . }}</span>
+            <a href="/tags/{{ . | urlize }}/" class="detail-tag" style="text-decoration:none;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/></svg>{{ . }}</a>
             {{ end }}
           </div>
         </div>
@@ -66,16 +79,39 @@
         <!-- Mobile Ad 1: top of detail content (after title, before meaning) -->
         <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
 
+        <!-- ===== DESCRIPTION BOX (SEO KEY FIX) ===== -->
+        {{ $shortDesc := .Params.shortDescription | default .Params.description | default "" }}
+        {{ if $shortDesc }}
+        <div class="description-box" style="background:#151515;border:1px solid #2a2a2a;border-radius:12px;padding:20px 24px;margin:0 0 24px 0;">
+          <h2 style="font-size:13px;font-weight:700;color:#a3e635;margin:0 0 10px 0;letter-spacing:0.1em;text-transform:uppercase;">Quick Definition</h2>
+          <p itemprop="description" style="font-size:16px;line-height:1.7;color:#d0d0d0;margin:0;">{{ $shortDesc }}</p>
+        </div>
+        {{ end }}
+
+        <!-- ===== TABLE OF CONTENTS ===== -->
+        <div id="toc" class="toc" style="background:#151515;border:1px solid #2a2a2a;border-radius:12px;padding:20px 24px;margin:0 0 24px 0;">
+          <h2 style="font-size:13px;font-weight:700;color:#a3e635;margin:0 0 14px 0;letter-spacing:0.1em;text-transform:uppercase;">Table of Contents</h2>
+          <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px 20px;">
+            {{ if .Content }}
+            <li style="margin:0;"><a href="#meaning" style="color:#aaa;text-decoration:none;font-size:14px;display:flex;align-items:center;gap:6px;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#aaa'"><span style="color:#333;font-size:11px;">01</span>Meaning &amp; Definition</a></li>
+            {{ end }}
+            {{ if .Content }}<li style="margin:0;"><a href="#context" style="color:#aaa;text-decoration:none;font-size:14px;display:flex;align-items:center;gap:6px;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#aaa'"><span style="color:#333;font-size:11px;">02</span>Usage Examples</a></li>{{ end }}
+            {{ if .Content }}<li style="margin:0;"><a href="#history" style="color:#aaa;text-decoration:none;font-size:14px;display:flex;align-items:center;gap:6px;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#aaa'"><span style="color:#333;font-size:11px;">03</span>Origin &amp; History</a></li>{{ end }}
+            {{ if .Content }}<li style="margin:0;"><a href="#culture" style="color:#aaa;text-decoration:none;font-size:14px;display:flex;align-items:center;gap:6px;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#aaa'"><span style="color:#333;font-size:11px;">04</span>Cultural Impact</a></li>{{ end }}
+            {{ if or .Params.faq .Content }}<li style="margin:0;"><a href="#faq" style="color:#aaa;text-decoration:none;font-size:14px;display:flex;align-items:center;gap:6px;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#aaa'"><span style="color:#333;font-size:11px;">05</span>FAQ</a></li>{{ end }}
+            {{ if .Content }}<li style="margin:0;"><a href="#related" style="color:#aaa;text-decoration:none;font-size:14px;display:flex;align-items:center;gap:6px;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#aaa'"><span style="color:#333;font-size:11px;">06</span>Related Slang</a></li>{{ end }}
+          </ul>
+        </div>
+
         <!-- Full Meaning -->
-        <div class="content-block">
+        <div class="content-block" id="meaning">
           {{ $titleLen := len .Title }}
           {{ if gt $titleLen 30 }}
-            <!-- Long title: use a clean short heading -->
-            <h2 class="section-title">Overview</h2>
+            <h2 class="section-title">What Does {{ .Title }} Mean in Gaming?</h2>
           {{ else }}
-            <h2 class="section-title">What Does "{{ .Title }}" Mean?</h2>
+            <h2 class="section-title">What Does "{{ .Title }}" Mean in Gaming?</h2>
           {{ end }}
-          <div class="content-text">{{ .Content }}</div>
+          <div class="content-text" itemprop="articleBody">{{ .Content }}</div>
         </div>
 
         <!-- Mobile Ad 2: middle of detail content -->
@@ -83,7 +119,7 @@
 
         <!-- Usage Examples -->
         {{ with .Params.usageExamples }}
-        <div class="content-block">
+        <div class="content-block" id="context">
           <h2 class="section-title">Usage Examples</h2>
           <div class="table-wrap">
             <table class="data-table">
@@ -100,7 +136,7 @@
 
         <!-- Origin -->
         {{ with .Params.originSpread }}
-        <div class="content-block">
+        <div class="content-block" id="history">
           <h2 class="section-title">Origin &amp; Spread</h2>
           <div class="table-wrap">
             <table class="data-table">
@@ -117,7 +153,7 @@
 
         <!-- Cultural Context -->
         {{ with .Params.culturalContext }}
-        <div class="content-block">
+        <div class="content-block" id="culture">
           <h2 class="section-title">Cultural Context</h2>
           <p class="content-text">{{ . }}</p>
         </div>
@@ -137,7 +173,7 @@
 
         <!-- FAQ -->
         {{ with .Params.faq }}
-        <div class="content-block">
+        <div class="content-block" id="faq">
           <h2 class="section-title">FAQ</h2>
           <div class="faq-list">
             {{ range . }}
@@ -164,14 +200,12 @@
 
         <!-- About the Author -->
         <div class="content-block author-card" style="margin-top:32px;padding:20px;border-top:1px solid #333;background:#111;border-radius:12px;">
-          <div style="display:flex;align-items:flex-start;gap:16px;">
-            <!-- Avatar placeholder -->
+          <div itemprop="author" itemscope itemtype="https://schema.org/Person" style="display:flex;align-items:flex-start;gap:16px;">
             <div style="width:48px;height:48px;border-radius:50%;background:#2a2a2a;flex-shrink:0;display:flex;align-items:center;justify-content:center;">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg>
             </div>
-            <!-- Author info -->
             <div style="flex:1;min-width:0;">
-              <p style="color:#f0f0f0;font-size:14px;font-weight:700;margin:0 0 8px 0;">AUTHOR: GEBILAOWANG</p>
+              <p style="color:#f0f0f0;font-size:14px;font-weight:700;margin:0 0 8px 0;"><span itemprop="name">GEBILAOWANG</span> — <span itemprop="jobTitle">Gaming Culture Writer</span></p>
               <p style="color:#888;font-size:13px;line-height:1.6;margin:0 0 12px 0;">Independent digital content creator, researcher, and online lexicographer building authoritative niche websites and in-depth content across gaming culture, social media trends, technology, and internet linguistics. Known for comprehensive slang dictionaries, digital trend analysis, and cultural documentation. Active in the field since 2024. For corrections, collaborations, or media inquiries: <a href="mailto:fei15888051764@gmail.com" style="color:#a3e635;">fei15888051764@gmail.com</a></p>
               <p style="margin:0;font-size:15px;color:#f0f0f0;"><strong>Learn more about GEBILAOWANG:</strong> <a href="https://about.me/GEBILAOWANG" target="_blank" rel="noopener" style="color:#a3e635;text-decoration:underline;">https://about.me/GEBILAOWANG</a></p>
             </div>
@@ -181,7 +215,7 @@
         <!-- Mobile Ad 3: end of detail content (before Related Slang) -->
         <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
 
-        <!-- Related Slang -->
+        <!-- ===== ENHANCED Related Slang (was 3, now 6) ===== -->
         {{ $current := . }}
         {{ $related := slice }}
         {{ range .Params.tags }}
@@ -192,14 +226,17 @@
           {{ end }}
         {{ end }}
         {{ if $related }}
-        <div class="related-section">
-          <h2 class="section-title">RELATED SLANG</h2>
+        <div class="related-section" id="related">
+          <h2 class="section-title" style="display:flex;align-items:center;justify-content:space-between;">
+            <span>RELATED SLANG</span>
+            <a href="/slang/" style="font-size:13px;font-weight:400;color:#888;text-transform:none;letter-spacing:0;text-decoration:none;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#888'">View All →</a>
+          </h2>
           <div class="cards-grid">
-            {{ range first 3 $related }}
+            {{ range first 6 $related }}
             {{ $rbase := replace .Params.slug "-gaming" "" }}
-            <a href="{{ .RelPermalink }}" class="card">
+            <a href="{{ .RelPermalink }}" class="card" style="text-decoration:none;">
               <div class="card-img-wrap">
-                <img src="/slang/{{ $rbase }}.jpg" alt="{{ .Title }}" class="card-img" loading="lazy"
+                <img src="/slang/{{ $rbase }}.jpg" alt="{{ .Title }} gaming slang" class="card-img" loading="lazy"
                      onerror="var t=this; var base='{{ $rbase }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg';} else {this.parentElement.style.display='none'};">
               </div>
               <div class="card-body">
@@ -223,6 +260,66 @@
           </div>
         </div>
         {{ end }}
+
+        <!-- ===== EXPLORE BY TAG ===== -->
+        {{ if .Params.tags }}
+        <div class="content-block" style="margin-top:32px;">
+          <h2 class="section-title">Explore by Category</h2>
+          <div style="display:flex;flex-wrap:wrap;gap:10px;">
+            {{ range .Params.tags }}
+            <a href="/tags/{{ . | urlize }}/" style="display:inline-flex;align-items:center;gap:6px;background:#1a1a1a;border:1px solid #333;padding:10px 18px;border-radius:8px;color:#aaa;text-decoration:none;font-size:14px;transition:all .2s;" onmouseover="this.style.borderColor='#a3e635';this.style.color='#fff'" onmouseout="this.style.borderColor='#333';this.style.color='#aaa'">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"/></svg>
+              {{ . }}
+            </a>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+
+        <!-- ===== INTERNAL LINKING: Auto-link slang terms in content ===== -->
+        <script>
+        (function() {
+          var slangMap = {};
+          if (window.searchIndex) {
+            window.searchIndex.forEach(function(item) {
+              if (item.title && item.url) {
+                slangMap[item.title.toLowerCase()] = item.url;
+              }
+            });
+          }
+          // Add common variations
+          var contentBlocks = document.querySelectorAll('.content-text');
+          contentBlocks.forEach(function(block) {
+            // Only process text nodes, not inside links already
+            var walker = document.createTreeWalker(block, NodeFilter.SHOW_TEXT, {
+              acceptNode: function(node) {
+                return node.parentElement.tagName !== 'A' && node.parentElement.tagName !== 'SCRIPT' ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+              }
+            });
+            var nodesToReplace = [];
+            while(walker.nextNode()) {
+              var text = walker.currentNode.textContent;
+              var replaced = text;
+              Object.keys(slangMap).forEach(function(term) {
+                // Don't link the current page's term
+                if (term === '{{ .Title | lower }}') return;
+                var regex = new RegExp('\\b' + term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'gi');
+                replaced = replaced.replace(regex, function(match) {
+                  return '<a href="' + slangMap[term.toLowerCase()] + '" class="internal-slang-link" style="color:#a3e635;text-decoration:underline;text-decoration-style:dotted;">' + match + '</a>';
+                });
+              });
+              if (replaced !== text) {
+                nodesToReplace.push({node: walker.currentNode, html: replaced});
+              }
+            }
+            nodesToReplace.forEach(function(item) {
+              var wrapper = document.createElement('span');
+              wrapper.innerHTML = item.html;
+              item.node.parentNode.replaceChild(wrapper, item.node);
+            });
+          });
+        })();
+        </script>
 
       </article>
 
