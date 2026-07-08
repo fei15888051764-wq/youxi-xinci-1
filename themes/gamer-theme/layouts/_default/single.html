@@ -5,12 +5,6 @@
 <div class="detail-page">
   <div class="detail-container">
 
-    <!-- Back Button -->
-    <button onclick="history.back()" class="back-btn">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
-      Back to Home
-    </button>
-
     <!-- Breadcrumb -->
     <nav class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
       <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
@@ -29,12 +23,20 @@
       </span>
     </nav>
 
-    <!-- Search Bar -->
-    <section class="search-section" style="margin-bottom:20px;">
-      <form class="search-form" onsubmit="event.preventDefault();">
-        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-        <input type="text" class="search-input" placeholder="Search Gaming Terms">
-      </form>
+    <!-- Search Bar + Home Button (unified white style) -->
+    <section class="search-section" style="padding-bottom:0;">
+      <div class="search-with-home">
+        <form class="search-form" onsubmit="event.preventDefault();">
+          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          <input type="text" class="search-input" placeholder="Search Gaming Terms">
+        </form>
+        <div class="home-btn-row">
+          <a href="/" class="home-btn" aria-label="Back to home page">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+            Home
+          </a>
+        </div>
+      </div>
     </section>
 
     <div class="detail-layout">
@@ -336,10 +338,6 @@
 <!-- Simple Page (About / Contact / Privacy / Terms) -->
 <div class="detail-page">
   <div class="detail-container">
-    <button onclick="history.back()" class="back-btn">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
-      Back to Home
-    </button>
     <article class="detail-content" style="max-width:800px;margin:0 auto;">
       <h1 class="detail-title" style="margin-bottom:24px;">{{ .Title }}</h1>
       <div class="content-text">{{ .Content }}</div>
