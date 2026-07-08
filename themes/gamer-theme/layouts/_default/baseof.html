@@ -3,30 +3,57 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
-<meta name="description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-<meta name="keywords" content="{{ if .Params.tags }}{{ delimit .Params.tags ", " }}{{ else }}{{ .Site.Params.keywords }}{{ end }}">
+{{ $seoTitle := "" }}
+{{ if .IsHome }}
+  {{ $seoTitle = .Site.Title }}
+{{ else if eq .Section "slang" }}
+  {{ $seoTitle = printf "%s - Gaming Slang Meaning & Origin 2026 | %s" .Title .Site.Title }}
+{{ else }}
+  {{ $seoTitle = printf "%s | %s" .Title .Site.Title }}
+{{ end }}
+<title>{{ $seoTitle }}</title>
+{{ $metaDesc := "" }}
+{{ if .Params.shortDescription }}
+  {{ $metaDesc = .Params.shortDescription }}
+{{ else if .Params.description }}
+  {{ $metaDesc = .Params.description }}
+{{ else if .Params.summary }}
+  {{ $metaDesc = .Params.summary }}
+{{ else if .Summary }}
+  {{ $metaDesc = .Summary }}
+{{ else }}
+  {{ $metaDesc = .Site.Params.description }}
+{{ end }}
+{{ $metaDesc = $metaDesc | plainify | truncate 160 }}
+<meta name="description" content="{{ $metaDesc }}">
+<meta name="keywords" content="{{ if .Params.tags }}{{ delimit .Params.tags ", " }}, {{ end }}gaming slang, gaming terms, gamer dictionary, video game terminology, 2026">
 <meta name="author" content="{{ .Site.Params.author }}">
 <meta name="copyright" content="© {{ now.Year }} {{ .Site.Title }}">
 {{ if eq .Kind "404" }}
 <meta name="robots" content="noindex, nofollow">
 {{ else }}
-<meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 {{ end }}
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#0a0a0a">
 <meta name="msapplication-TileColor" content="#0a0a0a">
 <link rel="canonical" href="{{ .Permalink }}">
-<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
-<meta property="og:description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+{{ if eq .Section "slang" }}
+<link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} - {{ .Title }} Feed" href="{{ .RelPermalink }}index.xml">
+{{ end }}
+<!-- Open Graph -->
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else if eq .Section \"slang\" }}{{ .Title }} - Gaming Slang Meaning &amp; Origin 2026{{ else }}{{ .Title }}{{ end }}">
+<meta property="og:description" content="{{ $metaDesc }}">
 <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
-{{ if eq .Section "slang" }}{{ $imgBase := .Params.slug }}<meta property="og:image" content="{{ .Site.BaseURL }}slang/{{ $imgBase }}.jpg">{{ else }}<meta property="og:image" content="{{ .Site.BaseURL }}og-image.jpg">{{ end }}
+<meta property="og:locale" content="en_US">
+{{ if eq .Section "slang" }}{{ $imgBase := .Params.slug }}<meta property="og:image" content="{{ .Site.BaseURL }}slang/{{ $imgBase }}.jpg"><meta property="og:image:alt" content="{{ .Title }} - Gaming Slang"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">{{ else }}<meta property="og:image" content="{{ .Site.BaseURL }}og-image.jpg"><meta property="og:image:alt" content="Gamer Slang &amp; Pro Terms Hub">{{ end }}
+<!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
-<meta name="twitter:description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-{{ if eq .Section "slang" }}{{ $imgBase := .Params.slug }}<meta name="twitter:image" content="{{ .Site.BaseURL }}slang/{{ $imgBase }}.jpg">{{ else }}<meta name="twitter:image" content="{{ .Site.BaseURL }}og-image.jpg">{{ end }}
+<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else if eq .Section \"slang\" }}{{ .Title }} - Gaming Slang Meaning &amp; Origin 2026{{ else }}{{ .Title }}{{ end }}">
+<meta name="twitter:description" content="{{ $metaDesc }}">
+{{ if eq .Section "slang" }}{{ $imgBase := .Params.slug }}<meta name="twitter:image" content="{{ .Site.BaseURL }}slang/{{ $imgBase }}.jpg"><meta name="twitter:image:alt" content="{{ .Title }} - Gaming Slang">{{ else }}<meta name="twitter:image" content="{{ .Site.BaseURL }}og-image.jpg">{{ end }}
 
 <!-- Performance: Preconnect -->
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -43,17 +70,20 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"{{ .Site.Title }}","url":"{{ .Site.BaseURL }}","logo":"{{ .Site.BaseURL }}logo.png","founder":{"@type":"Person","name":"{{ .Site.Params.author }}"},"contactPoint":{"@type":"ContactPoint","email":"fei15888051764@gmail.com","contactType":"customer support"},"sameAs":["https://twitter.com/gamerterms","https://youtube.com/@gamerterms","https://tiktok.com/@gamerterms"]}</script>
 {{ else if eq .Section "slang" }}
 {{ $imgBase := .Params.slug }}
+{{ $schemaDesc := $metaDesc }}
 <!-- Article -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"{{ .Title }}","description":"{{ .Params.description }}","url":"{{ .Permalink }}","image":"{{ .Site.BaseURL }}slang/{{ $imgBase }}.jpg","datePublished":"{{ .Date.Format "2006-01-02T15:04:05-07:00" }}","dateModified":"{{ .Date.Format "2006-01-02T15:04:05-07:00" }}","author":{"@type":"Person","name":"{{ .Site.Params.author }}","url":"https://about.me/GEBILAOWANG"},"publisher":{"@type":"Organization","name":"{{ .Site.Title }}","logo":{"@type":"ImageObject","url":"{{ .Site.BaseURL }}logo.png"}},"articleSection":"Gaming Slang","keywords":"{{ if .Params.tags }}{{ delimit .Params.tags ", " }}{{ end }}","mainEntityOfPage":{"@type":"WebPage","@id":"{{ .Permalink }}"},"inLanguage":"en-US","isAccessibleForFree":"True"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"{{ .Title }} - Gaming Slang Meaning & Origin 2026","description":{{ $schemaDesc | jsonify }},"url":"{{ .Permalink }}","image":{"@type":"ImageObject","url":"{{ .Site.BaseURL }}slang/{{ $imgBase }}.jpg","width":1200,"height":630},"datePublished":"{{ .Date.Format "2006-01-02T15:04:05-07:00" }}","dateModified":"{{ .Date.Format "2006-01-02T15:04:05-07:00" }}","author":{"@type":"Person","name":"{{ .Site.Params.author }}","url":"https://about.me/GEBILAOWANG","jobTitle":"Gaming Culture Writer"},"publisher":{"@type":"Organization","name":"{{ .Site.Title }}","logo":{"@type":"ImageObject","url":"{{ .Site.BaseURL }}logo.png","width":600,"height":60}},"articleSection":"Gaming Slang","keywords":"{{ if .Params.tags }}{{ delimit .Params.tags ", " }}{{ end }}","mainEntityOfPage":{"@type":"WebPage","@id":"{{ .Permalink }}"},"inLanguage":"en-US","isAccessibleForFree":"True","speakable":{"@type":"SpeakableSpecification","cssSelector":[".detail-title",".content-text"]}}</script>
 <!-- BreadcrumbList -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"{{ .Site.BaseURL }}"},{"@type":"ListItem","position":2,"name":"Slang","item":"{{ .Site.BaseURL }}slang/"},{"@type":"ListItem","position":3,"name":"{{ .Title }}","item":"{{ .Permalink }}"}]}</script>
+<!-- FAQPage (separate if FAQ exists) -->
 {{ with .Params.faq }}
-<!-- FAQPage -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{{ range $i, $q := . }}{{ if $i }},{{ end }}{"@type":"Question","name":{{ $q.question | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ $q.answer | plainify | jsonify }}}}{{ end }}]}</script>
 {{ end }}
+<!-- DefinedTerm (for slang definition) -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"DefinedTerm","name":"{{ .Title }}","description":{{ $schemaDesc | jsonify }},"inDefinedTermSet":{"@type":"DefinedTermSet","name":"Gaming Slang Dictionary","publisher":"{{ .Site.Title }}"},"termCode":"{{ .Title | lower | urlize }}"}</script>
 {{ else }}
 <!-- WebPage -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"{{ .Title }}","url":"{{ .Permalink }}","description":"{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"{{ .Title }}","url":"{{ .Permalink }}","description":{{ $metaDesc | jsonify }},"inLanguage":"en-US"}</script>
 {{ end }}
 
 <link rel="stylesheet" href="/css/site.css">
