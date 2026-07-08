@@ -17,7 +17,7 @@
 <section class="search-section home-search">
   <form class="search-form" onsubmit="event.preventDefault();">
     <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-    <input type="text" class="search-input" placeholder="Search Gaming Terms..." aria-label="Search gaming slang terms">
+    <input type="text" class="search-input" autocomplete="off" placeholder="Search Gaming Terms..." aria-label="Search gaming slang terms">
   </form>
 </section>
 
@@ -184,7 +184,7 @@
           <meta itemprop="description" content="{{ $desc }}">
           <meta itemprop="url" content="{{ $page.Permalink }}">
         <div class="card-img-wrap">
-          <img src="/slang/{{ $base }}.jpg?v=2" alt="{{ $page.Title }} gaming slang" class="card-img" loading="lazy" itemprop="image" onerror="var t=this; var base='{{ $base }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg?v=2';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg?v=2';} else {this.parentElement.style.display='none'};">
+          <img src="/slang/{{ $base }}.jpg?v=2" alt="{{ $page.Title }} gaming slang meaning definition 2026" class="card-img" loading="lazy" itemprop="image" onerror="var t=this; var base='{{ $base }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg?v=2';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg?v=2';} else {this.parentElement.style.display='none'};">
         </div>
         <div class="card-body">
           <h3 class="card-title-text" itemprop="name">{{ $page.Title }}</h3>
