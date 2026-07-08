@@ -175,7 +175,7 @@
       {{ $desc := $page.Params.shortDescription | default $page.Params.description | default $page.Summary }}
       <a href="{{ $page.RelPermalink }}" class="card{{ if eq $index 21 }} hide-on-desktop{{ end }}">
         <div class="card-img-wrap">
-          <img src="/slang/{{ $base }}.jpg" alt="{{ $page.Title }}" class="card-img" loading="lazy" onerror="var t=this; var base='{{ $base }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg';} else {this.parentElement.style.display='none'};">
+          <img src="/slang/{{ $base }}.jpg?v=2" alt="{{ $page.Title }}" class="card-img" loading="lazy" onerror="var t=this; var base='{{ $base }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg?v=2';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg?v=2';} else {this.parentElement.style.display='none'};">
         </div>
         <div class="card-body">
           <h3 class="card-title-text">{{ $page.Title }}</h3>
