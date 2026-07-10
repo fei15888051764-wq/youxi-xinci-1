@@ -87,5 +87,5 @@ Ganking represents the reality of competitive gaming: fair fights are rare, and 
 
 ## Sources
 
-- SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition) [https://spawnpoint.be/gaming-terms-slang-glossary/]
-- Bark.us — 2026 Gaming Terms and Slang Words [https://www.bark.us/blog/gaming-terms/]
+- [SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition)](https://spawnpoint.be/gaming-terms-slang-glossary/)
+- [Ehlion — Gaming Terms and Slang Every Gamer Should Know](https://ehlion.com/gaming-terms-and-slang/)
