@@ -108,6 +108,99 @@
           <div class="content-text" itemprop="articleBody">{{ .Content }}</div>
         </div>
 
+        <!-- Auto-reorder sections to unified order -->
+        <script>
+        (function() {
+          var contentBlock = document.querySelector('.content-text');
+          if (!contentBlock) return;
+
+          var h2s = contentBlock.querySelectorAll('h2');
+          if (h2s.length < 2) return;
+
+          var sectionOrder = [
+            { id: 'trajectory', keywords: ['Trajectory', 'Chronology'] },
+            { id: 'dialogues', keywords: ['High-Fidelity', 'Contextual', 'Dialogues'] },
+            { id: 'socio-cultural', keywords: ['Socio-Cultural', 'Cultural Impact'] },
+            { id: 'faq', keywords: ['FAQ'] },
+            { id: 'sources', keywords: ['Sources'] }
+          ];
+
+          var sections = {};
+          var currentSection = null;
+          var sectionBuffer = [];
+          var children = Array.from(contentBlock.children);
+
+          function flushBuffer() {
+            if (sectionBuffer.length > 0 && currentSection) {
+              if (!sections[currentSection]) sections[currentSection] = [];
+              sections[currentSection] = sections[currentSection].concat(sectionBuffer);
+              sectionBuffer = [];
+            }
+          }
+
+          children.forEach(function(el) {
+            if (el.tagName === 'H2') {
+              flushBuffer();
+              var text = el.textContent;
+              var matched = false;
+              for (var i = 0; i < sectionOrder.length; i++) {
+                var sec = sectionOrder[i];
+                for (var j = 0; j < sec.keywords.length; j++) {
+                  if (text.indexOf(sec.keywords[j]) !== -1) {
+                    currentSection = sec.id;
+                    matched = true;
+                    break;
+                  }
+                }
+                if (matched) break;
+              }
+              if (!matched) currentSection = 'other';
+              sectionBuffer.push(el);
+            } else {
+              sectionBuffer.push(el);
+            }
+          });
+          flushBuffer();
+
+          var currentH2Order = [];
+          h2s.forEach(function(h2) {
+            var text = h2.textContent;
+            for (var i = 0; i < sectionOrder.length; i++) {
+              for (var j = 0; j < sectionOrder[i].keywords.length; j++) {
+                if (text.indexOf(sectionOrder[i].keywords[j]) !== -1) {
+                  currentH2Order.push(sectionOrder[i].id);
+                  return;
+                }
+              }
+            }
+            currentH2Order.push('other');
+          });
+
+          var expectedOrder = ['trajectory', 'dialogues', 'socio-cultural', 'faq', 'sources'];
+          var idx = 0;
+          for (var i = 0; i < currentH2Order.length; i++) {
+            if (currentH2Order[i] === expectedOrder[idx]) { idx++; }
+          }
+          if (idx === expectedOrder.length) return;
+
+          var fragment = document.createDocumentFragment();
+          if (sections['intro']) {
+            sections['intro'].forEach(function(el) { fragment.appendChild(el); });
+          }
+          sectionOrder.forEach(function(sec) {
+            if (sections[sec.id]) {
+              sections[sec.id].forEach(function(el) { fragment.appendChild(el); });
+            }
+          });
+          if (sections['other']) {
+            sections['other'].forEach(function(el) { fragment.appendChild(el); });
+          }
+
+          contentBlock.innerHTML = '';
+          contentBlock.appendChild(fragment);
+        })();
+        </script>
+
         <!-- Mobile Ad 2 -->
         <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
 
