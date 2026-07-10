@@ -84,7 +84,7 @@ summary: "..."                      # 40-60词核心定义，用于AI Overview
 author: "GEBILAOWANG"
 category: slang                      # 单数！不是categories
 shortDescription: "..."             # **必填！** 用于详情页 Quick Definition 框显示
-updated: "Jul 10, 2026"            # 固定格式
+updated: "Jul 9, 2026"             # 固定格式
 readTime: "4 min read"             # 根据字数调整
 tags:
   - "tag1"                           # 列表格式，每行一个，带双引号
@@ -189,7 +189,7 @@ tags:
 - 比例：16:9
 - 分辨率：1280×720
 - 质量：82
-- 体积目标：80-150KB
+- 体积目标：80-300KB（上限300KB）
 - 文件名：`{slug}.jpg`
 - 保存路径：`/mnt/agents/output/slang_images_batch{N}/`
 
@@ -345,7 +345,7 @@ tags:
 **E. 图片检查**
 - [ ] 10张图片上无任何文字/水印
 - [ ] 图片尺寸 1280×720
-- [ ] 图片体积 80-150KB
+- [ ] 图片体积 80-300KB（上限300KB）
 
 **F. 语言检查（关键）**
 - [ ] 10个词条内容全文为纯正英文
