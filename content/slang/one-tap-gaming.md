@@ -84,5 +84,5 @@ Caster: "And that's why he's the best in the world. The one-tap doesn't lie."
 
 ## Sources
 
-- G2A Gaming Glossary — What Is a One-Tap in Gaming? [https://www.g2a.com/news/glossary/what-is-a-one-tap-in-gaming/]
-- SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition) [https://spawnpoint.be/gaming-terms-slang-glossary/]
+- [G2A Gaming Glossary — What Is a One-Tap in Gaming?](https://www.g2a.com/news/glossary/what-is-a-one-tap-in-gaming/)
+- [SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition)](https://spawnpoint.be/gaming-terms-slang-glossary/)

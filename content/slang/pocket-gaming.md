@@ -97,6 +97,6 @@ Pocketing has also become a source of team drama. Teammates who aren't getting s
 
 ## Sources
 
-- "Overwatch Support Guide" — *Blizzard*, playoverwatch.com/en-us/news/
-- "League of Legends Support Meta" — *Riot Games*, leagueoflegends.com/en-us/news/
-- "Apex Legends Team Strategy" — *EA Games*, ea.com/games/apex-legends/news
+- ["Overwatch Support Guide" — *Blizzard*](https://playoverwatch.com/en-us/news/)
+- ["League of Legends Support Meta" — *Riot Games*](https://leagueoflegends.com/en-us/news/)
+- ["Apex Legends Team Strategy" — *EA Games*](https://ea.com/games/apex-legends/news)

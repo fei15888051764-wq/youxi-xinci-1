@@ -78,5 +78,5 @@ Streamer: "Chat please, I'm already dead"
 
 ## Sources
 
-- Bark.us — Gaming Slang Guide for Parents [https://www.bark.us/gaming-slang-terms/]
-- SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition) [https://spawnpoint.be/gaming-terms-slang-glossary/]
+- [Bark.us — Gaming Slang Guide for Parents](https://www.bark.us/gaming-slang-terms/)
+- [SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition)](https://spawnpoint.be/gaming-terms-slang-glossary/)
