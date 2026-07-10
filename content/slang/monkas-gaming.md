@@ -78,5 +78,5 @@ Player B: "GG either way, this is hype"
 
 ## Sources
 
-- Instreamly — Twitch Slang You Need to Know in 2026 [https://instreamly.com/posts/twitch-slang-you-need-to-know-in-2022/]
-- SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition) [https://spawnpoint.be/gaming-terms-slang-glossary/]
+- [Instreamly — Twitch Slang You Need to Know in 2026](https://instreamly.com/posts/twitch-slang-you-need-to-know-in-2022/)
+- [SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition)](https://spawnpoint.be/gaming-terms-slang-glossary/)

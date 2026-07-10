@@ -79,5 +79,5 @@ Chat: "that's coping"
 
 ## Sources
 
-- Lets Learn Slang — What Does Mald Mean In Gaming? [https://letslearnslang.com/what-does-mald-mean-in-gaming/]
-- FastSlang — Mald Slang Meaning and Examples [https://www.fastslang.com/mald]
+- [Lets Learn Slang — What Does Mald Mean In Gaming?](https://letslearnslang.com/what-does-mald-mean-in-gaming/)
+- [FastSlang — Mald Slang Meaning and Examples](https://www.fastslang.com/mald)

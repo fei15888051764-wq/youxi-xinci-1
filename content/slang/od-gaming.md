@@ -97,6 +97,6 @@ The term's origins in urban/hip-hop culture give it a specific cultural flavor t
 
 ## Sources
 
-- "OD (slang)" — *Urban Dictionary*, urbandictionary.com/define.php?term=od
-- "Hip-Hop Slang in Gaming" — *The Ringer*, theringer.com/gaming/
-- "Gen Z Gaming Language" — *Washington Post*, washingtonpost.com/video-games/
+- ["OD (slang)" — *Urban Dictionary*](https://urbandictionary.com/define.php?term=od)
+- ["Hip-Hop Slang in Gaming" — *The Ringer*](https://theringer.com/gaming/)
+- ["Gen Z Gaming Language" — *Washington Post*](https://washingtonpost.com/video-games/)

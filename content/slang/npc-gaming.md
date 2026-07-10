@@ -80,5 +80,5 @@ Chat: "NPC behavior fr"
 
 ## Sources
 
-- Punzlife — NPC Meaning in Gaming, Chat, and Internet Culture [https://punzlife.com/npc-meaning/]
-- SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition) [https://spawnpoint.be/gaming-terms-slang-glossary/]
+- [Punzlife — NPC Meaning in Gaming, Chat, and Internet Culture](https://punzlife.com/npc-meaning/)
+- [SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition)](https://spawnpoint.be/gaming-terms-slang-glossary/)

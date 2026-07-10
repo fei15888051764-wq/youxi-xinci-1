@@ -87,5 +87,5 @@ Loot represents the psychological core of modern game design — the variable re
 
 ## Sources
 
-- SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition) [https://spawnpoint.be/gaming-terms-slang-glossary/]
-- Bark.us — 2026 Gaming Terms and Slang Words [https://www.bark.us/blog/gaming-terms/]
+- [SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition)](https://spawnpoint.be/gaming-terms-slang-glossary/)
+- [Bark.us — 2026 Gaming Terms and Slang Words](https://www.bark.us/blog/gaming-terms/)
