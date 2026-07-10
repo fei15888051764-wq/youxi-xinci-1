@@ -95,9 +95,9 @@
           <h2 style="font-size:13px;font-weight:700;color:#a3e635;margin:0 0 14px 0;letter-spacing:0.1em;text-transform:uppercase;">Table of Contents</h2>
           <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px 20px;">
             <li style="margin:0;"><a href="#meaning" style="color:#aaa;text-decoration:none;font-size:14px;display:flex;align-items:center;gap:6px;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#aaa'"><span style="color:#333;font-size:11px;">01</span>Meaning &amp; Definition</a></li>
-            <li style="margin:0;"><a href="#origin-history" style="color:#aaa;text-decoration:none;font-size:14px;display:flex;align-items:center;gap:6px;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#aaa'"><span style="color:#333;font-size:11px;">02</span>Origin &amp; History</a></li>
-            <li style="margin:0;"><a href="#usage-examples" style="color:#aaa;text-decoration:none;font-size:14px;display:flex;align-items:center;gap:6px;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#aaa'"><span style="color:#333;font-size:11px;">03</span>Usage Examples</a></li>
-            <li style="margin:0;"><a href="#cultural-impact" style="color:#aaa;text-decoration:none;font-size:14px;display:flex;align-items:center;gap:6px;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#aaa'"><span style="color:#333;font-size:11px;">04</span>Cultural Impact</a></li>
+            <li style="margin:0;"><a href="#trajectory--chronology" style="color:#aaa;text-decoration:none;font-size:14px;display:flex;align-items:center;gap:6px;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#aaa'"><span style="color:#333;font-size:11px;">02</span>Origin &amp; History</a></li>
+            <li style="margin:0;"><a href="#high-fidelity-contextual-dialogues" style="color:#aaa;text-decoration:none;font-size:14px;display:flex;align-items:center;gap:6px;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#aaa'"><span style="color:#333;font-size:11px;">03</span>Usage Examples</a></li>
+            <li style="margin:0;"><a href="#socio-cultural-gain" style="color:#aaa;text-decoration:none;font-size:14px;display:flex;align-items:center;gap:6px;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#aaa'"><span style="color:#333;font-size:11px;">04</span>Cultural Impact</a></li>
             <li style="margin:0;"><a href="#faq" style="color:#aaa;text-decoration:none;font-size:14px;display:flex;align-items:center;gap:6px;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#aaa'"><span style="color:#333;font-size:11px;">05</span>FAQ</a></li>
             <li style="margin:0;"><a href="#related" style="color:#aaa;text-decoration:none;font-size:14px;display:flex;align-items:center;gap:6px;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#aaa'"><span style="color:#333;font-size:11px;">06</span>Related Slang</a></li>
           </ul>
@@ -114,9 +114,11 @@
           var contentBlock = document.querySelector('.content-text');
           if (!contentBlock) return;
 
+          // Check if reordering is needed
           var h2s = contentBlock.querySelectorAll('h2');
           if (h2s.length < 2) return;
 
+          // Define section order and their identifying keywords
           var sectionOrder = [
             { id: 'trajectory', keywords: ['Trajectory', 'Chronology'] },
             { id: 'dialogues', keywords: ['High-Fidelity', 'Contextual', 'Dialogues'] },
@@ -125,9 +127,13 @@
             { id: 'sources', keywords: ['Sources'] }
           ];
 
+          // Group elements by section
           var sections = {};
           var currentSection = null;
+          var introElements = [];
+          var otherElements = [];
           var sectionBuffer = [];
+
           var children = Array.from(contentBlock.children);
 
           function flushBuffer() {
@@ -143,6 +149,7 @@
               flushBuffer();
               var text = el.textContent;
               var matched = false;
+
               for (var i = 0; i < sectionOrder.length; i++) {
                 var sec = sectionOrder[i];
                 for (var j = 0; j < sec.keywords.length; j++) {
@@ -154,7 +161,11 @@
                 }
                 if (matched) break;
               }
-              if (!matched) currentSection = 'other';
+
+              if (!matched) {
+                currentSection = 'other';
+              }
+
               sectionBuffer.push(el);
             } else {
               sectionBuffer.push(el);
@@ -162,6 +173,7 @@
           });
           flushBuffer();
 
+          // Check if already in correct order
           var currentH2Order = [];
           h2s.forEach(function(h2) {
             var text = h2.textContent;
@@ -177,21 +189,33 @@
           });
 
           var expectedOrder = ['trajectory', 'dialogues', 'socio-cultural', 'faq', 'sources'];
+          var isCorrect = true;
           var idx = 0;
           for (var i = 0; i < currentH2Order.length; i++) {
-            if (currentH2Order[i] === expectedOrder[idx]) { idx++; }
+            if (currentH2Order[i] === expectedOrder[idx]) {
+              idx++;
+            } else if (currentH2Order[i] === 'other') {
+              continue;
+            }
           }
-          if (idx === expectedOrder.length) return;
+          if (idx === expectedOrder.length) return; // Already correct
 
+          // Reorder: clear and rebuild
           var fragment = document.createDocumentFragment();
+
+          // Add intro (content before first h2)
           if (sections['intro']) {
             sections['intro'].forEach(function(el) { fragment.appendChild(el); });
           }
+
+          // Add sections in correct order
           sectionOrder.forEach(function(sec) {
             if (sections[sec.id]) {
               sections[sec.id].forEach(function(el) { fragment.appendChild(el); });
             }
           });
+
+          // Add any unrecognized sections at the end
           if (sections['other']) {
             sections['other'].forEach(function(el) { fragment.appendChild(el); });
           }
@@ -233,96 +257,6 @@
 
         <!-- Mobile Ad 3 -->
         <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
-
-        <!-- Auto-generate heading anchors for TOC jumps -->
-        <script>
-        (function() {
-          var contentBlock = document.querySelector('.content-text');
-          if (!contentBlock) return;
-          var headings = contentBlock.querySelectorAll('h2');
-          headings.forEach(function(h2) {
-            var text = h2.textContent.trim().toLowerCase();
-            var id = '';
-            if (text.indexOf('trajectory') !== -1 || text.indexOf('chronology') !== -1) {
-              id = 'origin-history';
-            } else if (text.indexOf('dialogue') !== -1 || text.indexOf('contextual') !== -1) {
-              id = 'usage-examples';
-            } else if (text.indexOf('socio-cultural') !== -1 || text.indexOf('cultural') !== -1) {
-              id = 'cultural-impact';
-            } else if (text.indexOf('faq') !== -1) {
-              id = 'faq';
-            } else if (text.indexOf('sources') !== -1) {
-              id = 'sources';
-            }
-            if (id && !h2.id) {
-              h2.id = id;
-            }
-          });
-        })();
-        </script>
-
-        <!-- FAQPage Schema Dynamic -->
-        <script>
-        (function() {
-          var scripts = document.querySelectorAll('script[type="application/ld+json"]');
-          var hasFAQSchema = false;
-          for (var i = 0; i < scripts.length; i++) {
-            if (scripts[i].textContent.indexOf('"@type":"FAQPage"') !== -1) {
-              hasFAQSchema = true; break;
-            }
-          }
-          if (hasFAQSchema) return;
-
-          var faqBlock = document.getElementById('faq');
-          if (!faqBlock) return;
-
-          var mainEntity = [];
-          var elements = faqBlock.querySelectorAll('p, blockquote, li');
-
-          elements.forEach(function(el) {
-            var text = el.textContent.trim();
-            if (!text) return;
-
-            var qMatch = text.match(/^Q(\d*):\s*(.+)/i);
-            if (!qMatch) qMatch = text.match(/^Q:\s*(.+)/i);
-
-            if (qMatch) {
-              var question = (qMatch[2] || qMatch[1]).trim();
-              var answerHtml = el.innerHTML;
-              var answerParts = answerHtml.split(/<\/(?:strong|b)>/i);
-              var answer = answerParts.length > 1 ? answerParts[1].replace(/<[^>]+>/g, '').trim() : '';
-
-              if (!answer && el.nextElementSibling) {
-                answer = el.nextElementSibling.textContent.trim();
-              }
-
-              if (question && answer) {
-                mainEntity.push({
-                  "@type": "Question",
-                  "name": question,
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": answer
-                  }
-                });
-              }
-            }
-          });
-
-          if (!mainEntity.length) return;
-
-          var schema = {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": mainEntity
-          };
-
-          var script = document.createElement('script');
-          script.type = 'application/ld+json';
-          script.textContent = JSON.stringify(schema);
-          document.head.appendChild(script);
-        })();
-        </script>
 
         <!-- Author Card -->
         <div class="content-block author-card" style="margin-top:32px;padding:20px;border-top:1px solid #333;background:#111;border-radius:12px;">
@@ -458,6 +392,69 @@
               item.node.parentNode.replaceChild(wrapper, item.node);
             });
           });
+        })();
+        </script>
+
+        <!-- FAQPage Schema Dynamic -->
+        <script>
+        (function() {
+          var scripts = document.querySelectorAll('script[type="application/ld+json"]');
+          var hasFAQSchema = false;
+          for (var i = 0; i < scripts.length; i++) {
+            if (scripts[i].textContent.indexOf('"@type":"FAQPage"') !== -1) {
+              hasFAQSchema = true; break;
+            }
+          }
+          if (hasFAQSchema) return;
+
+          var faqBlock = document.getElementById('faq');
+          if (!faqBlock) return;
+
+          var mainEntity = [];
+          var elements = faqBlock.querySelectorAll('p, blockquote, li');
+
+          elements.forEach(function(el) {
+            var text = el.textContent.trim();
+            if (!text) return;
+
+            var qMatch = text.match(/^Q(\d*):\s*(.+)/i);
+            if (!qMatch) qMatch = text.match(/^Q:\s*(.+)/i);
+
+            if (qMatch) {
+              var question = (qMatch[2] || qMatch[1]).trim();
+              var answerHtml = el.innerHTML;
+              var answerParts = answerHtml.split(/<\/(?:strong|b)>/i);
+              var answer = answerParts.length > 1 ? answerParts[1].replace(/<[^>]+>/g, '').trim() : '';
+
+              if (!answer && el.nextElementSibling) {
+                answer = el.nextElementSibling.textContent.trim();
+              }
+
+              if (question && answer) {
+                mainEntity.push({
+                  "@type": "Question",
+                  "name": question,
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": answer
+                  }
+                });
+              }
+            }
+          });
+
+          if (!mainEntity.length) return;
+
+          var schema = {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": mainEntity
+          };
+
+          var script = document.createElement('script');
+          script.type = 'application/ld+json';
+          script.textContent = JSON.stringify(schema);
+          document.head.appendChild(script);
         })();
         </script>
 
