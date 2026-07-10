@@ -76,7 +76,5 @@ User1: "Fair point, but in the right hands this thing shreds"
 
 ## Sources
 
-<div class="references-block">
-- Baidu Wiki — TTK Internet Slang [https://baike.baidu.com/en/item/ttk/1429268]
-- G2A Gaming Glossary — Gaming Terms and Slang Explained [https://www.g2a.com/news/glossary/]
-</div>
+- [Baidu Wiki — TTK Internet Slang](https://baike.baidu.com/en/item/ttk/1429268)
+- [G2A Gaming Glossary — Gaming Terms and Slang Explained](https://www.g2a.com/news/glossary/)

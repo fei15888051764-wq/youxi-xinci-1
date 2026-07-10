@@ -76,5 +76,5 @@ Player B: "tryhard with skill is just a good player, respect"
 
 ## Sources
 
-- Old Cynic — List Of Gaming Terms, Phrases, Slang, & Jargon [https://oldcynic.com/gaming-terms-slang-jargon-phrases-list-glossary]
-- SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition) [https://spawnpoint.be/gaming-terms-slang-glossary/]
+- [Old Cynic — List Of Gaming Terms, Phrases, Slang, & Jargon](https://oldcynic.com/gaming-terms-slang-jargon-phrases-list-glossary)
+- [SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition)](https://spawnpoint.be/gaming-terms-slang-glossary/)

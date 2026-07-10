@@ -84,5 +84,5 @@ User4: "Trading is the single biggest difference between low and mid-ranked play
 
 ## Sources
 
-- Esports.net — Trading in VALORANT Guide [https://www.esports.net/valorant/trading/]
-- SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition) [https://spawnpoint.be/gaming-terms-slang-glossary/]
+- [Esports.net — Trading in VALORANT Guide](https://www.esports.net/valorant/trading/)
+- [SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition)](https://spawnpoint.be/gaming-terms-slang-glossary/)
