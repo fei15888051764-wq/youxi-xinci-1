@@ -8,7 +8,7 @@ buildFuture: true
 pagination:
   pagerSize: 16
 enableRobotsTXT: false
-enableGitInfo: false
+enableGitInfo: true
 
 permalinks:
   slang: '/slang/:slug/'
@@ -34,6 +34,6 @@ menu:
       weight: 40
 
 sitemap:
-  changefreq: weekly
+  changefreq: daily
   priority: 0.8
   filename: sitemap.xml

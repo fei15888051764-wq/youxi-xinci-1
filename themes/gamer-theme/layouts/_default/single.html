@@ -49,7 +49,7 @@
       <article class="detail-content" itemscope itemtype="https://schema.org/Article">
         <meta itemprop="headline" content="{{ .Title }} - Gaming Slang Meaning &amp; Origin 2026" />
         <meta itemprop="datePublished" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}" />
-        <meta itemprop="dateModified" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}" />
+        <meta itemprop="dateModified" content="{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}" />
 
         <div class="detail-hero-img">
           <img src="/slang/{{ $base }}.jpg" alt="{{ .Title }} gaming slang meaning definition 2026" itemprop="image" onerror="var t=this; var base='{{ $base }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg';} else {this.parentElement.style.display='none'};">
@@ -278,6 +278,26 @@
         </div>
         {{ end }}
 
+        <!-- ===== POPULAR SLANG: Boost engagement & internal linking ===== -->
+        {{ $popular := first 4 (where .Site.RegularPages "Section" "slang") }}
+        {{ if $popular }}
+        <div class="content-block" style="margin-top:32px;padding:24px;background:#151515;border:1px solid #2a2a2a;border-radius:12px;">
+          <h2 style="font-size:13px;font-weight:700;color:#a3e635;margin:0 0 16px 0;letter-spacing:0.1em;text-transform:uppercase;">Popular Gaming Slang</h2>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            {{ range $popular }}
+            {{ $pbase := replace .Params.slug "-gaming" "" }}
+            <a href="{{ .RelPermalink }}" style="display:flex;align-items:center;gap:10px;text-decoration:none;padding:10px;background:#1a1a1a;border-radius:8px;transition:all .2s;" onmouseover="this.style.background='#222'" onmouseout="this.style.background='#1a1a1a'">
+              <img src="/slang/{{ $pbase }}.jpg" alt="" style="width:40px;height:40px;border-radius:6px;object-fit:cover;flex-shrink:0;" loading="lazy" onerror="this.style.display='none'">
+              <div style="min-width:0;">
+                <div style="color:#f0f0f0;font-size:14px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ .Title }}</div>
+                <div style="color:#888;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ .Params.shortDescription | default .Params.description | truncate 40 }}</div>
+              </div>
+            </a>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+
         <!-- ===== INTERNAL LINKING: Auto-link slang terms in content ===== -->
         <script>
         (function() {
@@ -374,8 +394,14 @@
         <!-- ===== FAQPAGE SCHEMA: dynamic generation for new-format articles ===== -->
         <script>
         (function() {
-          // Skip if server-side FAQPage schema already exists (old format)
-          if (document.querySelector('script[type="application/ld+json"]')?.textContent?.includes('"@type":"FAQPage"')) return;
+          var scripts = document.querySelectorAll('script[type="application/ld+json"]');
+          var hasFAQSchema = false;
+          for (var i = 0; i < scripts.length; i++) {
+            if (scripts[i].textContent.indexOf('"@type":"FAQPage"') !== -1) {
+              hasFAQSchema = true; break;
+            }
+          }
+          if (hasFAQSchema) return;
 
           var faqBlock = document.getElementById('faq');
           if (!faqBlock) return;
@@ -387,18 +413,15 @@
             var text = el.textContent.trim();
             if (!text) return;
 
-            // Match Q1: ... or Q: ... patterns
-            var qMatch = text.match(/^Q(\d+):\s*(.+)/i);
+            var qMatch = text.match(/^Q(\d*):\s*(.+)/i);
             if (!qMatch) qMatch = text.match(/^Q:\s*(.+)/i);
 
             if (qMatch) {
               var question = (qMatch[2] || qMatch[1]).trim();
-              // Extract answer: text after the Q: line, handling <strong>/<b> tags
               var answerHtml = el.innerHTML;
               var answerParts = answerHtml.split(/<\/(?:strong|b)>/i);
               var answer = answerParts.length > 1 ? answerParts[1].replace(/<[^>]+>/g, '').trim() : '';
 
-              // If no answer found after the question, try next sibling
               if (!answer && el.nextElementSibling) {
                 answer = el.nextElementSibling.textContent.trim();
               }
