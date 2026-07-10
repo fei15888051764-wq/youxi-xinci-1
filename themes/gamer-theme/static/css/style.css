@@ -152,7 +152,20 @@ input{font-family:inherit}
 .content-block{margin-bottom:24px}
 .section-label{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:#8c8c8c;font-weight:500;margin-bottom:12px}
 .section-title{font-family:'Press Start 2P',cursive;font-size:14px;color:#f0f0f0;margin-bottom:16px}
-.content-text{color:#f0f0f0;line-height:1.7;font-size:15px}
+.content-text{color:#f0f0f0;line-height:1.7;font-size:15px;overflow-wrap:break-word;word-break:break-word}
+.content-text a{word-break:break-all}
+
+/* ===== MOBILE DETAIL PAGE ===== */
+@media(max-width:639px){
+  .detail-container{padding:0 16px 24px}
+  .detail-title{font-size:18px}
+  .definition-box{padding:16px 20px}
+  .content-text{font-size:14px;line-height:1.6}
+  .faq-item{padding:16px}
+  .faq-q{font-size:13px}
+  .faq-a{font-size:13px}
+  .section-title{font-size:12px}
+}
 
 /* ===== TABLES ===== */
 .table-wrap{border:1px solid #333;border-radius:8px;overflow:hidden;overflow-x:auto}
