@@ -15,8 +15,9 @@ tags:
   - communication
   - essential
 ---
-
 In gaming, **LUL** is a popular Twitch emote used to express laughter. Based on the face of streamer TotalBiscuit, it's Twitch's universal 'lol'.
+
+---
 
 ---
 
@@ -25,6 +26,8 @@ In gaming, **LUL** is a popular Twitch emote used to express laughter. Based on 
 LUL originated as a photograph of streamer John "TotalBiscuit" Bain taken at an event. The original photo was submitted to Twitch as an emote in 2016 and quickly became one of the platform's most popular. When TotalBiscuit passed away in 2018, LUL became a memorial to his legacy as well as a universal laugh emote. In 2026, LUL remains one of Twitch's top 10 most-used emotes, alongside KEKW and OMEGALUL.
 
 > **GEBILAOWANG:** LUL is both a laugh and a tribute. TotalBiscuit's legacy lives on every time someone finds something funny on Twitch.
+
+---
 
 ## High-Fidelity Contextual Dialogues
 
@@ -48,6 +51,14 @@ Player B: "LUL is gentle laughter, KEKW is uncontrollable laughter"
 Player A: "Did you see that fail?"
 Player B: "LUL, that was so bad"
 
+---
+
+## Socio-Cultural Gain
+
+LUL represents the unique way gaming culture memorializes its figures. After TotalBiscuit's passing, LUL transformed from a simple laugh emote into a lasting tribute to one of gaming's most influential voices. The emote's staying power demonstrates how Twitch culture creates shared emotional experiences through simple images. LUL also highlights the hierarchy of laughter in streaming culture — from gentle LUL to intense KEKW to overwhelming OMEGALUL, each emote occupies a specific niche in the emotional spectrum.
+
+---
+
 ## FAQ
 
 **Q1: Who is the person in LUL?**
@@ -61,6 +72,8 @@ LOL is text. LUL is an emote/image. Same meaning, different format.
 **Q3: Is LUL free on Twitch?**
 
 Yes, it's a global Twitch emote available to all users.
+
+---
 
 ## Sources
 
