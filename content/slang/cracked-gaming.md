@@ -89,6 +89,6 @@ The meme **"My mom just said I'm cracked at Fortnite. I'm literally shaking"** a
 
 ## Sources
 
-- "Cracked at Fortnite" — *Know Your Meme*, knowyourmeme.com/memes/cracked-at-fortnite
-- "Gaming Slang Evolution" — *Dot Esports*, dotesports.com/general/news/gaming-slang
-- "Fortnite Competitive History" — *Epic Games*, epicgames.com/fortnite/competitive/en-US/news
+- ["Cracked at Fortnite" — *Know Your Meme*](https://knowyourmeme.com/memes/cracked-at-fortnite)
+- ["Gaming Slang Evolution" — *Dot Esports*](https://dotesports.com/general/news/gaming-slang)
+- ["Fortnite Competitive History" — *Epic Games*](https://epicgames.com/fortnite/competitive/en-US/news)
