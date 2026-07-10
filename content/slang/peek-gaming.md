@@ -15,8 +15,9 @@ tags:
   - competitive
   - essential
 ---
-
 In gaming, to **peek** is to quickly expose yourself from behind cover to gather information or take a shot. The most fundamental tactic in tactical shooters.
+
+---
 
 ---
 
@@ -25,6 +26,8 @@ In gaming, to **peek** is to quickly expose yourself from behind cover to gather
 Peeking has been a core FPS tactic since the genre's inception, but the terminology and techniques evolved with competitive play. *Counter-Strike* (1999) pioneered 'shoulder peeking' (fake peeks to bait shots) and 'jiggle peeking' (rapid side-to-side movement). *Valorant* (2020) introduced abilities that counter traditional peeking, adding new layers of strategy. By 2026, peeking is a fundamental skill taught in FPS tutorials, with specific techniques named and practiced.
 
 > **GEBILAOWANG:** Peeking is the poker of FPS games — it's all about reading your opponent and knowing when to commit.
+
+---
 
 ## High-Fidelity Contextual Dialogues
 
@@ -47,6 +50,14 @@ Player B: "You shoulder peeked too slow, he had time to react"
 Player A: "How do I peek against a good player?"
 Player B: "Jiggle first to bait the shot, then wide peek when they're reloading"
 
+---
+
+## Socio-Cultural Gain
+
+Peeking represents the fundamental risk-reward calculation at the heart of tactical shooters. Every peek is a gamble — information versus exposure. This tension creates some of the most intense moments in competitive gaming. The skill of 'jiggle peeking' (quickly exposing minimal body) has become an art form at high levels of play. In esports, peeking decisions are analyzed frame-by-frame, with casters breaking down the psychology behind each movement.
+
+---
+
 ## FAQ
 
 **Q1: What's the difference between wide peek and shoulder peek?**
@@ -60,6 +71,8 @@ No. Bad peeking gets you killed. Good peeking wins rounds.
 **Q3: How do I improve my peeking?**
 
 Crosshair placement, timing, and learning common angles. Watch pro demos.
+
+---
 
 ## Sources
 
