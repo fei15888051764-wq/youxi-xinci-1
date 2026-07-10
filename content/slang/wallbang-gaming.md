@@ -86,5 +86,5 @@ Wallbang represents the peak of game knowledge in tactical shooters — the mome
 
 ## Sources
 
-- SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition) [https://spawnpoint.be/gaming-terms-slang-glossary/]
-- CS2 Weapon Penetration Guide 2026 [https://www.esports.net/cs2/guides/weapon-wallbang-penetration-guide/]
+- [SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition)](https://spawnpoint.be/gaming-terms-slang-glossary/)
+- [CS2 Weapon Penetration Guide 2026](https://www.esports.net/cs2/guides/weapon-wallbang-penetration-guide/)

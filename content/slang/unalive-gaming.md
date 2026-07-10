@@ -78,5 +78,5 @@ Player B: "i was testing the respawn mechanics... extensively"
 
 ## Sources
 
-- Synonyms.com — What Does Unalive Mean? 2026 Guide [https://synonynms.com/what-does-unalive-mean-2026-guide-to-slang-text-language/]
-- SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition) [https://spawnpoint.be/gaming-terms-slang-glossary/]
+- [Synonyms.com — What Does Unalive Mean? 2026 Guide](https://synonynms.com/what-does-unalive-mean-2026-guide-to-slang-text-language/)
+- [SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition)](https://spawnpoint.be/gaming-terms-slang-glossary/)

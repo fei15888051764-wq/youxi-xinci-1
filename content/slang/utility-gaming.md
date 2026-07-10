@@ -82,5 +82,5 @@ Caster B: "The best teams treat utility like money — spend it wisely and it pa
 
 ## Sources
 
-- LDShop.gg — Valorant Economy System Guide [https://www.ldshop.gg/blog/valorant-gp/valorant-economy-guide.html]
-- SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition) [https://spawnpoint.be/gaming-terms-slang-glossary/]
+- [LDShop.gg — Valorant Economy System Guide](https://www.ldshop.gg/blog/valorant-gp/valorant-economy-guide.html)
+- [SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition)](https://spawnpoint.be/gaming-terms-slang-glossary/)

@@ -96,6 +96,6 @@ The term has become a tool for self-regulation and team communication. Saying "I
 
 ## Sources
 
-- "Gaming Performance Under Pressure" — *Red Bull Gaming*, redbull.com/gaming/
-- "Esports Psychology" — *The Washington Post*, washingtonpost.com/video-games/
-- "Tilt and Mental State in Gaming" — *Psychology Today*, psychologytoday.com/us/basics/video-games
+- ["Gaming Performance Under Pressure" — *Red Bull Gaming*](https://redbull.com/gaming/)
+- ["Esports Psychology" — *The Washington Post*](https://washingtonpost.com/video-games/)
+- ["Tilt and Mental State in Gaming" — *Psychology Today*](https://psychologytoday.com/us/basics/video-games)

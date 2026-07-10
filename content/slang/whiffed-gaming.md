@@ -86,5 +86,5 @@ Whiffed represents gaming culture's comfort with failure — the ability to laug
 
 ## Sources
 
-- GameTree — Whiff Gaming Slang [https://gametree.me/gaming-glossary/whiff/]
-- SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition) [https://spawnpoint.be/gaming-terms-slang-glossary/]
+- [GameTree — Whiff Gaming Slang](https://gametree.me/gaming-glossary/whiff/)
+- [SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition)](https://spawnpoint.be/gaming-terms-slang-glossary/)
