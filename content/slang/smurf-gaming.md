@@ -66,5 +66,5 @@ Friend 2: "Don't be that guy. Just play unrated with me."
 
 ## Sources
 
-- Key-Drop — Counter-Strike Slang: Language & Terms Explained (2026) [https://key-drop.com/blog/counter-strike-slang-origins-2026/]
-- Roblox Wiki — Roblox Slang [https://roblox.fandom.com/wiki/Roblox_slang]
+- [Key-Drop — Counter-Strike Slang: Language & Terms Explained (2026)](https://key-drop.com/blog/counter-strike-slang-origins-2026/)
+- [Roblox Wiki — Roblox Slang](https://roblox.fandom.com/wiki/Roblox_slang)

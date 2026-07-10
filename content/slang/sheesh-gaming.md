@@ -78,5 +78,5 @@ Jordan: "your sheesh game needs work but that clip was elite"
 
 ## Sources
 
-- Slangwise.com — 250 Most Popular Internet Slang Words of 2026 [https://slangwise.com/list-of-250-most-popular-internet-slang-words/]
-- SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition) [https://spawnpoint.be/gaming-terms-slang-glossary/]
+- [Slangwise.com — 250 Most Popular Internet Slang Words of 2026](https://slangwise.com/list-of-250-most-popular-internet-slang-words/)
+- [SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition)](https://spawnpoint.be/gaming-terms-slang-glossary/)

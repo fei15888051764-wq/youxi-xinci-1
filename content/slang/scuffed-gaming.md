@@ -84,5 +84,5 @@ Jordan: "Scuffed games have soul. AAA games are polished to death."
 
 ## Sources
 
-- SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition) [https://spawnpoint.be/gaming-terms-slang-glossary/]
-- Slang.net — Scuffed Meaning [https://slang.net/meaning/scuffed]
+- [SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition)](https://spawnpoint.be/gaming-terms-slang-glossary/)
+- [Slang.net — Scuffed Meaning](https://slang.net/meaning/scuffed)
