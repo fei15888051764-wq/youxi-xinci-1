@@ -85,5 +85,5 @@ Lasered represents the aesthetic of perfect aim in FPS culture — the visual of
 
 ## Sources
 
-- G2A Gaming Glossary — What Does Lasered Mean in Gaming? [https://www.g2a.com/news/glossary/what-does-lasered-mean-in-gaming/]
-- SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition) [https://spawnpoint.be/gaming-terms-slang-glossary/]
+- [G2A Gaming Glossary — What Does Lasered Mean in Gaming?](https://www.g2a.com/news/glossary/what-does-lasered-mean-in-gaming/)
+- [SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition)](https://spawnpoint.be/gaming-terms-slang-glossary/)

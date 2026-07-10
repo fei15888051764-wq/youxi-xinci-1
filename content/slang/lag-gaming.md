@@ -85,5 +85,5 @@ Lag represents the frustration of technology failing at the worst possible momen
 
 ## Sources
 
-- SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition) [https://spawnpoint.be/gaming-terms-slang-glossary/]
-- Bark.us — 2026 Gaming Terms and Slang Words [https://www.bark.us/blog/gaming-terms/]
+- [SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition)](https://spawnpoint.be/gaming-terms-slang-glossary/)
+- [Bark.us — 2026 Gaming Terms and Slang Words](https://www.bark.us/blog/gaming-terms/)

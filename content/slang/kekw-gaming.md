@@ -81,5 +81,5 @@ KEKW represents the globalization of gaming culture through memes. Juan Joya Bor
 
 ## Sources
 
-- StreamElements — KEKW Emote Guide [https://instreamly.com/posts/twitch-slang-you-need-to-know-in-2022/]
-- Slangwise.com — 250 Most Popular Internet Slang Words of 2026 [https://slangwise.com/list-of-250-most-popular-internet-slang-words/]
+- [StreamElements — KEKW Emote Guide](https://instreamly.com/posts/twitch-slang-you-need-to-know-in-2022/)
+- [Slangwise.com — 250 Most Popular Internet Slang Words of 2026](https://slangwise.com/list-of-250-most-popular-internet-slang-words/)
