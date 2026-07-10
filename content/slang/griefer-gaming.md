@@ -2,7 +2,7 @@
 title: "Griefer"
 date: 2026-07-05T00:00:00Z
 updated: "Jul 5, 2026"
-shortDescription: "A griefer is a player who deliberately ruins other players' experience for their own amusement. One of the most hated a..."
+shortDescription: "A griefer is a player who deliberately ruins other players' experience for their own amusement. One of the most hated archetypes in online gaming."
 slug: "griefer-gaming"
 description: "A griefer is a player who deliberately ruins other players' experience for their own amusement. One of the most hated archetypes in online gaming."
 summary: "In gaming, a 'griefer' is a player who deliberately disrupts and harasses other players for their own amusement, not for in-game rewards. Common tactics include team-killing, blocking progress, and destroying teammates' structures. The term originated in MMORPGs."
@@ -77,5 +77,5 @@ Player B: "Some of them have no life, best to just find a new lobby"
 
 ## Sources
 
-- Cyber Definitions — GRIEFER Meaning in Gaming [https://www.cyberdefinitions.com/definitions/GRIEFER.html]
-- Frontier Forums — What's Your Definition of a "Griefer"? [https://forums.frontier.co.uk/threads/whats-your-definition-of-a-griefer.182443/]
+- [Cyber Definitions — GRIEFER Meaning in Gaming](https://www.cyberdefinitions.com/definitions/GRIEFER.html)
+- [Frontier Forums — What's Your Definition of a "Griefer"?](https://forums.frontier.co.uk/threads/whats-your-definition-of-a-griefer.182443/)

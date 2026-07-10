@@ -69,5 +69,5 @@ Player B: "you know i'm there. the grind waits for no one"
 
 ## Sources
 
-- G2A Gaming Glossary — What Is Grinding in Gaming? [https://www.g2a.com/news/glossary/what-is-grinding-in-gaming/]
-- SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition) [https://spawnpoint.be/gaming-terms-slang-glossary/]
+- [G2A Gaming Glossary — What Is Grinding in Gaming?](https://www.g2a.com/news/glossary/what-is-grinding-in-gaming/)
+- [SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition)](https://spawnpoint.be/gaming-terms-slang-glossary/)

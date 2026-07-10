@@ -96,6 +96,6 @@ The term has helped destigmatize casual gaming. Where "casual" was once an insul
 
 ## Sources
 
-- "The Rise of Cozy Gaming" — *Polygon*, polygon.com/gaming/
-- "Gaming and Mental Health Research" — *APA Psychology*, apa.org/topics/video-games
-- "Stardew Valley: A Digital Sanctuary" — *PC Gamer*, pcgamer.com
+- ["The Rise of Cozy Gaming" — *Polygon*](https://polygon.com/gaming/)
+- ["Gaming and Mental Health Research" — *APA Psychology*](https://apa.org/topics/video-games)
+- ["Stardew Valley: A Digital Sanctuary" — *PC Gamer*](https://pcgamer.com)
