@@ -14,8 +14,9 @@ tags:
   - strategy
   - competitive
 ---
-
 In gaming, a **headglitch** is positioning behind cover so only your head is visible while you can still shoot. A controversial but effective tactic in FPS games.
+
+---
 
 ---
 
@@ -24,6 +25,8 @@ In gaming, a **headglitch** is positioning behind cover so only your head is vis
 Headglitching emerged from early FPS games with third-person camera perspectives, where the camera position didn't match the weapon's firing origin. In games like *Gears of War* (2006) and *Call of Duty*, players discovered that standing behind low cover allowed them to shoot while exposing only a tiny hitbox. The term gained popularity in the 2010s as competitive FPS communities analyzed optimal positioning. By 2026, headglitching is recognized as both a legitimate tactic and a design flaw, depending on who you ask.
 
 > **GEBILAOWANG:** Headglitching is technically fair — the game allows it — but it feels so dirty when you're on the receiving end.
+
+---
 
 ## High-Fidelity Contextual Dialogues
 
@@ -46,6 +49,14 @@ Player B: "That's cheap but effective"
 Player A: "Headglitching should be removed from the game"
 Player B: "It's just good positioning, learn to pre-fire"
 
+---
+
+## Socio-Cultural Gain
+
+Headglitching represents the intersection of game design and competitive exploitation. While technically a bug, it's become an accepted mechanic in many shooter communities. The practice highlights how players consistently find and utilize every available advantage, intentional or not. Some games have patched out headglitching entirely, while others have embraced it as part of the skill ceiling. In competitive scenes, knowing headglitch spots on every map is considered essential game knowledge.
+
+---
+
 ## FAQ
 
 **Q1: Is headglitching cheating?**
@@ -59,6 +70,8 @@ Pre-fire common angles, use grenades, or flank around the cover.
 **Q3: Which games have headglitching?**
 
 Most cover-based shooters and some tactical FPS games.
+
+---
 
 ## Sources
 
