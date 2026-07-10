@@ -23,12 +23,12 @@
       </span>
     </nav>
 
-    <!-- Search Bar + Home Button (unified white style) -->
+    <!-- Search Bar + Home Button -->
     <section class="search-section" style="padding-bottom:0;">
       <div class="search-with-home">
         <form class="search-form" onsubmit="event.preventDefault();">
           <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-          <input type="text" class="search-input" placeholder="Search Gaming Terms">
+          <input type="text" class="search-input" placeholder="Search Gaming Terms" autocomplete="off">
         </form>
         <div class="home-btn-row">
           <a href="/" class="home-btn" aria-label="Back to home page">
@@ -78,10 +78,10 @@
           </div>
         </div>
 
-        <!-- Mobile Ad 1: top of detail content (after title, before meaning) -->
+        <!-- Mobile Ad 1 -->
         <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
 
-        <!-- ===== DESCRIPTION BOX (SEO KEY FIX) ===== -->
+        <!-- Quick Definition -->
         {{ $shortDesc := .Params.shortDescription | default .Params.description | default "" }}
         {{ if $shortDesc }}
         <div class="description-box" style="background:#151515;border:1px solid #2a2a2a;border-radius:12px;padding:20px 24px;margin:0 0 24px 0;">
@@ -90,90 +90,28 @@
         </div>
         {{ end }}
 
-        <!-- ===== TABLE OF CONTENTS ===== -->
+        <!-- Table of Contents -->
         <div id="toc" class="toc" style="background:#151515;border:1px solid #2a2a2a;border-radius:12px;padding:20px 24px;margin:0 0 24px 0;">
           <h2 style="font-size:13px;font-weight:700;color:#a3e635;margin:0 0 14px 0;letter-spacing:0.1em;text-transform:uppercase;">Table of Contents</h2>
           <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px 20px;">
-            {{ if .Content }}
             <li style="margin:0;"><a href="#meaning" style="color:#aaa;text-decoration:none;font-size:14px;display:flex;align-items:center;gap:6px;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#aaa'"><span style="color:#333;font-size:11px;">01</span>Meaning &amp; Definition</a></li>
-            {{ end }}
-            {{ if .Content }}<li style="margin:0;"><a href="#context" style="color:#aaa;text-decoration:none;font-size:14px;display:flex;align-items:center;gap:6px;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#aaa'"><span style="color:#333;font-size:11px;">02</span>Usage Examples</a></li>{{ end }}
-            {{ if .Content }}<li style="margin:0;"><a href="#history" style="color:#aaa;text-decoration:none;font-size:14px;display:flex;align-items:center;gap:6px;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#aaa'"><span style="color:#333;font-size:11px;">03</span>Origin &amp; History</a></li>{{ end }}
-            {{ if .Content }}<li style="margin:0;"><a href="#culture" style="color:#aaa;text-decoration:none;font-size:14px;display:flex;align-items:center;gap:6px;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#aaa'"><span style="color:#333;font-size:11px;">04</span>Cultural Impact</a></li>{{ end }}
-            {{ if or .Params.faq .Content }}<li style="margin:0;"><a href="#faq" style="color:#aaa;text-decoration:none;font-size:14px;display:flex;align-items:center;gap:6px;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#aaa'"><span style="color:#333;font-size:11px;">05</span>FAQ</a></li>{{ end }}
-            {{ if .Content }}<li style="margin:0;"><a href="#related" style="color:#aaa;text-decoration:none;font-size:14px;display:flex;align-items:center;gap:6px;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#aaa'"><span style="color:#333;font-size:11px;">06</span>Related Slang</a></li>{{ end }}
+            <li style="margin:0;"><a href="#context" style="color:#aaa;text-decoration:none;font-size:14px;display:flex;align-items:center;gap:6px;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#aaa'"><span style="color:#333;font-size:11px;">02</span>Usage Examples</a></li>
+            <li style="margin:0;"><a href="#history" style="color:#aaa;text-decoration:none;font-size:14px;display:flex;align-items:center;gap:6px;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#aaa'"><span style="color:#333;font-size:11px;">03</span>Origin &amp; History</a></li>
+            <li style="margin:0;"><a href="#culture" style="color:#aaa;text-decoration:none;font-size:14px;display:flex;align-items:center;gap:6px;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#aaa'"><span style="color:#333;font-size:11px;">04</span>Cultural Impact</a></li>
+            <li style="margin:0;"><a href="#faq" style="color:#aaa;text-decoration:none;font-size:14px;display:flex;align-items:center;gap:6px;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#aaa'"><span style="color:#333;font-size:11px;">05</span>FAQ</a></li>
+            <li style="margin:0;"><a href="#related" style="color:#aaa;text-decoration:none;font-size:14px;display:flex;align-items:center;gap:6px;" onmouseover="this.style.color='#a3e635'" onmouseout="this.style.color='#aaa'"><span style="color:#333;font-size:11px;">06</span>Related Slang</a></li>
           </ul>
         </div>
 
-        <!-- Full Meaning -->
+        <!-- ===== MAIN CONTENT (.Content) ===== -->
         <div class="content-block" id="meaning">
-          {{ $titleLen := len .Title }}
-          {{ if gt $titleLen 30 }}
-            <h2 class="section-title">What Does {{ .Title }} Mean in Gaming?</h2>
-          {{ else }}
-            <h2 class="section-title">What Does "{{ .Title }}" Mean in Gaming?</h2>
-          {{ end }}
           <div class="content-text" itemprop="articleBody">{{ .Content }}</div>
         </div>
 
-        <!-- Mobile Ad 2: middle of detail content -->
+        <!-- Mobile Ad 2 -->
         <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
 
-        <!-- Usage Examples -->
-        {{ with .Params.usageExamples }}
-        <div class="content-block" id="context">
-          <h2 class="section-title">Usage Examples</h2>
-          <div class="table-wrap">
-            <table class="data-table">
-              <thead><tr><th>Example</th><th class="hide-mobile">Context</th><th>Tone</th></tr></thead>
-              <tbody>
-                {{ range . }}
-                <tr><td class="italic">"{{ .example }}"</td><td class="hide-mobile text-muted">{{ .context }}</td><td><span class="tone-badge">{{ .tone }}</span></td></tr>
-                {{ end }}
-              </tbody>
-            </table>
-          </div>
-        </div>
-        {{ end }}
-
-        <!-- Origin -->
-        {{ with .Params.originSpread }}
-        <div class="content-block" id="history">
-          <h2 class="section-title">Origin &amp; Spread</h2>
-          <div class="table-wrap">
-            <table class="data-table">
-              <thead><tr><th style="width:30%">Attribute</th><th>Detail</th></tr></thead>
-              <tbody>
-                {{ range . }}
-                <tr><td class="attr-label">{{ .attribute }}</td><td>{{ .detail }}</td></tr>
-                {{ end }}
-              </tbody>
-            </table>
-          </div>
-        </div>
-        {{ end }}
-
-        <!-- Cultural Context -->
-        {{ with .Params.culturalContext }}
-        <div class="content-block" id="culture">
-          <h2 class="section-title">Cultural Context</h2>
-          <p class="content-text">{{ . }}</p>
-        </div>
-        {{ end }}
-
-        <!-- Similar Terms -->
-        {{ with .Params.similarTerms }}
-        <div class="content-block">
-          <h2 class="section-title">Similar Slang</h2>
-          <ul class="similar-list">
-            {{ range . }}
-            <li><span class="similar-term">"{{ .term }}"</span><span class="text-muted"> — {{ .meaning }}</span></li>
-            {{ end }}
-          </ul>
-        </div>
-        {{ end }}
-
-        <!-- FAQ -->
+        <!-- ===== LEGACY: Old format FAQ from Params ===== -->
         {{ with .Params.faq }}
         <div class="content-block" id="faq">
           <h2 class="section-title">FAQ</h2>
@@ -188,7 +126,7 @@
         </div>
         {{ end }}
 
-        <!-- Sources -->
+        <!-- ===== LEGACY: Old format Sources from Params ===== -->
         {{ with .Params.sources }}
         <div class="content-block">
           <h2 class="section-title">Sources</h2>
@@ -200,7 +138,10 @@
         </div>
         {{ end }}
 
-        <!-- About the Author -->
+        <!-- Mobile Ad 3 -->
+        <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
+
+        <!-- Author Card -->
         <div class="content-block author-card" style="margin-top:32px;padding:20px;border-top:1px solid #333;background:#111;border-radius:12px;">
           <div itemprop="author" itemscope itemtype="https://schema.org/Person" style="display:flex;align-items:flex-start;gap:16px;">
             <div style="width:48px;height:48px;border-radius:50%;background:#2a2a2a;flex-shrink:0;display:flex;align-items:center;justify-content:center;">
@@ -214,10 +155,7 @@
           </div>
         </div>
 
-        <!-- Mobile Ad 3: end of detail content (before Related Slang) -->
-        <div class="ad-mobile"><div class="ad-mobile-inner">AD</div></div>
-
-        <!-- ===== ENHANCED Related Slang (was 3, now 6) ===== -->
+        <!-- Related Slang (6) -->
         {{ $current := . }}
         {{ $related := slice }}
         {{ range .Params.tags }}
@@ -263,7 +201,7 @@
         </div>
         {{ end }}
 
-        <!-- ===== EXPLORE BY TAG ===== -->
+        <!-- Explore by Tag -->
         {{ if .Params.tags }}
         <div class="content-block" style="margin-top:32px;">
           <h2 class="section-title">Explore by Category</h2>
@@ -278,7 +216,7 @@
         </div>
         {{ end }}
 
-        <!-- ===== POPULAR SLANG: Boost engagement & internal linking ===== -->
+        <!-- Popular Gaming Slang -->
         {{ $popular := first 4 (where .Site.RegularPages "Section" "slang") }}
         {{ if $popular }}
         <div class="content-block" style="margin-top:32px;padding:24px;background:#151515;border:1px solid #2a2a2a;border-radius:12px;">
@@ -298,7 +236,7 @@
         </div>
         {{ end }}
 
-        <!-- ===== INTERNAL LINKING: Auto-link slang terms in content ===== -->
+        <!-- Internal Linking -->
         <script>
         (function() {
           var slangMap = {};
@@ -340,58 +278,7 @@
         })();
         </script>
 
-        <!-- ===== TOC DYNAMIC HREF FIX ===== -->
-        <script>
-        (function() {
-          var tocMappings = [
-            null,
-            { keywords: ['contextual', 'dialogue', 'example', 'usage'] },
-            { keywords: ['trajectory', 'chronology', 'origin', 'history'] },
-            { keywords: ['socio-cultural', 'cultural', 'impact', 'gain'] },
-            { keywords: ['faq'] },
-            null
-          ];
-
-          var contentH2s = [];
-          document.querySelectorAll('.content-text h2[id], .content-block h2[id]').forEach(function(h2) {
-            contentH2s.push({ id: h2.id, text: h2.textContent.toLowerCase() });
-          });
-          document.querySelectorAll('.content-block[id]').forEach(function(block) {
-            var h2 = block.querySelector('h2');
-            if (h2 && !h2.id) {
-              contentH2s.push({ id: block.id, text: h2.textContent.toLowerCase() });
-            }
-          });
-
-          var tocLinks = document.querySelectorAll('#toc a');
-          tocLinks.forEach(function(link, index) {
-            var mapping = tocMappings[index];
-            if (!mapping) return;
-
-            var matched = false;
-            contentH2s.forEach(function(h2) {
-              if (matched) return;
-              mapping.keywords.forEach(function(kw) {
-                if (matched) return;
-                if (h2.text.indexOf(kw) !== -1) {
-                  link.href = '#' + h2.id;
-                  matched = true;
-                }
-              });
-            });
-
-            if (!matched) {
-              var defaultIds = ['context', 'history', 'culture', 'faq'];
-              var defaultId = defaultIds[index - 1];
-              if (defaultId && document.getElementById(defaultId)) {
-                link.href = '#' + defaultId;
-              }
-            }
-          });
-        })();
-        </script>
-
-        <!-- ===== FAQPAGE SCHEMA: dynamic generation for new-format articles ===== -->
+        <!-- FAQPage Schema Dynamic -->
         <script>
         (function() {
           var scripts = document.querySelectorAll('script[type="application/ld+json"]');
@@ -456,7 +343,7 @@
 
       </article>
 
-      <!-- Right Ad (desktop only) -->
+      <!-- Right Ad -->
       <div class="ad-sidebar ad-sidebar-detail">
         <div class="ad-sidebar-inner">AD</div>
       </div>
@@ -466,7 +353,7 @@
 </div>
 
 {{ else }}
-<!-- Simple Page (About / Contact / Privacy / Terms) -->
+<!-- Simple Page -->
 <div class="detail-page">
   <div class="detail-container">
     <article class="detail-content" style="max-width:800px;margin:0 auto;">
