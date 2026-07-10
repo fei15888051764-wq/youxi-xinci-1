@@ -86,5 +86,5 @@ Player A: "First time that's ever worked for me"
 
 ## Sources
 
-- 7ESL — Pogchamp Meaning, Origin and Related Gaming Terms [https://7esl.com/pogchamp/]
-- SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition) [https://spawnpoint.be/gaming-terms-slang-glossary/]
+- [7ESL — Pogchamp Meaning, Origin and Related Gaming Terms](https://7esl.com/pogchamp/)
+- [SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition)](https://spawnpoint.be/gaming-terms-slang-glossary/)

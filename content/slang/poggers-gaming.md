@@ -87,6 +87,6 @@ Player B: "Poggers energy carries games. Never doubt the poggers."
 
 ## Sources
 
-- Levlup Gaming Glossary — Poggers Meaning [https://www.levlup.com/en-row/blogs/glossary-uk/poggers-uk]
-- Slang.net — Poggers Meaning [https://slang.net/meaning/poggers]
-- 7ESL — Poggers Gaming Slang [https://7esl.com/poggers/]
+- [Levlup Gaming Glossary — Poggers Meaning](https://www.levlup.com/en-row/blogs/glossary-uk/poggers-uk)
+- [Slang.net — Poggers Meaning](https://slang.net/meaning/poggers)
+- [7ESL — Poggers Gaming Slang](https://7esl.com/poggers/)

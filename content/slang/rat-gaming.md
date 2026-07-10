@@ -100,6 +100,6 @@ Culturally, "rat" has become a way to discuss playstyles and priorities. Calling
 
 ## Sources
 
-- "Apex Legends Ranked Guide" — *EA Games*, ea.com/games/apex-legends/news
-- "Battle Royale Strategy" — *Dot Esports*, dotesports.com/apex-legends
-- "The Art of Survival in BR Games" — *IGN*, ign.com/articles/apex-legends
+- ["Apex Legends Ranked Guide" — *EA Games*](https://ea.com/games/apex-legends/news)
+- ["Battle Royale Strategy" — *Dot Esports*](https://dotesports.com/apex-legends)
+- ["The Art of Survival in BR Games" — *IGN*](https://ign.com/articles/apex-legends)

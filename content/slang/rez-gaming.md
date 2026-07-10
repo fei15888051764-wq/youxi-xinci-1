@@ -85,5 +85,5 @@ Rez represents the selfless teamwork that defines the best multiplayer experienc
 
 ## Sources
 
-- G2A Gaming Glossary — What Does Rez Mean in Gaming? [https://www.g2a.com/news/glossary/what-does-rez-mean-in-gaming/]
-- SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition) [https://spawnpoint.be/gaming-terms-slang-glossary/]
+- [G2A Gaming Glossary — What Does Rez Mean in Gaming?](https://www.g2a.com/news/glossary/what-does-rez-mean-in-gaming/)
+- [SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition)](https://spawnpoint.be/gaming-terms-slang-glossary/)
