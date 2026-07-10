@@ -80,5 +80,5 @@ User1: "At least there's always next split Sadge"
 
 ## Sources
 
-- Slanginfo.com — Sadge Meaning [https://slanginfo.com/sadge-meaning/]
-- Amazing Talker — What Does "Sadge" Mean? And Its Origin? [https://en.amazingtalker.com/questions/1140]
+- [Slanginfo.com — Sadge Meaning](https://slanginfo.com/sadge-meaning/)
+- [Amazing Talker — What Does "Sadge" Mean? And Its Origin?](https://en.amazingtalker.com/questions/1140)

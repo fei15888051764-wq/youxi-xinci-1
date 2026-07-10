@@ -84,5 +84,5 @@ Caster B: "That's why they're the best — rotation discipline wins championship
 
 ## Sources
 
-- CraftyPuns — Valorant Strategy Guide [https://craftypuns.com/how-to-level-up-faster-in-valorant-little-known-tricks-to-boost-your-xp/]
-- SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition) [https://spawnpoint.be/gaming-terms-slang-glossary/]
+- [CraftyPuns — Valorant Strategy Guide](https://craftypuns.com/how-to-level-up-faster-in-valorant-little-known-tricks-to-boost-your-xp/)
+- [SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition)](https://spawnpoint.be/gaming-terms-slang-glossary/)

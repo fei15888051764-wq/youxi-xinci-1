@@ -84,5 +84,5 @@ User4: "Also, learn to appreciate when opponents outplay you. Saying 'nice shot'
 
 ## Sources
 
-- Meanzhub — Scrub Gaming Slang 2026 [https://meanzhub.com/scrub-gaming-slang/]
-- Slang.org — Scrub Slang Meaning [https://slang.org/scrub/]
+- [Meanzhub — Scrub Gaming Slang 2026](https://meanzhub.com/scrub-gaming-slang/)
+- [Slang.org — Scrub Slang Meaning](https://slang.org/scrub/)
