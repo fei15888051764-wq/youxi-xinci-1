@@ -78,5 +78,5 @@ Streamer: "Chat I can't help it, I've been grinding ranked all day, my hands do 
 
 ## Sources
 
-- SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition) [https://spawnpoint.be/gaming-terms-slang-glossary/]
-- PlayStation — Ultimate Gaming Glossary (2026) [https://www.playstation.com/en-us/editorial/playstation-ultimate-gaming-glossary/]
+- [SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition)](https://spawnpoint.be/gaming-terms-slang-glossary/)
+- [PlayStation — Ultimate Gaming Glossary (2026)](https://www.playstation.com/en-us/editorial/playstation-ultimate-gaming-glossary/)

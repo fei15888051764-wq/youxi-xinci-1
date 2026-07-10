@@ -67,5 +67,5 @@ User4: "It's literally just crouching. If that tilts you, ranked isn't for you."
 
 ## Sources
 
-- Atlantic Asset Management — 2026 Gaming Terminology and Slang Terms [https://www.atlanticassetmanagement.net/2026-gaming-terminology-and-you-will-slang-terms-a-great-glossary-to-own-household/]
-- SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition) [https://spawnpoint.be/gaming-terms-slang-glossary/]
+- [Atlantic Asset Management — 2026 Gaming Terminology and Slang Terms](https://www.atlanticassetmanagement.net/2026-gaming-terminology-and-you-will-slang-terms-a-great-glossary-to-own-household/)
+- [SpawnPoint Gaming Glossary — Gaming Terms and Slang Explained (2026 Edition)](https://spawnpoint.be/gaming-terms-slang-glossary/)

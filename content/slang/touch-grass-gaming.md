@@ -67,5 +67,5 @@ Viewer 3: "both of you need to touch grass fr fr"
 
 ## Sources
 
-- PlayStation — Ultimate Gaming Glossary (2026) [https://www.playstation.com/en-us/editorial/playstation-ultimate-gaming-glossary/]
-- Urban Dictionary — Touch Grass [https://www.urbandictionary.com/define.php?term=touch%20grass]
+- [PlayStation — Ultimate Gaming Glossary (2026)](https://www.playstation.com/en-us/editorial/playstation-ultimate-gaming-glossary/)
+- [Urban Dictionary — Touch Grass](https://www.urbandictionary.com/define.php?term=touch%20grass)

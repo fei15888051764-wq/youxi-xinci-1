@@ -66,5 +66,5 @@ Friend 1: "Practice in Arena, not in casual modes."
 
 ## Sources
 
-- Roblox Wiki — Roblox Slang [https://roblox.fandom.com/wiki/Roblox_slang]
-- PlayStation — Ultimate Gaming Glossary (2026) [https://www.playstation.com/en-us/editorial/playstation-ultimate-gaming-glossary/]
+- [Roblox Wiki — Roblox Slang](https://roblox.fandom.com/wiki/Roblox_slang)
+- [PlayStation — Ultimate Gaming Glossary (2026)](https://www.playstation.com/en-us/editorial/playstation-ultimate-gaming-glossary/)
