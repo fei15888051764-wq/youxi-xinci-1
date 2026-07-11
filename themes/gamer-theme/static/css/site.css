@@ -265,4 +265,4 @@
 .detail-meta{font-size:12px;gap:8px}
 .detail-tag{font-size:11px;padding:3px 8px}
 .breadcrumb{font-size:12px}
-}
+}@media(max-width:639px){.detail-content{max-width:100%;overflow-x:hidden}.detail-content a{word-break:break-all}.detail-content pre{white-space:pre-wrap;word-break:break-word;overflow-wrap:break-word}.detail-content img,.detail-content iframe,.detail-content video{max-width:100%;height:auto}}
