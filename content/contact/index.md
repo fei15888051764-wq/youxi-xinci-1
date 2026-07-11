@@ -9,6 +9,7 @@ Have a suggestion, correction, or partnership inquiry? Reach out to us.
 
 - **Email:** [fei15888051764@gmail.com](mailto:fei15888051764@gmail.com)
 - **Response Time:** Usually within 48 hours
+- **Social:** Follow updates on X (Twitter): [@GEBILAOWANG_WYF](https://x.com/GEBILAOWANG_WYF)
 
 ## Submit a Term
 
