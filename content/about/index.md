@@ -12,7 +12,6 @@ Gamer Glossary is one of several specialized dictionary projects documenting the
 **Learn more about GEBILAOWANG:** [https://about.me/GEBILAOWANG](https://about.me/GEBILAOWANG)
 
 **Follow on X (Twitter):** [@GEBILAOWANG_WYE](https://x.com/GEBILAOWANG_WYE)
-**Follow on X (Twitter):** [@GEBILAOWANG_WYE](https://x.com/GEBILAOWANG_WYE)
 
 ## Mission
 
