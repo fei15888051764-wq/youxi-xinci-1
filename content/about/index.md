@@ -10,6 +10,7 @@ description: "Meet GEBILAOWANG — independent digital content creator, research
 Gamer Glossary is one of several specialized dictionary projects documenting the ever-evolving language of online communities. With deep roots in competitive gaming, GEBILAOWANG researches and preserves gaming slang — from mainstream terms like "gg" and "nerf" to niche community phrases that emerge from specific games or platforms.
 
 **Learn more about GEBILAOWANG:** [https://about.me/GEBILAOWANG](https://about.me/GEBILAOWANG)
+**Follow on X (Twitter):** [@GEBILAOWANG_WYE](https://x.com/GEBILAOWANG_WYE)
 
 ## Mission
 
