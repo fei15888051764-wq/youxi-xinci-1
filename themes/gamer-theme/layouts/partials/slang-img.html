@@ -1,0 +1,12 @@
+{{- /* 传入 slug，返回该词条真实存在的封面图路径，构建期精确匹配，避免 404 */ -}}
+{{- $slug := . -}}
+{{- $base := replace $slug "-gaming" "" -}}
+{{- if os.FileExists (printf "static/slang/%s.jpg" $slug) -}}
+{{- printf "/slang/%s.jpg" $slug -}}
+{{- else if os.FileExists (printf "static/slang/%s-featured.jpg" $base) -}}
+{{- printf "/slang/%s-featured.jpg" $base -}}
+{{- else if os.FileExists (printf "static/slang/%s.jpg" $base) -}}
+{{- printf "/slang/%s.jpg" $base -}}
+{{- else -}}
+{{- printf "/slang/%s.jpg" $slug -}}
+{{- end -}}
