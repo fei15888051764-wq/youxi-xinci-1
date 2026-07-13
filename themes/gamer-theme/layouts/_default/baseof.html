@@ -3,17 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{{ $ogImgPath := "/og-image.jpg" }}
+{{ if eq .Section "slang" }}{{ $ogImgPath = partial "slang-img.html" .Params.slug }}{{ end }}
+{{ $ogImgURL := printf "%s%s" .Site.BaseURL ($ogImgPath | strings.TrimPrefix "/") }}
 {{ $seoTitle := "" }}
 {{ if .IsHome }}
   {{ $seoTitle = .Site.Title }}
 {{ else if eq .Section "slang" }}
-  {{ $seoTitle = printf "%s - Gaming Slang Meaning & Origin 2026 | %s" .Title .Site.Title }}
+  {{ $seoTitle = printf "%s Meaning in Gaming (2026) | Gamer Terms" .Title }}
 {{ else }}
   {{ $seoTitle = printf "%s | %s" .Title .Site.Title }}
 {{ end }}
 <title>{{ $seoTitle }}</title>
 {{ $metaDesc := "" }}
-{{ if .Params.shortDescription }}
+{{ if eq .Section "slang" }}
+  {{ $def := .Params.shortDescription | default .Params.description | default (.Summary | plainify) }}
+  {{ $metaDesc = printf "What does %s mean in gaming? %s Learn its origin, real examples, and why gamers use it." .Title $def }}
+{{ else if .Params.shortDescription }}
   {{ $metaDesc = .Params.shortDescription }}
 {{ else if .Params.description }}
   {{ $metaDesc = .Params.description }}
@@ -48,18 +54,18 @@
 <meta name="has-faq" content="true">
 {{ end }}
 <!-- Open Graph -->
-<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else if eq .Section "slang" }}{{ .Title }} - Gaming Slang Meaning &amp; Origin 2026{{ else }}{{ .Title }}{{ end }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else if eq .Section "slang" }}{{ $seoTitle }}{{ else }}{{ .Title }}{{ end }}">
 <meta property="og:description" content="{{ $metaDesc }}">
 <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
 <meta property="og:locale" content="en_US">
-{{ if eq .Section "slang" }}{{ $imgBase := .Params.slug }}<meta property="og:image" content="{{ .Site.BaseURL }}slang/{{ $imgBase }}.jpg"><meta property="og:image:alt" content="{{ .Title }} gaming slang meaning definition 2026"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">{{ else }}<meta property="og:image" content="{{ .Site.BaseURL }}og-image.jpg"><meta property="og:image:alt" content="Gamer Slang &amp; Pro Terms Hub - Gaming Slang Dictionary 2026">{{ end }}
+<meta property="og:image" content="{{ $ogImgURL }}"><meta property="og:image:alt" content="{{ if eq .Section "slang" }}{{ .Title }} gaming slang meaning definition 2026{{ else }}Gamer Slang &amp; Pro Terms Hub - Gaming Slang Dictionary 2026{{ end }}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else if eq .Section "slang" }}{{ .Title }} - Gaming Slang Meaning &amp; Origin 2026{{ else }}{{ .Title }}{{ end }}">
+<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else if eq .Section "slang" }}{{ $seoTitle }}{{ else }}{{ .Title }}{{ end }}">
 <meta name="twitter:description" content="{{ $metaDesc }}">
-{{ if eq .Section "slang" }}{{ $imgBase := .Params.slug }}<meta name="twitter:image" content="{{ .Site.BaseURL }}slang/{{ $imgBase }}.jpg"><meta name="twitter:image:alt" content="{{ .Title }} gaming slang meaning definition 2026">{{ else }}<meta name="twitter:image" content="{{ .Site.BaseURL }}og-image.jpg">{{ end }}
+<meta name="twitter:image" content="{{ $ogImgURL }}">{{ if eq .Section "slang" }}<meta name="twitter:image:alt" content="{{ .Title }} gaming slang meaning definition 2026">{{ end }}
 {{ if eq .Section "slang" }}
 <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">
 <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}">
@@ -84,7 +90,7 @@
 {{ $imgBase := .Params.slug }}
 {{ $schemaDesc := $metaDesc }}
 <!-- Article -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"{{ .Title }} - Gaming Slang Meaning & Origin 2026","description":{{ $schemaDesc | jsonify }},"url":"{{ .Permalink }}","image":{"@type":"ImageObject","url":"{{ .Site.BaseURL }}slang/{{ $imgBase }}.jpg","width":1200,"height":630},"datePublished":"{{ .Date.Format "2006-01-02T15:04:05-07:00" }}","dateModified":"{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}","author":{"@type":"Person","name":"{{ .Site.Params.author }}","url":"https://about.me/GEBILAOWANG","jobTitle":"Gaming Culture Writer"},"publisher":{"@type":"Organization","name":"{{ .Site.Title }}","logo":{"@type":"ImageObject","url":"{{ .Site.BaseURL }}logo.png","width":600,"height":60}},"articleSection":"Gaming Slang","keywords":"{{ if .Params.tags }}{{ delimit .Params.tags ", " }}{{ end }}","mainEntityOfPage":{"@type":"WebPage","@id":"{{ .Permalink }}"},"inLanguage":"en-US","isAccessibleForFree":"True","speakable":{"@type":"SpeakableSpecification","cssSelector":[".detail-title",".content-text"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"{{ .Title }} Meaning in Gaming (2026)","description":{{ $schemaDesc | jsonify }},"url":"{{ .Permalink }}","image":{"@type":"ImageObject","url":"{{ $ogImgURL }}","width":1280,"height":720},"datePublished":"{{ .Date.Format "2006-01-02T15:04:05-07:00" }}","dateModified":"{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}","author":{"@type":"Person","name":"{{ .Site.Params.author }}","url":"https://about.me/GEBILAOWANG","jobTitle":"Gaming Culture Writer"},"publisher":{"@type":"Organization","name":"{{ .Site.Title }}","logo":{"@type":"ImageObject","url":"{{ .Site.BaseURL }}logo.png","width":600,"height":60}},"articleSection":"Gaming Slang","keywords":"{{ if .Params.tags }}{{ delimit .Params.tags ", " }}{{ end }}","mainEntityOfPage":{"@type":"WebPage","@id":"{{ .Permalink }}"},"inLanguage":"en-US","isAccessibleForFree":"True","speakable":{"@type":"SpeakableSpecification","cssSelector":[".detail-title",".content-text"]}}</script>
 <!-- BreadcrumbList -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"{{ .Site.BaseURL }}"},{"@type":"ListItem","position":2,"name":"Slang","item":"{{ .Site.BaseURL }}slang/"},{"@type":"ListItem","position":3,"name":"{{ .Title }}","item":"{{ .Permalink }}"}]}</script>
 <!-- FAQPage (old format: from .Params.faq) -->
@@ -92,7 +98,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{{ range $i, $q := . }}{{ if $i }},{{ end }}{"@type":"Question","name":{{ $q.question | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ $q.answer | plainify | jsonify }}}}{{ end }}]}</script>
 {{ end }}
 <!-- WebPage (for Sitelinks) -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"{{ .Title }} - Gaming Slang Meaning & Origin 2026","description":{{ $schemaDesc | jsonify }},"url":"{{ .Permalink }}","inLanguage":"en-US","isPartOf":{"@type":"WebSite","name":"{{ .Site.Title }}","url":"{{ .Site.BaseURL }}"},"primaryImageOfPage":{"@type":"ImageObject","url":"{{ .Site.BaseURL }}slang/{{ $imgBase }}.jpg"},"datePublished":"{{ .Date.Format "2006-01-02T15:04:05-07:00" }}","dateModified":"{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"{{ .Title }} Meaning in Gaming (2026)","description":{{ $schemaDesc | jsonify }},"url":"{{ .Permalink }}","inLanguage":"en-US","isPartOf":{"@type":"WebSite","name":"{{ .Site.Title }}","url":"{{ .Site.BaseURL }}"},"primaryImageOfPage":{"@type":"ImageObject","url":"{{ $ogImgURL }}"},"datePublished":"{{ .Date.Format "2006-01-02T15:04:05-07:00" }}","dateModified":"{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}"}</script>
 <!-- DefinedTerm (for slang definition) -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"DefinedTerm","name":"{{ .Title }}","description":{{ $schemaDesc | jsonify }},"inDefinedTermSet":{"@type":"DefinedTermSet","name":"Gaming Slang Dictionary","publisher":"{{ .Site.Title }}"},"termCode":"{{ .Title | lower | urlize }}"}</script>
 {{ else }}
@@ -100,6 +106,9 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"{{ .Title }}","url":"{{ .Permalink }}","description":{{ $metaDesc | jsonify }},"inLanguage":"en-US"}</script>
 {{ end }}
 
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
