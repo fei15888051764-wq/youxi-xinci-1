@@ -3,8 +3,6 @@ title: "Privacy Policy"
 description: "Privacy Policy for Gamer Glossary website."
 ---
 
-# Privacy Policy
-
 Last updated: June 30, 2026
 
 ## 1. Information We Collect

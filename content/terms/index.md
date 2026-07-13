@@ -3,8 +3,6 @@ title: "Terms of Service"
 description: "Terms of Service for Gamer Glossary website."
 ---
 
-# Terms of Service
-
 Last updated: June 30, 2026
 
 ## 1. Acceptance of Terms

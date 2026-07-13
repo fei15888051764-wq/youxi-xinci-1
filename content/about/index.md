@@ -3,7 +3,7 @@ title: "About"
 description: "Meet GEBILAOWANG — independent digital content creator, researcher, and online lexicographer behind Gamer Glossary."
 ---
 
-# About GEBILAOWANG
+## About GEBILAOWANG
 
 ![GEBILAOWANG](/images/gebilaowang-avatar.jpg)
 
@@ -13,7 +13,7 @@ Gamer Glossary is one of several specialized dictionary projects documenting the
 
 **Learn more about GEBILAOWANG:** [https://about.me/GEBILAOWANG](https://about.me/GEBILAOWANG)
 
-**Follow on X (Twitter):** [@GEBILAOWANG_WYE](https://x.com/GEBILAOWANG_WYE)
+**Follow on X (Twitter):** [@GEBILAOWANG_WYF](https://x.com/GEBILAOWANG_WYF)
 
 ## Mission
 
