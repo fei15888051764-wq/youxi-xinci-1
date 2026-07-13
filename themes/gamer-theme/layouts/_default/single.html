@@ -48,12 +48,12 @@
       </div>
 <!-- Main Content -->
       <article class="detail-content" itemscope itemtype="https://schema.org/Article">
-        <meta itemprop="headline" content="{{ .Title }} - Gaming Slang Meaning &amp; Origin 2026" />
+        <meta itemprop="headline" content="{{ .Title }} Meaning in Gaming (2026)" />
         <meta itemprop="datePublished" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}" />
         <meta itemprop="dateModified" content="{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}" />
 
         <div class="detail-hero-img">
-          <img src="/slang/{{ $base }}.jpg" alt="{{ .Title }} gaming slang meaning definition 2026" itemprop="image" onerror="var t=this; var base='{{ $base }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg';} else {this.parentElement.style.display='none'};">
+          <img src="{{ partial "slang-img.html" .Params.slug }}" alt="{{ .Title }} gaming slang meaning definition 2026" itemprop="image" width="1280" height="720" onerror="this.parentElement.style.display='none'">
         </div>
 
         <div class="detail-title-block">
@@ -295,8 +295,7 @@
             {{ $rbase := replace .Params.slug "-gaming" "" }}
             <a href="{{ .RelPermalink }}" class="card" style="text-decoration:none;">
               <div class="card-img-wrap">
-                <img src="/slang/{{ $rbase }}.jpg" alt="{{ .Title }} gaming slang meaning definition 2026" class="card-img" loading="lazy"
-                     onerror="var t=this; var base='{{ $rbase }}'; var s=this.src; if(s.indexOf('-gaming')===-1 && s.indexOf('-featured')===-1){this.src='/slang/'+base+'-gaming.jpg';} else if(s.indexOf('-featured')===-1){this.src='/slang/'+base+'-featured.jpg';} else {this.parentElement.style.display='none'};">
+                <img src="{{ partial "slang-img.html" .Params.slug }}" alt="{{ .Title }} gaming slang meaning definition 2026" class="card-img" loading="lazy" width="1280" height="720" onerror="this.parentElement.style.display='none'">
               </div>
               <div class="card-body">
                 <div class="card-header-row">
@@ -344,7 +343,7 @@
             {{ range $popular }}
             {{ $pbase := replace .Params.slug "-gaming" "" }}
             <a href="{{ .RelPermalink }}" style="display:flex;align-items:flex-start;gap:10px;text-decoration:none;padding:10px;background:#1a1a1a;border-radius:8px;transition:all .2s;" onmouseover="this.style.background='#222'" onmouseout="this.style.background='#1a1a1a'">
-              <img src="/slang/{{ $pbase }}.jpg" alt="" style="width:40px;height:40px;border-radius:6px;object-fit:cover;flex-shrink:0;" loading="lazy" onerror="this.style.display='none'">
+              <img src="{{ partial "slang-img.html" .Params.slug }}" alt="" style="width:40px;height:40px;border-radius:6px;object-fit:cover;flex-shrink:0;" loading="lazy" width="40" height="40" onerror="this.style.display='none'">
               <div style="min-width:0;">
                 <div style="color:#f0f0f0;font-size:14px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ .Title }}</div>
                 <div style="color:#888;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{{ .Params.shortDescription | default .Params.description | truncate 40 }}</div>
