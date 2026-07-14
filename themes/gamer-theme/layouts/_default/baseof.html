@@ -60,7 +60,7 @@
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="{{ $ogImgURL }}"><meta property="og:image:alt" content="{{ if eq .Section "slang" }}{{ .Title }} gaming slang meaning definition 2026{{ else }}Gamer Slang &amp; Pro Terms Hub - Gaming Slang Dictionary 2026{{ end }}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image" content="{{ $ogImgURL }}"><meta property="og:image:alt" content="{{ if eq .Section "slang" }}{{ .Title }} gaming slang meaning definition 2026{{ else }}Gamer Terms - Gaming Slang Dictionary 2026{{ end }}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else if eq .Section "slang" }}{{ $seoTitle }}{{ else }}{{ .Title }}{{ end }}">
@@ -95,7 +95,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"{{ .Site.BaseURL }}"},{"@type":"ListItem","position":2,"name":"Slang","item":"{{ .Site.BaseURL }}slang/"},{"@type":"ListItem","position":3,"name":"{{ .Title }}","item":"{{ .Permalink }}"}]}</script>
 <!-- FAQPage (old format: from .Params.faq) -->
 {{ with .Params.faq }}
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{{ range $i, $q := . }}{{ if $i }},{{ end }}{"@type":"Question","name":{{ $q.question | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ $q.answer | plainify | jsonify }}}}{{ end }}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{{ range $i, $q := . }}{{ if $i }},{{ end }}{"@type":"Question","name":{{ $q.question | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ $q.answer | plainify | jsonify }}}}}{{ end }}]}</script>
 {{ end }}
 <!-- WebPage (for Sitelinks) -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"{{ .Title }} Meaning in Gaming (2026)","description":{{ $schemaDesc | jsonify }},"url":"{{ .Permalink }}","inLanguage":"en-US","isPartOf":{"@type":"WebSite","name":"{{ .Site.Title }}","url":"{{ .Site.BaseURL }}"},"primaryImageOfPage":{"@type":"ImageObject","url":"{{ $ogImgURL }}"},"datePublished":"{{ .Date.Format "2006-01-02T15:04:05-07:00" }}","dateModified":"{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}"}</script>
