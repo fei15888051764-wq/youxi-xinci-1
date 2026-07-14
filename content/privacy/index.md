@@ -7,7 +7,7 @@ Last updated: June 30, 2026
 
 ## 1. Information We Collect
 
-Gamer Glossary is a static content website. We do not collect personal information directly. However, we use third-party services that may collect data:
+Gamer Terms is a static content website. We do not collect personal information directly. However, we use third-party services that may collect data:
 
 - **Cloudflare Pages** (hosting): May collect IP addresses and browser information for security and analytics purposes.
 - **Google Analytics** (if enabled): Tracks page views and user interactions anonymously.

@@ -7,7 +7,7 @@ Last updated: June 30, 2026
 
 ## 1. Acceptance of Terms
 
-By accessing and using Gamer Glossary, you accept and agree to be bound by these Terms of Service.
+By accessing and using Gamer Terms, you accept and agree to be bound by these Terms of Service.
 
 ## 2. Use of Content
 
