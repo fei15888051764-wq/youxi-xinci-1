@@ -61,6 +61,5 @@ It's like a soccer player deliberately scoring own goals to make their team lose
 ---
 
 ## Sources
-
-1. Mobalytics — "Terms That Every League of Legends Player Should Know" (official-ish glossary definition): mobalytics.gg
-2. EB24 — "What Does Inting Mean in League of Legends?" (soft vs. hard inting breakdown): eloboost24.eu
+- [Mobalytics — "Terms That Every League of Legends Player Should Know" (official-ish glossary definition)](https://mobalytics.gg)
+- [EB24 — "What Does Inting Mean in League of Legends?" (soft vs. hard inting breakdown)](https://eloboost24.eu)
