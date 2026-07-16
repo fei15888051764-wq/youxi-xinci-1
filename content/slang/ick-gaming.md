@@ -65,6 +65,5 @@ It's that small thing someone does that instantly makes you lose interest or fee
 ---
 
 ## Sources
-
-1. Urban Dictionary — "Ick" (multiple entries, 2021-2024): urbandictionary.com
-2. Instreamly — "Ick" in Twitch Slang Guide 2026 (gaming-specific usage): instreamly.com
+- [Urban Dictionary — "Ick" (multiple entries, 2021-2024)](https://urbandictionary.com)
+- [Instreamly — "Ick" in Twitch Slang Guide 2026 (gaming-specific usage)](https://instreamly.com)
