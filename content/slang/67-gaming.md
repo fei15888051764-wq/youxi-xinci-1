@@ -58,6 +58,5 @@ Constantly, especially by younger players. Like most meme slang it may eventuall
 ---
 
 ## Sources
-
-1. Dictionary.com — 2025 Word of the Year announcement ("6-7"): dictionary.com
-2. Quoteliy — "What Does 67 Mean in Meme? The Viral 'Six-Seven' Slang Explained": quoteliy.com
+- [Dictionary.com — 2025 Word of the Year announcement ("6-7")](https://dictionary.com)
+- [Quoteliy — "What Does 67 Mean in Meme? The Viral 'Six-Seven' Slang Explained"](https://quoteliy.com)
