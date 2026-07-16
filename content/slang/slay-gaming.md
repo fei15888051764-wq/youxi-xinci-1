@@ -66,6 +66,5 @@ It means to do something with flawless execution and total confidence. Originall
 ---
 
 ## Sources
-
-1. SlangPedia — "68 Most Popular TikTok Slang Words of 2026" (slay in top 50): slangpedia.co.uk
-2. Urban Dictionary — "Slay" (ballroom origins, modern gaming usage): urbandictionary.com
+- [SlangPedia — "68 Most Popular TikTok Slang Words of 2026" (slay in top 50)](https://slangpedia.co.uk)
+- [Urban Dictionary — "Slay" (ballroom origins, modern gaming usage)](https://urbandictionary.com)
