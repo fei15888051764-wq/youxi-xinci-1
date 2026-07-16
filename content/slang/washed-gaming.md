@@ -58,5 +58,4 @@ All the time, in both sports and gaming. Any time a veteran pro has a weak seaso
 ---
 
 ## Sources
-
-1. Urban Dictionary — "Washed" definitions (2016 top entry + 2020 gaming-specific entry): urbandictionary.com
+- [Urban Dictionary — "Washed" definitions (2016 top entry + 2020 gaming-specific entry)](https://urbandictionary.com)
