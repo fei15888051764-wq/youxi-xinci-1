@@ -67,6 +67,5 @@ It's like watching someone cook a meal — if you keep opening the oven and addi
 ---
 
 ## Sources
-
-1. StreamSpell — Twitch Slang Guide 2026 ("Let Them Cook" gaming context): streamspell.com
-2. Urban Dictionary — "Let him cook" / "Let them cook" (2023 entries): urbandictionary.com
+- [StreamSpell — Twitch Slang Guide 2026 ("Let Them Cook" gaming context)](https://streamspell.com)
+- [Urban Dictionary — "Let him cook" / "Let them cook" (2023 entries)](https://urbandictionary.com)
