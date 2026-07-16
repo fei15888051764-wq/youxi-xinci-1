@@ -69,7 +69,6 @@ Rizz is charm's younger, cooler sibling. Charm is universal — anyone can be ch
 ---
 
 ## Sources
-
-1. StreamSpell — "Rizz" entry in Twitch Slang Guide 2026 (streaming/gaming context): streamspell.com
-2. Merriam-Webster 2023 update (official dictionary entry alongside "goated" and "bussin")
-3. Know Your Meme — "Rizz" (origin from Kai Cenat, TikTok spread, variant definitions): knowyourmeme.com
+- [StreamSpell — "Rizz" entry in Twitch Slang Guide 2026 (streaming/gaming context)](https://streamspell.com)
+- Merriam-Webster 2023 update (official dictionary entry alongside "goated" and "bussin")
+- [Know Your Meme — "Rizz" (origin from Kai Cenat, TikTok spread, variant definitions)](https://knowyourmeme.com)
