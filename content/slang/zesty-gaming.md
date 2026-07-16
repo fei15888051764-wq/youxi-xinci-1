@@ -69,7 +69,6 @@ Both. A player can be zesty (confident, entertaining, full of personality) and a
 ---
 
 ## Sources
-
-1. Urban Dictionary — "Zesty" (2022 entry, 4047 upvotes): urbandictionary.com
-2. EnglishCollege — "Zesty Meaning Slang 2026" (positive gaming usage): englishcolege.com
-3. Slang Meaning Guide — "Gen Z Slang April 2026: 20 Trending Terms" (lists zesty as trending): slangmeaningguide.com
+- [Urban Dictionary — "Zesty" (2022 entry, 4047 upvotes)](https://urbandictionary.com)
+- [EnglishCollege — "Zesty Meaning Slang 2026" (positive gaming usage)](https://englishcolege.com)
+- [Slang Meaning Guide — "Gen Z Slang April 2026: 20 Trending Terms" (lists zesty as trending)](https://slangmeaningguide.com)
