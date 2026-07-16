@@ -62,6 +62,5 @@ It's short for "uncle" and basically means "you're old" — either said with rea
 ---
 
 ## Sources
-
-1. Urban Dictionary — "unc status" definitions (2024 entries): urbandictionary.com
-2. TextMeanings — "Unc Meaning Slang: The Ultimate Guide to This Viral 2026 Term": textmeanings.com
+- [Urban Dictionary — "unc status" definitions (2024 entries)](https://urbandictionary.com)
+- [TextMeanings — "Unc Meaning Slang: The Ultimate Guide to This Viral 2026 Term"](https://textmeanings.com)
