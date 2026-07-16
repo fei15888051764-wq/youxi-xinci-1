@@ -63,6 +63,5 @@ Yes, but more selectively than at its 2023 peak. It works best as an occasional 
 ---
 
 ## Sources
-
-1. EnglishCollege — "Ohio Meaning Slang in 2026" (origin timeline + gaming usage): englishcolege.com
-2. Similessons — "Ohio Slang Meaning: The Ultimate 2026 Guide" (68% Gen Z recognition stat): similessons.com
+- [EnglishCollege — "Ohio Meaning Slang in 2026" (origin timeline + gaming usage)](https://englishcolege.com)
+- [Similessons — "Ohio Slang Meaning: The Ultimate 2026 Guide" (68% Gen Z recognition stat)](https://similessons.com)
