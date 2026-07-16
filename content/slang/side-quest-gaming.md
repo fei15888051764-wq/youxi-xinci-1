@@ -65,6 +65,5 @@ In games, it's an optional mission you can do for extra rewards. In real life, i
 ---
 
 ## Sources
-
-1. Merriam-Webster — "Side Quest" official entry (June 2026): merriam-webster.com
-2. Similistic — "Side Quest Meaning: Why Gamers Love It" (gaming + real-life usage): similistic.com
+- [Merriam-Webster — "Side Quest" official entry (June 2026)](https://merriam-webster.com)
+- [Similistic — "Side Quest Meaning: Why Gamers Love It" (gaming + real-life usage)](https://similistic.com)
