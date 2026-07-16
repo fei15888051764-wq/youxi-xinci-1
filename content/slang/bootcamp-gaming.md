@@ -64,6 +64,5 @@ It's like a pre-season training camp in traditional sports. The team moves to a 
 ---
 
 ## Sources
-
-1. What is eSports — "Bootcamp Importance Esports: Why Training Camps Matter Most" (detailed bootcamp types, schedules, benefits): whatisesports.xyz
-2. GoExAnimo — "Esports Bootcamp" (professional training overview): goexanimo.com
+- [What is eSports — "Bootcamp Importance Esports: Why Training Camps Matter Most" (detailed bootcamp types, schedules, benefits)](https://whatisesports.xyz)
+- [GoExAnimo — "Esports Bootcamp" (professional training overview)](https://goexanimo.com)
