@@ -59,6 +59,5 @@ Yes, but primarily by Gen Alpha and younger Gen Z gamers. Like most meme slang, 
 ---
 
 ## Sources
-
-1. SlangPedia — "68 Most Popular TikTok Slang Words of 2026" (skibidi listed): slangpedia.co.uk
-2. Know Your Meme — "Skibidi Toilet" (origin, spread, cultural impact): knowyourmeme.com
+- [SlangPedia — "68 Most Popular TikTok Slang Words of 2026" (skibidi listed)](https://slangpedia.co.uk)
+- [Know Your Meme — "Skibidi Toilet" (origin, spread, cultural impact)](https://knowyourmeme.com)
