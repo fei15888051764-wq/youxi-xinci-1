@@ -71,4 +71,4 @@ It's an upgraded version that blew up around 2021–2022. "Sauce" is style or sw
 ## Sources
 - [Goated — "From Internet Slang to the #1 Crypto Casino" (origin breakdown of GOAT → goated)](https://goated.com)
 - [Slang.org — "Goated Meaning & Definition" (usage and cultural notes)](https://slang.org)
-- Merriam-Webster September 2023 update (official dictionary entry alongside "rizz" and "bussin")
+- [Merriam-Webster September 2023 update](https://www.merriam-webster.com)
