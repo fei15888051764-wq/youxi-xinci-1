@@ -62,5 +62,4 @@ It's like tackle football — one person holds the opponent in place so the rest
 ---
 
 ## Sources
-
-1. Fandom/Strife Wiki — "Crowd Control" (comprehensive CC types and mechanics breakdown): strife.fandom.com
+- [Fandom/Strife Wiki — "Crowd Control" (comprehensive CC types and mechanics breakdown)](https://strife.fandom.com)
