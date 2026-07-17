@@ -1,5 +1,5 @@
 ---
-date: 2026-07-20T00:00:00Z
+date: 2026-07-17T00:00:00Z
 description: "Learn what 'Brain Rot' means in gaming slang. A complete guide to this self-deprecating term for mental overload from too much online content."
 title: "Brain Rot"
 slug: "brain-rot-gaming"

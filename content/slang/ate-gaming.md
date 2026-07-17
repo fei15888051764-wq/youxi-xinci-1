@@ -1,5 +1,5 @@
 ---
-date: 2026-07-21T00:00:00Z
+date: 2026-07-17T00:00:00Z
 description: "Learn what 'Ate' means in gaming slang. A complete guide to this term for absolutely crushing it — from ballroom culture to gaming chats."
 title: "Ate"
 slug: "ate-gaming"

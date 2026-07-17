@@ -1,5 +1,5 @@
 ---
-date: 2026-07-18T00:00:00Z
+date: 2026-07-17T00:00:00Z
 description: "Learn what 'Delulu' means in gaming slang. A complete guide to this playful term for delusional thinking that took over TikTok, fandoms, and gaming culture."
 title: "Delulu"
 slug: "delulu-gaming"

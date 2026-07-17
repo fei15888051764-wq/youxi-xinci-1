@@ -1,5 +1,5 @@
 ---
-date: 2026-07-19T00:00:00Z
+date: 2026-07-17T00:00:00Z
 description: "Learn what 'Based' means in gaming slang. A complete guide to this term for authentic, unapologetic confidence that Lil B coined and gamers adopted."
 title: "Based"
 slug: "based-gaming"
