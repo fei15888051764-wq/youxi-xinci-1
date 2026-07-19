@@ -1,39 +1,55 @@
-baseURL: 'https://gamerterms.com/'
-languageCode: 'en-us'
-title: 'Gamer Slang & Pro Terms Hub'
-theme: 'gamer-theme'
-
-buildFuture: true
-
-pagination:
-  pagerSize: 16
-enableRobotsTXT: false
+baseURL: https://gamerterms.com/
+languageCode: en-us
+title: Gamer Slang & Pro Terms Hub
+theme: gamer-theme
 enableGitInfo: true
 
-permalinks:
-  slang: '/slang/:slug/'
+# 分页设置
+pagination:
+  pagerSize: 21
+
+# 输出格式
+outputs:
+  home: [HTML, RSS]
+  page: [HTML]
+  section: [HTML, RSS]
 
 params:
-  description: 'The ultimate dictionary for gaming slang and terminology.'
-  author: 'GEBILAOWANG'
-  keywords: 'gaming slang, gamer glossary, gaming terms, esports terminology'
+  description: 'The independent dictionary for gaming slang and pro terminology — clear definitions, real origins, and real in-game examples.'
+  author: GEBILAOWANG
 
-menu:
+# 菜单配置
+menus:
   main:
     - name: Home
       url: /
-      weight: 10
+      weight: 1
+    - name: Slang
+      url: /slang/
+      weight: 2
     - name: Tags
       url: /tags/
-      weight: 20
+      weight: 3
     - name: About
       url: /about/
-      weight: 30
-    - name: Contact
-      url: /contact/
-      weight: 40
+      weight: 4
 
-sitemap:
-  changefreq: daily
-  priority: 0.8
-  filename: sitemap.xml
+# 时间配置
+timeZone: America/New_York
+
+# 永久链接
+permalinks:
+  slang: /slang/:slug/
+
+# 分类法
+taxonomies:
+  tag: tags
+  category: categories
+  year: years
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: monokai
