@@ -108,7 +108,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{{ range $i, $q := . }}{{ if $i }},{{ end }}{"@type":"Question","name":{{ $q.question | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ $q.answer | plainify | jsonify }}}}{{ end }}]}</script>
 {{ end }}
 <!-- WebPage (for Sitelinks) -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"{{ .Title }} Meaning in Gaming (2026)","description":{{ $schemaDesc | jsonify }},"url":"{{ .Permalink }}","inLanguage":"en-US","isPartOf":{"@type":"WebSite","name":"{{ .Site.Title }}","url":"{{ .Site.BaseURL }}"},"primaryImageOfPage":{"@type":"ImageObject","url":"{{ $ogImgURL }}","datePublished":"{{ .Date.Format "2006-01-02T15:04:05-07:00" }}","dateModified":"{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"{{ .Title }} Meaning in Gaming (2026)","description":{{ $schemaDesc | jsonify }},"url":"{{ .Permalink }}","inLanguage":"en-US","isPartOf":{"@type":"WebSite","name":"{{ .Site.Title }}","url":"{{ .Site.BaseURL }}"},"primaryImageOfPage":{"@type":"ImageObject","url":"{{ $ogImgURL }}"},"datePublished":"{{ .Date.Format "2006-01-02T15:04:05-07:00" }}","dateModified":"{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}"}</script>
 <!-- DefinedTerm (for slang definition) -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"DefinedTerm","name":"{{ .Title }}","description":{{ $schemaDesc | jsonify }},"inDefinedTermSet":{"@type":"DefinedTermSet","name":"Gaming Slang Dictionary","publisher":"{{ .Site.Title }}"},"termCode":"{{ .Title | lower | urlize }}"}</script>
 {{ else }}
