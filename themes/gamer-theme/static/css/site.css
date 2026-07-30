@@ -134,7 +134,7 @@
 .detail-content th,.detail-content td{padding:10px 12px;border:1px solid #333;text-align:left}
 .detail-content th{background:#111;font-weight:600;color:#f0f0f0}
 .detail-content td{color:#ccc}
-.detail-hero-img{width:100%;border-radius:10px;margin-bottom:24px;aspect-ratio:16/9;object-fit:cover;overflow:hidden;padding-top:72px}
+.detail-hero-img{width:100%;border-radius:10px;margin-bottom:24px;aspect-ratio:16/9;object-fit:cover;overflow:hidden}
 .detail-hero-img img{width:100%;height:100%;object-fit:cover;display:block}
 .breadcrumb{display:flex;align-items:center;gap:8px;margin-bottom:16px;color:#888;font-size:13px;flex-wrap:wrap}
 .breadcrumb a{color:#888}
