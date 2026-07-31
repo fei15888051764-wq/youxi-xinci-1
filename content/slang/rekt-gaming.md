@@ -1,5 +1,5 @@
 ---
-date: 2026-07-31T08:14:32Z
+date: 2026-07-30T08:14:32Z
 description: "What does Rekt mean in gaming? Here's the deal: it's the most brutal way to say you got destroyed."
 title: "Rekt"
 slug: "rekt-gaming"

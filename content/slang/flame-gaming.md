@@ -1,5 +1,5 @@
 ---
-date: 2026-07-31T09:18:44Z
+date: 2026-07-30T09:18:44Z
 description: "Heard someone drop 'Flame' in a match? It's toxic trash talk. Full breakdown inside."
 title: "Flame"
 slug: "flame-gaming"

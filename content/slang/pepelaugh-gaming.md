@@ -1,5 +1,5 @@
 ---
-date: 2026-07-31T08:29:17Z
+date: 2026-07-30T08:29:17Z
 description: "Rekt explained — completely destroyed in gaming, where it came from, and why every gamer says it."
 title: "PepeLaugh"
 slug: "pepelaugh-gaming"

@@ -1,5 +1,5 @@
 ---
-date: 2026-07-31T08:45:53Z
+date: 2026-07-30T08:45:53Z
 description: "Everyone in chat keeps typing FPS. Here's what it actually means."
 title: "FPS"
 slug: "fps-gaming"

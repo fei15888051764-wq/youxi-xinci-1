@@ -1,5 +1,5 @@
 ---
-date: 2026-07-31T09:35:11Z
+date: 2026-07-30T09:35:11Z
 description: "New to Nade? It's short for grenade in shooter games — and gamers use it constantly."
 title: "Nade"
 slug: "nade-gaming"
