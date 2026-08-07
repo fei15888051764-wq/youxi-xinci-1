@@ -1,5 +1,5 @@
 ---
-date: 2026-08-07T08:30:00Z
+date: 2026-08-06T08:30:00Z
 description: "Heard someone drop 'NT' in a match? It's encouragement after a near-clutch. Full breakdown inside."
 title: "NT"
 slug: "nt-gaming"

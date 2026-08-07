@@ -1,5 +1,5 @@
 ---
-date: 2026-08-07T08:40:00Z
+date: 2026-08-06T08:40:00Z
 description: "Zerg: overwhelming your enemies with numbers. Origin, real examples, and when to use it."
 title: "Zerg"
 slug: "zerg-gaming"

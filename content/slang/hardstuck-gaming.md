@@ -1,5 +1,5 @@
 ---
-date: 2026-08-07T08:10:00Z
+date: 2026-08-06T08:10:00Z
 description: "Hardstuck explained — trapped at one rank, where it came from, and why every gamer says it."
 title: "Hardstuck"
 slug: "hardstuck-gaming"

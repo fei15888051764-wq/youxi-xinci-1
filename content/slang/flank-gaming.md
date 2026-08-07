@@ -1,5 +1,5 @@
 ---
-date: 2026-08-07T08:20:00Z
+date: 2026-08-06T08:20:00Z
 description: "Flank: hitting the enemy from behind. Origin, real examples, and when to use it."
 title: "Flank"
 slug: "flank-gaming"

@@ -1,5 +1,5 @@
 ---
-date: 2026-08-07T08:50:00Z
+date: 2026-08-06T08:50:00Z
 description: "New to Soulslike? It's a brutal action RPG genre — and gamers use it constantly."
 title: "Soulslike"
 slug: "soulslike-gaming"
